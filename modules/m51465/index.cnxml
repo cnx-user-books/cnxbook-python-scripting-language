@@ -1,0 +1,3180 @@
+<document xmlns="http://cnx.rice.edu/cnxml"> 
+<title>Itse1359-1450-Inheritance</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m51465</md:content-id>
+  <md:title>Itse1359-1450-Inheritance</md:title>
+  <md:abstract>You will learn a little about Python class inheritance in this module.</md:abstract>
+  <md:uuid>5f0c5e09-7034-4c16-af85-5e6582d7dd78</md:uuid>
+</metadata>
+
+<content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h11000">
+<title>
+Table of Contents
+
+</title>
+
+
+
+
+<list id="ul1000" list-type="bulleted">
+
+	
+
+<item id="li1000">
+<link id="a1000" target-id="Preface">
+
+Preface
+
+</link>
+
+
+	
+
+<list id="ul1001" list-type="bulleted">
+
+		
+
+<item id="li1001">
+<link id="a1001" target-id="What_you_have_learned">
+
+What you have learned
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1002">
+<link id="a1002" target-id="What_you_will_learn">
+
+What you will learn
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1003">
+<link id="a1003" target-id="Viewing_tip">
+
+Viewing tip
+
+</link>
+
+
+<list id="ul1002" list-type="bulleted">
+
+			
+
+<item id="li1004">
+<link id="a1004" target-id="Images">
+
+Figures
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1005">
+<link id="a1005" target-id="Listings">
+
+Listings
+
+</link>
+
+
+</item>
+
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+
+	
+
+<item id="li1006">
+<link id="a1006" target-id="General_background_information">
+
+General background information
+
+</link>
+
+
+<list id="ul1003" list-type="bulleted">
+
+		
+
+<item id="li1007">
+<link id="a1007" target-id="Inheritance">
+
+Inheritance
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1008">
+<link id="a1008" target-id="Multiple_inheritance">
+
+Multiple inheritance
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1009">
+<link id="a1009" target-id="Very_brief_coverage">
+
+Very brief coverage
+
+</link>
+
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+	
+
+<item id="li1010">
+<link id="a1010" target-id="Discussion_and_sample_code">
+
+Discussion and sample code
+
+</link>
+
+
+<list id="ul1004" list-type="bulleted">
+
+		
+
+<item id="li1011">
+<link id="a1011" target-id="Define_the_superclass">
+
+Define the superclass
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1012">
+<link id="a1012" target-id="Define_the_subclass">
+
+Define the subclass
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1013">
+<link id="a1013" target-id="Exercise_the_classes">
+
+Exercise the classes
+
+</link>
+
+
+<list id="ul1005" list-type="bulleted">
+
+			
+
+<item id="li1014">
+<link id="a1014" target-id="Display_the_value_of_the_class_variable">
+
+Display the value of the class variable
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1015">
+<link id="a1015" target-id="Instantiate_a_SubClass_object">
+
+Instantiate a Subclass object
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1016">
+<link id="a1016" target-id="Modify_and_print_the_value_in_superclassVar">
+
+Modify and then print the value in superclassVar
+
+</link>
+
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+
+	
+
+<item id="li1017">
+<link id="a1017" target-id="Run_the_program">
+
+Run the program
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1018">
+<link id="a1018" target-id="Visualize_the_program">
+
+Visualize the program
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1019">
+<link id="a1019" target-id="Complete_program_listings">
+
+Complete program listing
+
+</link>
+
+
+</item>
+
+
+
+	
+
+<item id="li1020">
+<link id="a1020" target-id="Miscellaneous">
+
+Miscellaneous
+
+</link>
+
+
+</item>
+
+
+
+
+
+</list>
+
+
+	
+	
+
+</section>
+<section id="h11001">
+<title>
+<emphasis id="Preface" effect="bold">
+
+Preface
+
+</emphasis>
+
+
+</title>
+
+
+	
+	
+
+<para id="p1000">
+This module is one in a collection of modules on Python designed for 
+teaching 
+
+<emphasis id="em1000" effect="italics">
+ITSE 1359 Introduction to Scripting Languages: Python
+
+</emphasis>
+ at Austin Community 
+College in Austin, TX.
+
+</para>
+
+
+
+
+<section id="h21000">
+<title>
+<emphasis id="What_you_have_learned" effect="bold">
+
+What you have learned
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1001">
+Earlier modules provided 
+
+</para>
+
+
+
+
+<list id="ul1006" list-type="bulleted">
+
+	
+
+<item id="li1021">
+an overview of classes and objects in Python,
+
+</item>
+
+
+	
+
+<item id="li1022">
+an explanation of the 
+
+<emphasis id="strong1000" effect="bold">
+self
+
+</emphasis>
+ word in Python class 
+	definitions, 
+
+</item>
+
+
+	
+
+<item id="li1023">
+a detailed explanation of 
+
+<emphasis id="strong1001" effect="bold">
+<emphasis id="em1001" effect="italics">
+instance variables
+
+</emphasis>
+</emphasis>
+ in Python class 
+	definitions, and
+
+</item>
+
+
+	
+
+<item id="li1024">
+some of the details regarding 
+
+<emphasis id="strong1002" effect="bold">
+<emphasis id="em1002" effect="italics">
+class variables
+
+</emphasis>
+</emphasis>
+ in Python class 
+	definitions.
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+</section>
+<section id="h21001">
+<title>
+<emphasis id="What_you_will_learn" effect="bold">
+
+What you will learn
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1002">
+You will learn a little about Python 
+
+<emphasis id="em1003" effect="italics">
+class inheritance
+
+</emphasis>
+ in this module.
+
+</para>
+
+
+	
+
+</section>
+<section id="h21002">
+<title>
+<emphasis id="Viewing_tip" effect="bold">
+
+Viewing tip
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1003">
+I recommend that you open another copy of this module in a separate 
+browser window and use the following links to easily find and view the Figures 
+	and the Listings 
+while you are reading about them.
+
+</para>
+
+
+
+
+<para id="p1004">
+<emphasis id="em1004" effect="italics">
+(Note to blind and visually impaired students: most of the Figures and all of the 
+Listings in 
+this module are presented in plain text format and should be accessible using an 
+audio screen reader or a braille display. Note however that the required 
+indentation may not be properly represented by an audio screen reader.)
+
+</emphasis>
+</para>
+
+
+	
+
+<section id="h31000">
+<title>
+<emphasis id="Images" effect="bold">
+
+Figures
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<list id="ul1007" list-type="bulleted">
+
+
+
+<item id="li1025">
+<link id="a1021" target-id="Image_4">
+
+Figure 1
+
+</link>
+
+. Output from the code in Listing 3.
+
+</item>
+
+
+
+
+<item id="li1026">
+<link id="a1022" target-id="Image_6">
+
+Figure 2
+
+</link>
+
+. Output from the code in Listing 4.
+
+</item>
+
+
+
+
+<item id="li1027">
+<link id="a1023" target-id="Image_8">
+
+Figure 3
+
+</link>
+
+. Output from the code in Listing 5.
+
+</item>
+
+
+
+
+<item id="li1028">
+<link id="a1024" target-id="Image_10">
+
+Figure 4
+
+</link>
+
+. Output from code in Listing 6.
+
+</item>
+
+
+	
+
+</list>
+
+
+
+
+</section>
+<section id="h31001">
+<title>
+<emphasis id="Listings" effect="bold">
+
+Listings
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<list id="ul1008" list-type="bulleted">
+
+
+
+<item id="li1029">
+<link id="a1025" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+. Define the superclass. 
+
+</item>
+
+
+
+
+<item id="li1030">
+<link id="a1026" target-id="Image_2">
+
+Listing 2
+
+</link>
+
+. Define a subclass that extends or inherits from Superclass.
+
+</item>
+
+
+
+
+<item id="li1031">
+<link id="a1027" target-id="Image_3">
+
+Listing 3
+
+</link>
+
+. Display the value of the class variable.
+
+</item>
+
+
+
+
+<item id="li1032">
+<link id="a1028" target-id="Image_5">
+
+Listing 4
+
+</link>
+
+. Instantiate a Subclass object.
+
+</item>
+
+
+
+
+<item id="li1033">
+<link id="a1029" target-id="Image_7">
+
+Listing 5
+
+</link>
+
+. Modify and then print the value in superclassVar.
+
+</item>
+
+
+
+
+<item id="li1034">
+<link id="a1030" target-id="Image_9">
+
+Listing 6
+
+</link>
+
+. Complete program listing. 
+
+</item>
+
+
+
+
+</list>
+
+
+	
+	
+	
+
+</section>
+</section>
+</section>
+<section id="h11002">
+<title>
+<emphasis id="General_background_information" effect="bold">
+
+General 
+	background information
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1005">
+I told you in an earlier module that OOP is an abbreviation for 
+Object-Oriented Programming. I told you that most books on OOP will tell you 
+that in order to understand OOP, you need to understand
+
+
+<emphasis id="the_following_three_concepts" effect="bold">
+
+the following three concepts
+
+</emphasis>
+
+: 
+
+</para>
+
+
+
+
+<list id="ul1009" list-type="bulleted">
+
+	
+
+<item id="li1035">
+Encapsulation 
+
+</item>
+
+
+	
+
+<item id="li1036">
+Inheritance 
+
+</item>
+
+
+	
+
+<item id="li1037">
+Polymorphism 
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+<para id="p1006">
+I have discussed encapsulation in some detail in previous modules. As near as 
+I can tell, unlike C++ and Java, Python does not support polymorphism, at least 
+not in any significant way. 
+
+</para>
+
+
+
+
+<section id="h21003">
+<title>
+<emphasis id="Inheritance" effect="bold">
+
+Inheritance
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1007">
+C++ and Java support two forms of polymorphism:
+
+</para>
+
+
+
+
+<list id="ul1010" list-type="bulleted">
+
+	
+
+<item id="li1038">
+Compile-time polymorphism
+
+</item>
+
+
+	
+
+<item id="li1039">
+Runtime polymorphism
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+<para id="p1008">
+Both of these depend on the "strongly-typed" nature of C++ 
+and Java. Runtime polymorphism using virtual functions and base-class pointers 
+also depends on inheritance. 
+
+</para>
+
+
+
+
+<para id="p1009">
+Because Python is a "weakly-typed" 
+
+<emphasis id="em1005" effect="italics">
+(if typed at all)
+
+</emphasis>
+ programming language, I 
+don't know how to implement either form of polymorphism using Python. 
+
+<emphasis id="em1006" effect="italics">
+
+(However, if I am wrong on this, I will be happy to learn 
+how to implement polymorphism in Python.)
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1010">
+Inheritance is extremely important in C++ and Java primarily because of the 
+use of runtime polymorphism in program design. 
+However, due to the lack of polymorphism, inheritance in Python is not nearly as important as in those other two 
+languages. Although it may have some other uses, inheritance in Python appears 
+mainly to be a convenient way to reduce the amount of typing required to write a 
+program.
+
+</para>
+
+
+
+
+<para id="p1011">
+According to
+
+
+<link id="a1031" url="http://www.tutorialspoint.com/python/python_classes_objects.htm">
+
+
+tutorialspoint--Python Objected Oriented
+
+</link>
+
+, Python inheritance is
+
+</para>
+
+
+
+
+<quote id="blockquote1000" display="block">
+
+	"The transfer of the characteristics of a class to other classes that are 
+	derived from it."
+
+</quote>
+
+
+
+
+<para id="p1012">
+While that can sometimes be a useful capability, it is simply one of many 
+useful capabilities that exist in Python
+
+</para>
+
+
+
+
+</section>
+<section id="h21004">
+<title>
+<emphasis id="Multiple_inheritance" effect="bold">
+
+Multiple inheritance
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1013">
+C++ supports a concept know as 
+
+<emphasis id="em1007" effect="italics">
+multiple inheritance
+
+</emphasis>
+, which often 
+results in significant programming errors for novice programmers. Multiple 
+inheritance is so problematic that the designers of Java excluded it from the language and replaced it with a safer alternative 
+known as the 
+
+<emphasis id="em1008" effect="italics">
+Java interface
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+<para id="p1014">
+Python also supports multiple inheritance. Because of the general lack of 
+safety nets in Python, in my opinion, multiple inheritance is more problematic 
+for novice programmers in Python than in C++. My advice -- don't use Python 
+multiple inheritance for any serious programming effort until you become a very 
+capable Python programmer.
+
+</para>
+
+
+
+
+</section>
+<section id="h21005">
+<title>
+<emphasis id="Very_brief_coverage" effect="bold">
+
+Very brief coverage
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1015">
+As a result of the issues mentioned above, this module will provide only a 
+very brief treatment of inheritance in Python. If you need to learn more about 
+inheritance, I will refer you to the following documents that are available on the web 
+as of October 2014.
+
+</para>
+
+
+
+
+<list id="ul1011" list-type="bulleted">
+
+	
+
+<item id="li1040">
+
+	
+
+<link id="a1032" url="http://www.tutorialspoint.com/python/python_classes_objects.htm">
+
+
+	tutorialspoint--Python Objected Oriented
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1041">
+<link id="a1033" url="https://docs.python.org/3/tutorial/classes.html#inheritance">
+
+
+	The Python Tutorial -- Inheritance
+
+</link>
+
+
+</item>
+
+
+
+
+</list>
+
+
+	
+	
+
+</section>
+</section>
+<section id="h11003">
+<title>
+<emphasis id="Discussion_and_sample_code" effect="bold">
+
+Discussion and sample code
+
+</emphasis>
+
+
+</title>
+
+
+	
+	
+
+<para id="p1016">
+I will present and explain a simple program to give you a taste of 
+	inheritance. A complete listing of the program is provided in
+	
+
+<link id="a1034" target-id="Image_9">
+
+Listing 6
+
+</link>
+
+. The output produced by running the 
+	program is shown in 
+
+<link id="a1035" target-id="Image_10">
+
+Figure 4
+
+</link>
+
+. As usual, I will break 
+	the program down and explain it in fragments.
+
+</para>
+
+
+
+
+<section id="h21006">
+<title>
+<emphasis id="Define_the_superclass" effect="bold">
+
+Define the superclass
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1017">
+<link id="a1036" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+ defines a class named 
+
+<emphasis id="strong1003" effect="bold">
+Superclass
+
+</emphasis>
+ that will be the 
+
+
+<emphasis id="em1009" effect="italics">
+superclass
+
+</emphasis>
+ or the 
+
+<emphasis id="em1010" effect="italics">
+base class
+
+</emphasis>
+ for another class named 
+
+<emphasis id="strong1004" effect="bold">
+
+Subclass
+
+</emphasis>
+. 
+In other words, the class named 
+
+<emphasis id="strong1005" effect="bold">
+Subclass
+
+</emphasis>
+ will 
+
+<emphasis id="em1011" effect="italics">
+inherit from
+
+</emphasis>
+ 
+the class named 
+
+<emphasis id="strong1006" effect="bold">
+Superclass
+
+</emphasis>
+ or will 
+
+<emphasis id="em1012" effect="italics">
+extend
+
+</emphasis>
+ the class 
+named 
+
+<emphasis id="strong1007" effect="bold">
+Superclass
+
+</emphasis>
+, whichever jargon you prefer. 
+
+<emphasis id="em1013" effect="italics">
+(A
+
+
+<link id="a1037" url="http://pythontutor.com/visualize.html#mode=display">
+
+visualization
+
+</link>
+
+ 
+of the program uses the word 
+
+<emphasis id="strong1008" effect="bold">
+extends
+
+</emphasis>
+ to indicate 
+inheritance.)
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1018">
+Depending on your preferred jargon, 
+
+<emphasis id="strong1009" effect="bold">
+Superclass
+
+</emphasis>
+ will be the 
+
+<emphasis id="em1014" effect="italics">
+base class
+
+</emphasis>
+ 
+or the 
+
+<emphasis id="em1015" effect="italics">
+superclass
+
+</emphasis>
+. 
+
+<emphasis id="strong1010" effect="bold">
+Subclass
+
+</emphasis>
+ will be the 
+
+<emphasis id="em1016" effect="italics">
+derived
+
+</emphasis>
+ 
+class or the 
+
+<emphasis id="em1017" effect="italics">
+subclass
+
+</emphasis>
+.
+
+</para>
+
+
+	
+
+<table id="table1000" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1000">
+
+			
+
+<row id="tr1000">
+
+				
+
+<entry id="th1000">
+<emphasis id="Image_1" effect="bold">
+
+Listing 1
+
+</emphasis>
+
+. Define the 
+				superclass.
+
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1000">
+
+			
+
+<row id="tr1001">
+
+				
+
+<entry id="td1000">
+
+
+
+
+<code id="pre1000" display="block">
+#Define the superclass
+class Superclass(object):
+    superclassVar = True
+    
+    def __init__(self,name):
+        Superclass.superclassVar = name
+        self.friend = "Tom"
+</code>
+
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1019">
+The code in 
+
+<link id="a1038" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+ creates a class variable named 
+
+<emphasis id="strong1011" effect="bold">
+superclassVar
+
+</emphasis>
+ 
+	and initializes its value to 
+
+<emphasis id="strong1012" effect="bold">
+True
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+<para id="p1020">
+The code in 
+
+<link id="a1039" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+ also defines an initializer or constructor method named
+
+
+<emphasis id="strong1013" effect="bold">
+__init__
+
+</emphasis>
+. When this method is executed, it changes the value 
+stored in 
+
+<emphasis id="strong1014" effect="bold">
+superclassVar
+
+</emphasis>
+ from 
+
+<emphasis id="strong1015" effect="bold">
+True
+
+</emphasis>
+ to the value 
+of an incoming parameter named 
+
+<emphasis id="strong1016" effect="bold">
+name
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+<para id="p1021">
+The 
+
+<emphasis id="strong1017" effect="bold">
+__init__
+
+</emphasis>
+ method also creates an instance variable named
+
+
+<emphasis id="strong1018" effect="bold">
+friend
+
+</emphasis>
+ in the object referred to by 
+
+<emphasis id="strong1019" effect="bold">
+self
+
+</emphasis>
+ and 
+initializes that variable to contain 
+
+<emphasis id="strong1020" effect="bold">
+"Tom"
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+</section>
+<section id="h21007">
+<title>
+<emphasis id="Define_the_subclass" effect="bold">
+
+Define the subclass
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1022">
+The class named 
+
+<emphasis id="strong1021" effect="bold">
+Subclass
+
+</emphasis>
+, which extends 
+
+<emphasis id="strong1022" effect="bold">
+Superclass
+
+</emphasis>
+, is defined in 
+
+<link id="a1040" target-id="Image_2">
+
+
+Listing 2
+
+</link>
+
+. This 
+class also 
+defines a constructor method named 
+
+<emphasis id="strong1023" effect="bold">
+__init__
+
+</emphasis>
+, which in turn 
+calls the 
+
+<emphasis id="strong1024" effect="bold">
+__init__
+
+</emphasis>
+ method of 
+
+<emphasis id="strong1025" effect="bold">
+Superclass
+
+</emphasis>
+, 
+passing its own incoming parameters to the superclass constructor method.
+
+</para>
+
+
+
+
+	
+
+<table id="table1001" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1001">
+
+			
+
+<row id="tr1002">
+
+				
+
+<entry id="th1001">
+<emphasis id="Image_2" effect="bold">
+
+Listing 2
+
+</emphasis>
+
+. Define a subclass that extends or inherits from Superclass.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1001">
+
+			
+
+<row id="tr1003">
+
+				
+
+<entry id="td1001">
+
+
+
+
+<code id="pre1001" display="block">
+#Define a subclass that extends or inherits from Superclass
+class Subclass(Superclass):
+    def __init__(self,name):
+        Superclass.__init__(self,name)
+        print(self.friend)
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1023">
+The method named 
+
+<emphasis id="strong1026" effect="bold">
+__init__
+
+</emphasis>
+ in 
+
+<emphasis id="strong1027" effect="bold">
+Subclass
+
+</emphasis>
+ 
+	also prints the value of the variable named 
+
+<emphasis id="strong1028" effect="bold">
+friend
+
+</emphasis>
+ when it is executed.
+
+</para>
+
+
+
+
+<quote id="blockquote1001" display="block">
+When you instantiate a new object of a class that contains a method 
+named __init__, that method is automatically called and a reference to the 
+object is automatically passed as the first parameter to the method. However, if 
+you write code that explicitly calls __init__, you must explicitly pass that 
+parameter along with any other required parameters as shown in Listing 2.
+
+</quote>
+
+
+
+
+</section>
+<section id="h21008">
+<title>
+<emphasis id="Exercise_the_classes" effect="bold">
+
+Exercise the classes
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1024">
+The remaining program code is designed to exercise the classes and to illustrate 
+the behavior of inheritance in Python. The code that exercises the classes begins in 
+
+<link id="a1041" target-id="Image_3">
+
+
+Listing 3
+
+</link>
+
+. 
+
+</para>
+
+
+
+
+<section id="h31002">
+<title>
+<emphasis id="Display_the_value_of_the_class_variable" effect="bold">
+
+Display the value of the 
+class variable
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1025">
+The code in 
+
+<link id="a1042" target-id="Image_3">
+
+Listing 3
+
+</link>
+
+ gets and prints the initial value stored in the class 
+	variable named 
+
+<emphasis id="strong1029" effect="bold">
+superclassVar
+
+</emphasis>
+, producing the output shown in 
+	
+
+<link id="a1043" target-id="Image_4">
+
+Figure 1
+
+</link>
+
+. 
+
+</para>
+
+
+
+
+	
+
+<table id="table1002" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1002">
+
+			
+
+<row id="tr1004">
+
+				
+
+<entry id="th1002">
+<emphasis id="Image_3" effect="bold">
+
+Listing 3
+
+</emphasis>
+
+. Display the value of 
+				the class variable.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1002">
+
+			
+
+<row id="tr1005">
+
+				
+
+<entry id="td1002">
+
+
+
+
+<code id="pre1002" display="block">
+#Code that exercises the classes
+print(Superclass.superclassVar)
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1026">
+As you can see, at this point in the program, the class variable 
+	contains the value 
+
+<emphasis id="strong1030" effect="bold">
+True
+
+</emphasis>
+ that was placed there when the 
+	class variable was created by the code in 
+
+<link id="a1044" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+.
+
+</para>
+
+
+	
+
+<table id="table1003" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1003">
+
+			
+
+<row id="tr1006">
+
+				
+
+<entry id="th1003">
+<emphasis id="Image_4" effect="bold">
+
+Figure 1
+
+</emphasis>
+
+. Output from the code 
+				in Listing 3.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1003">
+
+			
+
+<row id="tr1007">
+
+				
+
+<entry id="td1003">
+
+
+
+
+<code id="pre1003" display="block">
+True
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+</section>
+<section id="h31003">
+<title>
+<emphasis id="Instantiate_a_SubClass_object" effect="bold">
+
+Instantiate a Subclass object
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1027">
+The code in 
+
+<link id="a1045" target-id="Image_5">
+
+Listing 4
+
+</link>
+
+ instantiates an object of the class named 
+
+<emphasis id="strong1031" effect="bold">
+
+Subclass
+
+</emphasis>
+ 
+passing 
+
+<emphasis id="strong1032" effect="bold">
+"Joe"
+
+</emphasis>
+ as a parameter to the 
+
+<emphasis id="strong1033" effect="bold">
+__init__
+
+</emphasis>
+ method belonging to that class. 
+
+
+<emphasis id="em1018" effect="italics">
+(As you will recall, that 
+
+</emphasis>
+ 
+
+<emphasis id="strong1034" effect="bold">
+<emphasis id="em1019" effect="italics">
+__init__
+
+</emphasis>
+</emphasis>
+<emphasis id="em1020" effect="italics">
+ method is automatically 
+called when the object is instantiated.)
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1028">
+<link id="a1046" target-id="Image_6">
+
+Figure 2
+
+</link>
+
+ shows the output produced by executing the code in 
+
+<link id="a1047" target-id="Image_5">
+
+
+Listing 4
+
+</link>
+
+.
+
+</para>
+
+
+
+
+	
+
+<table id="table1004" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1004">
+
+			
+
+<row id="tr1008">
+
+				
+
+<entry id="th1004">
+<emphasis id="Image_5" effect="bold">
+
+Listing 4
+
+</emphasis>
+
+. Instantiate a 
+				Subclass object.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1004">
+
+			
+
+<row id="tr1009">
+
+				
+
+<entry id="td1004">
+
+
+
+
+<code id="pre1004" display="block">
+ref = Subclass("Joe")
+
+print(ref.superclassVar)
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+<para id="p1029">
+As you saw in 
+
+<link id="a1048" target-id="Image_2">
+
+Listing 2
+
+</link>
+
+, the 
+
+<emphasis id="strong1035" effect="bold">
+__init__
+
+</emphasis>
+ method in the class 
+named 
+
+<emphasis id="strong1036" effect="bold">
+Subclass
+
+</emphasis>
+ calls the method named 
+
+<emphasis id="strong1037" effect="bold">
+__init__
+
+</emphasis>
+ 
+in the class named 
+
+<emphasis id="strong1038" effect="bold">
+Superclass
+
+</emphasis>
+ passing both of its incoming parameters as parameters to 
+the 
+
+<emphasis id="strong1039" effect="bold">
+__init__
+
+</emphasis>
+ method in the class named 
+
+<emphasis id="strong1040" effect="bold">
+Superclass
+
+</emphasis>
+. As you saw in 
+
+<link id="a1049" target-id="Image_1">
+
+
+Listing 1
+
+</link>
+
+, that 
+method replaces the value 
+
+<emphasis id="strong1041" effect="bold">
+True
+
+</emphasis>
+ in 
+
+<emphasis id="strong1042" effect="bold">
+superclassVar
+
+</emphasis>
+ with 
+one of its incoming parameters, 
+which in this case is 
+
+<emphasis id="strong1043" effect="bold">
+"Joe"
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+<para id="p1030">
+The code in the method named 
+
+<emphasis id="strong1044" effect="bold">
+__init__
+
+</emphasis>
+ in the class named 
+
+
+<emphasis id="strong1045" effect="bold">
+Subclass
+
+</emphasis>
+ in 
+
+<link id="a1050" target-id="Image_2">
+
+Listing 2
+
+</link>
+
+ 
+also prints the value of the variable named 
+
+<emphasis id="strong1046" effect="bold">
+friend
+
+</emphasis>
+ 
+
+<emphasis id="em1021" effect="italics">
+(which 
+is created and initialized by the 
+
+<emphasis id="strong1047" effect="bold">
+__init__
+
+</emphasis>
+ method in the class 
+named 
+
+<emphasis id="strong1048" effect="bold">
+Superclass
+
+</emphasis>
+ in 
+
+<link id="a1051" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+)
+
+</emphasis>
+. 
+This produces the first line of output text 
+
+<emphasis id="em1022" effect="italics">
+(Tom)
+
+</emphasis>
+ shown in 
+
+<link id="a1052" target-id="Image_6">
+
+
+Figure 2
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<para id="p1031">
+The code in 
+
+<link id="a1053" target-id="Image_5">
+
+Listing 4
+
+</link>
+
+ also uses the reference to the 
+
+<emphasis id="strong1049" effect="bold">
+
+Subclass
+
+</emphasis>
+ object to get and 
+print the value of the class variable named 
+
+<emphasis id="strong1050" effect="bold">
+superclassVar
+
+</emphasis>
+ from the class named 
+
+
+<emphasis id="strong1051" effect="bold">
+Superclass
+
+</emphasis>
+, producing the second line of output text in 
+
+<link id="a1054" target-id="Image_6">
+
+
+Figure 2
+
+</link>
+
+
+
+
+<emphasis id="em1023" effect="italics">
+(Joe)
+
+</emphasis>
+.
+
+</para>
+
+
+	
+
+<table id="table1005" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1005">
+
+			
+
+<row id="tr1010">
+
+				
+
+<entry id="th1005">
+<emphasis id="Image_6" effect="bold">
+
+Figure 2
+
+</emphasis>
+
+. Output from the code 
+				in Listing 4.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1005">
+
+			
+
+<row id="tr1011">
+
+				
+
+<entry id="td1005">
+
+
+
+
+<code id="pre1005" display="block">
+Tom
+Joe
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+</section>
+<section id="h31004">
+<title>
+<emphasis id="Modify_and_print_the_value_in_superclassVar" effect="bold">
+
+Modify and then 
+	print the value in superclassVar
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1032">
+Finally, the code in 
+
+<link id="a1055" target-id="Image_7">
+
+Listing 5
+
+</link>
+
+ uses the reference to the 
+
+<emphasis id="strong1052" effect="bold">
+
+Subclass
+
+</emphasis>
+ 
+object to modify and then print the value stored in the class variable of the
+
+
+<emphasis id="strong1053" effect="bold">
+Superclass
+
+</emphasis>
+ class named 
+
+<emphasis id="strong1054" effect="bold">
+superclassVar
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<table id="table1006" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1006">
+
+			
+
+<row id="tr1012">
+
+				
+
+<entry id="th1006">
+<emphasis id="Image_7" effect="bold">
+
+Listing 5
+
+</emphasis>
+
+. Modify and then 
+				print the value in superclassVar.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1006">
+
+			
+
+<row id="tr1013">
+
+				
+
+<entry id="td1006">
+
+
+
+
+<code id="pre1006" display="block">
+ref.superclassVar = "Sue"
+print(ref.superclassVar)
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1033">
+<link id="a1056" target-id="Image_8">
+
+Figure 3
+
+</link>
+
+ shows the output produced by executing the code in 
+
+<link id="a1057" target-id="Image_7">
+
+
+	Listing 5
+
+</link>
+
+.
+
+</para>
+
+
+
+
+	
+
+<table id="table1007" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1007">
+
+			
+
+<row id="tr1014">
+
+				
+
+<entry id="th1007">
+<emphasis id="Image_8" effect="bold">
+
+Figure 3
+
+</emphasis>
+
+. Output from the code 
+				in Listing 5.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1007">
+
+			
+
+<row id="tr1015">
+
+				
+
+<entry id="td1007">
+
+
+
+
+<code id="pre1007" display="block">
+Sue
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+
+</section>
+</section>
+</section>
+<section id="h11004">
+<title>
+<emphasis id="Run_the_program" effect="bold">
+
+Run the program
+
+</emphasis>
+
+
+</title>
+
+
+
+
+
+<para id="p1034">
+I encourage you to copy the code from 
+
+<link id="a1058" target-id="Image_9">
+
+Listing 6
+
+</link>
+
+. Execute the code and confirm 
+that you get the same results as those shown in 
+
+<link id="a1059" target-id="Image_10">
+
+Figure 4
+
+</link>
+
+. Experiment with the code, 
+making changes, and observing the results of your changes. Make certain that you 
+can explain why your changes behave as they do.
+
+</para>
+
+
+
+
+</section>
+<section id="h11005">
+<title>
+<emphasis id="Visualize_the_program" effect="bold">
+
+Visualize the program
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1035">
+I also encourage you to create a
+
+
+<link id="a1060" url="http://pythontutor.com/visualize.html#mode=display">
+
+
+visualization
+
+</link>
+
+ for the code in
+
+
+<link id="a1061" target-id="Image_9">
+
+Listing 6
+
+</link>
+
+. Step through the program one instruction at a time. As you do that, pay 
+attention to the movements of the red and green arrows on the left, the diagram 
+on the right, and the printed material at the bottom. That should help you to 
+better understand inheritance in Python.
+
+</para>
+
+
+
+
+
+</section>
+<section id="h11006">
+<title>
+<emphasis id="Complete_program_listings" effect="bold">
+
+Complete program listing
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1036">
+A complete listing of the program discussed in this module is provided in 
+
+
+<link id="a1062" target-id="Image_9">
+
+Listing 6
+
+</link>
+
+ below. The output produced by the code in 
+
+<link id="a1063" target-id="Image_9">
+
+
+Listing 6
+
+</link>
+
+ is shown in 
+
+
+<link id="a1064" target-id="Image_10">
+
+Figure 4
+
+</link>
+
+.
+
+</para>
+
+
+	
+
+<table id="table1008" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1008">
+
+			
+
+<row id="tr1016">
+
+				
+
+<entry id="th1008">
+<emphasis id="Image_9" effect="bold">
+
+Listing 6
+
+</emphasis>
+
+. Complete 
+				program listing.
+
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1008">
+
+			
+
+<row id="tr1017">
+
+				
+
+<entry id="td1008">
+
+
+
+
+<code id="pre1008" display="block">
+# Illustrates inheritance
+#----------------------------------------------------------
+#Define the superclass
+class Superclass(object):
+    superclassVar = True
+    
+    def __init__(self,name):
+        Superclass.superclassVar = name
+        self.friend = "Tom"
+
+#Define a subclass that extends or inherits from Superclass
+class Subclass(Superclass):
+    def __init__(self,name):
+        Superclass.__init__(self,name)
+        print(self.friend)
+
+#Code that exercises the classes
+print(Superclass.superclassVar)
+ref = Subclass("Joe")
+print(ref.superclassVar)
+ref.superclassVar = "Sue"
+print(ref.superclassVar)
+</code>
+
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+	
+
+<table id="table1009" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1009">
+
+			
+
+<row id="tr1018">
+
+				
+
+<entry id="th1009">
+<emphasis id="Image_10" effect="bold">
+
+Figure 4
+
+</emphasis>
+
+. Output from 
+				code in Listing 6.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1009">
+
+			
+
+<row id="tr1019">
+
+				
+
+<entry id="td1009">
+
+
+
+
+<code id="pre1009" display="block">
+True
+Tom
+Joe
+Sue
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+	
+
+</section>
+<section id="h11007">
+<title>
+<emphasis id="Miscellaneous" effect="bold">
+
+Miscellaneous
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1037">
+This section contains a variety of miscellaneous information. 
+
+</para>
+
+
+
+
+
+	
+
+<note id="note1000" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1055" effect="bold">
+Housekeeping material
+
+</emphasis>
+
+				
+
+<list id="ul1012" list-type="bulleted">
+
+					
+
+<item id="li1042">
+Module name: Itse1359-1450-Inheritance
+
+</item>
+
+
+					
+
+<item id="li1043">
+File: Itse1359-1450.htm
+
+
+</item>
+
+
+					
+
+<item id="li1044">
+Published: 10/27/14
+
+</item>
+
+
+
+
+<item id="li1045">
+Revised: 03/04/15
+
+</item>
+
+
+				
+
+</list>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+
+
+
+	
+
+<note id="note1001" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1056" effect="bold">
+Disclaimers:
+
+</emphasis>
+<para id="p1038">
+<emphasis id="strong1057" effect="bold">
+Financial
+
+</emphasis>
+: Although the Connexions
+site makes it possible for you to download a PDF file for this
+module at no charge, and also makes it possible for you to
+purchase a pre-printed version of the PDF file, you should be
+aware that some of the HTML elements in this module may not translate well into
+PDF.
+
+</para>
+
+
+				
+
+<para id="p1039">
+I also want you to know that, I receive no financial compensation from the Connexions website even if you purchase 
+	the PDF version of the module.
+
+</para>
+
+
+				
+
+<para id="p1040">
+In the past, unknown individuals have copied my modules from cnx.org, converted them to Kindle books, and 
+				placed them for sale on Amazon.com showing me as the author. I 
+				neither receive compensation for those sales nor do I know who does 
+				receive compensation. If you purchase such a book, please be 
+				aware that it is a copy of a module that is freely 
+				available on cnx.org and that it was made and published without 
+				my prior knowledge.
+
+</para>
+
+
+				
+
+<para id="p1041">
+<emphasis id="strong1058" effect="bold">
+Affiliation
+
+</emphasis>
+: I : I am a professor of Computer Information 
+	Technology at Austin Community College in Austin, TX.
+	
+
+</para>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+
+
+<para id="p1042">
+-end- 
+
+</para>
+
+
+
+
+
+
+</section>
+</content>
+
+
+
+
+</document>

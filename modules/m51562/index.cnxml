@@ -1,0 +1,3279 @@
+<document xmlns="http://cnx.rice.edu/cnxml"> 
+<title>Itse1359-1930-Dbm and Shelve Databases</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m51562</md:content-id>
+  <md:title>Itse1359-1930-Dbm and Shelve Databases</md:title>
+  <md:abstract>This module contains review questions and answers keyed to instructional material on several websites.</md:abstract>
+  <md:uuid>ad41a80a-9e33-498d-9944-053fb9aa69c0</md:uuid>
+</metadata>
+
+<content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h11000">
+<title>
+Table of contents
+
+</title>
+
+
+
+
+<list id="ul1000" list-type="bulleted">
+
+	
+
+<item id="li1000">
+<link id="a1000" target-id="Preface">
+
+Preface
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1001">
+<link id="a1001" target-id="Questions">
+
+Questions
+
+</link>
+
+
+	
+
+<list id="ul1001" list-type="bulleted">
+
+		
+
+<item id="li1002">
+<link id="a1002" target-id="question01">
+
+1
+
+</link>
+
+, 
+
+<link id="a1003" target-id="question02">
+
+2
+
+</link>
+
+,
+		
+
+<link id="a1004" target-id="question03">
+
+3
+
+</link>
+
+, 
+
+<link id="a1005" target-id="question04">
+
+4
+
+</link>
+
+,
+		
+
+<link id="a1006" target-id="question05">
+
+5
+
+</link>
+
+, 
+
+<link id="a1007" target-id="question06">
+
+6
+
+</link>
+
+,
+		
+
+<link id="a1008" target-id="question07">
+
+7
+
+</link>
+
+, 
+
+<link id="a1009" target-id="question08">
+
+8
+
+</link>
+
+,
+		
+
+<link id="a1010" target-id="question09">
+
+9
+
+</link>
+
+, 
+
+<link id="a1011" target-id="question10">
+
+10
+
+</link>
+
+, 
+		
+
+<link id="a1012" target-id="question11">
+
+11
+
+</link>
+
+, 
+
+<link id="a1013" target-id="question12">
+
+12
+
+</link>
+
+, 
+		
+
+<link id="a1014" target-id="question13">
+
+13
+
+</link>
+
+, 
+		
+
+<link id="a1015" target-id="question14">
+
+14
+
+</link>
+
+, 
+		
+
+<link id="a1016" target-id="question15">
+
+15
+
+</link>
+
+
+		
+		
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+	
+
+<item id="li1003">
+<link id="a1017" target-id="Figure_index">
+
+Figure index
+
+</link>
+
+
+</item>
+
+
+
+	
+
+<item id="li1004">
+<link id="a1018" target-id="Answers">
+
+Answers
+
+</link>
+
+
+</item>
+
+
+
+	
+
+<item id="li1005">
+<link id="a1019" target-id="Miscellaneous">
+
+Miscellaneous
+
+</link>
+
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+</section>
+<section id="h11001">
+<title>
+<emphasis id="Preface" effect="bold">
+
+Preface
+
+</emphasis>
+
+
+</title>
+
+
+
+
+
+<para id="p1000">
+This module is one in a collection of modules on Python designed for teaching
+
+
+<emphasis id="em1000" effect="italics">
+ITSE 1359 Introduction to Scripting Languages: Python
+
+</emphasis>
+ at Austin 
+Community College in Austin, TX.
+
+</para>
+
+
+
+
+<para id="p1001">
+This module contains review questions and answers keyed to material on the 
+following web sites:
+
+</para>
+
+
+
+
+<list id="ul1002" list-type="bulleted">
+
+	
+
+<item id="li1006">
+<link id="a1020" url="https://docs.python.org/3/library/dbm.html">
+
+The Python Standard 
+	Library - 12.5. dbm - Interfaces to Unix "databases"
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1007">
+<link id="a1021" url="https://docs.python.org/3/library/shelve.html">
+
+The Python 
+	Standard Library - 12.3. shelve - Python object persistence
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1008">
+<link id="a1022" url="https://docs.python.org/3/library/pickle.html">
+
+The Python 
+	Standard Library - 12.1. pickle - Python object serialization
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1009">
+
+	
+
+<link id="a1023" url="https://docs.python.org/3/library/stdtypes.html#mapping-types-dict">
+
+
+	The Python Standard Library - 4.10. Mapping Types - dict
+
+</link>
+
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+<para id="p1002">
+Once you study that module, you should be able to answer the review 
+questions in this module.
+
+</para>
+
+
+
+
+<para id="p1003">
+The questions and the answers in this module are connected by hyperlinks to 
+make it easy for you to navigate from the question to the answer and back again.
+
+</para>
+
+
+
+
+<para id="p1004">
+<emphasis id="em1001" effect="italics">
+(Note to blind and visually impaired students: with the exception of 
+two bitmap images that are used solely as spacers to separate the question 
+section from the answer section, all of the material in this module is presented 
+in plain text format and should be accessible using an audio screen reader or a 
+braille display. Note however that the required indentation may not be properly 
+represented by an audio screen reader.)
+
+</emphasis>
+</para>
+
+
+
+
+</section>
+<section id="h11002">
+<title>
+<emphasis id="Questions" effect="bold">
+
+Questions
+
+</emphasis>
+
+
+</title>
+
+
+
+
+
+<section id="h21000">
+<title>
+<emphasis id="question01" effect="bold">
+
+Question 1
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1005">
+True or False? The webpage at
+
+
+<link id="a1024" url="https://docs.python.org/3/library/pickle.html">
+
+The Python Standard 
+Library - 12.1. pickle - Python object serialization
+
+</link>
+
+ contains the following 
+warning:
+
+</para>
+
+
+
+
+<quote id="blockquote1000" display="block">
+Warning: The pickle module is not intended to be secure against erroneous or maliciously constructed data. Never unpickle data received from an untrusted or unauthenticated source.
+
+</quote>
+
+
+
+
+
+<para id="p1006">
+Go to 
+
+<link id="a1025" target-id="answer01">
+
+answer 1
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21001">
+<title>
+<emphasis id="question02" effect="bold">
+
+Question 2
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1007">
+True or False? The webpage at 
+
+<link id="a1026" url="https://docs.python.org/3/library/shelve.html">
+
+The Python 
+	Standard Library - 12.3. shelve - Python object persistence
+
+</link>
+
+ contains the 
+following warning:
+
+</para>
+
+
+
+
+<quote id="blockquote1001" display="block">
+Warning: Because the shelve module is backed by pickle, it is insecure to load a shelf from an untrusted source. Like with pickle, loading a shelf can execute arbitrary code.
+
+</quote>
+
+
+
+
+<para id="p1008">
+Go to 
+
+<link id="a1027" target-id="answer02">
+
+answer 2
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21002">
+<title>
+<emphasis id="question03" effect="bold">
+
+Question 3
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1009">
+True or False? The webpage at 
+
+<link id="a1028" url="https://docs.python.org/3/library/dbm.html">
+
+The Python Standard 
+	Library - 12.5. dbm - Interfaces to Unix "databases"
+
+</link>
+
+ contains the 
+following warning:
+
+</para>
+
+
+
+
+<quote id="blockquote1002" display="block">
+Warning: The dbm module is not intended to be secure against erroneous or maliciously constructed data. Never 
+	use dbm data received from an untrusted or unauthenticated source.
+
+</quote>
+
+
+
+
+<para id="p1010">
+Go to 
+
+<link id="a1029" target-id="answer03">
+
+answer 3
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21003">
+<title>
+<emphasis id="question04" effect="bold">
+
+Question 4
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1011">
+True or False? 
+
+<emphasis id="strong1000" effect="bold">
+dbm
+
+</emphasis>
+ is a generic interface to variants of the 
+DBM databases - 
+
+<emphasis id="strong1001" effect="bold">
+dbm.gnu
+
+</emphasis>
+ or 
+
+<emphasis id="strong1002" effect="bold">
+dbm.ndbm
+
+</emphasis>
+. If neither 
+of these modules is installed, the program will raise a "Module not found" 
+error.
+
+</para>
+
+
+
+
+<para id="p1012">
+Go to 
+
+<link id="a1030" target-id="answer04">
+
+answer 4
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21004">
+<title>
+<emphasis id="question05" effect="bold">
+
+Question 5
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1013">
+True or False? The function named 
+
+<emphasis id="strong1003" effect="bold">
+dbm.whichdb(
+
+<emphasis id="em1002" effect="italics">
+filename
+
+</emphasis>
+)
+
+</emphasis>
+ 
+can be called to determine which database module should be used to open a given 
+database file.
+
+</para>
+
+
+
+
+<para id="p1014">
+Go to 
+
+<link id="a1031" target-id="answer05">
+
+answer 5
+
+</link>
+
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21005">
+<title>
+<emphasis id="question06" effect="bold">
+
+Question 6
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1015">
+True or False? The function named 
+
+<emphasis id="strong1004" effect="bold">
+dbm.getDatabase
+
+</emphasis>
+ can be 
+called to open an existing 
+
+<emphasis id="strong1005" effect="bold">
+dbm
+
+</emphasis>
+ database file or to create a new
+
+
+<emphasis id="strong1006" effect="bold">
+dbm
+
+</emphasis>
+ database file.
+
+</para>
+
+
+
+
+<para id="p1016">
+Go to 
+
+<link id="a1032" target-id="answer06">
+
+answer 6
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21006">
+<title>
+<emphasis id="question07" effect="bold">
+
+Question 7
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1017">
+True or False? The object returned by 
+
+<emphasis id="strong1007" effect="bold">
+dbm.open
+
+</emphasis>
+ supports the 
+same basic functionality as tuples. Keys and their corresponding values can be 
+stored, retrieved, and deleted. The 
+
+<emphasis id="strong1008" effect="bold">
+in
+
+</emphasis>
+ operator and the 
+k
+
+<emphasis id="strong1009" effect="bold">
+eys
+
+</emphasis>
+ method are available, as well as 
+
+<emphasis id="strong1010" effect="bold">
+get
+
+</emphasis>
+ and
+
+
+<emphasis id="strong1011" effect="bold">
+setdefault
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+<para id="p1018">
+Go to 
+
+<link id="a1033" target-id="answer07">
+
+answer 7
+
+</link>
+
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21007">
+<title>
+<emphasis id="question08" effect="bold">
+
+Question 8
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1019">
+True or False? When using the 
+
+<emphasis id="strong1012" effect="bold">
+dbm.dumb
+
+</emphasis>
+ module, attempting to store a key or value that is not a string will 
+raise an exception.
+
+</para>
+
+
+
+
+
+
+<para id="p1020">
+Go to 
+
+<link id="a1034" target-id="answer08">
+
+answer 8
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21008">
+<title>
+<emphasis id="question09" effect="bold">
+
+Question 9
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1021">
+True or False? The following statement appears on the webpage at
+
+
+<link id="a1035" url="https://docs.python.org/3/library/dbm.html">
+
+The Python Standard Library 
+- 12.5. dbm - Interfaces to Unix "databases"
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<quote id="blockquote1003" display="block">
+Note: The dbm.dumb module is intended as a last resort fallback for 
+the dbm module when a more robust module is not available. The dbm.dumb module 
+is not written for speed and is not nearly as heavily used as the other database 
+modules.
+
+</quote>
+
+
+
+
+<para id="p1022">
+Go to 
+
+<link id="a1036" target-id="answer09">
+
+answer 9
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21009">
+<title>
+<emphasis id="question10" effect="bold">
+
+Question 10
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1023">
+True or False? The function named 
+
+<emphasis id="strong1013" effect="bold">
+dbm.dumb.open
+
+</emphasis>
+ can be 
+called to create or open a 
+
+<emphasis id="strong1014" effect="bold">
+dumbdbm
+
+</emphasis>
+ database and return a
+
+
+<emphasis id="strong1015" effect="bold">
+dumbdbm
+
+</emphasis>
+ object.
+
+</para>
+
+
+
+
+<para id="p1024">
+Go to 
+
+<link id="a1037" target-id="answer10">
+
+answer 10
+
+</link>
+
+
+</para>
+
+
+	
+
+
+</section>
+<section id="h21010">
+<title>
+<emphasis id="question11" effect="bold">
+
+Question 11
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1025">
+True or False? The code in the top panel of 
+
+<link id="a1038" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+ produces the output 
+shown in the bottom panel of 
+
+<link id="a1039" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+.
+
+</para>
+
+
+	
+
+<table id="table1000" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1000">
+
+			
+
+<row id="tr1000">
+
+				
+
+<entry id="th1000">
+<emphasis id="Figure_1" effect="bold">
+
+Figure 1
+
+</emphasis>
+
+. Question 11.
+
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1000">
+
+			
+
+<row id="tr1001">
+
+				
+
+<entry id="td1000">
+
+
+
+
+<code id="pre1000" display="block">
+import dbm.dumb
+
+dumbDb = dbm.dumb.open('database', 'c')
+
+dumbDb[b'aNumber'] = 1234
+print(dumbDb.get('aNumber'))
+
+dumbDb.close()
+===============================================================================
+1234
+</code>
+
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+<para id="p1026">
+Go to 
+
+<link id="a1040" target-id="answer11">
+
+answer 11
+
+</link>
+
+
+</para>
+
+
+	
+
+
+</section>
+<section id="h21011">
+<title>
+<emphasis id="question12" effect="bold">
+
+Question 12
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1027">
+True or False? The code in the top panel of 
+
+<link id="a1041" target-id="Figure_3">
+
+Figure 3
+
+</link>
+
+ produces the output shown 
+in the bottom panel of 
+
+<link id="a1042" target-id="Figure_3">
+
+Figure 3
+
+</link>
+
+.
+
+</para>
+
+
+
+	
+
+<table id="table1001" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1001">
+
+			
+
+<row id="tr1002">
+
+				
+
+<entry id="th1001">
+<emphasis id="Figure_3" effect="bold">
+
+Figure 3
+
+</emphasis>
+
+. Question 12.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1001">
+
+			
+
+<row id="tr1003">
+
+				
+
+<entry id="td1001">
+
+
+
+
+<code id="pre1001" display="block">
+import dbm.dumb
+
+dumbDb = dbm.dumb.open('database', 'c')
+
+dumbDb[b'aNumber'] = b'1234'
+print(dumbDb.get('aNumber'))
+
+dumbDb.close()
+===============================================================================
+b'1234'
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+<para id="p1028">
+Go to 
+
+<link id="a1043" target-id="answer12">
+
+answer 12
+
+</link>
+
+
+</para>
+
+
+	
+
+
+</section>
+<section id="h21012">
+<title>
+<emphasis id="question13" effect="bold">
+
+Question 13
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1029">
+True or False? The code in the top panel of 
+
+<link id="a1044" target-id="Figure_4">
+
+Figure 4
+
+</link>
+
+ produces the output shown 
+in the bottom panel of 
+
+<link id="a1045" target-id="Figure_4">
+
+Figure 4
+
+</link>
+
+.
+
+</para>
+
+
+
+	
+
+<table id="table1002" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1002">
+
+			
+
+<row id="tr1004">
+
+				
+
+<entry id="th1002">
+<emphasis id="Figure_4" effect="bold">
+
+Figure 4
+
+</emphasis>
+
+. Question 13.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1002">
+
+			
+
+<row id="tr1005">
+
+				
+
+<entry id="td1002">
+
+
+
+
+<code id="pre1002" display="block">
+import dbm.dumb
+
+dumbDb = dbm.dumb.open('database', 'c')
+
+empName = b'Joe'
+
+dumbDb[b'name'] = empName
+dumbDb[b"cubicle"] = b"639"
+dumbDb[b"phone"] = b"617.665.2154"
+
+if(empName in dumbDb):
+    print('name: ', dumbDb.get(b'name'))
+    print('cubicle: ', dumbDb.get(b'cubicle'))
+    print('phone: ', dumbDb.get(b'phone'))
+else:
+    print("Not in dumbDb")
+
+dumbDb.close()
+===============================================================================
+name: b'Joe'
+cubicle: b'639'
+phone: b'617.665.2154'
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+<para id="p1030">
+Go to 
+
+<link id="a1046" target-id="answer13">
+
+answer 13
+
+</link>
+
+
+</para>
+
+
+	
+
+
+</section>
+<section id="h21013">
+<title>
+<emphasis id="question14" effect="bold">
+
+Question 14
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1031">
+True or False? The code in the top panel of 
+
+<link id="a1047" target-id="Figure_6">
+
+Figure 6
+
+</link>
+
+ produces the output shown 
+in the bottom panel of 
+
+<link id="a1048" target-id="Figure_6">
+
+Figure 6
+
+</link>
+
+.
+
+</para>
+
+
+
+	
+
+<table id="table1003" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1003">
+
+			
+
+<row id="tr1006">
+
+				
+
+<entry id="th1003">
+<emphasis id="Figure_6" effect="bold">
+
+Figure 6
+
+</emphasis>
+
+. Question 14.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1003">
+
+			
+
+<row id="tr1007">
+
+				
+
+<entry id="td1003">
+
+
+
+
+<code id="pre1003" display="block">
+import dbm.dumb
+
+dumbDb = dbm.dumb.open('database', 'c')
+
+empName = b'Joe'
+
+dumbDb[b'name'] = empName
+dumbDb[b"cubicle"] = b"639"
+dumbDb[b"phone"] = b"617.665.2154"
+
+if(b'name' in dumbDb):
+    print('name: ', dumbDb.get(b'name'))
+    print('cubicle: ', dumbDb.get(b'cubicle'))
+    print('phone: ', dumbDb.get(b'phone'))
+else:
+    print("Not in dumbDb")
+
+dumbDb.close()
+===============================================================================
+name:  b'Joe'
+cubicle:  b'639'
+phone:  b'617.665.2154'
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+<para id="p1032">
+Go to 
+
+<link id="a1049" target-id="answer14">
+
+answer 14
+
+</link>
+
+
+</para>
+
+
+	
+
+
+</section>
+<section id="h21014">
+<title>
+<emphasis id="question15" effect="bold">
+
+Question 15
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1033">
+True or False? The code in the top panel of 
+
+<link id="a1050" target-id="Figure_7">
+
+Figure 7
+
+</link>
+
+ produces the output 
+shown in the bottom panel of 
+
+<link id="a1051" target-id="Figure_7">
+
+Figure 7
+
+</link>
+
+.
+
+</para>
+
+
+
+
+
+<para id="p1034">
+<emphasis id="strong1016" effect="bold">
+<emphasis id="Figure_7" effect="bold">
+
+Figure 7
+
+</emphasis>
+
+. Question 15.
+
+</emphasis>
+</para>
+
+
+
+
+
+
+<code id="pre1004" display="block">
+import dbm.dumb
+
+dumbDb = dbm.dumb.open('database', 'c')
+
+#Create keys and values
+myKeys = b'name',b'cubicle',b'phone',b'age',b'gender',b'marital'
+myValues = b'Joe',b'639',b'333.444.5555',b'39',b'male',b'married'
+
+#Populate the database
+for cnt in range(len(myKeys)):
+    dumbDb[myKeys[cnt]] = myValues[cnt]
+
+print('Get and display values')
+values = dumbDb.values()
+for value in values:
+    print(value)
+
+print()#blank line
+print('Get and display keys')
+keys = dumbDb.keys()
+for key in keys:
+    print(key)
+
+print()
+print('Attempt to pop and display two values')
+print(dumbDb.pop(b'phone','no phone'))
+print(dumbDb.pop(b'weight','no weight'))
+
+print()
+print('Get and display keys and values')
+print('Database length',len(dumbDb))
+items = dumbDb.items()
+for item in items:
+    print(item)
+
+print()
+print('Delete a key/value pair and display again')
+del dumbDb[b'cubicle']
+print('Database length',len(dumbDb))
+items = dumbDb.items()
+for item in items:
+    print(item)
+
+dumbDb.close()
+===============================================================================
+Get and display values
+b'name'
+b'age'
+b'phone'
+b'marital'
+b'cubicle'
+b'gender'
+
+Get and display keys
+b'Joe'
+b'39'
+b'333.444.5555'
+b'married'
+b'639'
+b'male'
+
+Attempt to pop and display two values
+b'333.444.5555'
+no weight
+
+Get and display keys and values
+Database length 5
+(b'name', b'Joe')
+(b'age', b'39')
+(b'marital', b'married')
+(b'cubicle', b'639')
+(b'gender', b'male')
+
+Delete a key/value pair and display again
+Database length 4
+(b'name', b'Joe')
+(b'age', b'39')
+(b'marital', b'married')
+(b'gender', b'male')
+</code>
+
+
+
+
+
+
+<para id="p1035">
+Go to 
+
+<link id="a1052" target-id="answer15">
+
+answer 15
+
+</link>
+
+
+</para>
+
+
+
+
+
+
+</section>
+</section>
+<section id="h11003">
+<title>
+<emphasis id="Figure_index" effect="bold">
+
+Figure index
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<list id="ul1003" list-type="bulleted">
+
+		
+
+<item id="li1010">
+<link id="a1053" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+. Question 11. 
+
+</item>
+
+
+		
+
+<item id="li1011">
+<link id="a1054" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+. Answer 11.
+
+</item>
+
+
+		
+
+<item id="li1012">
+<link id="a1055" target-id="Figure_3">
+
+Figure 3
+
+</link>
+
+. Question 12.
+
+</item>
+
+
+		
+
+<item id="li1013">
+<link id="a1056" target-id="Figure_4">
+
+Figure 4
+
+</link>
+
+. Question 13.
+
+</item>
+
+
+		
+
+<item id="li1014">
+<link id="a1057" target-id="Figure_5">
+
+Figure 5
+
+</link>
+
+. Answer 13.
+
+</item>
+
+
+		
+
+<item id="li1015">
+<link id="a1058" target-id="Figure_6">
+
+Figure 6
+
+</link>
+
+. Question 14.
+
+</item>
+
+
+		
+
+<item id="li1016">
+<link id="a1059" target-id="Figure_7">
+
+Figure 7
+
+</link>
+
+. Question 15.
+
+</item>
+
+
+		
+
+<item id="li1017">
+<link id="a1060" target-id="Figure_8">
+
+Figure 8
+
+</link>
+
+. Answer 15.
+
+</item>
+
+
+
+
+	
+
+</list>
+
+
+
+
+
+<para id="p1036">
+<emphasis id="strong1017" effect="bold">
+What is the meaning of the following two images?
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1037">
+These images were inserted here simply to insert some space between the 
+questions and the answers to keep them from being visible on the screen at the 
+same time. 
+
+</para>
+
+
+
+
+
+<media id="media1000" alt="Spacer image of a rabbit and a penguin." display="block">
+<image id="img1000" mime-type="image/jpeg" src="../../media/Spacer01.jpg" width="339" height="290"/>
+</media>
+
+
+
+
+
+<para id="p1038">
+This image was also inserted for the purpose of inserting space between the questions and the answers.
+
+</para>
+
+
+
+
+<para id="p1039">
+
+
+
+<media id="media1001" alt="Spacer image of a penguin and some houses." display="block">
+<image id="img1001" mime-type="image/jpeg" src="../../media/Spacer02.jpg" width="374" height="308"/>
+</media>
+
+
+</para>
+
+
+
+
+
+
+
+</section>
+<section id="h11004">
+<title>
+<emphasis id="Answers" effect="bold">
+
+Answers
+
+</emphasis>
+
+
+</title>
+
+
+
+
+
+
+
+<section id="h21015">
+<title>
+<emphasis id="answer15" effect="bold">
+
+Answer 15
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1040">
+False. The output is shown in 
+
+<link id="a1061" target-id="Figure_8">
+
+Figure 8
+
+</link>
+
+. The 
+
+<emphasis id="strong1018" effect="bold">
+keys
+
+</emphasis>
+ and the 
+
+
+<emphasis id="strong1019" effect="bold">
+values
+
+</emphasis>
+ were switched 
+in the bottom panel of 
+
+<link id="a1062" target-id="Figure_7">
+
+Figure 7
+
+</link>
+
+.
+
+</para>
+
+
+	
+
+<table id="table1004" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1004">
+
+			
+
+<row id="tr1008">
+
+				
+
+<entry id="th1004">
+<emphasis id="Figure_8" effect="bold">
+
+Figure 8
+
+</emphasis>
+
+. Answer 15.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1004">
+
+			
+
+<row id="tr1009">
+
+				
+
+<entry id="td1004">
+
+
+
+
+<code id="pre1005" display="block">
+Get and display values
+b'Joe'
+b'39'
+b'333.444.5555'
+b'married'
+b'639'
+b'male'
+
+Get and display keys
+b'name'
+b'age'
+b'phone'
+b'marital'
+b'cubicle'
+b'gender'
+
+Attempt to pop and display two values
+b'333.444.5555'
+no weight
+
+Get and display keys and values
+Database length 5
+(b'name', b'Joe')
+(b'age', b'39')
+(b'marital', b'married')
+(b'cubicle', b'639')
+(b'gender', b'male')
+
+Delete a key/value pair and display again
+Database length 4
+(b'name', b'Joe')
+(b'age', b'39')
+(b'marital', b'married')
+(b'gender', b'male')
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+<para id="p1041">
+Go back to 
+
+<link id="a1063" target-id="question15">
+
+Question 15
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21016">
+<title>
+<emphasis id="answer14" effect="bold">
+
+Answer 14
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1042">
+True.
+
+</para>
+
+
+
+
+<para id="p1043">
+Go back to 
+
+<link id="a1064" target-id="question14">
+
+Question 14
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21017">
+<title>
+<emphasis id="answer13" effect="bold">
+
+Answer 13
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1044">
+False. The output is shown in 
+
+<link id="a1065" target-id="Figure_5">
+
+Figure 5
+
+</link>
+
+. The 
+
+<emphasis id="strong1020" effect="bold">
+in
+
+</emphasis>
+ operator searches for a match 
+in the 
+
+<emphasis id="strong1021" effect="bold">
+keys
+
+</emphasis>
+ and does not search for a match in the 
+
+<emphasis id="strong1022" effect="bold">
+values
+
+</emphasis>
+.
+
+</para>
+
+
+	
+
+<table id="table1005" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1005">
+
+			
+
+<row id="tr1010">
+
+				
+
+<entry id="th1005">
+<emphasis id="Figure_5" effect="bold">
+
+Figure 5
+
+</emphasis>
+
+. Answer 13.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1005">
+
+			
+
+<row id="tr1011">
+
+				
+
+<entry id="td1005">
+
+
+
+
+<code id="pre1006" display="block">
+Not in dumbDb
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+<para id="p1045">
+Go back to 
+
+<link id="a1066" target-id="question13">
+
+Question 13
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21018">
+<title>
+<emphasis id="answer12" effect="bold">
+
+Answer 12
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1046">
+True.
+
+</para>
+
+
+
+
+<para id="p1047">
+Go back to 
+
+<link id="a1067" target-id="question12">
+
+Question 12
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21019">
+<title>
+<emphasis id="answer11" effect="bold">
+
+Answer 11
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1048">
+False. The code in 
+
+<link id="a1068" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+ produces an error by attempting to store a number 
+as a value. The output 
+
+<emphasis id="em1003" effect="italics">
+(with some text deleted for brevity)
+
+</emphasis>
+ is shown in 
+
+<link id="a1069" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+.
+
+</para>
+
+
+	
+
+<table id="table1006" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1006">
+
+			
+
+<row id="tr1012">
+
+				
+
+<entry id="th1006">
+<emphasis id="Figure_2" effect="bold">
+
+Figure 2
+
+</emphasis>
+
+. Answer 11.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1006">
+
+			
+
+<row id="tr1013">
+
+				
+
+<entry id="td1006">
+
+
+
+
+<code id="pre1007" display="block">
+Traceback (most recent call last):
+  File "1359-1930-11.py", line 11, in &lt;module&gt;
+    dumbDb[b'aNumber'] = 1234
+...
+    raise TypeError("values must be bytes or strings")
+TypeError: values must be bytes or strings
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+<para id="p1049">
+Go back to 
+
+<link id="a1070" target-id="question11">
+
+Question 11
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21020">
+<title>
+<emphasis id="answer10" effect="bold">
+
+Answer 10
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1050">
+True. See 
+
+<link id="a1071" url="https://docs.python.org/3/library/dbm.html">
+
+The Python 
+Standard Library - 12.5. dbm - Interfaces to Unix "databases"
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<para id="p1051">
+Go back to 
+
+<link id="a1072" target-id="question10">
+
+Question 10
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+
+</section>
+<section id="h21021">
+<title>
+<emphasis id="answer09" effect="bold">
+
+Answer 9
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1052">
+True as of 11/09/2014.
+
+</para>
+
+
+
+
+<para id="p1053">
+Go back to 
+
+<link id="a1073" target-id="question09">
+
+Question 9
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21022">
+<title>
+<emphasis id="answer08" effect="bold">
+
+Answer 8
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1054">
+True. See comments in sample code at
+
+
+<link id="a1074" url="https://docs.python.org/3/library/dbm.html">
+
+The Python Standard Library 
+- 12.5. dbm - Interfaces to Unix "databases"
+
+</link>
+
+.
+
+</para>
+
+
+
+
+
+
+
+<para id="p1055">
+Go back to 
+
+<link id="a1075" target-id="question08">
+
+Question 8
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21023">
+<title>
+<emphasis id="answer07" effect="bold">
+
+Answer 7
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1056">
+False. The object returned by 
+
+<emphasis id="strong1023" effect="bold">
+dbm.open
+
+</emphasis>
+ supports the same 
+basic functionality as 
+
+<emphasis id="strong1024" effect="bold">
+<emphasis id="em1004" effect="italics">
+dictionaries
+
+</emphasis>
+</emphasis>
+. Keys and their corresponding values can be 
+stored, retrieved, and deleted. The 
+
+<emphasis id="strong1025" effect="bold">
+in
+
+</emphasis>
+ operator and the 
+
+<emphasis id="strong1026" effect="bold">
+keys
+
+</emphasis>
+ 
+method are available, as well as 
+
+<emphasis id="strong1027" effect="bold">
+get
+
+</emphasis>
+ and 
+
+<emphasis id="strong1028" effect="bold">
+setdefault
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+<para id="p1057">
+Go back to 
+
+<link id="a1076" target-id="question07">
+
+Question 7
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21024">
+<title>
+<emphasis id="answer06" effect="bold">
+
+Answer 6
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1058">
+False. The function named 
+
+<emphasis id="strong1029" effect="bold">
+dbm.open
+
+</emphasis>
+ can be called to open an 
+existing 
+
+<emphasis id="strong1030" effect="bold">
+dbm
+
+</emphasis>
+ database file or to create a new 
+
+<emphasis id="strong1031" effect="bold">
+dbm
+
+</emphasis>
+ 
+database file.
+
+</para>
+
+
+
+
+<para id="p1059">
+Go back to 
+
+<link id="a1077" target-id="question06">
+
+Question 6
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21025">
+<title>
+<emphasis id="answer05" effect="bold">
+
+Answer 5
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1060">
+True.
+
+</para>
+
+
+
+
+<para id="p1061">
+Go back to 
+
+<link id="a1078" target-id="question05">
+
+Question 5
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21026">
+<title>
+<emphasis id="answer04" effect="bold">
+
+Answer 4
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1062">
+False. 
+
+<emphasis id="strong1032" effect="bold">
+dbm
+
+</emphasis>
+ is a generic interface to variants of the DBM 
+databases - 
+
+<emphasis id="strong1033" effect="bold">
+dbm.gnu
+
+</emphasis>
+ or 
+
+<emphasis id="strong1034" effect="bold">
+dbm.ndbm
+
+</emphasis>
+. If neither of 
+these modules is installed, the slow-but-simple implementation in module 
+
+<emphasis id="strong1035" effect="bold">
+
+dbm.dumb
+
+</emphasis>
+ will be used.
+
+</para>
+
+
+
+
+<para id="p1063">
+Go back to 
+
+<link id="a1079" target-id="question04">
+
+Question 4
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21027">
+<title>
+<emphasis id="answer03" effect="bold">
+
+Answer 3
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1064">
+False. As of 11/09/2014, no such warning appears on the referenced webpage. 
+Therefore, it might be concluded that even though 
+
+<emphasis id="strong1036" effect="bold">
+shelve
+
+</emphasis>
+ has 
+features that are not available in 
+
+<emphasis id="strong1037" effect="bold">
+dbm
+
+</emphasis>
+, 
+
+<emphasis id="strong1038" effect="bold">
+dbm
+
+</emphasis>
+ is 
+the more secure of the two. As a result, this course will concentrate on 
+
+<emphasis id="strong1039" effect="bold">
+
+dbm
+
+</emphasis>
+ and ignore 
+
+<emphasis id="strong1040" effect="bold">
+shelve
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+<para id="p1065">
+Go back to 
+
+<link id="a1080" target-id="question03">
+
+Question 3
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21028">
+<title>
+<emphasis id="answer02" effect="bold">
+
+Answer 2
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1066">
+True as of 11/09/2014. 
+
+</para>
+
+
+
+
+<para id="p1067">
+Go back to 
+
+<link id="a1081" target-id="question02">
+
+Question 2
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21029">
+<title>
+<emphasis id="answer01" effect="bold">
+
+Answer 1
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1068">
+True as of 11/09/2014. 
+
+</para>
+
+
+
+
+<para id="p1069">
+Go back to 
+
+<link id="a1082" target-id="question01">
+
+Question 1
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+</section>
+<section id="h11005">
+<title>
+<emphasis id="Miscellaneous" effect="bold">
+
+Miscellaneous
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1070">
+This section contains a variety of miscellaneous information. 
+
+</para>
+
+
+
+
+
+	
+
+<note id="note1000" type="">
+
+
+		
+
+
+			
+
+<emphasis id="strong1041" effect="bold">
+Housekeeping material
+
+</emphasis>
+
+			
+
+<list id="ul1004" list-type="bulleted">
+
+				
+
+<item id="li1018">
+Module name: Itse1359-1930-Dbm and Shelve Databases
+
+</item>
+
+
+				
+
+<item id="li1019">
+File: Itse1359-1930.htm 
+
+</item>
+
+
+				
+
+<item id="li1020">
+Published: 11/10/14
+
+</item>
+
+
+
+
+<item id="li1021">
+Revised: 07/28/16
+
+</item>
+
+
+			
+
+</list>
+
+
+			
+
+</note>
+
+		
+
+
+
+
+
+
+
+
+
+	
+
+<note id="note1001" type="">
+
+
+		
+
+
+			
+
+<emphasis id="strong1042" effect="bold">
+Disclaimers:
+
+</emphasis>
+<para id="p1071">
+<emphasis id="strong1043" effect="bold">
+Financial
+
+</emphasis>
+: 
+			Although the Connexions site makes it possible for you to download a 
+			PDF file for this module at no charge, and also makes it possible 
+			for you to purchase a pre-printed version of the PDF file, you 
+			should be aware that some of the HTML elements in this module may 
+			not translate well into PDF.
+
+</para>
+
+
+			
+
+<para id="p1072">
+I also want you to know that, I receive no financial compensation 
+			from the Connexions website even if you purchase the PDF version of 
+			the module.
+
+</para>
+
+
+			
+
+<para id="p1073">
+In the past, unknown individuals have copied my modules from 
+			cnx.org, converted them to Kindle books, and placed them for sale on 
+			Amazon.com showing me as the author. I neither receive compensation 
+			for those sales nor do I know who does receive compensation. If you 
+			purchase such a book, please be aware that it is a copy of a module 
+			that is freely available on cnx.org and that it was made and 
+			published without my prior knowledge.
+
+</para>
+
+
+			
+
+<para id="p1074">
+<emphasis id="strong1044" effect="bold">
+Affiliation
+
+</emphasis>
+: I am a professor of Computer 
+			Information Technology at Austin Community College in Austin, TX.
+			
+
+</para>
+
+
+			
+
+</note>
+
+		
+
+
+
+
+
+
+
+
+
+<para id="p1075">
+-end- 
+
+</para>
+
+
+
+
+
+
+
+
+</section>
+</content>
+
+
+
+
+</document>

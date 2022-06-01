@@ -1,0 +1,4863 @@
+<document xmlns="http://cnx.rice.edu/cnxml"> 
+<title>Itse1359-1610-GUI Programming</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m51474</md:content-id>
+  <md:title>Itse1359-1610-GUI Programming</md:title>
+  <md:abstract>This module explains the ins and outs of creating a simple GUI using Python and tkinter.</md:abstract>
+  <md:uuid>00bff569-2d3a-41c9-950f-150e11a1f786</md:uuid>
+</metadata>
+
+<content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h11000">
+<title>
+Table of Contents
+
+</title>
+
+
+
+
+<list id="ul1000" list-type="bulleted">
+
+	
+
+<item id="li1000">
+<link id="a1000" target-id="Preface">
+
+Preface
+
+</link>
+
+
+	
+
+<list id="ul1001" list-type="bulleted">
+
+
+		
+
+<item id="li1001">
+<link id="a1001" target-id="What_you_will_learn">
+
+What you will learn
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1002">
+<link id="a1002" target-id="Viewing_tip">
+
+Viewing tip
+
+</link>
+
+
+<list id="ul1002" list-type="bulleted">
+
+			
+
+<item id="li1003">
+<link id="a1003" target-id="Images">
+
+Figures
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1004">
+<link id="a1004" target-id="Listings">
+
+Listings
+
+</link>
+
+
+</item>
+
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+
+	
+
+<item id="li1005">
+<link id="a1005" target-id="General_background_information">
+
+General background information
+
+</link>
+
+
+<list id="ul1003" list-type="bulleted">
+
+		
+
+<item id="li1006">
+<link id="a1006" target-id="Tk_and_tkinter">
+
+Tk and tkinter
+
+</link>
+
+
+<list id="ul1004" list-type="bulleted">
+
+			
+
+<item id="li1007">
+<link id="a1007" target-id="What_is_a_GUI">
+
+What is a GUI?
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1008">
+<link id="a1008" target-id="What_is_TCL">
+
+What is TCL?
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1009">
+<link id="a1009" target-id="What_is_TK">
+
+What is TK?
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1010">
+<link id="a1010" target-id="What_is_tkinter">
+
+What is tkinter?
+
+</link>
+
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+		
+
+<item id="li1011">
+<link id="a1011" target-id="Not_the_only_GUI_alternative">
+
+Not the only GUI alternative
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1012">
+<link id="a1012" target-id="A_big_and_complex_topic">
+
+A big and complex topic
+
+</link>
+
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+	
+
+<item id="li1013">
+<link id="a1013" target-id="Discussion_and_sample_code">
+
+Discussion and sample code
+
+</link>
+
+
+<list id="ul1005" list-type="bulleted">
+
+		
+
+<item id="li1014">
+<link id="a1014" target-id="A_sample_program">
+
+A sample program
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1015">
+<link id="a1015" target-id="Will_discuss_in_fragments">
+
+Will discuss in fragments
+
+</link>
+
+
+<list id="ul1006" list-type="bulleted">
+
+			
+
+<item id="li1016">
+<link id="a1016" target-id="The_root">
+
+The root
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1017">
+<link id="a1017" target-id="Import_statements">
+
+Import statements
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1018">
+<link id="a1018" target-id="The_calculate_function">
+
+The calculate function
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1019">
+<link id="a1019" target-id="Add_a_Frame_widget">
+
+Add a Frame widget
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1020">
+<link id="a1020" target-id="The_grid_geometry_manager">
+
+The grid geometry manager
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1021">
+<link id="a1021" target-id="Columns_and_rows">
+
+Columns and rows
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1022">
+<link id="a1022" target-id="A_sticky_situation">
+
+A sticky situation
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1023">
+<link id="a1023" target-id="StringVar">
+
+StringVar
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1024">
+<link id="a1024" target-id="The_Entry_widget">
+
+The Entry widget
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1025">
+<link id="a1025" target-id="The_width_argument">
+
+The width argument
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1026">
+<link id="a1026" target-id="The_textvariable_argument">
+
+The textvariable argument
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1027">
+<link id="a1027" target-id="Make_the_data_entry_field_visible">
+
+Make the Entry field visible
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1028">
+<link id="a1028" target-id="A_sticky_demonstration">
+
+A sticky demonstration
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1029">
+<link id="a1029" target-id="A_Label_and_a_Button">
+
+A Label and a Button
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1030">
+<link id="a1030" target-id="Three_more_Label_widgets">
+
+Three more Label widgets
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1031">
+<link id="a1031" target-id="Finishing_touches">
+
+Finishing touches
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1032">
+<link id="a1032" target-id="Now_back_to_the_calculate_function">
+
+Now back to the calculate function
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1033">
+<link id="a1033" target-id="The_input_value_in_feet">
+
+The input value in feet
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1034">
+<link id="a1034" target-id="Either_save_the_float_or_pass">
+
+Either save the float or pass
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1035">
+<link id="a1035" target-id="Calculate_and_display_the_result_in_meters">
+
+Calculate and display the result in meters
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1036">
+<link id="a1036" target-id="Make_everything_run">
+
+Make everything run
+
+</link>
+
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+
+	
+
+<item id="li1037">
+<link id="a1037" target-id="Run_the_program">
+
+Run the program
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1038">
+<link id="a1038" target-id="Complete_program_listings">
+
+Complete program listing
+
+</link>
+
+
+</item>
+
+
+
+	
+
+<item id="li1039">
+<link id="a1039" target-id="Miscellaneous">
+
+Miscellaneous
+
+</link>
+
+
+</item>
+
+
+
+
+
+</list>
+
+
+	
+	
+
+</section>
+<section id="h11001">
+<title>
+<emphasis id="Preface" effect="bold">
+
+Preface
+
+</emphasis>
+
+
+</title>
+
+
+	
+	
+
+<para id="p1000">
+This module is one in a collection of modules on Python designed for 
+teaching 
+
+<emphasis id="em1000" effect="italics">
+ITSE 1359 Introduction to Scripting Languages: Python
+
+</emphasis>
+ at Austin Community 
+College in Austin, TX.
+
+</para>
+
+
+
+
+<para id="p1001">
+This module is not intended to be a stand-alone tutorial. Instead, it is 
+intended to be an annotated guide to other freely available online resources on 
+the topic.
+
+</para>
+
+
+
+
+<section id="h21000">
+<title>
+<emphasis id="What_you_will_learn" effect="bold">
+
+What you will learn
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1002">
+You will learn how to create a simple GUI using Python and 
+
+<emphasis id="strong1000" effect="bold">
+tkinter
+
+</emphasis>
+.
+
+</para>
+
+
+	
+
+</section>
+<section id="h21001">
+<title>
+<emphasis id="Viewing_tip" effect="bold">
+
+Viewing tip
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1003">
+I recommend that you open another copy of this module in a separate 
+browser window and use the following links to easily find and view the Figures 
+	and Listings 
+	while you are reading about them.
+
+</para>
+
+
+
+
+<para id="p1004">
+<emphasis id="em1001" effect="italics">
+(Note to blind and visually impaired students: the Figures in this 
+module are bitmap images and are probably not accessible using an 
+audio screen reader or a braille display. The Listings are text and should be 
+accessible. Therefore, this module is only partially accessible to blind 
+students. 
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1005">
+<emphasis id="em1002" effect="italics">
+Because the module is not accessible to blind students, material from 
+this 
+module will not be used for assignments and will not be included on 
+tests. However, sighted students are strongly encouraged to study the material 
+for their own education. Blind and visually impaired students are also 
+encouraged to learn as much from the module as they can.)
+
+</emphasis>
+</para>
+
+
+	
+
+<section id="h31000">
+<title>
+<emphasis id="Images" effect="bold">
+
+Figures
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<list id="ul1007" list-type="bulleted">
+
+
+
+<item id="li1040">
+<link id="a1040" target-id="Image_1">
+
+Figure 1
+
+</link>
+
+. Image of a tkinter test from the command line.
+
+</item>
+
+
+
+
+<item id="li1041">
+<link id="a1041" target-id="Image_2">
+
+Figure 2
+
+</link>
+
+. Output from Feet to Meters converter program.
+
+</item>
+
+
+
+
+<item id="li1042">
+<link id="a1042" target-id="Image_3a">
+
+Figure 3
+
+</link>
+
+. Output from Listing 1.
+
+</item>
+
+
+
+
+<item id="li1043">
+<link id="a1043" target-id="Image_7">
+
+Figure 4
+
+</link>
+
+.  A sticky demonstration. 
+
+</item>
+
+
+	
+
+</list>
+
+
+
+
+</section>
+<section id="h31001">
+<title>
+<emphasis id="Listings" effect="bold">
+
+Listings
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<list id="ul1008" list-type="bulleted">
+
+
+
+<item id="li1044">
+<link id="a1044" target-id="Image_3">
+
+Listing 1
+
+</link>
+
+. The root.
+
+</item>
+
+
+
+
+<item id="li1045">
+<link id="a1045" target-id="Image_4">
+
+Listing 2
+
+</link>
+
+. Add a Frame widget.
+
+</item>
+
+
+
+
+<item id="li1046">
+<link id="a1046" target-id="Image_5">
+
+Listing 3
+
+</link>
+
+. StringVar objects.
+
+</item>
+
+
+
+
+<item id="li1047">
+<link id="a1047" target-id="Image_6">
+
+Listing 4
+
+</link>
+
+. The Entry widget.
+
+</item>
+
+
+
+
+<item id="li1048">
+<link id="a1048" target-id="Image_8">
+
+Listing 5
+
+</link>
+
+. A Label and a Button.
+
+</item>
+
+
+
+
+<item id="li1049">
+<link id="a1049" target-id="Image_9">
+
+Listing 6
+
+</link>
+
+. Three more Label widgets.
+
+</item>
+
+
+
+
+<item id="li1050">
+<link id="a1050" target-id="Image_10">
+
+Listing 7
+
+</link>
+
+. Finishing touches.
+
+</item>
+
+
+
+
+<item id="li1051">
+<link id="a1051" target-id="Image_11">
+
+Listing 8
+
+</link>
+
+. The calculate function.
+
+</item>
+
+
+
+
+<item id="li1052">
+<link id="a1052" target-id="Image_12">
+
+Listing 9
+
+</link>
+
+. Complete program listing. 
+
+</item>
+
+
+
+
+
+</list>
+
+
+	
+
+</section>
+</section>
+</section>
+<section id="h11002">
+<title>
+<emphasis id="General_background_information" effect="bold">
+
+General 
+	background information
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<section id="h21002">
+<title>
+<emphasis id="Tk_and_tkinter" effect="bold">
+
+Tk and tkinter
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<section id="h31002">
+<title>
+<emphasis id="What_is_a_GUI" effect="bold">
+
+What is a GUI
+
+</emphasis>
+
+?
+
+</title>
+
+
+
+
+<para id="p1006">
+According to 
+
+<link id="a1053" url="http://en.wikipedia.org/wiki/Graphical_user_interface">
+
+
+Wikipedia
+
+</link>
+
+, 
+
+</para>
+
+
+
+
+<quote id="blockquote1000" display="block">
+"In computing, a graphical user interface (GUI... sometimes 
+pronounced "gooey" ...) is a type of interface that allows users to interact with 
+electronic devices through graphical icons and visual indicators such as 
+secondary notation, as opposed to text-based interfaces, typed command labels or 
+text navigation. GUIs were introduced in reaction to the perceived steep 
+learning curve of command-line interfaces ... which require commands to be typed on the keyboard."
+
+</quote>
+
+
+	
+
+<para id="p1007">
+You probably interface with most of the programs that you use on a daily 
+	basis through a GUI. If you use Python to create programs that will be used 
+	by non programmers, you may need to provide GUIs for those programs. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31003">
+<title>
+<emphasis id="What_is_TCL" effect="bold">
+
+What is TCL?
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1008">
+According to the 
+
+<link id="a1054" url="http://www.tcl.tk/">
+
+Tcl Developer Xchange
+
+</link>
+
+, 
+
+</para>
+
+
+
+
+<quote id="blockquote1001" display="block">
+"Tcl (Tool Command Language) is a very powerful but easy to learn dynamic programming language, suitable for a very wide range of uses, including web and desktop applications, networking, administration, testing and many more. Open source and business-friendly, Tcl is a mature yet evolving language that is truly cross platform, easily deployed and highly extensible."
+
+</quote>
+
+
+
+
+</section>
+<section id="h31004">
+<title>
+<emphasis id="What_is_TK" effect="bold">
+
+What is TK?
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1009">
+Also according to the 
+
+<link id="a1055" url="http://www.tcl.tk/">
+
+Tcl Developer Xchange
+
+</link>
+
+, 
+
+</para>
+
+
+
+
+<quote id="blockquote1002" display="block">
+"Tk is a graphical user interface toolkit that takes developing desktop applications to a higher level than conventional approaches. Tk is the standard GUI not only for Tcl, but for many other dynamic languages, and can produce rich, native applications that run unchanged across Windows, Mac OS X, Linux and more."
+
+</quote>
+
+
+
+
+</section>
+<section id="h31005">
+<title>
+<emphasis id="What_is_tkinter" effect="bold">
+
+What is tkinter?
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1010">
+According to 
+
+<link id="a1056" url="https://docs.python.org/3/library/tk.html">
+
+The Python Standard Library -- 25. Graphical User Interfaces with Tk
+
+</link>
+
+,
+
+</para>
+
+
+
+
+<quote id="blockquote1003" display="block">
+"Tk/Tcl has long been an integral part of Python. It provides a robust and platform independent windowing toolkit, that is available to Python programmers using the tkinter package, and its extension, the tkinter.tix and the tkinter.ttk modules.
+
+... To use tkinter, you don't need to write Tcl code, but you will need to consult the Tk documentation, and occasionally the Tcl documentation. tkinter...usually comes bundled with Python."
+
+</quote>
+
+
+
+
+<para id="p1011">
+According to 
+
+
+<link id="a1057" url="https://docs.python.org/3/library/tkinter.html#module-tkinter">
+
+The Python Standard Library -- 25.1 tkinter -- Python interface to Tcl/Tk
+
+</link>
+
+,
+
+</para>
+
+
+
+
+<quote id="blockquote1004" display="block">
+"The tkinter package ("Tk interface") is the standard Python interface to the Tk GUI toolkit. Both Tk and tkinter are available on most Unix platforms, as well as on Windows systems. (Tk itself is not part of Python; it is maintained at ActiveState.) You can check that tkinter is properly installed on your system by running python -m tkinter from the command line; this should open a window demonstrating a simple Tk interface."
+
+</quote>
+
+
+
+
+<para id="p1012">
+<link id="a1058" target-id="Image_1">
+
+Figure 1
+
+</link>
+
+ shows the result of entering the command given above on the command 
+line on my computer and then clicking the button labeled 
+
+<emphasis id="strong1001" effect="bold">
+Click me
+
+</emphasis>
+ several times. 
+Clicking the QUIT button will cause the GUI to disappear from the screen as 
+expected.
+
+</para>
+
+
+
+
+
+
+<para id="p1013">
+<emphasis id="strong1002" effect="bold">
+<emphasis id="Image_1" effect="bold">
+
+Figure 1
+
+</emphasis>
+
+. Image of a tkinter test from the command line.
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1014">
+<media id="media1000" alt="Image of a tkinter test from the command line." display="block">
+<image id="img1000" mime-type="image/jpeg" src="../../media/1359-1610-01.jpg" width="194" height="162"/>
+</media>
+
+
+</para>
+
+
+
+
+
+</section>
+</section>
+<section id="h21003">
+<title>
+<emphasis id="Not_the_only_GUI_alternative" effect="bold">
+
+Not the only GUI alternative
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1015">
+You will find other GUI alternatives for Python listed and described at 
+
+
+<link id="a1059" url="https://docs.python.org/3/library/othergui.html#other-gui-packages">
+
+The Python 
+Standard Library -- 25.6. Other Graphical User Interface Packages
+
+</link>
+
+. However, 
+this module will concentrate on 
+
+<emphasis id="strong1003" effect="bold">
+tkinter
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+</section>
+<section id="h21004">
+<title>
+<emphasis id="A_big_and_complex_topic" effect="bold">
+
+A big and complex topic
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1016">
+The design and implementation of graphical user interfaces is a huge topic 
+that could fill an E-book in its own right. In this module, I will barely 
+scratch the surface. In particular, I will present and explain one GUI program. 
+Beyond that, I will refer you to several good online resources where you can 
+learn more about GUI programming in Python if you are interested.
+
+</para>
+
+
+	
+	
+
+</section>
+</section>
+<section id="h11003">
+<title>
+<emphasis id="Discussion_and_sample_code" effect="bold">
+
+Discussion and sample code
+
+</emphasis>
+
+
+</title>
+
+
+	
+	
+
+<section id="h21005">
+<title>
+<emphasis id="A_sample_program" effect="bold">
+
+A sample program
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1017">
+<link id="a1060" target-id="Image_12">
+
+Listing 9
+
+</link>
+
+ presents an unmodified version of a program that was published by 
+
+
+<link id="a1061" url="http://www.markroseman.com/">
+
+Mark Roseman
+
+</link>
+
+ at 
+
+<link id="a1062" url="http://www.tkdocs.com/tutorial/firstexample.html">
+
+
+	TkDocs
+
+</link>
+
+ under a 
+	
+
+<link id="a1063" url="http://creativecommons.org/licenses/by-nc-sa/2.5/ca/">
+
+Creative Commons 
+Attribution-NonCommercial-ShareAlike 2.5 Canada (CC BY-NC-SA 2.5 CA)
+
+</link>
+
+ 
+	license. This program GUI allows the user to enter a length value in feet. 
+When the user presses a button labeled 
+
+<emphasis id="strong1004" effect="bold">
+Calculate
+
+</emphasis>
+, the 
+corresponding length value in meters is displayed. This process can be repeated 
+until the user presses the X-button in the upper-right corner of the GUI, which 
+terminates the program and removes the GUI from the screen.
+
+</para>
+
+
+
+
+<para id="p1018">
+<link id="a1064" target-id="Image_2">
+
+Figure 2
+
+</link>
+
+ shows the output produced by running this program.
+
+</para>
+
+
+
+
+
+<para id="p1019">
+<emphasis id="strong1005" effect="bold">
+<emphasis id="Image_2" effect="bold">
+
+Figure 2
+
+</emphasis>
+
+. Output from Feet to Meters converter 
+	program.
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1020">
+<media id="media1001" alt="Output from Feet to Meters convertor program." display="block">
+<image id="img1001" mime-type="image/jpeg" src="../../media/1359-1610-02.jpg" width="329" height="171"/>
+</media>
+
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21006">
+<title>
+<emphasis id="Will_discuss_in_fragments" effect="bold">
+
+Will discuss in fragments
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1021">
+As is my custom, I will break the program down and discuss it in 
+	fragments. I will attempt to explain why the various parts of the program 
+	behave as they do. The first fragment is shown in 
+
+<link id="a1065" target-id="Image_3">
+
+Listing 
+	1
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<section id="h31006">
+<title>
+<emphasis id="The_root" effect="bold">
+
+The root
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1022">
+<link id="a1066" target-id="Image_3">
+
+Listing 1
+
+</link>
+
+ shows a skeleton of the program with most of the code removed to expose the
+
+
+<emphasis id="strong1006" effect="bold">
+root
+
+</emphasis>
+ 
+and the 
+
+<emphasis id="em1003" effect="italics">
+main loop
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+	
+
+<table id="table1000" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1000">
+
+			
+
+<row id="tr1000">
+
+				
+
+<entry id="th1000">
+<emphasis id="Image_3" effect="bold">
+
+Listing 1
+
+</emphasis>
+
+. The root.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1000">
+
+			
+
+<row id="tr1001">
+
+				
+
+<entry id="td1000">
+
+
+
+
+<code id="pre1000" display="block">
+from tkinter import *
+
+root = Tk()
+root.title("Feet to Meters")
+
+root.mainloop()
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1023">
+<link id="a1067" target-id="Image_3a">
+
+Figure 3
+
+</link>
+
+ shows the output produced by running the 
+	skeleton code in 
+
+<link id="a1068" target-id="Image_3">
+
+Listing 1
+
+</link>
+
+.
+
+</para>
+
+
+
+
+
+<para id="p1024">
+<emphasis id="strong1007" effect="bold">
+<emphasis id="Image_3a" effect="bold">
+
+Figure 3
+
+</emphasis>
+
+. Output from Listing 1.
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1025">
+<media id="media1002" alt="Image showing output of code for root only." display="block">
+<image id="img1002" mime-type="image/jpeg" src="../../media/1359-1610-03a.jpg" width="219" height="246"/>
+</media>
+
+
+</para>
+
+
+
+
+
+<para id="p1026">
+According to 
+
+
+<link id="a1069" url="http://effbot.org/tkinterbook/tkinter-hello-tkinter.htm">
+
+Hello, Tkinter
+
+</link>
+
+,
+
+</para>
+
+
+
+
+<quote id="blockquote1005" display="block">
+"To initialize Tkinter, we have to create a Tk root widget. This is an ordinary window, with a title bar and other decoration provided by your window manager. You should only create one root widget for each program, and it must be created before any other widgets."
+
+</quote>
+
+
+
+
+<para id="p1027">
+<emphasis id="em1004" effect="italics">
+(Note that according to 
+
+</emphasis>
+
+
+
+<link id="a1070" url="http://www.tkdocs.com/tutorial/firstexample.html">
+
+
+<emphasis id="em1005" effect="italics">
+TkDocs
+
+</emphasis>
+</link>
+
+
+<emphasis id="em1006" effect="italics">
+, the name of the module was changed from
+
+
+</emphasis>
+ 
+
+<emphasis id="strong1008" effect="bold">
+<emphasis id="em1007" effect="italics">
+Tkinter
+
+</emphasis>
+</emphasis>
+<emphasis id="em1008" effect="italics">
+ to 
+
+</emphasis>
+ 
+
+<emphasis id="strong1009" effect="bold">
+<emphasis id="em1009" effect="italics">
+tkinter
+
+</emphasis>
+</emphasis>
+<emphasis id="em1010" effect="italics">
+ 
+with the release of Python 3.0.)
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1028">
+The empty window that you see in 
+
+<link id="a1071" target-id="Image_3a">
+
+Figure 3
+
+</link>
+
+ behaves like a standard Windows 
+window on my machine. The three buttons in the upper-right corner behave as 
+expected while the menu icon in the upper-left corner behaves as expected. 
+
+<emphasis id="em1011" effect="italics">
+
+(The icon in the upper-left corner appears to be the TCL feather logo.)
+
+</emphasis>
+</para>
+
+
+
+
+</section>
+<section id="h31007">
+<title>
+<emphasis id="Import_statements" effect="bold">
+
+Import statements
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1029">
+<link id="a1072" url="http://www.tkdocs.com/tutorial/firstexample.html">
+
+TkDocs
+
+</link>
+
+ has 
+this to say about the two import statements at the top of 
+
+<link id="a1073" target-id="Image_12">
+
+
+Listing 9
+
+</link>
+
+,
+
+</para>
+
+
+
+
+<quote id="blockquote1006" display="block">
+"These two lines tell Python that our program needs two modules. The first, "tkinter", is the standard binding to Tk, which when loaded also causes the existing Tk library on your system to be loaded. The second, "ttk", is Python's binding to the newer "themed widgets" that were added to Tk in 8.5."
+
+</quote>
+
+
+
+
+<para id="p1030">
+That document goes on to provide a very interesting TIP regarding the use of 
+the asterisk (*) with the first import statement and the non-use of the asterisk 
+with the second import statement. I will leave it as an exercise for the student 
+to examine that material.
+
+</para>
+
+
+
+
+</section>
+<section id="h31008">
+<title>
+<emphasis id="The_calculate_function" effect="bold">
+
+The calculate function
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1031">
+I'm going to skip over the 
+
+<emphasis id="strong1010" effect="bold">
+calculate
+
+</emphasis>
+ function 
+
+<emphasis id="em1012" effect="italics">
+(see
+
+
+<link id="a1074" target-id="Image_12">
+
+Listing 9
+
+</link>
+
+)
+
+</emphasis>
+ at this point 
+and return to discuss it in context later.
+
+</para>
+
+
+
+
+</section>
+<section id="h31009">
+<title>
+<emphasis id="Add_a_Frame_widget" effect="bold">
+
+Add a Frame widget
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1032">
+The first statement in 
+
+<link id="a1075" target-id="Image_4">
+
+Listing 2
+
+</link>
+
+ creates a 
+
+<emphasis id="strong1011" effect="bold">
+Frame
+
+</emphasis>
+ widget and 
+places it in the 
+
+<emphasis id="strong1012" effect="bold">
+root
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+	
+
+<table id="table1001" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1001">
+
+			
+
+<row id="tr1002">
+
+				
+
+<entry id="th1001">
+<emphasis id="Image_4" effect="bold">
+
+Listing 2
+
+</emphasis>
+
+. Add a Frame widget.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1001">
+
+			
+
+<row id="tr1003">
+
+				
+
+<entry id="td1001">
+
+
+
+
+<code id="pre1001" display="block">
+mainframe = ttk.Frame(root, padding="3 3 12 12")
+mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
+
+mainframe.columnconfigure(0, weight=1)
+mainframe.rowconfigure(0, weight=1)
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1033">
+<emphasis id="According_to_TkDocs" effect="bold">
+
+According to TkDocs
+
+</emphasis>
+
+,
+
+</para>
+
+
+
+
+<quote id="blockquote1007" display="block">
+"Next, we create a frame widget, which will hold all the content of our user interface, and place that in our main window. The "columnconfigure"/"rowconfigure" bits just tell Tk that if the main window is resized, the frame should expand to take up the extra space."
+
+</quote>
+
+
+
+
+<para id="p1034">
+According to 
+
+
+<link id="a1076" url="http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/ttk-Frame.html">
+
+Tkinter 8.5 reference: a GUI for Python
+
+</link>
+
+, 
+
+</para>
+
+
+
+
+<quote id="blockquote1008" display="block">
+"Like the Tkinter Frame widget, the ttk.Frame widget is a rectangular container for other widgets."
+
+</quote>
+
+
+
+
+<para id="p1035">
+That document goes on to explain that the first argument to 
+
+<emphasis id="strong1013" effect="bold">
+Frame
+
+</emphasis>
+ 
+is the parent of the 
+
+<emphasis id="strong1014" effect="bold">
+Frame
+
+</emphasis>
+. In this case, the frame will be a 
+child of 
+
+<emphasis id="strong1015" effect="bold">
+root
+
+</emphasis>
+. After that, you can enter any of about nine 
+different options, one of which is 
+
+<emphasis id="strong1016" effect="bold">
+padding
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+<para id="p1036">
+According to 
+
+<link id="a1077" url="http://www.tkdocs.com/tutorial/grid.html#padding">
+
+Padding
+
+</link>
+
+ at TkDocs, 
+
+</para>
+
+
+
+
+<quote id="blockquote1009" display="block">
+"Normally, each column or row will be directly adjacent to the next, so that widgets will be right next to each other. This is sometimes what you want (think of a listbox and its scrollbar), but often you want some space between widgets. In Tk, this is called padding, and there are several ways you can choose to add it."
+
+</quote>
+
+
+
+
+<para id="p1037">
+One of the ways to achieve the desired space between widgets is by using the 
+syntax shown in the 
+
+<emphasis id="strong1017" effect="bold">
+padding
+
+</emphasis>
+ argument of 
+
+<link id="a1078" target-id="Image_4">
+
+
+Listing 2
+
+</link>
+
+. This syntax 
+inserts spaces 
+
+<emphasis id="em1013" effect="italics">
+(in units of pixels)
+
+</emphasis>
+ on the four sides of the frame in 
+the order west, north, east, and south or left, top, right, and bottom. 
+
+<emphasis id="em1014" effect="italics">
+
+(Note that the integers in 
+
+<link id="a1079" target-id="Image_4">
+
+Listing 2
+
+</link>
+
+ are not separated by commas.)
+
+</emphasis>
+</para>
+
+
+
+
+</section>
+<section id="h31010">
+<title>
+<emphasis id="The_grid_geometry_manager" effect="bold">
+
+The grid geometry manager
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1038">
+Once you have a 
+
+<emphasis id="strong1018" effect="bold">
+Frame
+
+</emphasis>
+ widget, you can call various methods 
+on it. One of those methods is 
+
+<emphasis id="strong1019" effect="bold">
+grid
+
+</emphasis>
+ as shown by the second line 
+of code in 
+
+<link id="a1080" target-id="Image_4">
+
+Listing 2
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<para id="p1039">
+According to 
+
+<link id="a1081" url="http://www.tkdocs.com/tutorial/grid.html">
+
+The Grid Geometry Manager
+
+</link>
+
+ at 
+TkDocs,
+
+</para>
+
+
+
+
+<quote id="blockquote1010" display="block">
+"Grid is one of several geometry managers available in Tk, but it's mix of power, flexibility and ease of use, along with its natural fit with today's layouts (that rely on alignment of widgets) make it the best choice for general use. There are other geometry managers: "pack" is also quite powerful, but harder to use and understand; "place" gives you complete control of positioning each element; we'll see even widgets like paned windows, notebooks, canvas and text can act as geometry managers."
+
+</quote>
+
+
+
+
+</section>
+<section id="h31011">
+<title>
+<emphasis id="Columns_and_rows" effect="bold">
+
+Columns and rows
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1040">
+With the 
+
+<emphasis id="strong1020" effect="bold">
+Grid
+
+</emphasis>
+ geometry manager, a container of widgets such 
+as the 
+
+<emphasis id="strong1021" effect="bold">
+root
+
+</emphasis>
+ or the 
+
+<emphasis id="strong1022" effect="bold">
+Frame
+
+</emphasis>
+ is subdivided into a 
+grid of cells. The locations of widgets in the container are specified by column 
+and row numbers. 
+
+</para>
+
+
+
+
+<para id="p1041">
+<emphasis id="According_to" effect="bold">
+
+According to
+
+</emphasis>
+
+ 
+
+<link id="a1082" url="http://www.tkdocs.com/tutorial/grid.html#colsrows">
+
+
+Columns and Rows
+
+</link>
+
+ at TkDocs,
+
+</para>
+
+
+
+
+<quote id="blockquote1011" display="block">
+"Column and row numbers must be integers, with the first column and row starting at 0. You can leave gaps in column and row numbers (e.g. column 0, 1, 2, 10, 11, 12, 20, 21), which is handy if you plan to add more widgets in the middle of the user interface at a later time.
+
+The width of each column (or height of each row) depends on the width or height of the widgets contained within the column or row. This means when sketching out your user interface, and dividing it into rows and columns, you don't need to worry about each column or row being equal width."
+
+</quote>
+
+
+
+
+<para id="p1042">
+The second statement in 
+
+<link id="a1083" target-id="Image_4">
+
+Listing 2
+
+</link>
+
+ shows that the 
+
+<emphasis id="strong1023" effect="bold">
+Frame
+
+</emphasis>
+ is 
+placed in column 0 and row 0 
+
+<emphasis id="em1015" effect="italics">
+(the upper-left corner)
+
+</emphasis>
+ of the 
+
+<emphasis id="strong1024" effect="bold">
+
+root
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+</section>
+<section id="h31012">
+<title>
+<emphasis id="A_sticky_situation" effect="bold">
+
+A sticky situation
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1043">
+The sizes of the cells in a grid are determined by the sizes of the widgets 
+placed in them. Therefore, the width of the cells in a column will be at least 
+as wide as the widest widget in the column and the height of the cells in a row 
+will be at least as high as the tallest widget placed in the row.
+
+</para>
+
+
+
+
+<para id="p1044">
+By default, if a widget is smaller than the cell in which it is placed, it 
+will be placed in the upper-left corner of the cell. The 
+
+<emphasis id="strong1025" effect="bold">
+sticky
+
+</emphasis>
+ 
+argument can be used to specify something other than the default. The value of 
+the sticky argument consists of the compass directions N, S, E, and W as shown 
+in the second statement of 
+
+<link id="a1084" target-id="Image_4">
+
+Listing 2
+
+</link>
+
+. 
+
+<emphasis id="em1016" effect="italics">
+(Note that they are separated by 
+commas.)
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1045">
+Many different combinations of N, S, E, and W can be used to control the 
+placement of the widget in the cell. A good explanation is provided in 
+
+
+<link id="a1085" url="http://www.tkdocs.com/tutorial/grid.html#incell">
+
+Layout within the Cell
+
+</link>
+
+ at 
+TkDocs. The combination used in the second statement of 
+
+<link id="a1086" target-id="Image_4">
+
+
+Listing 2
+
+</link>
+
+ causes the
+
+
+<emphasis id="strong1026" effect="bold">
+Frame
+
+</emphasis>
+ to be stretched in all four directions so as to be stuck 
+to all four sides of the 
+
+<emphasis id="strong1027" effect="bold">
+root
+
+</emphasis>
+. In other words, the 
+
+<emphasis id="strong1028" effect="bold">
+
+Frame
+
+</emphasis>
+ completely fills the available space within the 
+
+<emphasis id="strong1029" effect="bold">
+root
+
+</emphasis>
+ 
+container.
+
+</para>
+
+
+
+
+<para id="p1046">
+The last two statements in 
+
+<link id="a1087" target-id="Image_4">
+
+Listing 2
+
+</link>
+
+ were explained by
+
+
+<link id="a1088" target-id="According_to_TkDocs">
+
+According to TkDocs
+
+</link>
+
+  above.
+
+</para>
+
+
+
+
+</section>
+<section id="h31013">
+<title>
+<emphasis id="StringVar" effect="bold">
+
+StringVar
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1047">
+To make a long story short, the 
+
+<emphasis id="strong1030" effect="bold">
+StringVar
+
+</emphasis>
+ objects shown in
+
+<link id="a1089" target-id="Image_5">
+
+ 
+Listing 3
+
+</link>
+
+ are used to connect the string values for 
+
+<emphasis id="strong1031" effect="bold">
+feet
+
+</emphasis>
+ and 
+
+<emphasis id="strong1032" effect="bold">
+meters
+
+</emphasis>
+ to the 
+
+
+<emphasis id="strong1033" effect="bold">
+textvariable
+
+</emphasis>
+ 
+arguments of an 
+
+<emphasis id="strong1034" effect="bold">
+Entry
+
+</emphasis>
+ widget and a 
+
+<emphasis id="strong1035" effect="bold">
+Label
+
+</emphasis>
+ 
+widget, which you will see later. 
+
+</para>
+
+
+
+
+<para id="p1048">
+<emphasis id="em1017" effect="italics">
+(If you connect a widget to a 
+
+</emphasis>
+<emphasis id="strong1036" effect="bold">
+<emphasis id="em1018" effect="italics">
+StringVar
+
+</emphasis>
+</emphasis>
+<emphasis id="em1019" effect="italics">
+ 
+object using a 
+
+</emphasis>
+<emphasis id="strong1037" effect="bold">
+<emphasis id="em1020" effect="italics">
+textvariable
+
+</emphasis>
+</emphasis>
+<emphasis id="em1021" effect="italics">
+ argument, a 
+change in the contents of either will cause a corresponding change in the other. This is 
+discussed in some detail at 
+
+</emphasis>
+ 
+
+
+<link id="a1090" url="https://docs.python.org/3/library/tkinter.html#coupling-widget-variables">
+
+
+
+
+<emphasis id="em1022" effect="italics">
+25.1.6.4. Coupling Widget Variables
+
+</emphasis>
+</link>
+
+
+<emphasis id="em1023" effect="italics">
+.)
+
+</emphasis>
+</para>
+
+
+	
+
+<table id="table1002" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1002">
+
+			
+
+<row id="tr1004">
+
+				
+
+<entry id="th1002">
+<emphasis id="Image_5" effect="bold">
+
+Listing 3
+
+</emphasis>
+
+. StringVar objects.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1002">
+
+			
+
+<row id="tr1005">
+
+				
+
+<entry id="td1002">
+
+
+
+
+<code id="pre1002" display="block">
+feet = StringVar()
+meters = StringVar()
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+</section>
+<section id="h31014">
+<title>
+<emphasis id="The_Entry_widget" effect="bold">
+
+The Entry widget
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1049">
+In the 
+
+<link id="a1091" url="http://www.tkdocs.com/tutorial/firstexample.html">
+
+initial 
+design stages
+
+</link>
+
+ of the GUI, the author indicates that the widgets will be 
+placed in three columns and three rows.
+
+</para>
+
+
+
+
+<para id="p1050">
+The first statement in 
+
+<link id="a1092" target-id="Image_6">
+
+Listing 4
+
+</link>
+
+ creates a new widget of the class
+
+
+<link id="a1093" url="http://effbot.org/tkinterbook/entry.htm">
+
+Entry
+
+</link>
+
+ and saves the 
+object's reference in the variable named 
+
+<emphasis id="strong1038" effect="bold">
+feet_entry
+
+</emphasis>
+. According to 
+
+
+<link id="a1094" url="http://effbot.org/tkinterbook/entry.htm">
+
+The Tkinter Entry Widget
+
+</link>
+
+,
+
+</para>
+
+
+
+
+<quote id="blockquote1012" display="block">
+"The Entry widget is a standard Tkinter widget used to enter or display a single line of text."
+
+</quote>
+
+
+
+
+<para id="p1051">
+The first argument is the parent -- in this case 
+
+<emphasis id="strong1039" effect="bold">
+mainframe
+
+</emphasis>
+. 
+This is followed by many possible optional arguments, one of which is 
+
+<emphasis id="strong1040" effect="bold">
+
+width
+
+</emphasis>
+.
+
+</para>
+
+
+
+	
+
+<table id="table1003" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1003">
+
+			
+
+<row id="tr1006">
+
+				
+
+<entry id="th1003">
+<emphasis id="Image_6" effect="bold">
+
+Listing 4
+
+</emphasis>
+
+. The Entry widget.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1003">
+
+			
+
+<row id="tr1007">
+
+				
+
+<entry id="td1003">
+
+
+
+
+<code id="pre1003" display="block">
+feet_entry = ttk.Entry(mainframe, width=7, textvariable=feet)
+
+feet_entry.grid(column=2, row=1, sticky=(W, E))
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+</section>
+<section id="h31015">
+<title>
+<emphasis id="The_width_argument" effect="bold">
+
+The width argument
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1052">
+<link id="a1095" url="http://effbot.org/tkinterbook/entry.htm">
+
+The Tkinter Entry Widget
+
+</link>
+
+ 
+describes the 
+
+<emphasis id="strong1041" effect="bold">
+width
+
+</emphasis>
+ argument as follows:
+
+</para>
+
+
+
+
+<quote id="blockquote1013" display="block">
+"Width of the entry field, in character units. Note that this controls the size on screen; it does not limit the number of characters that can be typed into the entry field. The default width is 20 character."
+
+</quote>
+
+
+
+
+<para id="p1053">
+The first statement in 
+
+<link id="a1096" target-id="Image_6">
+
+Listing 4
+
+</link>
+
+ sets the width to seven characters.
+
+</para>
+
+
+
+
+</section>
+<section id="h31016">
+<title>
+<emphasis id="The_textvariable_argument" effect="bold">
+
+The textvariable argument
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1054">
+<link id="a1097" url="http://effbot.org/tkinterbook/entry.htm">
+
+The Tkinter Entry Widget
+
+</link>
+
+ 
+describes the 
+
+<emphasis id="strong1042" effect="bold">
+textvariable
+
+</emphasis>
+ argument as follows:
+
+</para>
+
+
+
+
+<quote id="blockquote1014" display="block">
+"Associates a Tkinter variable (usually a StringVar) to the contents of the entry field."
+
+</quote>
+
+
+
+
+<para id="p1055">
+This argument is set equal to 
+
+<emphasis id="strong1043" effect="bold">
+feet
+
+</emphasis>
+ from 
+
+<link id="a1098" target-id="Image_5">
+
+
+Listing 3
+
+</link>
+
+. From this 
+point forward, values entered into the data entry field shown in 
+
+<link id="a1099" target-id="Image_2">
+
+
+Figure 2
+
+</link>
+
+ will be 
+saved in the 
+
+<emphasis id="strong1044" effect="bold">
+StringVar
+
+</emphasis>
+ named 
+
+<emphasis id="strong1045" effect="bold">
+feet
+
+</emphasis>
+. This makes 
+the value available to the 
+
+<emphasis id="strong1046" effect="bold">
+calculate
+
+</emphasis>
+ function that will 
+be discussed later.
+
+</para>
+
+
+
+
+</section>
+<section id="h31017">
+<title>
+<emphasis id="Make_the_data_entry_field_visible" effect="bold">
+
+Make the Entry field visible
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1056">
+The author of the 
+
+<link id="a1100" url="http://www.tkdocs.com/tutorial/firstexample.html">
+
+
+program
+
+</link>
+
+ explains that the first statement in 
+
+<link id="a1101" target-id="Image_6">
+
+Listing 4
+
+</link>
+
+ creates the 
+
+<emphasis id="strong1047" effect="bold">
+
+Entry
+
+</emphasis>
+ widget but does not make it visible in the GUI. In order to make 
+it visible, you must tell Tk where to place it relative to other widgets. This 
+is accomplished by the call to 
+
+<emphasis id="strong1048" effect="bold">
+grid
+
+</emphasis>
+ in the second statement in 
+
+
+<link id="a1102" target-id="Image_6">
+
+Listing 4
+
+</link>
+
+, which places the 
+
+<emphasis id="strong1049" effect="bold">
+Entry
+
+</emphasis>
+ widget in column 2 and row 1.
+
+
+<emphasis id="em1024" effect="italics">
+(Note that the author seems to have skipped column 0 and row 0 as described 
+
+<link id="a1103" target-id="According_to">
+
+earlier
+
+</link>
+
+.)
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1057">
+The 
+
+<emphasis id="strong1050" effect="bold">
+sticky
+
+</emphasis>
+ parameter in 
+
+<link id="a1104" target-id="Image_6">
+
+Listing 4
+
+</link>
+
+ instructs Tk to stretch the
+
+
+<emphasis id="strong1051" effect="bold">
+Entry
+
+</emphasis>
+ widget horizontally and make it touch both sides of the 
+cell. 
+
+<emphasis id="em1025" effect="italics">
+(Note that manually stretching the size of the 
+
+<emphasis id="strong1052" effect="bold">
+root
+
+</emphasis>
+ 
+on the screen 
+does not stretch the size of the 
+
+<emphasis id="strong1053" effect="bold">
+Frame
+
+</emphasis>
+ or the widgets contained 
+in the Frame.)
+
+</emphasis>
+</para>
+
+
+
+
+</section>
+<section id="h31018">
+<title>
+<emphasis id="A_sticky_demonstration" effect="bold">
+
+A sticky demonstration
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1058">
+As an aside, I am going to demonstrate what happens with the sticky 
+parameters in 
+
+<link id="a1105" target-id="Image_6">
+
+Listing 4
+
+</link>
+
+ when the column width changes. Compare 
+
+<link id="a1106" target-id="Image_7">
+
+
+Figure 4
+
+</link>
+
+ with 
+
+
+<link id="a1107" target-id="Image_2">
+
+Figure 2
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+<para id="p1059">
+<emphasis id="strong1054" effect="bold">
+<emphasis id="Image_7" effect="bold">
+
+Figure 4
+
+</emphasis>
+
+. 
+	A sticky demonstration.
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1060">
+<media id="media1003" alt="Demonstrates effect of change in column width with sticky W, E" display="block">
+<image id="img1003" mime-type="image/jpeg" src="../../media/1359-1610-07.jpg" width="410" height="171"/>
+</media>
+
+
+</para>
+
+
+
+
+
+<para id="p1061">
+As you will see shortly, the numerical result of calculating the conversion 
+from feet to meters is displayed in column 2 in the row immediately below the
+
+
+<emphasis id="strong1055" effect="bold">
+Entry
+
+</emphasis>
+ widget. When that result requires more width than is 
+available in the column by default, the width of the column is automatically increased. 
+Because the right and left ends of the 
+
+<emphasis id="strong1056" effect="bold">
+Entry
+
+</emphasis>
+ widget stick to the sides of its cell in that 
+column, the width of the 
+
+<emphasis id="strong1057" effect="bold">
+Entry
+
+</emphasis>
+ widget increases accordingly.
+
+</para>
+
+
+
+
+</section>
+<section id="h31019">
+<title>
+<emphasis id="A_Label_and_a_Button" effect="bold">
+
+A Label and a Button
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1062">
+By now you should be catching on to the general scheme of things and less 
+detailed instructions should be needed.
+
+</para>
+
+
+
+
+<para id="p1063">
+<link id="a1108" target-id="Image_8">
+
+Listing 5
+
+</link>
+
+ creates a 
+
+<emphasis id="strong1058" effect="bold">
+Label
+
+</emphasis>
+ widget and a 
+
+<emphasis id="strong1059" effect="bold">
+Button
+
+</emphasis>
+ 
+widget and places them in the rows and columns indicated by the 
+
+<emphasis id="strong1060" effect="bold">
+sticky
+
+</emphasis>
+ 
+parameters.
+
+</para>
+
+
+	
+
+<table id="table1004" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1004">
+
+			
+
+<row id="tr1008">
+
+				
+
+<entry id="th1004">
+<emphasis id="Image_8" effect="bold">
+
+Listing 5
+
+</emphasis>
+
+. A Label and a 
+				Button.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1004">
+
+			
+
+<row id="tr1009">
+
+				
+
+<entry id="td1004">
+
+
+
+
+<code id="pre1004" display="block">
+ttk.Label(mainframe, textvariable=meters).grid(column=2, row=2, sticky=(W, E))
+ttk.Button(mainframe,text="Calculate", command=calculate).grid(
+    column=3, row=3, sticky=W)
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1064">
+A few things are different here:
+
+</para>
+
+
+
+
+<list id="ul1009" list-type="bulleted">
+
+	
+
+<item id="li1053">
+References to the widgets are not saved in ordinary Python variables 
+	because there will be no need to refer to them later in program code.
+
+</item>
+
+
+	
+
+<item id="li1054">
+The dot operator is used to call 
+
+<emphasis id="strong1061" effect="bold">
+grid
+
+</emphasis>
+ immediately upon 
+	the creation of each widget as opposed to calling 
+
+<emphasis id="strong1062" effect="bold">
+grid
+
+</emphasis>
+ in a 
+	separate statement as was done in 
+
+<link id="a1109" target-id="Image_6">
+
+Listing 4
+
+</link>
+
+.
+
+</item>
+
+
+	
+
+<item id="li1055">
+The 
+
+<emphasis id="strong1063" effect="bold">
+Button
+
+</emphasis>
+ widget uses a 
+
+<emphasis id="strong1064" effect="bold">
+text
+
+</emphasis>
+ argument 
+	to place the string 
+
+<emphasis id="strong1065" effect="bold">
+"Calculate"
+
+</emphasis>
+ on the face of the button.
+
+</item>
+
+
+	
+
+<item id="li1056">
+No text is placed in the 
+
+<emphasis id="strong1066" effect="bold">
+Label
+
+</emphasis>
+. The empty 
+
+<emphasis id="strong1067" effect="bold">
+Label
+
+</emphasis>
+ 
+	will be used to display the results of converting feet to meters.
+
+</item>
+
+
+	
+
+<item id="li1057">
+The left end of the 
+
+<emphasis id="strong1068" effect="bold">
+Button
+
+</emphasis>
+ widget is stuck to the west 
+	side of the cell in which it resides. It is not stretched to the width of 
+	the cell as is the case with the 
+
+<emphasis id="strong1069" effect="bold">
+Entry
+
+</emphasis>
+ and 
+
+<emphasis id="strong1070" effect="bold">
+Label
+
+</emphasis>
+ widgets
+
+</item>
+
+
+	
+
+<item id="li1058">
+Last and perhaps most important, the 
+
+<emphasis id="strong1071" effect="bold">
+Button
+
+</emphasis>
+ widget uses 
+	the 
+
+<emphasis id="strong1072" effect="bold">
+command
+
+</emphasis>
+ argument to specify that the function named
+	
+
+<emphasis id="strong1073" effect="bold">
+calculate
+
+</emphasis>
+ will be executed whenever the user presses the 
+	button.
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+</section>
+<section id="h31020">
+<title>
+<emphasis id="Three_more_Label_widgets" effect="bold">
+
+Three more Label widgets
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1065">
+<link id="a1110" target-id="Image_9">
+
+Listing 6
+
+</link>
+
+ creates three more 
+
+<emphasis id="strong1074" effect="bold">
+Label
+
+</emphasis>
+ widgets and places them in the rows and 
+columns shown.
+
+</para>
+
+
+	
+
+<table id="table1005" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1005">
+
+			
+
+<row id="tr1010">
+
+				
+
+<entry id="th1005">
+<emphasis id="Image_9" effect="bold">
+
+Listing 6
+
+</emphasis>
+
+. Three more Label 
+				widgets.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1005">
+
+			
+
+<row id="tr1011">
+
+				
+
+<entry id="td1005">
+
+
+
+
+<code id="pre1005" display="block">
+ttk.Label(mainframe, text="feet").grid(column=3, row=1, sticky=W)
+ttk.Label(mainframe, text="is equivalent to").grid(column=1, row=2, sticky=E)
+ttk.Label(mainframe, text="meters").grid(column=3, row=2, sticky=W)
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1066">
+There is nothing new in 
+
+<link id="a1111" target-id="Image_9">
+
+Listing 6
+
+</link>
+
+ so no explanation of that code should be 
+	required.
+
+</para>
+
+
+
+
+</section>
+<section id="h31021">
+<title>
+<emphasis id="Finishing_touches" effect="bold">
+
+Finishing touches
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1067">
+The 
+
+<link id="a1112" url="http://www.tkdocs.com/tutorial/firstexample.html">
+
+author
+
+</link>
+
+ of the
+program describes the first line of code in 
+
+<link id="a1113" target-id="Image_10">
+
+Listing 7
+
+</link>
+
+ as follows:
+
+</para>
+
+
+
+
+<quote id="blockquote1015" display="block">
+"The first line walks through all of the widgets that are children of our content frame, and adds a little bit of padding around each, so they aren't so scrunched together. We could have added these options to each "grid" call when we first put the widgets onscreen, but this is a nice shortcut."
+
+</quote>
+
+
+	
+
+<table id="table1006" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1006">
+
+			
+
+<row id="tr1012">
+
+				
+
+<entry id="th1006">
+<emphasis id="Image_10" effect="bold">
+
+Listing 7
+
+</emphasis>
+
+. Finishing 
+				touches.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1006">
+
+			
+
+<row id="tr1013">
+
+				
+
+<entry id="td1006">
+
+
+
+
+<code id="pre1006" display="block">
+for child in mainframe.winfo_children(): child.grid_configure(padx=5, pady=5)
+
+feet_entry.focus()
+
+root.bind('&lt;Return&gt;', calculate)
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1068">
+The 
+
+<link id="a1114" url="http://www.tkdocs.com/tutorial/firstexample.html">
+
+author
+
+</link>
+
+ describes the 
+	second line of code in 
+
+<link id="a1115" target-id="Image_10">
+
+Listing 7
+
+</link>
+
+ as follows:
+
+</para>
+
+
+
+
+<quote id="blockquote1016" display="block">
+"The second line tells Tk to put the focus on our entry widget. That way the cursor will start in that field, so the user doesn't have to click in it before starting to type."
+
+</quote>
+
+
+
+
+<para id="p1069">
+<emphasis id="And_finally" effect="bold">
+
+And finally
+
+</emphasis>
+
+, the 
+
+<link id="a1116" url="http://www.tkdocs.com/tutorial/firstexample.html">
+
+author
+
+</link>
+
+ describes the 
+	third line of code in 
+
+<link id="a1117" target-id="Image_10">
+
+Listing 7
+
+</link>
+
+ as follows:
+
+</para>
+
+
+
+
+<quote id="blockquote1017" display="block">
+"The third line tells Tk that if the user presses the Return key (Enter on Windows) anywhere within the root window, that it should call our calculate routine, the same as if the user pressed the Calculate button."
+
+</quote>
+
+
+
+
+</section>
+<section id="h31022">
+<title>
+<emphasis id="Now_back_to_the_calculate_function" effect="bold">
+
+Now back to the calculate 
+function
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1070">
+The calculate function, which is shown in 
+
+<link id="a1118" target-id="Image_11">
+
+Listing 8
+
+</link>
+
+, is executed whenever the user presses the
+
+
+<emphasis id="strong1075" effect="bold">
+calculate
+
+</emphasis>
+ button or 
+hits the 
+
+<emphasis id="em1026" effect="italics">
+Enter
+
+</emphasis>
+ key on the keyboard as described 
+
+<link id="a1119" target-id="And_finally">
+
+above
+
+</link>
+
+.
+
+</para>
+
+
+
+
+	
+
+<table id="table1007" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1007">
+
+			
+
+<row id="tr1014">
+
+				
+
+<entry id="th1007">
+<emphasis id="Image_11" effect="bold">
+
+Listing 8
+
+</emphasis>
+
+. The calculate 
+				function.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1007">
+
+			
+
+<row id="tr1015">
+
+				
+
+<entry id="td1007">
+
+
+
+
+<code id="pre1007" display="block">
+def calculate(*args):
+    try:
+        value = float(feet.get())
+        meters.set((0.3048 * value * 10000.0 + 0.5)/10000.0)
+    except ValueError:
+        pass
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+</section>
+<section id="h31023">
+<title>
+<emphasis id="The_input_value_in_feet" effect="bold">
+
+The input value in feet
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1071">
+Any value that is entered into the 
+
+<emphasis id="strong1076" effect="bold">
+Entry
+
+</emphasis>
+ widget is 
+	stored in the 
+
+<emphasis id="strong1077" effect="bold">
+StringVar
+
+</emphasis>
+ object referred to by 
+
+<emphasis id="strong1078" effect="bold">
+feet
+
+</emphasis>
+ 
+	as shown in 
+
+<link id="a1120" target-id="Image_5">
+
+Listing 3
+
+</link>
+
+ and 
+
+<link id="a1121" target-id="Image_6">
+
+Listing 
+4
+
+</link>
+
+ and as described
+	
+
+<link id="a1122" target-id="The_textvariable_argument">
+
+above
+
+</link>
+
+. 
+
+</para>
+
+
+
+
+<para id="p1072">
+The 
+
+<emphasis id="strong1079" effect="bold">
+StringVar
+
+</emphasis>
+ object has a method named 
+
+<emphasis id="strong1080" effect="bold">
+get
+
+</emphasis>
+ 
+that returns the string stored in the object. The code in the 
+
+<emphasis id="strong1081" effect="bold">
+try
+
+</emphasis>
+ block of 
+
+
+<link id="a1123" target-id="Image_11">
+
+Listing 8
+
+</link>
+
+ calls the 
+
+<emphasis id="strong1082" effect="bold">
+get
+
+</emphasis>
+ method on the 
+
+<emphasis id="strong1083" effect="bold">
+StringVar
+
+</emphasis>
+ object and attempts to convert the 
+string to type 
+
+<emphasis id="strong1084" effect="bold">
+float
+
+</emphasis>
+. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31024">
+<title>
+<emphasis id="Either_save_the_float_or_pass" effect="bold">
+
+Either save the float or pass
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1073">
+If the string cannot be converted to a 
+
+<emphasis id="strong1085" effect="bold">
+float
+
+</emphasis>
+, a 
+
+<emphasis id="strong1086" effect="bold">
+ValueError
+
+</emphasis>
+ is thrown and 
+control is passed to the 
+
+<emphasis id="strong1087" effect="bold">
+pass
+
+</emphasis>
+ statement. This causes the 
+function to exit without doing anything. 
+
+</para>
+
+
+
+
+<para id="p1074">
+If the string can be converted to a 
+
+
+<emphasis id="strong1088" effect="bold">
+float
+
+</emphasis>
+, that float value is stored in the variable named 
+
+<emphasis id="strong1089" effect="bold">
+value
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+</section>
+<section id="h31025">
+<title>
+<emphasis id="Calculate_and_display_the_result_in_meters" effect="bold">
+
+Calculate and display 
+the result in meters
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1075">
+A 
+
+<emphasis id="strong1090" effect="bold">
+StringVar
+
+</emphasis>
+ object also has a method named 
+
+<emphasis id="strong1091" effect="bold">
+set
+
+</emphasis>
+ that can be used to store a 
+value in the object. The code in the 
+
+<emphasis id="strong1092" effect="bold">
+try
+
+</emphasis>
+ block performs the arithmetic to 
+convert the value in feet to a value in meters and then calls the 
+
+<emphasis id="strong1093" effect="bold">
+set
+
+</emphasis>
+ method 
+on 
+
+<emphasis id="strong1094" effect="bold">
+meters
+
+</emphasis>
+ to 
+store that value in the 
+
+<emphasis id="strong1095" effect="bold">
+StringVar
+
+</emphasis>
+ object referred to by 
+
+<emphasis id="strong1096" effect="bold">
+meters
+
+</emphasis>
+ in 
+
+<link id="a1124" target-id="Image_5">
+
+
+Listing 3
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<para id="p1076">
+Storing a value in that 
+
+<emphasis id="strong1097" effect="bold">
+StringVar
+
+</emphasis>
+ object causes the value to appear in the 
+
+
+<emphasis id="strong1098" effect="bold">
+Label
+
+</emphasis>
+ immediately to the left of the word 
+
+<emphasis id="strong1099" effect="bold">
+meters
+
+</emphasis>
+ in 
+
+<link id="a1125" target-id="Image_2">
+
+
+Figure 2
+
+</link>
+
+ due to the 
+
+
+<emphasis id="strong1100" effect="bold">
+textvariable
+
+</emphasis>
+ argument in 
+
+<link id="a1126" target-id="Image_8">
+
+Listing 5
+
+</link>
+
+. Once again, if you connect a widget to a 
+
+
+<emphasis id="strong1101" effect="bold">
+StringVar
+
+</emphasis>
+ object using a 
+
+<emphasis id="strong1102" effect="bold">
+textvariable
+
+</emphasis>
+ argument, a change in the contents of 
+either will cause a corresponding change in the other.
+
+</para>
+
+
+
+
+</section>
+<section id="h31026">
+<title>
+<emphasis id="Make_everything_run" effect="bold">
+
+Make everything run
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1077">
+Finally, the last statement in the program, which is shown in 
+
+<link id="a1127" target-id="Image_12">
+
+
+Listing 9
+
+</link>
+
+, causes 
+Tk to enter its 
+
+<emphasis id="em1027" effect="italics">
+event-handling loop
+
+</emphasis>
+ and causes everything to run. The code in 
+this loop will monitor for an event indicating that the user has pressed the 
+
+
+<emphasis id="strong1103" effect="bold">
+calculate
+
+</emphasis>
+ button. When that happens, the 
+
+<emphasis id="strong1104" effect="bold">
+calculate
+
+</emphasis>
+ function will be executed 
+causing the conversion from feet to meters to take place and causing the results 
+of the calculation to be displayed as shown in 
+
+<link id="a1128" target-id="Image_2">
+
+Figure 2
+
+</link>
+
+. 
+This is an infinite loop that will continue to run and monitor for events until 
+the program is terminated.
+
+</para>
+
+
+
+
+
+</section>
+</section>
+</section>
+<section id="h11004">
+<title>
+<emphasis id="Run_the_program" effect="bold">
+
+Run the program
+
+</emphasis>
+
+
+</title>
+
+
+
+
+
+<para id="p1078">
+I encourage you to copy the code from 
+
+<link id="a1129" target-id="Image_12">
+
+Listing 9
+
+</link>
+
+. Execute the code and confirm 
+that you get results similar to those shown in 
+
+<link id="a1130" target-id="Image_2">
+
+Figure 2
+
+</link>
+
+ or 
+
+
+<link id="a1131" target-id="Image_7">
+
+Figure 4
+
+</link>
+
+. Experiment with the code, 
+making changes, and observing the results of your changes. Make certain that you 
+can explain why your changes behave as they do.
+
+</para>
+
+
+
+
+
+</section>
+<section id="h11005">
+<title>
+<emphasis id="Complete_program_listings" effect="bold">
+
+Complete program listing
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1079">
+A complete listing of the program is shown in 
+
+<link id="a1132" target-id="Image_12">
+
+Listing 9
+
+</link>
+
+.
+
+</para>
+
+
+	
+
+<table id="table1008" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1008">
+
+			
+
+<row id="tr1016">
+
+				
+
+<entry id="th1008">
+<emphasis id="Image_12" effect="bold">
+
+Listing 9
+
+</emphasis>
+
+. Complete 
+				program listing.
+
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1008">
+
+			
+
+<row id="tr1017">
+
+				
+
+<entry id="td1008">
+
+
+
+
+<code id="pre1008" display="block">
+# Illustrates a Python GUI using tkinter.
+# Published by Mark Roseman at TkDocs under a Creative Commons
+# Attribution-NonCommercial-ShareAlike 2.5 Canada (CC BY-NC-SA 2.5 CA) license.
+#------------------------------------------------------------------------------
+from tkinter import *
+from tkinter import ttk
+
+def calculate(*args):
+    try:
+        value = float(feet.get())
+        meters.set((0.3048 * value * 10000.0 + 0.5)/10000.0)
+    except ValueError:
+        pass
+    
+root = Tk()
+root.title("Feet to Meters")
+
+mainframe = ttk.Frame(root, padding="3 3 12 12")
+mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
+mainframe.columnconfigure(0, weight=1)
+mainframe.rowconfigure(0, weight=1)
+
+feet = StringVar()
+meters = StringVar()
+
+feet_entry = ttk.Entry(mainframe, width=7, textvariable=feet)
+feet_entry.grid(column=2, row=1, sticky=(W, E))
+
+ttk.Label(mainframe, textvariable=meters).grid(column=2, row=2, sticky=(W, E))
+ttk.Button(mainframe,text="Calculate", command=calculate).grid(
+    column=3, row=3, sticky=W)
+
+ttk.Label(mainframe, text="feet").grid(column=3, row=1, sticky=W)
+ttk.Label(mainframe, text="is equivalent to").grid(column=1, row=2, sticky=E)
+ttk.Label(mainframe, text="meters").grid(column=3, row=2, sticky=W)
+
+for child in mainframe.winfo_children(): child.grid_configure(padx=5, pady=5)
+
+feet_entry.focus()
+root.bind('&lt;Return&gt;', calculate)
+
+root.mainloop()
+</code>
+
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+	
+
+</section>
+<section id="h11006">
+<title>
+<emphasis id="Miscellaneous" effect="bold">
+
+Miscellaneous
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1080">
+This section contains a variety of miscellaneous information.
+
+</para>
+
+
+
+
+
+	
+
+<note id="note1000" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1105" effect="bold">
+Housekeeping material
+
+</emphasis>
+
+				
+
+<list id="ul1010" list-type="bulleted">
+
+					
+
+<item id="li1059">
+Module name: Itse1359-1610-GUI Programming
+
+</item>
+
+
+					
+
+<item id="li1060">
+File: Itse1359-1610.htm
+
+
+</item>
+
+
+					
+
+<item id="li1061">
+Published: 10/28/14
+
+</item>
+
+
+
+
+<item id="li1062">
+Revised: 01/31/16
+
+</item>
+
+
+				
+
+</list>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+
+
+
+	
+
+<note id="note1001" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1106" effect="bold">
+Disclaimers:
+
+</emphasis>
+<para id="p1081">
+<emphasis id="strong1107" effect="bold">
+Financial
+
+</emphasis>
+: Although the Connexions
+site makes it possible for you to download a PDF file for this
+module at no charge, and also makes it possible for you to
+purchase a pre-printed version of the PDF file, you should be
+aware that some of the HTML elements in this module may not translate well into
+PDF.
+
+</para>
+
+
+				
+
+<para id="p1082">
+I also want you to know that, I receive no financial compensation from the Connexions website even if you purchase 
+	the PDF version of the module.
+
+</para>
+
+
+				
+
+<para id="p1083">
+In the past, unknown individuals have copied my modules from cnx.org, converted them to Kindle books, and 
+				placed them for sale on Amazon.com showing me as the author. I 
+				neither receive compensation for those sales nor do I know who does 
+				receive compensation. If you purchase such a book, please be 
+				aware that it is a copy of a module that is freely 
+				available on cnx.org and that it was made and published without 
+				my prior knowledge.
+
+</para>
+
+
+				
+
+<para id="p1084">
+<emphasis id="strong1108" effect="bold">
+Affiliation
+
+</emphasis>
+: I am a professor of Computer Information 
+	Technology at Austin Community College in Austin, TX.
+	
+
+</para>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+
+
+<para id="p1085">
+-end- 
+
+</para>
+
+
+
+
+
+
+</section>
+</content>
+
+
+
+
+</document>

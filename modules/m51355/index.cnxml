@@ -1,0 +1,3560 @@
+<document xmlns="http://cnx.rice.edu/cnxml"> 
+<title>Itse1359-1090-Lists Part 2</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m51355</md:content-id>
+  <md:title>Itse1359-1090-Lists Part 2</md:title>
+  <md:abstract>This module expands on the previous module on lists by teaching you other ways to manipulate lists.</md:abstract>
+  <md:uuid>de44f5dd-a41a-4f19-829d-c8dc7601afc9</md:uuid>
+</metadata>
+
+<content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h11000">
+<title>
+Table of contents
+
+</title>
+
+
+
+
+<list id="ul1000" list-type="bulleted">
+
+	
+
+<item id="li1000">
+<link id="a1000" target-id="Preface">
+
+Preface
+
+</link>
+
+
+	
+
+<list id="ul1001" list-type="bulleted">
+
+		
+
+<item id="li1001">
+<link id="a1001" target-id="Viewing_tip">
+
+Viewing tip
+
+</link>
+
+
+<list id="ul1002" list-type="bulleted">
+
+			
+
+<item id="li1002">
+<link id="a1002" target-id="Figures">
+
+Figures
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1003">
+<link id="a1003" target-id="Listings">
+
+Listings
+
+</link>
+
+
+</item>
+
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+	
+
+<item id="li1004">
+<link id="a1004" target-id="Preface">
+
+Preface
+
+</link>
+
+
+
+
+</item>
+
+
+	
+
+<item id="li1005">
+<link id="a1005" target-id="Introduction">
+
+Introduction
+
+</link>
+
+
+	
+
+<list id="ul1003" list-type="bulleted">
+
+		
+
+<item id="li1006">
+<link id="a1006" target-id="Manipulating_lists">
+
+Manipulating lists
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1007">
+<link id="a1007" target-id="Other_ways_to_manipulate_lists_">
+
+Other ways to manipulate lists 
+		
+
+</link>
+
+ 
+
+</item>
+
+
+	
+
+</list>
+
+
+
+
+</item>
+
+
+	
+
+<item id="li1008">
+<link id="a1008" target-id="SomeSamplePrograms">
+
+Some sample programs 
+
+</link>
+
+
+	
+
+<list id="ul1004" list-type="bulleted">
+
+		
+
+<item id="li1009">
+<link id="a1009" target-id="Replacing_a_slice">
+
+Replacing a slice
+
+</link>
+
+
+<list id="ul1005" list-type="bulleted">
+
+			
+
+<item id="li1010">
+<link id="a1010" target-id="Can_change_the_length_of_the_list_">
+
+Can change the length of the list 
+			
+
+</link>
+
+ 
+
+</item>
+
+
+			
+
+<item id="li1011">
+<link id="a1011" target-id="The_function_named_len">
+
+The function named len()
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1012">
+
+			
+
+<link id="a1012" target-id="Replaces_a_three-element_slice_with_a_six-element_list">
+
+Replaces a three-element slice with a six-element list
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1013">
+<link id="a1013" target-id="Length_of_the_list_is_increased_by_3_">
+
+Length of the list is increased by 3 
+			
+
+</link>
+
+ 
+
+</item>
+
+
+			
+
+<item id="li1014">
+<link id="a1014" target-id="Program_output">
+
+Program output
+
+</link>
+
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+		
+
+<item id="li1015">
+<link id="a1015" target-id="Replacing_an_element_with_a_list_">
+
+Replacing an element with a list 
+		
+
+</link>
+
+
+		
+
+<list id="ul1006" list-type="bulleted">
+
+			
+
+<item id="li1016">
+<link id="a1016" target-id="Behavior_is_different_from_above_">
+
+Behavior is different from above 
+			
+
+</link>
+
+ 
+
+</item>
+
+
+			
+
+<item id="li1017">
+<link id="a1017" target-id="Produces_nested_lists">
+
+Produces nested lists
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1018">
+<link id="a1018" target-id="Length_is_unchanged">
+
+Length is unchanged
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1019">
+<link id="a1019" target-id="Program_output_from_replacing_an_element_with_a_list">
+
+Program output from replacing an element with a list
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1020">
+<link id="a1020" target-id="One_element_is_itself_a_list">
+
+One element is itself a list
+
+</link>
+
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+		
+
+<item id="li1021">
+<link id="a1021" target-id="Visualization">
+
+A visualization
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1022">
+<link id="a1022" target-id="Extracting_elements_from_a_nested_list">
+
+Extracting elements from a nested list
+
+</link>
+
+
+		
+
+<list id="ul1007" list-type="bulleted">
+
+			
+
+<item id="li1023">
+<link id="a1023" target-id="Display_the_nested_list_combination_">
+
+Display the nested list combination
+
+</link>
+
+ 
+
+</item>
+
+
+			
+
+<item id="li1024">
+<link id="a1024" target-id="Double-square-bracket_notation_">
+
+Double-square-bracket notation 
+
+</link>
+
+ 
+
+</item>
+
+
+			
+
+<item id="li1025">
+<link id="a1025" target-id="Program_output_from_extracting_elements_from_a_nested_list">
+
+Program output from extracting elements from a nested list
+
+</link>
+
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+		
+
+<item id="li1026">
+<link id="a1026" target-id="More_on_nested_elements_">
+
+More on nested elements 
+
+</link>
+
+
+		
+
+<list id="ul1008" list-type="bulleted">
+
+			
+
+<item id="li1027">
+<link id="a1027" target-id="Create_a_list_of_lists_">
+
+Create a list of lists 
+
+</link>
+
+ 
+
+</item>
+
+
+			
+
+<item id="li1028">
+<link id="a1028" target-id="Inner_lists_are_different_lengths_">
+
+Inner lists are different lengths  
+			
+
+</link>
+
+  
+
+</item>
+
+
+			
+
+<item id="li1029">
+<link id="a1029" target-id="Program_behavior_and_output_">
+
+Program behavior and output 
+			
+
+</link>
+
+ 
+
+</item>
+
+
+			
+
+<item id="li1030">
+<link id="a1030" target-id="Getting_the_length_of_a_nested_list_">
+
+Getting the length of a nested list 
+			
+
+</link>
+
+ 
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+		
+
+<item id="li1031">
+<link id="a1031" target-id="Arrays__not_for_beginners_">
+
+Arrays -- not for beginners 
+		
+
+</link>
+
+
+		
+
+<list id="ul1009" list-type="bulleted">
+
+			
+
+<item id="li1032">
+<link id="a1032" target-id="Python_lists_are_more_powerful_">
+
+Python lists are more powerful 
+			
+
+</link>
+
+ 
+
+</item>
+
+
+			
+
+<item id="li1033">
+<link id="a1033" target-id="Sub-arrays_can_be_different_sizes_">
+
+Sub-arrays can be different sizes 
+			
+
+</link>
+
+ 
+
+</item>
+
+
+			
+
+<item id="li1034">
+<link id="a1034" target-id="Types_can_also_be_different_">
+
+Types can also be different 
+			
+
+</link>
+
+ 
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+		
+
+<item id="li1035">
+<link id="a1035" target-id="A_three-dimensional_array_program_">
+
+A three-dimensional array program 
+		
+
+</link>
+
+
+		
+
+<list id="ul1010" list-type="bulleted">
+
+			
+
+<item id="li1036">
+<link id="a1036" target-id="Triple-square-bracket_notation">
+
+Triple-square-bracket notation
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1037">
+<link id="a1037" target-id="Visualization_of_a_three-dimensional_array">
+
+Visualization of a three-dimensional 
+			array
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1038">
+<link id="a1038" target-id="Program_behavior">
+
+Program behavior
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1039">
+<link id="a1039" target-id="Output__from_a_three-dimensional_array_program">
+
+Output  from a three-dimensional array program
+
+</link>
+
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+	
+
+</list>
+
+
+
+
+</item>
+
+
+	
+
+<item id="li1040">
+<link id="a1040" target-id="MoreInformationonLists">
+
+More information on lists 
+
+</link>
+
+ 
+
+</item>
+
+
+	
+
+<item id="li1041">
+<link id="a1041" target-id="Miscellaneous">
+
+Miscellaneous
+
+</link>
+
+
+</item>
+
+
+
+
+
+</list>
+
+
+	
+	
+
+</section>
+<section id="h11001">
+<title>
+<emphasis id="Preface" effect="bold">
+
+Preface
+
+</emphasis>
+
+
+</title>
+
+
+	
+	
+
+<para id="p1000">
+This module is one in a collection of modules on Python designed for 
+teaching 
+
+<emphasis id="em1000" effect="italics">
+ITSE 1359 Introduction to Scripting Languages: Python
+
+</emphasis>
+ at Austin Community 
+College in Austin, TX. It expands on the previous module titled 
+	
+
+<link id="a1042" url="http://cnx.org/contents/81942bae-453e-4cce-ac50-6e9ed9f2c54e">
+
+Itse1359-1080-Lists Part 1
+
+</link>
+
+ by teaching you some other ways to 
+	manipulate lists.
+
+</para>
+
+
+	
+
+<section id="h21000">
+<title>
+<emphasis id="Viewing_tip" effect="bold">
+
+Viewing tip
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1001">
+I recommend that you open another copy of this module in a separate 
+browser window and use the following links to easily find and view the Figures and 
+	the Listings while you are reading about them.
+
+</para>
+
+
+
+
+<para id="p1002">
+<emphasis id="em1001" effect="italics">
+(Note to blind and visually impaired students: most of the Figures and all of the Listings in 
+this module are presented in plain text format and should be accessible using an 
+audio screen reader or a braille display.)
+
+</emphasis>
+</para>
+
+
+	
+
+<section id="h31000">
+<title>
+<emphasis id="Figures" effect="bold">
+
+Figures
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<list id="ul1011" list-type="bulleted">
+
+
+		
+
+<item id="li1042">
+<link id="a1043" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+. Program output.
+
+</item>
+
+
+
+		
+
+<item id="li1043">
+<link id="a1044" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+. Program output from replacing an element with a list.
+
+</item>
+
+
+		
+
+<item id="li1044">
+<link id="a1045" target-id="Figure_3">
+
+Figure 3
+
+</link>
+
+. Visualization
+
+</item>
+
+
+		
+
+<item id="li1045">
+<link id="a1046" target-id="Figure_4">
+
+Figure 4
+
+</link>
+
+. Program output from extracting elements from a nested list.
+
+</item>
+
+
+		
+
+<item id="li1046">
+<link id="a1047" target-id="Figure_5">
+
+Figure 5
+
+</link>
+
+. Output from more nested elements.
+
+</item>
+
+
+		
+
+<item id="li1047">
+<link id="a1048" target-id="Figure_6">
+
+Figure 6
+
+</link>
+
+. Visualization of a three-dimensional array. 
+
+</item>
+
+
+		
+
+<item id="li1048">
+<link id="a1049" target-id="Figure_7">
+
+Figure 7
+
+</link>
+
+. Output  from a three-dimensional array program.
+
+</item>
+
+
+
+	
+
+</list>
+
+
+
+
+</section>
+<section id="h31001">
+<title>
+<emphasis id="Listings" effect="bold">
+
+Listings
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<list id="ul1012" list-type="bulleted">
+
+		
+
+<item id="li1049">
+<link id="a1050" target-id="Listing_1">
+
+Listing 1
+
+</link>
+
+. Replace a slice in a list. 
+
+</item>
+
+
+		
+
+<item id="li1050">
+<link id="a1051" target-id="Listing_2">
+
+Listing 2
+
+</link>
+
+. Replacing an element with a list.
+
+</item>
+
+
+		
+
+<item id="li1051">
+<link id="a1052" target-id="Listing_3">
+
+Listing 3
+
+</link>
+
+. Extracting elements from a nested list.
+
+</item>
+
+
+		
+
+<item id="li1052">
+<link id="a1053" target-id="Listing_4">
+
+Listing 4
+
+</link>
+
+. More nested elements.
+
+</item>
+
+
+		
+
+<item id="li1053">
+<link id="a1054" target-id="Listing_5">
+
+Listing 5
+
+</link>
+
+. A three-dimensional array program.
+
+</item>
+
+
+
+
+
+</list>
+
+
+	
+
+</section>
+</section>
+</section>
+<section id="h11002">
+<title>
+<emphasis id="Introduction" effect="bold">
+
+Introduction
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1003">
+A previous module titled
+	
+
+<link id="a1055" url="http://cnx.org/contents/81942bae-453e-4cce-ac50-6e9ed9f2c54e">
+
+Itse1359-1080-Lists Part 1
+
+</link>
+
+  
+introduced you to lists 
+and some other structures as well.
+
+</para>
+
+
+
+
+<para id="p1004">
+It also introduced you to 
+
+</para>
+
+
+
+
+<list id="ul1013" list-type="bulleted">
+
+	
+
+<item id="li1054">
+subscriptions
+
+</item>
+
+
+	
+
+<item id="li1055">
+sequences
+
+</item>
+
+
+	
+
+<item id="li1056">
+mutable sequences
+
+</item>
+
+
+	
+
+<item id="li1057">
+mappings
+
+</item>
+
+
+	
+
+<item id="li1058">
+slicing, and 
+
+</item>
+
+
+	
+
+<item id="li1059">
+tuples. 
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+<section id="h21001">
+<title>
+<emphasis id="Manipulating_lists" effect="bold">
+
+Manipulating lists
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1005">
+That module showed you some of the ways that you can manipulate lists. The 
+discussion was illustrated using sample programs and visualizations.
+
+</para>
+
+
+
+
+</section>
+<section id="h21002">
+<title>
+<emphasis id="Other_ways_to_manipulate_lists_" effect="bold">
+
+Other ways to manipulate lists 
+
+</emphasis>
+
+ 
+
+
+</title>
+
+
+
+
+<para id="p1006">
+This module carries that discussion forward by using sample programs to teach 
+you other ways to manipulate lists. 
+
+</para>
+
+
+
+
+</section>
+</section>
+<section id="h11003">
+<title>
+<emphasis id="SomeSamplePrograms" effect="bold">
+
+Some sample programs
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<section id="h21003">
+<title>
+<emphasis id="Replacing_a_slice" effect="bold">
+
+Replacing a slice
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1007">
+You can replace a slice in a list with the elements from another list through 
+assignment. 
+
+</para>
+
+
+
+
+<section id="h31002">
+<title>
+<emphasis id="Can_change_the_length_of_the_list_" effect="bold">
+
+Can change the length of the list 
+
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1008">
+Note that this operation can change the length of the original list. 
+
+</para>
+
+
+
+
+<para id="p1009">
+The script in 
+
+<link id="a1056" target-id="Listing_1">
+
+Listing 1
+
+</link>
+
+ replaces a slice in a list with the elements from 
+another list.
+
+</para>
+
+
+	
+
+<table id="table1000" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1000">
+
+			
+
+<row id="tr1000">
+
+				
+
+<entry id="th1000">
+<emphasis id="Listing_1" effect="bold">
+
+Listing 1
+
+</emphasis>
+
+. Replace a slice in a 
+				list.
+
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1000">
+
+			
+
+<row id="tr1001">
+
+				
+
+<entry id="td1000">
+
+
+
+<code id="pre1000" display="block">
+# Illustrates replacing a slice in a list
+#
+#----------------------------------------
+print("Create and print a list")
+listA = [100,200,300,400,500]
+print(listA)
+print("Original length is:")
+print(len(listA))
+print("Replace a slice")
+listA[1:4] = [2,4,8,16,32,64]
+print("Print the modified list")
+print(listA)
+print("Modified length is:")
+print(len(listA))
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+</section>
+<section id="h31003">
+<title>
+<emphasis id="The_function_named_len" effect="bold">
+
+The function named len()
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1010">
+This program also illustrates the use of the function named 
+
+<emphasis id="strong1000" effect="bold">
+len()
+
+</emphasis>
+ to get and print the length of the list. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31004">
+<title>
+<emphasis id="Replaces_a_three-element_slice_with_a_six-element_list" effect="bold">
+
+Replaces a three-element slice with a six-element list
+
+</emphasis>
+
+ 
+
+
+</title>
+
+
+
+
+<para id="p1011">
+In this program, a slice of an original five-element list, consisting of the 
+elements from 1 through 3 inclusive, is replaced by the elements of a new list 
+consisting of six new elements. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31005">
+<title>
+<emphasis id="Length_of_the_list_is_increased_by_3_" effect="bold">
+
+Length of the list is increased by 3 
+
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1012">
+Since three existing elements are replaced by six new elements, the overall 
+length of the list is increased by three elements. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31006">
+<title>
+<emphasis id="Program_output" effect="bold">
+
+Program output
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1013">
+The output from this program is shown in
+
+
+<link id="a1057" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+.
+
+</para>
+
+
+	
+
+<table id="table1001" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1001">
+
+			
+
+<row id="tr1002">
+
+				
+
+<entry id="th1001">
+<emphasis id="Figure_1" effect="bold">
+
+Figure 1
+
+</emphasis>
+
+. Program output.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1001">
+
+			
+
+<row id="tr1003">
+
+				
+
+<entry id="td1001">
+
+
+
+<code id="pre1001" display="block">
+Create and print a list
+[100, 200, 300, 400, 500]
+Original length is:
+5
+Replace a slice
+Print the modified list
+[100, 2, 4, 8, 16, 32, 64, 500]
+Modified length is:
+8
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+<para id="p1014">
+As you can see in 
+
+<link id="a1058" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+, the six new elements replaced the three original elements to 
+increase the length of the list from 5 to 8 elements. 
+
+</para>
+
+
+
+
+</section>
+</section>
+<section id="h21004">
+<title>
+<emphasis id="Replacing_an_element_with_a_list_" effect="bold">
+
+Replacing an element with a list 
+
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1015">
+It is also possible to replace an element in an existing list with a new 
+list, as illustrated by the program in 
+
+<link id="a1059" target-id="Listing_2">
+
+Listing 2
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<section id="h31007">
+<title>
+<emphasis id="Behavior_is_different_from_above_" effect="bold">
+
+Behavior is different from above 
+
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1016">
+In this case, the behavior is different from that shown above where a slice 
+from the original list was replaced with the elements from a different list 
+
+
+<emphasis id="em1002" effect="italics">
+(even though the right operand of the assignment operator is the same in both 
+cases)
+
+</emphasis>
+. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31008">
+<title>
+<emphasis id="Produces_nested_lists" effect="bold">
+
+Produces nested lists
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1017">
+When a single element is replaced by a list, the result is that 
+
+<emphasis id="em1003" effect="italics">
+a new list 
+is nested inside the original list
+
+</emphasis>
+. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31009">
+<title>
+<emphasis id="Length_is_unchanged" effect="bold">
+
+Length is unchanged
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1018">
+It is also interesting to note that the length of the list is unchanged by 
+this operation since the list that replaces the element is itself considered to 
+be a single element. Therefore, the number of elements is not changed. 
+
+</para>
+
+
+
+
+<para id="p1019">
+This is illustrated in 
+
+<link id="a1060" target-id="Listing_2">
+
+Listing 2
+
+</link>
+
+, 
+where the element at index 2 of an original list is replaced with a new list 
+having six elements. 
+
+</para>
+
+
+	
+
+<table id="table1002" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1002">
+
+			
+
+<row id="tr1004">
+
+				
+
+<entry id="th1002">
+<emphasis id="Listing_2" effect="bold">
+
+Listing 2
+
+</emphasis>
+
+. Replacing an element 
+				with a list.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1002">
+
+			
+
+<row id="tr1005">
+
+				
+
+<entry id="td1002">
+
+
+
+<code id="pre1002" display="block">
+# Illustrates replacing an
+# element with a slice
+#
+#-------------------------------
+print("Create and print a list")
+listA = [100,200,300,400,500]
+print(listA)
+print("Original length is:")
+print(len(listA))
+print("Replace an element")
+listA[2] = [2,4,8,16,32,64]
+print("Print the modified list")
+print(listA)
+print("Modified length is:")
+print(len(listA))
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+</section>
+<section id="h31010">
+<title>
+<emphasis id="Program_output_from_replacing_an_element_with_a_list" effect="bold">
+
+Program output from replacing an element with a list
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1020">
+The output from this program is shown in
+
+
+<link id="a1061" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+. 
+
+</para>
+
+
+
+	
+
+<table id="table1003" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1003">
+
+			
+
+<row id="tr1006">
+
+				
+
+<entry id="th1003">
+<emphasis id="Figure_2" effect="bold">
+
+Figure 2
+
+</emphasis>
+
+. Program output from replacing an element with a list.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1003">
+
+			
+
+<row id="tr1007">
+
+				
+
+<entry id="td1003">
+
+
+
+<code id="pre1003" display="block">
+Create and print a list
+[100, 200, 300, 400, 500]
+Original length is:
+5
+Replace an element
+Print the modified list
+[100, 200, [2, 4, 8, 16, 32, 64], 400, 500]
+Modified length is:
+5
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+</section>
+<section id="h31011">
+<title>
+<emphasis id="One_element_is_itself_a_list" effect="bold">
+
+One element is itself a list
+
+</emphasis>
+
+ 
+
+
+</title>
+
+
+
+
+<para id="p1021">
+As you can see from 
+
+<link id="a1062" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+, the result is that one of the elements in the original 
+five-element list is replaced by a new list containing six elements. However, 
+the length of the list is unchanged. 
+
+</para>
+
+
+
+
+<para id="p1022">
+Again, it is important to note that this results in one list being nested 
+inside of another list. 
+
+</para>
+
+
+
+
+</section>
+</section>
+<section id="h21005">
+<title>
+<emphasis id="Visualization" effect="bold">
+
+A visualization
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1023">
+The code visualization shown in 
+
+<link id="a1063" target-id="Figure_3">
+
+Figure 3
+
+</link>
+
+ summarizes the concepts 
+that were explained 
+in the previous two sections. This image was produced by 
+entering the five statements shown in the 
+
+
+<link id="a1064" url="http://pythontutor.com/visualize.html#mode=display">
+
+code visualizer's
+
+</link>
+
+ code 
+window and stepping through all five instructions.
+
+</para>
+
+
+
+
+
+<para id="p1024">
+<emphasis id="strong1001" effect="bold">
+<emphasis id="Figure_3" effect="bold">
+
+Figure 3.
+
+</emphasis>
+
+ Visualization.
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1025">
+<media id="media1000" alt="Visualization" display="block">
+<image id="img1000" mime-type="image/jpeg" src="../../media/1359-1090a.jpg" width="807" height="584"/>
+</media>
+
+
+</para>
+
+
+
+
+
+<para id="p1026">
+I recommend that you use the
+
+
+<link id="a1065" url="http://pythontutor.com/visualize.html#mode=display">
+
+code visualizer
+
+</link>
+
+ 
+to step through this code and observe the state of the program in memory as each 
+instruction is executed. Try to correlate the behavior of this program with what you learned in the sections 
+above titled 
+
+<link id="a1066" target-id="Replacing_a_slice">
+
+Replacing a slice
+
+</link>
+
+ and 
+
+
+<link id="a1067" target-id="Replacing_an_element_with_a_list_">
+
+Replacing an element with a list
+
+</link>
+
+.
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21006">
+<title>
+<emphasis id="Extracting_elements_from_a_nested_list" effect="bold">
+
+Extracting elements from a nested list
+
+</emphasis>
+
+ 
+
+
+</title>
+
+
+
+
+<para id="p1027">
+Now I am going to illustrate the syntax for extracting elements from a nested 
+list using 
+
+<emphasis id="em1004" effect="italics">
+pairs of matching square brackets
+
+</emphasis>
+.
+
+
+<link id="a1068" target-id="Listing_3">
+
+Listing 3
+
+</link>
+
+ is an expansion of
+
+
+<link id="a1069" target-id="Listing_2">
+
+Listing 2
+
+</link>
+
+ . 
+
+</para>
+
+
+	
+
+<table id="table1004" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1004">
+
+			
+
+<row id="tr1008">
+
+				
+
+<entry id="th1004">
+<emphasis id="Listing_3" effect="bold">
+
+Listing 3
+
+</emphasis>
+
+. Extracting elements from a nested list.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1004">
+
+			
+
+<row id="tr1009">
+
+				
+
+<entry id="td1004">
+
+
+
+<code id="pre1004" display="block">
+# Illustrates extracting a
+# list element and extracting
+# elements from a nested list
+#
+#-------------------------------
+print("Create and print a list")
+listA = [100,200,300,400,500]
+print(listA)
+print("Original length is:")
+print(len(listA))
+print("Replace an element")
+listA[2] = [2,4,8,16,32,64]
+print("Print the modified list")
+print(listA)
+print("Modified length is:")
+print(len(listA))
+print("Extract and display each")
+print(" element in the list")
+print(listA[0])
+print(listA[1])
+print(listA[2])
+print(listA[3])
+print(listA[4])
+
+print("Extract and display each")
+print(" element in nested list")
+print(listA[2][0])
+print(listA[2][1])
+print(listA[2][2])
+print(listA[2][3])
+print(listA[2][4])
+print(listA[2][5])
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+<section id="h31012">
+<title>
+<emphasis id="Display_the_nested_list_combination_" effect="bold">
+
+Display the nested list combination 
+
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1028">
+After nesting a list as element 2 in another list, the program displays the 
+value of each of the elements of the original list. When element 2 is displayed, 
+it can be seen to be another list. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31013">
+<title>
+<emphasis id="Double-square-bracket_notation_" effect="bold">
+
+Double-square-bracket notation 
+
+</emphasis>
+
+ 
+
+
+</title>
+
+
+
+
+<para id="p1029">
+Then the program uses double-square-bracket notation 
+
+<emphasis id="strong1002" effect="bold">
+<emphasis id="em1005" effect="italics">
+(listA[2][4])
+
+</emphasis>
+</emphasis>
+ to extract and display each of the elements in the nested 
+inner list that comprises element 2 of the outer list. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31014">
+<title>
+<emphasis id="Program_output_from_extracting_elements_from_a_nested_list" effect="bold">
+
+Program output from 
+extracting elements from a nested list
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1030">
+The output from this program is shown in
+
+
+<link id="a1070" target-id="Figure_4">
+
+Figure 4
+
+</link>
+
+. 
+
+</para>
+
+
+	
+
+<table id="table1005" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1005">
+
+			
+
+<row id="tr1010">
+
+				
+
+<entry id="th1005">
+<emphasis id="Figure_4" effect="bold">
+
+Figure 4
+
+</emphasis>
+
+. Program output from extracting elements from a nested list.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1005">
+
+			
+
+<row id="tr1011">
+
+				
+
+<entry id="td1005">
+
+
+
+<code id="pre1005" display="block">
+Create and print a list
+[100, 200, 300, 400, 500]
+Original length is:
+5
+Replace an element
+Print the modified list
+[100, 200, [2, 4, 8, 16, 32, 64], 400, 500]
+Modified length is:
+5
+Extract and display each
+element in the list
+100
+200
+[2, 4, 8, 16, 32, 64]
+400
+500
+Extract and display each
+element in nested list
+2
+4
+8
+16
+32
+64
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+</section>
+</section>
+<section id="h21007">
+<title>
+<emphasis id="More_on_nested_elements_" effect="bold">
+
+More on nested elements 
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1031">
+The program in 
+
+<link id="a1071" target-id="Listing_4">
+
+Listing 4
+
+</link>
+
+ illustrates 
+some additional aspects of nested elements. 
+
+</para>
+
+
+	
+
+<table id="table1006" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1006">
+
+			
+
+<row id="tr1012">
+
+				
+
+<entry id="th1006">
+<emphasis id="Listing_4" effect="bold">
+
+Listing 4
+
+</emphasis>
+
+. More nested 
+				elements.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1006">
+
+			
+
+<row id="tr1013">
+
+				
+
+<entry id="td1006">
+
+
+
+<code id="pre1006" display="block">
+# Illustrates more nested elements
+#
+#-----------------------------------------
+print("Create and print a list\
+with 3 nested elements")
+listA = [[2,4],[8,16,32],[64,128,256,512]]
+print(listA)
+print("Number of elements is:")
+print(len(listA))
+print("Length of Element 0 is")
+print(len(listA[0]))
+print("Length of Element 1 is")
+print(len(listA[1]))
+print("Length of Element 2 is")
+print(len(listA[2]))
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+<section id="h31015">
+<title>
+<emphasis id="Create_a_list_of_lists_" effect="bold">
+
+Create a list of lists 
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1032">
+This program defines a three-element list containing three nested lists. 
+
+</para>
+
+
+
+
+<para id="p1033">
+In other words, each of the elements in the outer list is itself a list. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31016">
+<title>
+<emphasis id="Inner_lists_are_different_lengths_" effect="bold">
+
+Inner lists are different lengths 
+
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1034">
+Furthermore, the lengths of the inner nested lists are not the same. The 
+lengths of the inner nested lists are 2, 3, and 4 elements each, respectively.
+
+
+</para>
+
+
+
+
+</section>
+<section id="h31017">
+<title>
+<emphasis id="Program_behavior_and_output_" effect="bold">
+
+Program behavior and output 
+
+</emphasis>
+
+ 
+
+
+</title>
+
+
+
+
+<para id="p1035">
+The output from the program is shown in 
+
+<link id="a1072" target-id="Figure_5">
+
+Figure 5
+
+</link>
+
+. The program displays the entire 
+list, and then gets and displays the lengths of each of the nested lists. 
+
+</para>
+
+
+	
+
+<table id="table1007" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1007">
+
+			
+
+<row id="tr1014">
+
+				
+
+<entry id="th1007">
+<emphasis id="Figure_5" effect="bold">
+
+Figure 5
+
+</emphasis>
+
+. Output from more 
+				nested elements.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1007">
+
+			
+
+<row id="tr1015">
+
+				
+
+<entry id="td1007">
+
+
+
+<code id="pre1007" display="block">
+Create and print a list with 3 nested elements
+[[2, 4], [8, 16, 32], [64, 128, 256, 512]]
+Number of elements is:
+3
+Length of Element 0 is
+2
+Length of Element 1 is
+3
+Length of Element 2 is
+4
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+</section>
+<section id="h31018">
+<title>
+<emphasis id="Getting_the_length_of_a_nested_list_" effect="bold">
+
+Getting the length of a nested list 
+
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1036">
+Note in particular the syntax used to pass a parameter to the 
+
+<emphasis id="strong1003" effect="bold">
+len()
+
+</emphasis>
+ method in order to get the length of a nested list 
+
+
+<emphasis id="strong1004" effect="bold">
+<emphasis id="em1006" effect="italics">
+(len(listA[1]) )
+
+</emphasis>
+</emphasis>
+. 
+
+</para>
+
+
+
+
+</section>
+</section>
+<section id="h21008">
+<title>
+<emphasis id="Arrays__not_for_beginners_" effect="bold">
+
+Arrays -- not for beginners 
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1037">
+If you are a beginning programmer, you may want to skip this section. If you are an experienced programmer, you may have observed that a Python 
+lists bear a striking resemblance to arrays in other programming environments.
+
+
+</para>
+
+
+
+
+<section id="h31019">
+<title>
+<emphasis id="Python_lists_are_more_powerful_" effect="bold">
+
+Python lists are more powerful 
+
+</emphasis>
+
+ 
+
+
+</title>
+
+
+
+
+<para id="p1038">
+However, Python lists are more powerful than the arrays I am aware of in 
+other programming environments, including Java. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31020">
+<title>
+<emphasis id="Sub-arrays_can_be_different_sizes_" effect="bold">
+
+Sub-arrays can be different sizes 
+
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1039">
+For example as in Java, when a Python list is used to construct a 
+multidimensional array, the sub arrays don't have to be of the same size. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31021">
+<title>
+<emphasis id="Types_can_also_be_different_" effect="bold">
+
+Types can also be different 
+
+</emphasis>
+
+ 
+
+
+</title>
+
+
+
+
+<para id="p1040">
+However, unlike Java, the elements in the array don't even have to be of the 
+same type 
+
+<emphasis id="em1007" effect="italics">
+(granted that the elements in a Java array can be of different 
+types so long as there is an inheritance or Interface relationship among them).
+
+</emphasis>
+
+
+
+</para>
+
+
+
+
+</section>
+</section>
+<section id="h21009">
+<title>
+<emphasis id="A_three-dimensional_array_program_" effect="bold">
+
+A three-dimensional array program 
+
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1041">
+The program in 
+
+<link id="a1073" target-id="Listing_5">
+
+Listing 5
+
+</link>
+
+ 
+might represent what an experienced programmer would consider to be a 
+three-dimensional array of integer data in some other programming environment.
+
+
+</para>
+
+
+	
+
+<table id="table1008" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1008">
+
+			
+
+<row id="tr1016">
+
+				
+
+<entry id="th1008">
+<emphasis id="Listing_5" effect="bold">
+
+Listing 5
+
+</emphasis>
+
+. A three-dimensional array program.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1008">
+
+			
+
+<row id="tr1017">
+
+				
+
+<entry id="td1008">
+
+
+
+<code id="pre1008" display="block">
+# Illustrates a three-dimensional array list
+#
+#----------------------------------------------------
+print("Create and print a\
+three-dimensional array list")
+listA = [[[[1],[2]],[[3],[4]]],[[[5],[6]],[[7],[8]]]]
+print(listA)
+print("Print each element")
+print(listA[0][0][0])
+print(listA[0][0][1])
+print(listA[0][1][0])
+print(listA[0][1][1])
+print(listA[1][0][0])
+print(listA[1][0][1])
+print(listA[1][1][0])
+print(listA[1][1][1])
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+<section id="h31022">
+<title>
+<emphasis id="Triple-square-bracket_notation" effect="bold">
+
+Triple-square-bracket notation
+
+</emphasis>
+
+ 
+
+
+</title>
+
+
+
+
+<para id="p1042">
+Pay particular attention to the triple square bracket notation that is used 
+to access and print each element in the array. This is very similar to the 
+syntax in other programming languages.
+
+</para>
+
+
+
+
+</section>
+<section id="h31023">
+<title>
+<emphasis id="Visualization_of_a_three-dimensional_array" effect="bold">
+
+Visualization of a three-dimensional array
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1043">
+<link id="a1074" target-id="Figure_6">
+
+Figure 6
+
+</link>
+
+ shows a
+
+
+<link id="a1075" url="http://pythontutor.com/visualize.html#mode=display">
+
+visualization
+
+</link>
+
+ 
+of the three-dimensional array pointed to by the variable named 
+
+<emphasis id="strong1005" effect="bold">
+listA
+
+</emphasis>
+ in 
+
+
+<link id="a1076" target-id="Listing_5">
+
+Listing 5
+
+</link>
+
+. In programming, we deal with arrays having 
+one, two, three or more dimensions. As you can see, even a three-dimensional array is a 
+relatively complex structure. 
+
+</para>
+
+
+
+
+
+<para id="p1044">
+<emphasis id="strong1006" effect="bold">
+<emphasis id="Figure_6" effect="bold">
+
+Figure 6.
+
+</emphasis>
+
+ Visualization of a three-dimensional array.
+
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1045">
+<media id="media1001" alt="Visualization of a three-dimensional array." display="block">
+<image id="img1001" mime-type="image/jpeg" src="../../media/1359-1090b.jpg" width="426" height="723"/>
+</media>
+
+
+</para>
+
+
+
+
+
+</section>
+<section id="h31024">
+<title>
+<emphasis id="Program_behavior" effect="bold">
+
+Program behavior
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1046">
+This program 
+
+</para>
+
+
+
+
+<list id="ul1014" list-type="bulleted">
+
+	
+
+<item id="li1060">
+Creates and populates the list that represents a three-dimensional 
+	array.
+
+</item>
+
+
+	
+
+<item id="li1061">
+Displays the entire array as a set of nested lists.
+
+</item>
+
+
+	
+
+<item id="li1062">
+Displays the contents of each element in the array.
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+</section>
+<section id="h31025">
+<title>
+<emphasis id="Output__from_a_three-dimensional_array_program" effect="bold">
+
+Output from a three-dimensional array program
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1047">
+The output from the program is shown in 
+
+<link id="a1077" target-id="Figure_7">
+
+Figure 7
+
+</link>
+
+. The triple-square-bracket notation in the program of
+
+
+<link id="a1078" target-id="Listing_5">
+
+Listing 5
+
+</link>
+
+ is essentially the same 
+notation that would be used to access the individual elements in a 
+three-dimensional array in C, C++, or Java. 
+
+</para>
+
+
+	
+
+<table id="table1009" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1009">
+
+			
+
+<row id="tr1018">
+
+				
+
+<entry id="th1009">
+<emphasis id="Figure_7" effect="bold">
+
+Figure 7
+
+</emphasis>
+
+. Output from a three-dimensional array program.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1009">
+
+			
+
+<row id="tr1019">
+
+				
+
+<entry id="td1009">
+
+
+
+<code id="pre1009" display="block">
+Create and print a three-dimensional array list
+[[[[1], [2]], [[3], [4]]], [[[5], [6]], [[7], [8]]]]
+Print each element
+[1]
+[2]
+[3]
+[4]
+[5]
+[6]
+[7]
+[8]
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+</section>
+</section>
+</section>
+<section id="h11004">
+<title>
+<emphasis id="MoreInformationonLists" effect="bold">
+
+More information on lists
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1048">
+There is quite a lot more that you will need to learn about lists. However, I 
+will defer that discussion for a future module where I discuss the use of a list 
+as a 
+
+<emphasis id="em1008" effect="italics">
+data structure
+
+</emphasis>
+ or a 
+
+<emphasis id="em1009" effect="italics">
+container
+
+</emphasis>
+. 
+
+</para>
+
+
+
+	
+
+</section>
+<section id="h11005">
+<title>
+<emphasis id="Miscellaneous" effect="bold">
+
+Miscellaneous
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1049">
+This section contains a variety of miscellaneous information.
+
+</para>
+
+
+
+
+
+	
+
+<note id="note1000" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1007" effect="bold">
+Housekeeping material
+
+</emphasis>
+
+				
+
+<list id="ul1015" list-type="bulleted">
+
+					
+
+<item id="li1063">
+Module name: Itse1359-1090-Lists Part 2
+
+</item>
+
+
+					
+
+<item id="li1064">
+File: Itse1359-1090.htm
+
+
+</item>
+
+
+					
+
+<item id="li1065">
+Published: 10/15/14
+
+</item>
+
+
+					
+
+<item id="li1066">
+Revised: 01/31/16
+
+</item>
+
+
+				
+
+</list>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+
+
+
+	
+
+<note id="note1001" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1008" effect="bold">
+Disclaimers:
+
+</emphasis>
+<para id="p1050">
+<emphasis id="strong1009" effect="bold">
+Financial
+
+</emphasis>
+: Although the Connexions
+site makes it possible for you to download a PDF file for this
+module at no charge, and also makes it possible for you to
+purchase a pre-printed version of the PDF file, you should be
+aware that some of the HTML elements in this module may not translate well into
+PDF.
+
+</para>
+
+
+				
+
+<para id="p1051">
+I also want you to know that, I receive no financial compensation from the Connexions website even if you purchase 
+	the PDF version of the module.
+
+</para>
+
+
+				
+
+<para id="p1052">
+In the past, unknown individuals have copied my modules from cnx.org, converted them to Kindle books, and 
+				placed them for sale on Amazon.com showing me as the author. I 
+				neither receive compensation for those sales nor do I know who does 
+				receive compensation. If you purchase such a book, please be 
+				aware that it is a copy of a module that is freely 
+				available on cnx.org and that it was made and published without 
+				my prior knowledge.
+
+</para>
+
+
+				
+
+<para id="p1053">
+<emphasis id="strong1010" effect="bold">
+Affiliation
+
+</emphasis>
+: I am a professor of Computer Information 
+	Technology at Austin Community College in Austin, TX.
+	
+
+</para>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+	
+
+<para id="p1054">
+-end- 
+
+</para>
+
+
+
+
+
+
+</section>
+</content>
+
+
+
+
+</document>

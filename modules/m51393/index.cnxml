@@ -1,0 +1,1271 @@
+<document xmlns="http://cnx.rice.edu/cnxml"> 
+<title>Itse1359-1110r-Review</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m51393</md:content-id>
+  <md:title>Itse1359-1110r-Review</md:title>
+  <md:abstract>This module contains review questions and answers keyed to the module titled Itse1359-1110-Nested Tuples.</md:abstract>
+  <md:uuid>80f5c161-b0b2-4bbe-aaa3-07b9d7e0c9c7</md:uuid>
+</metadata>
+
+<content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h11000">
+<title>
+Table of contents
+
+</title>
+
+
+
+
+<list id="ul1000" list-type="bulleted">
+
+	
+
+<item id="li1000">
+<link id="a1000" target-id="Preface">
+
+Preface
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1001">
+<link id="a1001" target-id="Questions">
+
+Questions
+
+</link>
+
+
+	
+
+<list id="ul1001" list-type="bulleted">
+
+		
+
+<item id="li1002">
+<link id="a1002" target-id="question01">
+
+1
+
+</link>
+
+, 
+
+<link id="a1003" target-id="question02">
+
+2
+
+</link>
+
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+	
+
+<item id="li1003">
+<link id="a1004" target-id="Figure_index">
+
+Figure index
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1004">
+<link id="a1005" target-id="Listing_index">
+
+Listing index
+
+</link>
+
+
+</item>
+
+
+
+	
+
+<item id="li1005">
+<link id="a1006" target-id="Answers">
+
+Answers
+
+</link>
+
+
+</item>
+
+
+
+	
+
+<item id="li1006">
+<link id="a1007" target-id="Miscellaneous">
+
+Miscellaneous
+
+</link>
+
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+</section>
+<section id="h11001">
+<title>
+<emphasis id="Preface" effect="bold">
+
+Preface
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1000">
+This module is one in a collection of modules on Python designed for 
+teaching 
+
+<emphasis id="em1000" effect="italics">
+ITSE 1359 Introduction to Scripting Languages: Python
+
+</emphasis>
+ at Austin Community 
+College in Austin, TX.
+
+</para>
+
+
+
+
+<para id="p1001">
+This module contains review questions and answers keyed to the module titled
+
+
+<emphasis id="em1001" effect="italics">
+Itse1359-1110-Nested Tuples
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+<para id="p1002">
+Once you study that module, you should be able to answer the review 
+questions in this module.
+
+</para>
+
+
+
+
+<para id="p1003">
+The questions and the answers in this module are connected by hyperlinks to 
+make it easy for you to navigate from the question to the answer and back again.
+
+</para>
+
+
+
+
+<para id="p1004">
+<emphasis id="em1002" effect="italics">
+(Note to blind and visually impaired students: with the exception of 
+two bitmap images that are used solely as spacers to separate the question 
+section from the answer section, all of the material in this module is presented 
+in plain text format and should be accessible using an audio screen reader or a 
+braille display.)
+
+</emphasis>
+</para>
+
+
+
+
+</section>
+<section id="h11002">
+<title>
+<emphasis id="Questions" effect="bold">
+
+Questions
+
+</emphasis>
+
+
+</title>
+
+
+
+
+
+<section id="h21000">
+<title>
+<emphasis id="question01" effect="bold">
+
+Question 1
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1005">
+True or False? The program code in 
+
+<link id="a1008" target-id="Listing_1">
+
+Listing 1
+
+</link>
+
+ produces the output shown in 
+
+
+<link id="a1009" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+.
+
+</para>
+
+
+
+
+	
+
+<table id="table1000" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1000">
+
+			
+
+<row id="tr1000">
+
+				
+
+<entry id="th1000">
+<emphasis id="Listing_1" effect="bold">
+
+Listing 1
+
+</emphasis>
+
+. Question 1 program 
+				code.
+
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1000">
+
+			
+
+<row id="tr1001">
+
+				
+
+<entry id="td1000">
+
+
+
+<code id="pre1000" display="block">
+t1 = 1,2
+print(t1)
+
+t2 = "a","b"
+print(t2)
+
+t3 = "A",t1,"B",t2
+print(t3)</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+
+	
+
+<table id="table1001" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1001">
+
+			
+
+<row id="tr1002">
+
+				
+
+<entry id="th1001">
+<emphasis id="Figure_1" effect="bold">
+
+Figure 1
+
+</emphasis>
+
+. Question 1 possible 
+				output.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1001">
+
+			
+
+<row id="tr1003">
+
+				
+
+<entry id="td1001">
+
+
+
+<code id="pre1001" display="block">
+(1, 2)
+('a', 'b')
+('A', (1, 2), 'B', ('a', 'b'))
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+<para id="p1006">
+Go to 
+
+<link id="a1010" target-id="answer01">
+
+answer 1
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21001">
+<title>
+<emphasis id="question02" effect="bold">
+
+Question 2
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1007">
+True or False? The program code in 
+
+<link id="a1011" target-id="Listing_2">
+
+Listing 2
+
+</link>
+
+ produces the output shown in 
+
+
+<link id="a1012" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+.
+
+</para>
+
+
+	
+
+<table id="table1002" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1002">
+
+			
+
+<row id="tr1004">
+
+				
+
+<entry id="th1002">
+<emphasis id="Listing_2" effect="bold">
+
+Listing 2
+
+</emphasis>
+
+. Question 2 program 
+				code.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1002">
+
+			
+
+<row id="tr1005">
+
+				
+
+<entry id="td1002">
+
+
+
+<code id="pre1002" display="block">
+t1 = 1,2
+print(t1)
+
+t2 = "a","b"
+print(t2)
+
+t3 = "A",t1,"B",t2
+print(t3)
+print(len(t3))
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+
+
+	
+
+<table id="table1003" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1003">
+
+			
+
+<row id="tr1006">
+
+				
+
+<entry id="th1003">
+<emphasis id="Figure_2" effect="bold">
+
+Figure 2
+
+</emphasis>
+
+. Question 2 possible 
+				output.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1003">
+
+			
+
+<row id="tr1007">
+
+				
+
+<entry id="td1003">
+
+
+
+<code id="pre1003" display="block">
+(1, 2)
+('a', 'b')
+('A', (1, 2), 'B', ('a', 'b'))
+6
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+
+<para id="p1008">
+Go to 
+
+<link id="a1013" target-id="answer02">
+
+answer 2
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+</section>
+<section id="h11003">
+<title>
+<emphasis id="Figure_index" effect="bold">
+
+Figure index
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<list id="ul1002" list-type="bulleted">
+
+		
+
+<item id="li1007">
+<link id="a1014" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+. Question 1 possible output.
+
+</item>
+
+
+		
+
+<item id="li1008">
+<link id="a1015" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+. Question 2 possible output.
+
+</item>
+
+
+		
+
+<item id="li1009">
+<link id="a1016" target-id="Figure_3">
+
+Figure 3
+
+</link>
+
+. Question 2 actual output.
+
+</item>
+
+
+
+	
+
+</list>
+
+
+
+
+</section>
+<section id="h11004">
+<title>
+<emphasis id="Listing_index" effect="bold">
+
+Listing index
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<list id="ul1003" list-type="bulleted">
+
+		
+
+<item id="li1010">
+<link id="a1017" target-id="Listing_1">
+
+Listing 1
+
+</link>
+
+. Question 1 program code. 
+
+</item>
+
+
+		
+
+<item id="li1011">
+<link id="a1018" target-id="Listing_2">
+
+Listing 2
+
+</link>
+
+. Question 2 program code.
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+<para id="p1009">
+<emphasis id="strong1000" effect="bold">
+What is the meaning of the following two images?
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1010">
+These images were inserted here simply to insert some space between the 
+questions and the answers to keep them from being visible on the screen at the 
+same time. 
+
+</para>
+
+
+
+
+
+<media id="media1000" alt="Spacer image of a rabbit and a penguin." display="block">
+<image id="img1000" mime-type="image/jpeg" src="../../media/Spacer01.jpg" width="339" height="290"/>
+</media>
+
+
+
+
+
+<para id="p1011">
+This image was also inserted for the purpose of inserting space between the questions and the answers.
+
+</para>
+
+
+
+
+<para id="p1012">
+
+
+
+<media id="media1001" alt="Spacer image of a penguin and some houses." display="block">
+<image id="img1001" mime-type="image/jpeg" src="../../media/Spacer02.jpg" width="374" height="308"/>
+</media>
+
+
+</para>
+
+
+
+
+
+
+
+</section>
+<section id="h11005">
+<title>
+<emphasis id="Answers" effect="bold">
+
+Answers
+
+</emphasis>
+
+
+</title>
+
+
+
+
+
+<section id="h21002">
+<title>
+<emphasis id="answer02" effect="bold">
+
+Answer 2
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1013">
+False. The actual output is shown in 
+
+<link id="a1019" target-id="Figure_3">
+
+Figure 3
+
+</link>
+
+. The code in 
+
+
+<link id="a1020" target-id="Listing_2">
+
+Listing 2
+
+</link>
+
+ produces a tuple containing two other nested 
+tuples. A nested tuple counts as only one element in the length of a tuple 
+containing nested tuples.
+
+</para>
+
+
+	
+
+<table id="table1004" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1004">
+
+			
+
+<row id="tr1008">
+
+				
+
+<entry id="th1004">
+<emphasis id="Figure_3" effect="bold">
+
+Figure 3
+
+</emphasis>
+
+. Question 2 actual 
+				output.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1004">
+
+			
+
+<row id="tr1009">
+
+				
+
+<entry id="td1004">
+
+
+
+<code id="pre1004" display="block">
+(1, 2)
+('a', 'b')
+('A', (1, 2), 'B', ('a', 'b'))
+4
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+<para id="p1014">
+Go back to 
+
+<link id="a1021" target-id="question02">
+
+Question 2
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21003">
+<title>
+<emphasis id="answer01" effect="bold">
+
+Answer 1
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1015">
+True. 
+
+</para>
+
+
+
+
+<para id="p1016">
+Go back to 
+
+<link id="a1022" target-id="question01">
+
+Question 1
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+</section>
+<section id="h11006">
+<title>
+<emphasis id="Miscellaneous" effect="bold">
+
+Miscellaneous
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1017">
+This section contains a variety of miscellaneous information. 
+
+</para>
+
+
+
+
+
+	
+
+<note id="note1000" type="">
+
+
+		
+
+
+			
+
+<emphasis id="strong1001" effect="bold">
+Housekeeping material
+
+</emphasis>
+
+			
+
+<list id="ul1004" list-type="bulleted">
+
+				
+
+<item id="li1012">
+Module name: Itse1359-1110r-Review
+
+</item>
+
+
+				
+
+<item id="li1013">
+File: Itse1359-1110r.htm 
+
+</item>
+
+
+				
+
+<item id="li1014">
+Published: 10/19/14
+
+</item>
+
+
+				
+
+<item id="li1015">
+Revised: 02/23/15
+
+</item>
+
+
+			
+
+</list>
+
+
+			
+
+</note>
+
+		
+
+
+
+
+
+
+
+
+
+	
+
+<note id="note1001" type="">
+
+
+		
+
+
+			
+
+<emphasis id="strong1002" effect="bold">
+Disclaimers:
+
+</emphasis>
+<para id="p1018">
+<emphasis id="strong1003" effect="bold">
+Financial
+
+</emphasis>
+: 
+			Although the Connexions site makes it possible for you to download a 
+			PDF file for this module at no charge, and also makes it possible 
+			for you to purchase a pre-printed version of the PDF file, you 
+			should be aware that some of the HTML elements in this module may 
+			not translate well into PDF.
+
+</para>
+
+
+			
+
+<para id="p1019">
+I also want you to know that, I receive no financial compensation 
+			from the Connexions website even if you purchase the PDF version of 
+			the module.
+
+</para>
+
+
+			
+
+<para id="p1020">
+In the past, unknown individuals have copied my modules from 
+			cnx.org, converted them to Kindle books, and placed them for sale on 
+			Amazon.com showing me as the author. I neither receive compensation 
+			for those sales nor do I know who does receive compensation. If you 
+			purchase such a book, please be aware that it is a copy of a module 
+			that is freely available on cnx.org and that it was made and 
+			published without my prior knowledge.
+
+</para>
+
+
+			
+
+<para id="p1021">
+<emphasis id="strong1004" effect="bold">
+Affiliation
+
+</emphasis>
+: I am a professor of Computer 
+			Information Technology at Austin Community College in Austin, TX.
+			
+
+</para>
+
+
+			
+
+</note>
+
+		
+
+
+
+
+
+
+
+
+
+<para id="p1022">
+-end- 
+
+</para>
+
+
+
+
+	
+
+
+
+</section>
+</content>
+
+
+
+
+</document>

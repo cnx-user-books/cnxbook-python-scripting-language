@@ -1,0 +1,993 @@
+<document xmlns="http://cnx.rice.edu/cnxml"> 
+<title>Itse1359-1900-Preface to Networking and Databases</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m51585</md:content-id>
+  <md:title>Itse1359-1900-Preface to Networking and Databases</md:title>
+  <md:abstract>This module is the preface for the Networking and Databases portion of the course.</md:abstract>
+  <md:uuid>75d18729-6b6f-4d42-90f8-e9409c76807b</md:uuid>
+</metadata>
+
+<content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h11000">
+<title>
+Table of contents
+
+</title>
+
+
+
+
+<list id="ul1000" list-type="bulleted">
+
+	
+
+<item id="li1000">
+<link id="a1000" target-id="Preface">
+
+Preface
+
+</link>
+
+
+
+
+</item>
+
+
+	
+
+<item id="li1001">
+<link id="a1001" target-id="Networking_with_HTTP">
+
+Networking with HTTP
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1002">
+<link id="a1002" target-id="Dbm_and_Shelve_Databases">
+
+Dbm and shelve databases
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1003">
+<link id="a1003" target-id="Sqlite_database">
+
+SQLite database
+
+</link>
+
+
+</item>
+
+
+
+	
+
+<item id="li1004">
+<link id="a1004" target-id="Miscellaneous">
+
+Miscellaneous
+
+</link>
+
+
+</item>
+
+
+
+
+
+</list>
+
+
+	
+	
+
+</section>
+<section id="h11001">
+<title>
+<emphasis id="Preface" effect="bold">
+
+Preface
+
+</emphasis>
+
+
+</title>
+
+
+	
+	
+
+<para id="p1000">
+This module is one in a collection of modules on Python designed for 
+teaching 
+
+<emphasis id="em1000" effect="italics">
+ITSE 1359 Introduction to Scripting Languages: Python
+
+</emphasis>
+ at Austin Community 
+College in Austin, TX.
+
+</para>
+
+
+
+
+<para id="p1001">
+The learning resource for the 
+
+<emphasis id="strong1000" effect="bold">
+Networking and Databases
+
+</emphasis>
+ 
+portion of the course consists 
+of material from selected websites plus modules containing review questions and answers 
+keyed to 
+the material on those websites.
+
+</para>
+
+
+
+
+<para id="p1002">
+The
+
+<emphasis id="strong1001" effect="bold">
+ Networking and Databases
+
+</emphasis>
+ portion of the course consists of 
+three main areas of 
+study:
+
+</para>
+
+
+
+
+<list id="ul1001" list-type="bulleted">
+
+	
+
+<item id="li1005">
+Networking with HTTP
+
+</item>
+
+
+	
+
+<item id="li1006">
+Dbm and shelve databases
+
+</item>
+
+
+	
+
+<item id="li1007">
+SQLite database
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+<para id="p1003">
+A list of selected websites plus review questions keyed to those websites is 
+provided for each area of study. The 
+combined list of selected websites is:
+
+</para>
+
+
+
+
+<list id="ul1002" list-type="bulleted">
+
+	
+
+<item id="li1008">
+<link id="a1005" url="http://www.tutorialspoint.com/http/http_quick_guide.htm">
+
+
+	tutorialspoint - HTTP - Quick Guide
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1009">
+<link id="a1006" url="http://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html">
+
+w3.org - 
+	3 Protocol Parameters
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1010">
+<link id="a1007" url="https://docs.python.org/3/library/http.client.html">
+
+The Python 
+	Standard Library - 21.12. http.client - HTTP protocol client
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1011">
+<link id="a1008" url="https://docs.python.org/3/library/dbm.html">
+
+The Python Standard 
+	Library - 12.5. dbm - Interfaces to Unix "databases"
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1012">
+<link id="a1009" url="https://docs.python.org/3/library/shelve.html">
+
+The Python 
+	Standard Library - 12.3. shelve - Python object persistence
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1013">
+<link id="a1010" url="https://docs.python.org/3/library/pickle.html">
+
+The Python 
+	Standard Library - 12.1. pickle - Python object serialization
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1014">
+
+	
+
+<link id="a1011" url="https://docs.python.org/3/library/stdtypes.html#mapping-types-dict">
+
+
+	The Python Standard Library - 4.10. Mapping Types - dict
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1015">
+<link id="a1012" url="http://www.w3schools.com/sql/">
+
+W3Schools SQL Tutorial
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1016">
+<link id="a1013" url="https://docs.python.org/3/library/sqlite3.html">
+
+The Python 
+	Standard Library - 12.6. SQLite3 - DB-API 2.0 interface for SQLite databases
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1017">
+<link id="a1014" url="http://www.pythoncentral.io/introduction-to-sqlite-in-python/">
+
+
+	Python Central - Introduction to SQLite in Python
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1018">
+<link id="a1015" url="https://www.udemy.com/blog/sqlite-tutorial/">
+
+udemy - SQLite for 
+	Beginners
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1019">
+<link id="a1016" url="http://www.tutorialspoint.com/sqlite/">
+
+tutorialspoint - SQLite 
+	Tutorial
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1020">
+<link id="a1017" url="http://zetcode.com/db/sqlite/">
+
+ZetCode - SQLite tutorial
+
+</link>
+
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+
+<para id="p1004">
+Take-home programming assignments may be based on any material on these 
+websites as well as material from any of the other modules in this collection of 
+modules for teaching ITSE 1359. However, online tests for the
+
+<emphasis id="strong1002" effect="bold">
+ Networking and Databases
+
+</emphasis>
+ 
+portion of the course will be restricted to topics addressed in the following 
+three modules:
+
+</para>
+
+
+
+
+<list id="ul1003" list-type="bulleted">
+
+	
+
+<item id="li1021">
+Itse1359-1910-Networking with HTTP
+
+</item>
+
+
+	
+
+<item id="li1022">
+Itse1359-1930-Dbm and Shelve Databases
+
+</item>
+
+
+	
+
+<item id="li1023">
+Itse1359-1950-SQLite Database
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+</section>
+<section id="h11002">
+<title>
+<emphasis id="Networking_with_HTTP" effect="bold">
+
+Networking with HTTP
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1005">
+Networking is a very broad topic. There are many textbooks and websites that 
+discuss Python programs used for a variety of networking purposes, such as online chat, 
+shared whiteboards, FTP, sockets, server sockets, etc. However, in order to narrow the topic somewhat, 
+this course and the topics covered by the module titled 
+
+<emphasis id="em1001" effect="italics">
+Networking with HTTP
+
+</emphasis>
+ 
+concentrate mainly on what is probably the most common form of networking: 
+HTTP.
+
+</para>
+
+
+
+
+<para id="p1006">
+According to 
+
+<link id="a1018" url="http://www.tutorialspoint.com/http/http_quick_guide.htm">
+
+
+	tutorialspoint - HTTP - Quick Guide
+
+</link>
+
+,
+
+</para>
+
+
+
+
+<quote id="blockquote1000" display="block">
+The Hypertext Transfer Protocol (HTTP) is an application-level protocol for distributed, collaborative, hypermedia information systems. This is the foundation for data communication for the World Wide Web (i.e.. internet) since 1990. HTTP is a generic and stateless protocol which can be used for other purposes as well using extension of its request methods, error codes and headers.
+
+</quote>
+
+
+
+
+<para id="p1007">
+In other words, if you are reading this document online, you are probably 
+accessing and reading it from a website using HTTP.
+
+</para>
+
+
+
+
+</section>
+<section id="h11003">
+<title>
+<emphasis id="Dbm_and_Shelve_Databases" effect="bold">
+
+Dbm and shelve databases
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1008">
+In layman's terms, a database is a structure that can maintain data on a 
+persistent basis. In other words, the data does not go away when the program 
+that is accessing that data terminates. The same or other programs can be 
+started up later to access and manipulate the data in the database.
+
+</para>
+
+
+
+
+<para id="p1009">
+Python supports several different types of databases, one of which is
+
+
+<link id="a1019" url="https://docs.python.org/3/library/dbm.html">
+
+DBM
+
+</link>
+
+. However, 
+configuring a system to support a particular type of database can be very 
+tedious. For compatibility 
+with different student's computing systems, this course will concentrate on a 
+standard 
+
+<link id="a1020" url="https://docs.python.org/3/library/dbm.html#module-dbm.dumb">
+
+
+Portable DBM implementation
+
+</link>
+
+ known as 
+
+
+<link id="a1021" url="https://docs.python.org/3/library/dbm.html#module-dbm.dumb">
+
+dbm.dumb.
+
+</link>
+
+
+</para>
+
+
+
+
+<para id="p1010">
+According to 
+
+<link id="a1022" url="https://docs.python.org/3/library/dbm.html#module-dbm.dumb">
+
+
+Portable DBM implementation
+
+</link>
+
+, the 
+
+<emphasis id="strong1003" effect="bold">
+dbm.dumb
+
+</emphasis>
+ module is intended as a last resort fallback for the dbm module when a more robust module is not available. The 
+
+
+<emphasis id="strong1004" effect="bold">
+dbm.dumb
+
+</emphasis>
+ module is not written for speed and is not nearly as heavily used as the other database modules.
+
+
+
+</para>
+
+
+
+
+<para id="p1011">
+The 
+
+<emphasis id="strong1005" effect="bold">
+dbm.dumb
+
+</emphasis>
+ module provides a persistent dictionary-like interface which is written entirely in Python. Unlike other modules such as dbm.gnu no external library is required. As with other persistent mappings, the keys and values are always stored as bytes.
+
+</para>
+
+
+
+
+<para id="p1012">
+A 
+
+<link id="a1023" url="https://docs.python.org/3/library/shelve.html">
+
+shelf
+
+</link>
+
+ is a persistent, dictionary-like object. The difference with 
+"dbm" databases is that the values (not the keys!) in a shelf can be essentially arbitrary Python objects 
+-- anything that the
+
+
+<link id="a1024" url="https://docs.python.org/3/library/pickle.html#module-pickle">
+
+pickle
+
+</link>
+
+ module can handle. This includes most class instances, recursive data types, and objects containing lots of shared sub-objects. The keys are ordinary strings.
+
+</para>
+
+
+
+
+<para id="p1013">
+Aside from this brief description, this course will not address
+
+
+<link id="a1025" url="https://docs.python.org/3/library/shelve.html">
+
+shelve
+
+</link>
+
+.
+
+</para>
+
+
+
+
+</section>
+<section id="h11004">
+<title>
+<emphasis id="Sqlite_database" effect="bold">
+
+SQLite database
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1014">
+SQL stands for 
+
+<emphasis id="strong1006" effect="bold">
+Structured Query Language
+
+</emphasis>
+. SQL is used to communicate with a database. According to ANSI 
+
+
+<emphasis id="em1002" effect="italics">
+(American National Standards Institute)
+
+</emphasis>
+, it is the standard language for relational database management systems.
+
+</para>
+
+
+
+
+<para id="p1015">
+According to 
+
+<link id="a1026" url="https://docs.python.org/3/library/sqlite3.html">
+
+The 
+Python Standard Library - 12.6. sqlite3 - DB-API 2.0 interface for SQLite 
+databases
+
+</link>
+
+,
+
+</para>
+
+
+
+
+<quote id="blockquote1001" display="block">
+SQLite is a C library that provides a lightweight disk-based database that doesn't require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language.
+
+</quote>
+
+
+
+
+<para id="p1016">
+SQL is also a very broad topic. Considerable time, effort, and experience is 
+required to master SQL. As evidence of this fact, see the somewhat voluminous
+
+
+<link id="a1027" url="http://www.w3schools.com/sql/">
+
+W3Schools SQL Tutorial
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<para id="p1017">
+Knowledge of SQL is a prerequisite for understanding SQLite. It is 
+unreasonable to expect a student to learn SQL during a small portion of a one-semester 
+course in Python. Therefore, the module titled 
+
+<emphasis id="em1003" effect="italics">
+Itse1359-1950-SQLite Database
+
+</emphasis>
+ 
+will barely scratch the surface and will provide only a cursory introduction to 
+the use of SQLite. 
+
+</para>
+
+
+	
+
+</section>
+<section id="h11005">
+<title>
+<emphasis id="Miscellaneous" effect="bold">
+
+Miscellaneous
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1018">
+This section contains a variety of miscellaneous information.
+
+</para>
+
+
+
+
+
+	
+
+<note id="note1000" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1007" effect="bold">
+Housekeeping material
+
+</emphasis>
+
+				
+
+<list id="ul1004" list-type="bulleted">
+
+					
+
+<item id="li1024">
+Module name: Itse1359-1900-Preface to Networking and 
+					Databases
+
+</item>
+
+
+					
+
+<item id="li1025">
+File: Itse1359-1900.htm
+
+
+</item>
+
+
+					
+
+<item id="li1026">
+Published: 11/11/14
+
+</item>
+
+
+
+
+<item id="li1027">
+Revised: 06/23/17
+
+</item>
+
+
+
+				
+
+</list>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+
+
+
+	
+
+<note id="note1001" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1008" effect="bold">
+Disclaimers:
+
+</emphasis>
+<para id="p1019">
+<emphasis id="strong1009" effect="bold">
+Financial
+
+</emphasis>
+: Although the Connexions
+site makes it possible for you to download a PDF file for this
+module at no charge, and also makes it possible for you to
+purchase a pre-printed version of the PDF file, you should be
+aware that some of the HTML elements in this module may not translate well into
+PDF.
+
+</para>
+
+
+				
+
+<para id="p1020">
+I also want you to know that, I receive no financial compensation from the Connexions website even if you purchase 
+	the PDF version of the module.
+
+</para>
+
+
+				
+
+<para id="p1021">
+In the past, unknown individuals have copied my modules from cnx.org, converted them to Kindle books, and 
+				placed them for sale on Amazon.com showing me as the author. I 
+				neither receive compensation for those sales nor do I know who does 
+				receive compensation. If you purchase such a book, please be 
+				aware that it is a copy of a module that is freely 
+				available on cnx.org and that it was made and published without 
+				my prior knowledge.
+
+</para>
+
+
+				
+
+<para id="p1022">
+<emphasis id="strong1010" effect="bold">
+Affiliation
+
+</emphasis>
+: I am a professor of Computer Information 
+	Technology at Austin Community College in Austin, TX.
+	
+
+</para>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+
+
+<para id="p1023">
+-end- 
+
+</para>
+
+
+
+
+
+
+</section>
+</content>
+
+
+
+
+</document>

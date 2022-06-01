@@ -1,0 +1,3573 @@
+<document xmlns="http://cnx.rice.edu/cnxml"> 
+<title>Itse1359-1720-Doctest</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m51550</md:content-id>
+  <md:title>Itse1359-1720-Doctest</md:title>
+  <md:abstract>This module provides an introduction to the doctest module.</md:abstract>
+  <md:uuid>330a4317-db2f-4021-a7f1-a65a10da51f0</md:uuid>
+</metadata>
+
+<content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h11000">
+<title>
+Table of contents
+
+</title>
+
+
+
+
+<list id="ul1000" list-type="bulleted">
+
+	
+
+<item id="li1000">
+<link id="a1000" target-id="Preface">
+
+Preface
+
+</link>
+
+
+	
+
+<list id="ul1001" list-type="bulleted">
+
+		
+
+<item id="li1001">
+<link id="a1001" target-id="What_you_have_learned">
+
+What you have learned
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1002">
+<link id="a1002" target-id="What_you_will_learn">
+
+What you will learn
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1003">
+<link id="a1003" target-id="Viewing_tip">
+
+Viewing tip
+
+</link>
+
+
+<list id="ul1002" list-type="bulleted">
+
+			
+
+<item id="li1004">
+<link id="a1004" target-id="Images">
+
+Figures
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1005">
+<link id="a1005" target-id="Listings">
+
+Listings
+
+</link>
+
+
+</item>
+
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+
+	
+
+<item id="li1006">
+<link id="a1006" target-id="General_background_information">
+
+General background information
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1007">
+<link id="a1007" target-id="Discussion_and_sample_code">
+
+Discussion and sample code
+
+</link>
+
+
+<list id="ul1003" list-type="bulleted">
+
+		
+
+<item id="li1008">
+<link id="a1008" target-id="An_interactive_session">
+
+An interactive session
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1009">
+<link id="a1009" target-id="An_automated_interactive_session">
+
+An automated interactive 
+		session
+
+</link>
+
+
+<list id="ul1004" list-type="bulleted">
+
+			
+
+<item id="li1010">
+<link id="a1010" target-id="The_test_file_named_Py1359_1720_01">
+
+The test file named Py1359_1720_01
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1011">
+<link id="a1011" target-id="The_batch_the_named_Py1359_1720_01">
+
+The batch the named Py1359_1720_01
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1012">
+<link id="a1012" target-id="The_outputA">
+
+The output
+
+</link>
+
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+		
+
+<item id="li1013">
+<link id="a1013" target-id="A_more_substantive_example">
+
+A more substantive example
+
+</link>
+
+
+<list id="ul1005" list-type="bulleted">
+
+			
+
+<item id="li1014">
+<link id="a1014" target-id="The_module_named_named_Py1359_1720_02">
+
+The module named Py1359_1720_02
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1015">
+<link id="a1015" target-id="The_test_file_named_Py1359_1720_02">
+
+The test file named Py1359_1720_02
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1016">
+<link id="a1016" target-id="The_file_named_Py1359_1720_02">
+
+The batch file named Py1359_1720_02
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1017">
+<link id="a1017" target-id="The_outputB">
+
+The output
+
+</link>
+
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+		
+
+<item id="li1018">
+<link id="a1018" target-id="Embedding_a_test_in_a_docstring">
+
+Embedding a test in a 
+		docstring
+
+</link>
+
+
+<list id="ul1006" list-type="bulleted">
+
+			
+
+<item id="li1019">
+<link id="a1019" target-id="What_is_a_docstring">
+
+What is a docstring?
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1020">
+<link id="a1020" target-id="The_module_named_named_Py1359_1720_03">
+
+The module named Py1359_1720_03
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1021">
+<link id="a1021" target-id="The_batch_file_named_Py1359_1720_03">
+
+The batch file named Py1359_1720_03
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1022">
+<link id="a1022" target-id="The_outputC">
+
+The output
+
+</link>
+
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+
+	
+
+<item id="li1023">
+<link id="a1023" target-id="Run_the_program">
+
+Run the program
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1024">
+<link id="a1024" target-id="Whats_next">
+
+What's next?
+
+</link>
+
+
+</item>
+
+
+
+
+	
+
+<item id="li1025">
+<link id="a1025" target-id="Miscellaneous">
+
+Miscellaneous
+
+</link>
+
+
+</item>
+
+
+
+
+
+</list>
+
+
+	
+	
+
+</section>
+<section id="h11001">
+<title>
+<emphasis id="Preface" effect="bold">
+
+Preface
+
+</emphasis>
+
+
+</title>
+
+
+	
+	
+
+<para id="p1000">
+This module is one in a collection of modules on Python designed for 
+teaching 
+
+<emphasis id="em1000" effect="italics">
+ITSE 1359 Introduction to Scripting Languages: Python
+
+</emphasis>
+ at Austin Community 
+College in Austin, TX.
+
+</para>
+
+
+
+
+<section id="h21000">
+<title>
+<emphasis id="What_you_have_learned" effect="bold">
+
+What you have learned
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1001">
+In previous modules, you have learned the basics of Python programming, 
+control flow, classes and objects, input/output, and GUI programming.
+
+</para>
+
+
+
+
+</section>
+<section id="h21001">
+<title>
+<emphasis id="What_you_will_learn" effect="bold">
+
+What you will learn
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1002">
+In this and the following module, you will learn how to use the Python
+
+
+<emphasis id="strong1000" effect="bold">
+doctest
+
+</emphasis>
+ module to test your Python programs.
+
+</para>
+
+
+	
+
+</section>
+<section id="h21002">
+<title>
+<emphasis id="Viewing_tip" effect="bold">
+
+Viewing tip
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1003">
+I recommend that you open another copy of this module in a separate 
+browser window and use the following links to easily find and view the Figures 
+	and the Listings 
+	while you are reading about them.
+
+</para>
+
+
+
+
+<para id="p1004">
+<emphasis id="em1001" effect="italics">
+(Note to blind and visually impaired students: all of the Figures and 
+Listings in 
+this module are presented in plain text format and should be accessible using an 
+audio screen reader or a braille display. Note however that the required 
+indentation may not be properly represented by an audio screen reader.)
+
+</emphasis>
+</para>
+
+
+	
+
+<section id="h31000">
+<title>
+<emphasis id="Images" effect="bold">
+
+Figures
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<list id="ul1007" list-type="bulleted">
+
+
+
+<item id="li1026">
+<link id="a1026" target-id="Image_1">
+
+Figure 1
+
+</link>
+
+. Simple interactive session. 
+
+</item>
+
+
+
+
+<item id="li1027">
+<link id="a1027" target-id="Image_4">
+
+Figure 2
+
+</link>
+
+. Output produced by the test file named Py1359_1720_01.txt.
+
+</item>
+
+
+
+
+<item id="li1028">
+<link id="a1028" target-id="Image_8">
+
+Figure 3
+
+</link>
+
+. Output produced by the test file named Py1359_1720_02.txt.
+
+</item>
+
+
+
+
+<item id="li1029">
+<link id="a1029" target-id="Image_11">
+
+Figure 4
+
+</link>
+
+. Output produced by the test embedded in the docstring.
+
+</item>
+
+
+	
+
+</list>
+
+
+
+
+</section>
+<section id="h31001">
+<title>
+<emphasis id="Listings" effect="bold">
+
+Listings
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<list id="ul1008" list-type="bulleted">
+
+
+
+<item id="li1030">
+<link id="a1030" target-id="Image_2">
+
+Listing 1
+
+</link>
+
+. Contents of the test file named Py1359_1720_01.txt.
+
+</item>
+
+
+
+
+<item id="li1031">
+<link id="a1031" target-id="Image_3">
+
+Listing 2
+
+</link>
+
+. Contents of the file named Py1359_1720_01.bat.
+
+</item>
+
+
+
+
+<item id="li1032">
+<link id="a1032" target-id="Image_5">
+
+Listing 3
+
+</link>
+
+. Contents of the file named Py1359_1720_02.py.
+
+</item>
+
+
+
+
+<item id="li1033">
+<link id="a1033" target-id="Image_6">
+
+Listing 4
+
+</link>
+
+. Contents of the test file named Py1359_1720_02.txt.
+
+</item>
+
+
+
+
+<item id="li1034">
+<link id="a1034" target-id="Image_7">
+
+Listing 5
+
+</link>
+
+. Contents of the batch file named Py1359_1720_02.bat.
+
+</item>
+
+
+
+
+<item id="li1035">
+<link id="a1035" target-id="Image_9">
+
+Listing 6
+
+</link>
+
+. Contents of the file named Py1359_1720_03.py.
+
+</item>
+
+
+
+
+<item id="li1036">
+<link id="a1036" target-id="Image_10">
+
+Listing 7
+
+</link>
+
+. Contents of the batch file named Py1359_1720_03.bat.
+
+</item>
+
+
+
+
+
+</list>
+
+
+	
+
+</section>
+</section>
+</section>
+<section id="h11002">
+<title>
+<emphasis id="General_background_information" effect="bold">
+
+General 
+	background information
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1005">
+According to 
+
+<link id="a1037" url="https://docs.python.org/3/library/development.html">
+
+The Python Standard Library -- 26. Development Tools
+
+</link>
+
+,
+
+</para>
+
+
+
+
+<quote id="blockquote1000" display="block">
+"The doctest and unittest modules contain frameworks for writing 
+unit tests that automatically exercise code and verify that the expected output 
+is produced."
+
+</quote>
+
+
+
+
+<para id="p1006">
+The material in this module is based heavily on
+
+
+<link id="a1038" url="https://docs.python.org/3/library/doctest.html">
+
+The Python Standard 
+Library -- 26.2 doctest -- Test interactive Python examples
+
+</link>
+
+. According to 
+that document,
+
+</para>
+
+
+
+
+<quote id="blockquote1001" display="block">
+"The doctest module searches for pieces of text that look like 
+interactive Python sessions, and then executes those sessions to verify that 
+they work exactly as shown."
+
+</quote>
+
+
+
+
+<para id="p1007">
+Stated differently, the 
+
+<emphasis id="strong1001" effect="bold">
+doctest
+
+</emphasis>
+ module can be used to automate the execution 
+of code that you might otherwise execute in an interactive session. However, 
+instead of having the computer present the result to you, you specify the 
+required result and the computer tests the required result against the actual 
+result and notifies you when the two fail to match.
+
+</para>
+
+
+	
+
+<para id="p1008">
+There are at least 
+
+<emphasis id="two_different_ways_to_use_doctest" effect="bold">
+
+two different ways to use 
+
+<emphasis id="strong1002" effect="bold">
+doctest
+
+</emphasis>
+</emphasis>
+
+:
+
+</para>
+
+
+
+
+<list id="ol1000" list-type="enumerated">
+
+	
+
+<item id="li1037">
+You can write the test code in a separate text file and use that file to 
+	perform the testing.
+
+</item>
+
+
+	
+
+<item id="li1038">
+You can embed the test code in one or more 
+
+<emphasis id="strong1003" effect="bold">
+docstrings
+
+</emphasis>
+ in a module and 
+	cause the test code to be executed each time you execute the module as a 
+	script. 
+
+</item>
+
+
+
+
+</list>
+
+
+	
+
+<para id="p1009">
+A simple example of each approach will be provided and explained in this 
+	module.
+
+</para>
+
+
+	
+	
+
+</section>
+<section id="h11003">
+<title>
+<emphasis id="Discussion_and_sample_code" effect="bold">
+
+Discussion and sample code
+
+</emphasis>
+
+
+</title>
+
+
+	
+	
+
+<section id="h21003">
+<title>
+<emphasis id="An_interactive_session" effect="bold">
+
+An interactive session
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1010">
+<link id="a1039" target-id="Image_1">
+
+Figure 1
+
+</link>
+
+ shows a simple interactive session run on the Python interactive 
+command line interface.
+
+</para>
+
+
+	
+
+<table id="table1000" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1000">
+
+			
+
+<row id="tr1000">
+
+				
+
+<entry id="th1000">
+<emphasis id="Image_1" effect="bold">
+
+Figure 1
+
+</emphasis>
+
+. Simple interactive 
+				session.
+
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1000">
+
+			
+
+<row id="tr1001">
+
+				
+
+<entry id="td1000">
+
+
+
+
+<code id="pre1000" display="block">
+&gt;&gt;&gt; 2 + 3
+5
+&gt;&gt;&gt;
+</code>
+
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1011">
+If you have forgotten what the text in 
+
+<link id="a1040" target-id="Image_1">
+
+Figure 1
+
+</link>
+
+ means, see the earlier 
+	module titled 
+
+<emphasis id="em1002" effect="italics">
+Itse1359-1010-Getting Started
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+</section>
+<section id="h21004">
+<title>
+<emphasis id="An_automated_interactive_session" effect="bold">
+
+An automated interactive session
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1012">
+This first example is provided solely to show how 
+
+<emphasis id="strong1004" effect="bold">
+doctest
+
+</emphasis>
+ works. It is not 
+intended to be useful otherwise.
+
+</para>
+
+
+
+
+<section id="h31002">
+<title>
+<emphasis id="The_test_file_named_Py1359_1720_01" effect="bold">
+
+The test file named 
+Py1359_1720_01
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1013">
+<link id="a1041" target-id="Image_2">
+
+Listing 1
+
+</link>
+
+ shows the contents of a test file named 
+
+<emphasis id="strong1005" effect="bold">
+
+Py1359_1720_01.txt
+
+</emphasis>
+.
+
+</para>
+
+
+	
+
+<table id="table1001" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1001">
+
+			
+
+<row id="tr1002">
+
+				
+
+<entry id="th1001">
+<emphasis id="Image_2" effect="bold">
+
+Listing 1
+
+</emphasis>
+
+. Contents of the test file 
+				named Py1359_1720_01.txt.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1001">
+
+			
+
+<row id="tr1003">
+
+				
+
+<entry id="td1001">
+
+
+
+
+<code id="pre1001" display="block">
+&gt;&gt;&gt; 2 + 3
+6
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1014">
+Note that the contents of the test file mirror the input and the output of the 
+	interactive session shown in 
+
+<link id="a1042" target-id="Image_1">
+
+Figure 1
+
+</link>
+
+ except that the result of performing 
+	the computation was purposely specified incorrectly as 6 instead of 5. 
+
+<emphasis id="em1003" effect="italics">
+
+	(When you create a 
+
+<emphasis id="strong1006" effect="bold">
+doctest
+
+</emphasis>
+ test file, you must specify the required output 
+	as shown in 
+
+</emphasis>
+
+	
+
+<link id="a1043" target-id="Image_2">
+
+
+<emphasis id="em1004" effect="italics">
+Listing 1
+
+</emphasis>
+</link>
+
+
+<emphasis id="em1005" effect="italics">
+.)
+
+</emphasis>
+</para>
+
+
+
+
+<quote id="blockquote1002" display="block">
+Note that the 
+
+<emphasis id="strong1007" effect="bold">
+doctest
+
+</emphasis>
+ process is very picky regarding file names. 
+Some file names that are valid for the operating system may not work when using 
+
+
+<emphasis id="strong1008" effect="bold">
+doctest
+
+</emphasis>
+. However, if you restrict your file names to names that would be valid 
+for variables, you should be okay.
+
+</quote>
+
+
+
+
+<para id="p1015">
+<link id="a1044" target-id="Image_3">
+
+Listing 2
+
+</link>
+
+ shows the contents of a Windows batch file named 
+
+
+<emphasis id="strong1009" effect="bold">
+Py1359_1720_01.bat
+
+</emphasis>
+ that I used to perform the test. Although 
+not a requirement, the use of such a batch file makes it convenient to perform 
+the test more than once with a minimal typing effort.
+
+</para>
+
+
+
+
+</section>
+<section id="h31003">
+<title>
+<emphasis id="The_batch_the_named_Py1359_1720_01" effect="bold">
+
+The batch the named 
+Py1359_1720_01
+
+</emphasis>
+
+
+</title>
+
+
+
+
+	
+
+<table id="table1002" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1002">
+
+			
+
+<row id="tr1004">
+
+				
+
+<entry id="th1002">
+<emphasis id="Image_3" effect="bold">
+
+Listing 2
+
+</emphasis>
+
+. Contents of the file 
+				named Py1359_1720_01.bat.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1002">
+
+			
+
+<row id="tr1005">
+
+				
+
+<entry id="td1002">
+
+
+
+
+<code id="pre1002" display="block">
+echo off
+
+rem set the path
+path=%path%;"C:\Program Files (x86)\Python34"
+
+rem perform the test
+python -m doctest Py1359_1720_01.txt
+
+pause
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1016">
+<emphasis id="em1006" effect="italics">
+(Some of the text in 
+
+</emphasis>
+<link id="a1045" target-id="Image_3">
+
+
+<emphasis id="em1007" effect="italics">
+Listing 2
+
+</emphasis>
+</link>
+
+
+<emphasis id="em1008" effect="italics">
+ 
+	is peculiar to my machine. You can ignore the text shown in 
+
+</emphasis>
+
+	
+
+<link id="a1046" target-id="Image_3">
+
+
+<emphasis id="em1009" effect="italics">
+Listing 2
+
+</emphasis>
+</link>
+
+
+<emphasis id="em1010" effect="italics">
+ down to the command that begins 
+	with the word 
+
+<emphasis id="strong1010" effect="bold">
+python
+
+</emphasis>
+.)
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1017">
+The third command that begins with the word python in 
+
+<link id="a1047" target-id="Image_3">
+
+
+Listing 2
+
+</link>
+
+ executes the Python 
+
+<emphasis id="strong1011" effect="bold">
+doctest
+
+</emphasis>
+ 
+module as a script and passes the name of the test file as a command-line 
+argument to the module.
+
+</para>
+
+
+
+
+<quote id="blockquote1003" display="block">
+According to 
+
+<link id="a1048" url="https://docs.python.org/3.1/using/cmdline.html">
+
+Python v3.1.5 
+documentation -- Python Setup and Usage
+
+</link>
+
+, "When called with -m module-name, 
+the given module is located on the Python module path and executed as a script."
+
+</quote>
+
+
+
+
+<para id="p1018">
+The syntax shown for the python command in 
+
+<link id="a1049" target-id="Image_3">
+
+Listing 2
+
+</link>
+
+ is a 
+
+
+<emphasis id="command_line_shortcut" effect="bold">
+
+command line 
+shortcut
+
+</emphasis>
+
+ for calling the 
+
+<emphasis id="strong1012" effect="bold">
+testmod()
+
+</emphasis>
+ function in the 
+
+<emphasis id="strong1013" effect="bold">
+doctest
+
+</emphasis>
+ module. 
+
+<emphasis id="em1011" effect="italics">
+(You will 
+see more on this later.)
+
+</emphasis>
+</para>
+
+
+
+
+</section>
+<section id="h31004">
+<title>
+<emphasis id="The_outputA" effect="bold">
+
+The output
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1019">
+The execution of the python command in 
+
+<link id="a1050" target-id="Image_3">
+
+Listing 2
+
+</link>
+
+ produced the command line 
+output shown in 
+
+<link id="a1051" target-id="Image_4">
+
+Figure 2
+
+</link>
+
+.
+
+</para>
+
+
+
+	
+
+<table id="table1003" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1003">
+
+			
+
+<row id="tr1006">
+
+				
+
+<entry id="th1003">
+<emphasis id="Image_4" effect="bold">
+
+Figure 2
+
+</emphasis>
+
+. Output produced by 
+				the test file 
+				named Py1359_1720_01.txt.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1003">
+
+			
+
+<row id="tr1007">
+
+				
+
+<entry id="td1003">
+
+
+
+
+<code id="pre1003" display="block">
+**********************************************************************
+File "Py1359_1720_01.txt", line 2, in Py1359_1720_01.txt
+Failed example:
+2 + 3
+Expected:
+6
+Got:
+5
+**********************************************************************
+1 items had failures:
+1 of 1 in Py1359_1720_01.txt
+***Test Failed*** 1 failures.
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1020">
+<link id="a1052" target-id="Image_4">
+
+Figure 2
+
+</link>
+
+ shows that the test failed because the result of the computation 
+	did not match the specified value of 6. In this case, the output from the 
+	computation was correct but the value specified by the test was incorrect. 
+	
+
+</para>
+
+
+
+
+<para id="p1021">
+When testing using the 
+
+<emphasis id="strong1014" effect="bold">
+doctest
+
+</emphasis>
+ module, you specify what the result must be 
+for the test to pass. 
+	If the test fails to produce a matching result, the output will show that 
+	the test failed. For the case of 
+
+<link id="a1053" target-id="Image_2">
+
+Listing 1
+
+</link>
+
+ and 
+
+<link id="a1054" target-id="Image_3">
+
+
+Listing 2
+
+</link>
+
+, if the correct result 
+	had been specified, the test would simply have returned to the command 
+	prompt with no other output. 
+
+</para>
+
+
+
+
+<quote id="blockquote1004" display="block">
+A verbose output could have been specified in 
+
+<link id="a1055" target-id="Image_3">
+
+
+	Listing 2
+
+</link>
+
+ to cause the 
+test to return positive results even if there were no failures. You will see how 
+to do that in the next example.
+
+</quote>
+
+
+
+
+</section>
+</section>
+<section id="h21005">
+<title>
+<emphasis id="A_more_substantive_example" effect="bold">
+
+A more substantive example
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<section id="h31005">
+<title>
+<emphasis id="The_module_named_named_Py1359_1720_02" effect="bold">
+
+The module named Py1359_1720_02
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1022">
+This example will perform a test on a simple function named 
+
+<emphasis id="strong1015" effect="bold">
+sum
+
+</emphasis>
+ 
+in a module named 
+
+<emphasis id="strong1016" effect="bold">
+Py1359_1720_02.py
+
+</emphasis>
+ as shown in 
+
+<link id="a1056" target-id="Image_5">
+
+
+Listing 3
+
+</link>
+
+.
+
+</para>
+
+
+	
+
+<table id="table1004" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1004">
+
+			
+
+<row id="tr1008">
+
+				
+
+<entry id="th1004">
+<emphasis id="Image_5" effect="bold">
+
+Listing 3
+
+</emphasis>
+
+. Contents of the file 
+				named Py1359_1720_02.py.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1004">
+
+			
+
+<row id="tr1009">
+
+				
+
+<entry id="td1004">
+
+
+
+
+<code id="pre1004" display="block">
+def sum(parA,parB):
+    return parA + parB
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+</section>
+<section id="h31006">
+<title>
+<emphasis id="The_test_file_named_Py1359_1720_02" effect="bold">
+
+The test file named 
+	Py1359_1720_02
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1023">
+The test file for this example is shown in 
+
+<link id="a1057" target-id="Image_6">
+
+Listing 4
+
+</link>
+
+.
+
+</para>
+
+
+
+
+	
+
+<table id="table1005" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1005">
+
+			
+
+<row id="tr1010">
+
+				
+
+<entry id="th1005">
+<emphasis id="Image_6" effect="bold">
+
+Listing 4
+
+</emphasis>
+
+. Contents of the test 
+				file named Py1359_1720_02.txt.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1005">
+
+			
+
+<row id="tr1011">
+
+				
+
+<entry id="td1005">
+
+
+
+
+<code id="pre1005" display="block">
+&gt;&gt;&gt; from Py1359_1720_02 import sum
+&gt;&gt;&gt; sum(2,3)
+6
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1024">
+This file will actually cause two tests to be performed. The first test 
+	is to import the function named 
+
+<emphasis id="strong1017" effect="bold">
+sum
+
+</emphasis>
+ from the module named
+	
+
+<emphasis id="strong1018" effect="bold">
+Py1359_1720_02
+
+</emphasis>
+. However, no visible output is expected from 
+	this test. Therefore, no output is specified in 
+
+<link id="a1058" target-id="Image_6">
+
+Listing 4
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<para id="p1025">
+The second test is to call the function named 
+
+<emphasis id="strong1019" effect="bold">
+sum
+
+</emphasis>
+ 
+
+<emphasis id="em1012" effect="italics">
+(shown in 
+
+
+<link id="a1059" target-id="Image_5">
+
+Listing 3
+
+</link>
+
+)
+
+</emphasis>
+ passing 2 and 3 as parameters. The test file shows that an incorrect 
+output value of 6 is expected from this test. 
+
+<emphasis id="em1013" effect="italics">
+(As before, an incorrect value was 
+specified to force the test to fail for illustration purposes only.)
+
+</emphasis>
+</para>
+
+
+
+
+</section>
+<section id="h31007">
+<title>
+<emphasis id="The_file_named_Py1359_1720_02" effect="bold">
+
+The batch file named Py1359_1720_02
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1026">
+The batch file used to execute the test is shown in 
+
+<link id="a1060" target-id="Image_7">
+
+
+Listing 5
+
+</link>
+
+.
+
+</para>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<table id="table1006" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1006">
+
+			
+
+<row id="tr1012">
+
+				
+
+<entry id="th1006">
+<emphasis id="Image_7" effect="bold">
+
+Listing 5
+
+</emphasis>
+
+. Contents of the 
+				batch file 
+				named Py1359_1720_02.bat.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1006">
+
+			
+
+<row id="tr1013">
+
+				
+
+<entry id="td1006">
+
+
+
+
+<code id="pre1006" display="block">
+echo off
+
+rem set the path
+path=%path%;"C:\Program Files (x86)\Python34"
+
+rem perform the test
+python -m doctest -v Py1359_1720_02.txt
+
+pause
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1027">
+This batch file differs from the one shown in 
+
+<link id="a1061" target-id="Image_3">
+
+Listing 
+	2
+
+</link>
+
+ in one respect. The 
+
+<emphasis id="strong1020" effect="bold">
+-v
+
+</emphasis>
+ switch following 
+
+<emphasis id="strong1021" effect="bold">
+doctest
+
+</emphasis>
+ in the command 
+	causes the output to be more verbose than the output from the previous 
+	example.
+
+</para>
+
+
+
+
+</section>
+<section id="h31008">
+<title>
+<emphasis id="The_outputB" effect="bold">
+
+The output
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1028">
+The execution of the third 
+
+<emphasis id="em1014" effect="italics">
+(python)
+
+</emphasis>
+ command in 
+
+<link id="a1062" target-id="Image_7">
+
+
+Listing 5
+
+</link>
+
+ produced the command line 
+output shown in 
+
+<link id="a1063" target-id="Image_8">
+
+Figure 3
+
+</link>
+
+.
+
+</para>
+
+
+	
+
+<table id="table1007" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1007">
+
+			
+
+<row id="tr1014">
+
+				
+
+<entry id="th1007">
+<emphasis id="Image_8" effect="bold">
+
+Figure 3
+
+</emphasis>
+
+. Output produced by 
+				the test file named Py1359_1720_02.txt.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1007">
+
+			
+
+<row id="tr1015">
+
+				
+
+<entry id="td1007">
+
+
+
+
+<code id="pre1007" display="block">
+Trying:
+from Py1359_1720_02 import sum
+Expecting nothing
+ok
+Trying:
+sum(2,3)
+Expecting:
+6
+**********************************************************************
+File "Py1359_1720_02.txt", line 2, in Py1359_1720_02.txt
+Failed example:
+sum(2,3)
+Expected:
+6
+Got:
+5
+**********************************************************************
+1 items had failures:
+1 of 2 in Py1359_1720_02.txt
+2 tests in 1 items.
+1 passed and 1 failed.
+***Test Failed*** 1 failures.
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1029">
+As mentioned earlier, this output is more verbose than the output shown 
+	in 
+
+<link id="a1064" target-id="Image_4">
+
+Figure 2
+
+</link>
+
+. In this more verbose output, tests that 
+	pass are shown in addition to 
+	tests that fail. For example, the test of the 
+
+<emphasis id="strong1022" effect="bold">
+import
+
+</emphasis>
+ statement is shown as 
+
+<emphasis id="strong1023" effect="bold">
+
+	ok
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+<para id="p1030">
+On the other hand, as expected, the call to the 
+
+<emphasis id="strong1024" effect="bold">
+sum
+
+</emphasis>
+ function 
+is shown as 
+
+<emphasis id="strong1025" effect="bold">
+failed
+
+</emphasis>
+. As before, both the location and the nature of the failure 
+is explained.
+
+</para>
+
+
+
+
+</section>
+</section>
+<section id="h21006">
+<title>
+<emphasis id="Embedding_a_test_in_a_docstring" effect="bold">
+
+Embedding a test in a docstring
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1031">
+As mentioned 
+
+<link id="a1065" target-id="two_different_ways_to_use_doctest">
+
+earlier
+
+</link>
+
+, in addition to putting tests in separate text files, 
+you can also embed tests in docstrings. 
+
+</para>
+
+
+
+
+<section id="h31009">
+<title>
+<emphasis id="What_is_a_docstring" effect="bold">
+
+What is a docstring?
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1032">
+As shown in the earlier module titled
+
+
+<emphasis id="em1015" effect="italics">
+Itse1359-1270-Functions
+
+</emphasis>
+, and described more fully in
+
+
+<link id="a1066" url="http://legacy.python.org/dev/peps/pep-0257/#what-is-a-docstring">
+
+What 
+is a Docstring?
+
+</link>
+
+, a 
+
+<emphasis id="strong1026" effect="bold">
+docstring
+
+</emphasis>
+ is a string literal that occurs as the first statement in a module, function, class, or method definition. 
+A docstring is surrounded by 
+triple quotes.
+
+</para>
+
+
+
+
+</section>
+<section id="h31010">
+<title>
+<emphasis id="The_module_named_named_Py1359_1720_03" effect="bold">
+
+The module named Py1359_1720_03
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1033">
+This example will perform a test on a simple function named 
+
+<emphasis id="strong1027" effect="bold">
+sum
+
+</emphasis>
+ in a module named 
+
+
+<emphasis id="strong1028" effect="bold">
+Py1359_1720_03.py
+
+</emphasis>
+ as shown in 
+
+<link id="a1067" target-id="Image_9">
+
+Listing 6
+
+</link>
+
+.
+
+</para>
+
+
+
+	
+
+<table id="table1008" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1008">
+
+			
+
+<row id="tr1016">
+
+				
+
+<entry id="th1008">
+<emphasis id="Image_9" effect="bold">
+
+Listing 6
+
+</emphasis>
+
+. Contents of the file 
+				named Py1359_1720_03.py.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1008">
+
+			
+
+<row id="tr1017">
+
+				
+
+<entry id="td1008">
+
+
+
+
+<code id="pre1008" display="block">
+"""
+&gt;&gt;&gt; sum(2,3)
+6
+"""
+def sum(parA,parB):
+    return parA + parB
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1034">
+<link id="a1068" target-id="Image_9">
+
+Listing 6
+
+</link>
+
+ is an update of the earlier module shown in 
+
+<link id="a1069" target-id="Image_5">
+
+
+	Listing 3
+
+</link>
+
+. Test code 
+	was embedded in the docstring at the beginning of 
+
+<link id="a1070" target-id="Image_9">
+
+Listing 
+	6
+
+</link>
+
+. 
+
+</para>
+
+
+
+
+<para id="p1035">
+In addition, a 
+	special 
+
+<emphasis id="strong1029" effect="bold">
+if
+
+</emphasis>
+ 
+	statement was added at the end of 
+
+<link id="a1071" target-id="Image_9">
+
+Listing 6
+
+</link>
+
+ that calls the 
+
+<emphasis id="strong1030" effect="bold">
+testmod
+
+</emphasis>
+ 
+	function of the 
+
+<emphasis id="strong1031" effect="bold">
+doctest
+
+</emphasis>
+ module. 
+
+<emphasis id="em1016" effect="italics">
+(See the
+	
+
+<link id="a1072" target-id="command_line_shortcut">
+
+earlier
+
+</link>
+
+ comment regarding the testmod 
+	function and the command line shortcut.)
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1036">
+According to 
+
+
+<link id="a1073" url="https://docs.python.org/3/library/doctest.html#simple-usage-checking-examples-in-docstrings">
+
+The Python Standard 
+Library -- 26.2.1. Simple Usage: Checking Examples in Docstrings
+
+</link>
+
+,
+
+<emphasis id="_if_you_include_this_code" effect="bold">
+
+ if you 
+include this code
+
+</emphasis>
+
+ at the end of a module, running the module as a script will 
+cause tests that are embedded in docstrings to be executed.
+
+</para>
+
+
+
+
+<para id="p1037">
+Detailed information on the various options of the 
+
+<emphasis id="strong1032" effect="bold">
+testmod
+
+</emphasis>
+ function are 
+provided at 
+
+<link id="a1074" url="https://docs.python.org/3/library/doctest.html#basic-api">
+
+The Python Standard Library -- 26.2.4. Basic API
+
+</link>
+
+.
+
+</para>
+
+
+
+
+</section>
+<section id="h31011">
+<title>
+<emphasis id="The_batch_file_named_Py1359_1720_03" effect="bold">
+
+The batch file named Py1359_1720_03
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1038">
+The batch file used to execute the test is shown in 
+
+<link id="a1075" target-id="Image_10">
+
+
+Listing 7
+
+</link>
+
+.
+
+</para>
+
+
+	
+
+<table id="table1009" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1009">
+
+			
+
+<row id="tr1018">
+
+				
+
+<entry id="th1009">
+<emphasis id="Image_10" effect="bold">
+
+Listing 7
+
+</emphasis>
+
+. Contents of the 
+				batch file named Py1359_1720_03.bat.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1009">
+
+			
+
+<row id="tr1019">
+
+				
+
+<entry id="td1009">
+
+
+
+
+<code id="pre1009" display="block">
+echo off
+
+rem set the path
+path=%path%;"C:\Program Files (x86)\Python34"
+
+rem perform the test
+python Py1359_1720_03.py -v
+
+pause
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1039">
+In this case there was no separate test file. Instead, the python command 
+	in 
+
+<link id="a1076" target-id="Image_10">
+
+Listing 7
+
+</link>
+
+ executed the module named 
+
+<emphasis id="strong1033" effect="bold">
+Py1359_1720_03.py
+
+</emphasis>
+ as a script triggering the test to 
+	be run as described 
+
+<link id="a1077" target-id="_if_you_include_this_code">
+
+above
+
+</link>
+
+. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31012">
+<title>
+<emphasis id="The_outputC" effect="bold">
+
+The output
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1040">
+The 
+
+<emphasis id="strong1034" effect="bold">
+-v
+
+</emphasis>
+ switch in 
+
+<link id="a1078" target-id="Image_10">
+
+Listing 7
+
+</link>
+
+ causes the verbose version of the output to be 
+produced as shown in 
+
+<link id="a1079" target-id="Image_11">
+
+Figure 4
+
+</link>
+
+. Once again, I set the test up in such a way as to 
+cause it to fail for purposes of illustration.
+
+</para>
+
+
+
+
+	
+
+<table id="table1010" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1010">
+
+			
+
+<row id="tr1020">
+
+				
+
+<entry id="th1010">
+<emphasis id="Image_11" effect="bold">
+
+Figure 4
+
+</emphasis>
+
+. Output produced 
+				by the test embedded in the docstring.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1010">
+
+			
+
+<row id="tr1021">
+
+				
+
+<entry id="td1010">
+
+
+
+
+<code id="pre1010" display="block">
+Trying:
+sum(2,3)
+Expecting:
+6
+**********************************************************************
+File "Py1359_1720_03.py", line 4, in __main__
+Failed example:
+sum(2,3)
+Expected:
+6
+Got:
+5
+1 items had no tests:
+__main__.sum
+**********************************************************************
+1 items had failures:
+1 of 1 in __main__
+1 tests in 2 items.
+0 passed and 1 failed.
+***Test Failed*** 1 failures.</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+
+</section>
+</section>
+</section>
+<section id="h11004">
+<title>
+<emphasis id="Run_the_program" effect="bold">
+
+Run the program
+
+</emphasis>
+
+
+</title>
+
+
+
+
+
+<para id="p1041">
+I encourage you to copy the code provided in this module. Execute the code and confirm 
+that you get the same results. Experiment with the code, 
+making changes, and observing the results of your changes. Make certain that you 
+can explain why your changes behave as they do.
+
+</para>
+
+
+
+
+</section>
+<section id="h11005">
+<title>
+<emphasis id="Whats_next" effect="bold">
+
+What's next?
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1042">
+Now that you know some of the mechanics of using 
+
+<emphasis id="strong1035" effect="bold">
+doctest
+
+</emphasis>
+, you should study 
+the next module in the collection titled 
+
+<emphasis id="em1017" effect="italics">
+Itse1359-1720r-Review
+
+</emphasis>
+. In 
+addition, you should study some of the many articles and 
+tutorials that are freely available on the web that provide insight into the use 
+of 
+
+<emphasis id="strong1036" effect="bold">
+doctest
+
+</emphasis>
+ for unit testing. Links to a few of those documents 
+are provided below. You can 
+find many more with a simple web search.
+
+</para>
+
+
+
+
+<list id="ul1009" list-type="bulleted">
+
+	
+
+<item id="li1039">
+<link id="a1080" url="https://docs.python.org/3/library/doctest.html">
+
+26.2. doctest -- 
+Test interactive Python examples
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1040">
+
+	
+
+<link id="a1081" url="https://www.packtpub.com/books/content/testing-python-using-doctest">
+
+Excerpt from book -- Testing in Python using doctest
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1041">
+
+	
+
+<link id="a1082" url="https://www.packtpub.com/books/content/python-unit-testing-doctest">
+
+Excerpt from book -- 	
+Python: Unit Testing with Doctest
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1042">
+<link id="a1083" url="http://docs.python-guide.org/en/latest/writing/tests/">
+
+Testing Your Code -- The Hitchhiker's Guide to Python
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1043">
+
+	
+
+<link id="a1084" url="http://agiletesting.blogspot.com/2005/01/python-unit-testing-part-1-unittest.html">
+
+Agile Testing -- Python unit testing part 1: the unittest module
+
+</link>
+
+
+	
+
+</item>
+
+
+	
+
+<item id="li1044">
+
+	
+
+<link id="a1085" url="http://agiletesting.blogspot.com/2005/01/python-unit-testing-part-2-doctest.html">
+
+Agile Testing -- Python unit testing part 2: the doctest module
+
+</link>
+
+
+	
+
+</item>
+
+
+	
+
+<item id="li1045">
+
+	
+
+<link id="a1086" url="http://agiletesting.blogspot.com/2005/01/python-unit-testing-part-3-pytest-tool.html">
+
+Agile Testing -- Python unit testing part 3: the py.test tool and library
+
+</link>
+
+
+	
+
+</item>
+
+
+	
+
+<item id="li1046">
+<link id="a1087" url="http://www.python-course.eu/python3_tests.php">
+
+Python3 Tutorial: Tests, DocTests, UnitTests -- Python Course
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1047">
+
+	
+
+<link id="a1088" url="http://ivory.idyll.org/articles/nose-intro.html#running-doctests-in-nose">
+
+An Extended Introduction to the nose Unit Testing Framework 
+-- Running doctests in nose
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1048">
+<link id="a1089" url="http://nose.readthedocs.org/en/latest/plugins/doctests.html">
+
+Doctests: run doctests with nose -- nose 1.3.4 documentation
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1049">
+
+
+	
+
+<link id="a1090" url="http://www.youtube.com/watch?v=L8EcFqpX-Lk">
+
+Unit Testing Python Using doctest - YouTube
+
+</link>
+
+
+</item>
+
+
+
+
+</list>
+
+
+
+	
+
+</section>
+<section id="h11006">
+<title>
+<emphasis id="Miscellaneous" effect="bold">
+
+Miscellaneous
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1043">
+This section contains a variety of miscellaneous information. 
+
+</para>
+
+
+
+
+
+	
+
+<note id="note1000" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1037" effect="bold">
+Housekeeping material
+
+</emphasis>
+
+				
+
+<list id="ul1010" list-type="bulleted">
+
+					
+
+<item id="li1050">
+Module name: Itse1359-1720-Doctest 
+					Introduction
+
+</item>
+
+
+					
+
+<item id="li1051">
+File: Itse1359-1720.htm
+
+
+</item>
+
+
+					
+
+<item id="li1052">
+Published: 11/10/14
+
+</item>
+
+
+
+
+<item id="li1053">
+Revised: 03/04/15
+
+</item>
+
+
+
+				
+
+</list>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+
+
+
+	
+
+<note id="note1001" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1038" effect="bold">
+Disclaimers:
+
+</emphasis>
+<para id="p1044">
+<emphasis id="strong1039" effect="bold">
+Financial
+
+</emphasis>
+: Although the Connexions
+site makes it possible for you to download a PDF file for this
+module at no charge, and also makes it possible for you to
+purchase a pre-printed version of the PDF file, you should be
+aware that some of the HTML elements in this module may not translate well into
+PDF.
+
+</para>
+
+
+				
+
+<para id="p1045">
+I also want you to know that, I receive no financial compensation from the Connexions website even if you purchase 
+	the PDF version of the module.
+
+</para>
+
+
+				
+
+<para id="p1046">
+In the past, unknown individuals have copied my modules from cnx.org, converted them to Kindle books, and 
+				placed them for sale on Amazon.com showing me as the author. I 
+				neither receive compensation for those sales nor do I know who does 
+				receive compensation. If you purchase such a book, please be 
+				aware that it is a copy of a module that is freely 
+				available on cnx.org and that it was made and published without 
+				my prior knowledge.
+
+</para>
+
+
+				
+
+<para id="p1047">
+<emphasis id="strong1040" effect="bold">
+Affiliation
+
+</emphasis>
+: I am a professor of Computer Information 
+	Technology at Austin Community College in Austin, TX.
+	
+
+</para>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+
+
+<para id="p1048">
+-end- 
+
+</para>
+
+
+
+
+
+
+</section>
+</content>
+
+
+
+
+</document>

@@ -1,0 +1,5380 @@
+<document xmlns="http://cnx.rice.edu/cnxml"> 
+<title>Itse1359-1720r-Review</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m51534</md:content-id>
+  <md:title>Itse1359-1720r-Review</md:title>
+  <md:abstract>This module contains review questions and answers keyed to the module titled Itse1359-1720-Doctest as well as review questions and answers keyed to the document at https://docs.python.org/3/library/doctest.html.</md:abstract>
+  <md:uuid>126f4489-3d65-4f0a-a488-aa68ce3f5c42</md:uuid>
+</metadata>
+
+<content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h11000">
+<title>
+Table of contents
+
+</title>
+
+
+
+
+<list id="ul1000" list-type="bulleted">
+
+	
+
+<item id="li1000">
+<link id="a1000" target-id="Preface">
+
+Preface
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1001">
+<link id="a1001" target-id="Questions">
+
+Questions
+
+</link>
+
+
+	
+
+<list id="ul1001" list-type="bulleted">
+
+		
+
+<item id="li1002">
+<link id="a1002" target-id="question01">
+
+1
+
+</link>
+
+, 
+
+<link id="a1003" target-id="question02">
+
+2
+
+</link>
+
+,
+		
+
+<link id="a1004" target-id="question03">
+
+3
+
+</link>
+
+, 
+
+<link id="a1005" target-id="question04">
+
+4
+
+</link>
+
+,
+		
+
+<link id="a1006" target-id="question05">
+
+5
+
+</link>
+
+, 
+
+<link id="a1007" target-id="question06">
+
+6
+
+</link>
+
+,
+		
+
+<link id="a1008" target-id="question07">
+
+7
+
+</link>
+
+, 
+
+<link id="a1009" target-id="question08">
+
+8
+
+</link>
+
+,
+		
+
+<link id="a1010" target-id="question09">
+
+9
+
+</link>
+
+
+		
+		
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+	
+
+<item id="li1003">
+<link id="a1011" target-id="Figure_index">
+
+Figure index
+
+</link>
+
+
+</item>
+
+
+
+	
+
+<item id="li1004">
+<link id="a1012" target-id="Answers">
+
+Answers
+
+</link>
+
+
+</item>
+
+
+
+	
+
+<item id="li1005">
+<link id="a1013" target-id="Miscellaneous">
+
+Miscellaneous
+
+</link>
+
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+</section>
+<section id="h11001">
+<title>
+<emphasis id="Preface" effect="bold">
+
+Preface
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1000">
+This module is one in a collection of modules on Python designed for 
+teaching 
+
+<emphasis id="em1000" effect="italics">
+ITSE 1359 Introduction to Scripting Languages: Python
+
+</emphasis>
+ at Austin Community 
+College in Austin, TX.
+
+</para>
+
+
+
+
+<para id="p1001">
+This module contains review questions and answers keyed to the module titled
+
+
+<emphasis id="em1001" effect="italics">
+Itse1359-1720-Doctest
+
+</emphasis>
+. In addition, some of the questions and answers 
+are keyed to the document titled
+
+
+<link id="a1014" url="https://docs.python.org/3/library/doctest.html">
+
+The Python Standard 
+Library -- 26.2 doctest -- Test interactive Python examples
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<para id="p1002">
+Once you study that material, you should be able to answer the review 
+questions in this module.
+
+</para>
+
+
+
+
+<para id="p1003">
+The questions and the answers in this module are connected by hyperlinks to 
+make it easy for you to navigate from the question to the answer and back again.
+
+</para>
+
+
+
+
+<para id="p1004">
+<emphasis id="em1002" effect="italics">
+(Note to blind and visually impaired students: with the exception of 
+two bitmap images that are used solely as spacers to separate the question 
+section from the answer section, all of the material in this module is presented 
+in plain text format and should be accessible using an audio screen reader or a 
+braille display. Note however that the required indentation may not be properly 
+represented by an audio screen reader.)
+
+</emphasis>
+</para>
+
+
+
+
+</section>
+<section id="h11002">
+<title>
+<emphasis id="Questions" effect="bold">
+
+Questions
+
+</emphasis>
+
+
+</title>
+
+
+
+
+
+<section id="h21000">
+<title>
+<emphasis id="question01" effect="bold">
+
+Question 1
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1005">
+True or False? The test file shown in 
+
+<link id="a1015" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+, when executed using the command 
+shown in 
+
+
+<link id="a1016" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+, produces the output shown in 
+
+<link id="a1017" target-id="Figure_3">
+
+Figure 3
+
+</link>
+
+.
+
+</para>
+
+
+
+	
+
+<table id="table1000" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1000">
+
+			
+
+<row id="tr1000">
+
+				
+
+<entry id="th1000">
+<emphasis id="Figure_1" effect="bold">
+
+Figure 1
+
+</emphasis>
+
+. Question 1 test 
+				code named Py1359_1720r_01.txt.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1000">
+
+			
+
+<row id="tr1001">
+
+				
+
+<entry id="td1000">
+
+
+
+
+<code id="pre1000" display="block">
+Beginning of first test
+&gt;&gt;&gt; 2 + 3
+5
+
+End of first test
+Beginning of second test
+&gt;&gt;&gt; 2 + 3
+6
+
+End of second test
+</code>
+
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+	
+
+<table id="table1001" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1001">
+
+			
+
+<row id="tr1002">
+
+				
+
+<entry id="th1001">
+<emphasis id="Figure_2" effect="bold">
+
+Figure 2
+
+</emphasis>
+
+. Question 1 execution 
+				command.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1001">
+
+			
+
+<row id="tr1003">
+
+				
+
+<entry id="td1001">
+
+
+
+
+<code id="pre1001" display="block">
+python -m doctest Py1359_1720r_01.txt
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+	
+
+<table id="table1002" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1002">
+
+			
+
+<row id="tr1004">
+
+				
+
+<entry id="th1002">
+<emphasis id="Figure_3" effect="bold">
+
+Figure 3
+
+</emphasis>
+
+. Question 1 possible 
+				output.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1002">
+
+			
+
+<row id="tr1005">
+
+				
+
+<entry id="td1002">
+
+
+
+
+<code id="pre1002" display="block">
+**********************************************************************
+File "Py1359_1720r_01.txt", line 2, in Py1359_1720r_01.txt
+Failed example:
+    2 + 3
+Expected:
+    6
+Got:
+    5
+**********************************************************************
+File "Py1359_1720r_01.txt", line 7, in Py1359_1720r_01.txt
+Failed example:
+    2 + 3
+Expected:
+    6
+Got:
+    5
+**********************************************************************
+1 items had failures:
+   2 of   2 in Py1359_1720r_01.txt
+***Test Failed*** 2 failures.
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+<para id="p1006">
+Go to 
+
+<link id="a1018" target-id="answer01">
+
+answer 1
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21001">
+<title>
+<emphasis id="question02" effect="bold">
+
+Question 2
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1007">
+True or False? The test file shown in 
+
+<link id="a1019" target-id="Figure_5">
+
+Figure 5
+
+</link>
+
+, when executed using the 
+command shown in 
+
+<link id="a1020" target-id="Figure_6">
+
+Figure 6
+
+</link>
+
+, produces the output shown in 
+
+<link id="a1021" target-id="Figure_7">
+
+Figure 7
+
+</link>
+
+.
+
+</para>
+
+
+
+	
+
+<table id="table1003" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1003">
+
+			
+
+<row id="tr1006">
+
+				
+
+<entry id="th1003">
+<emphasis id="Figure_5" effect="bold">
+
+Figure 5
+
+</emphasis>
+
+. Question 2 test code 
+				named Py1359_1720r_02.txt.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1003">
+
+			
+
+<row id="tr1007">
+
+				
+
+<entry id="td1003">
+
+
+
+
+<code id="pre1003" display="block">
+Beginning of test
+&gt;&gt;&gt; 2 + 3
+5
+End of test
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+	
+
+<table id="table1004" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1004">
+
+			
+
+<row id="tr1008">
+
+				
+
+<entry id="th1004">
+<emphasis id="Figure_6" effect="bold">
+
+Figure 6
+
+</emphasis>
+
+. Question 2 execution 
+				command.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1004">
+
+			
+
+<row id="tr1009">
+
+				
+
+<entry id="td1004">
+
+
+
+
+<code id="pre1004" display="block">
+python -m doctest Py1359_1720r_02.txt -v
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+	
+
+<table id="table1005" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1005">
+
+			
+
+<row id="tr1010">
+
+				
+
+<entry id="th1005">
+<emphasis id="Figure_7" effect="bold">
+
+Figure 7
+
+</emphasis>
+
+. Question 2 possible 
+				output.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1005">
+
+			
+
+<row id="tr1011">
+
+				
+
+<entry id="td1005">
+
+
+
+
+<code id="pre1005" display="block">
+Trying:
+    2 + 3
+Expecting:
+    5
+ok
+1 items passed all tests:
+   1 tests in Py1359_1720r_02.txt
+1 tests in 1 items.
+1 passed and 0 failed.
+Test passed.
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+<para id="p1008">
+Go to 
+
+<link id="a1022" target-id="answer02">
+
+answer 2
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21002">
+<title>
+<emphasis id="question03" effect="bold">
+
+Question 3
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1009">
+True or False? Given the Python module shown in 
+
+<link id="a1023" target-id="Figure_9">
+
+Figure 9
+
+</link>
+
+, 
+when the test file shown 
+in 
+
+<link id="a1024" target-id="Figure_10">
+
+Figure 10
+
+</link>
+
+ is executed using the command shown in 
+
+<link id="a1025" target-id="Figure_11">
+
+Figure 11
+
+</link>
+
+, 
+it produces the 
+output shown in 
+
+<link id="a1026" target-id="Figure_12">
+
+Figure 12
+
+</link>
+
+.
+
+</para>
+
+
+
+	
+
+<table id="table1006" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1006">
+
+			
+
+<row id="tr1012">
+
+				
+
+<entry id="th1006">
+<emphasis id="Figure_9" effect="bold">
+
+Figure 9
+
+</emphasis>
+
+. Question 3 Python 
+				module named Py1359_1720r_03.py.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1006">
+
+			
+
+<row id="tr1013">
+
+				
+
+<entry id="td1006">
+
+
+
+
+<code id="pre1006" display="block">
+def sum(parA,parB):
+    return parA + parB
+
+def product(parC,parD):
+    return parC * parD
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+
+	
+
+<table id="table1007" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1007">
+
+			
+
+<row id="tr1014">
+
+				
+
+<entry id="th1007">
+<emphasis id="Figure_10" effect="bold">
+
+Figure 10
+
+</emphasis>
+
+. Question 3 test 
+				code named Py1359_1720r_03.txt.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1007">
+
+			
+
+<row id="tr1015">
+
+				
+
+<entry id="td1007">
+
+
+
+
+<code id="pre1007" display="block">
+&gt;&gt;&gt; from Py1359_1720r_03 import sum
+&gt;&gt;&gt; sum(2,3)
+5
+&gt;&gt;&gt; from Py1359_1720r_03 import product
+&gt;&gt;&gt; product(2,3)
+6
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+
+	
+
+<table id="table1008" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1008">
+
+			
+
+<row id="tr1016">
+
+				
+
+<entry id="th1008">
+<emphasis id="Figure_11" effect="bold">
+
+Figure 11
+
+</emphasis>
+
+. Question 3 
+				execution command.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1008">
+
+			
+
+<row id="tr1017">
+
+				
+
+<entry id="td1008">
+
+
+
+
+<code id="pre1008" display="block">
+python -m doctest -v Py1359_1720r_03.txt
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<table id="table1009" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1009">
+
+			
+
+<row id="tr1018">
+
+				
+
+<entry id="th1009">
+<emphasis id="Figure_12" effect="bold">
+
+Figure 12
+
+</emphasis>
+
+. Question 3 
+				possible output.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1009">
+
+			
+
+<row id="tr1019">
+
+				
+
+<entry id="td1009">
+
+
+
+
+<code id="pre1009" display="block">
+Trying:
+    from Py1359_1720r_03 import sum
+Expecting nothing
+ok
+Trying:
+    sum(2,3)
+Expecting:
+    5
+ok
+Trying:
+    from Py1359_1720r_03 import product
+Expecting nothing
+ok
+Trying:
+    product(2,3)
+Expecting:
+    6
+ok
+1 items passed all tests:
+   4 tests in Py1359_1720r_03.txt
+4 tests in 1 items.
+4 passed and 0 failed.
+Test passed.
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+<para id="p1010">
+Go to 
+
+<link id="a1027" target-id="answer03">
+
+answer 3
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21003">
+<title>
+<emphasis id="question04" effect="bold">
+
+Question 4
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1011">
+True or False? Given the Python module shown in 
+
+<link id="a1028" target-id="Figure_13">
+
+Figure 13
+
+</link>
+
+, execution of the 
+module as a script using the command shown in 
+
+<link id="a1029" target-id="Figure_14">
+
+Figure 14
+
+</link>
+
+ produces the output 
+shown in 
+
+<link id="a1030" target-id="Figure_15">
+
+Figure 15
+
+</link>
+
+.
+
+</para>
+
+
+
+	
+
+<table id="table1010" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1010">
+
+			
+
+<row id="tr1020">
+
+				
+
+<entry id="th1010">
+<emphasis id="Figure_13" effect="bold">
+
+Figure 13
+
+</emphasis>
+
+. Question 4 Python 
+				module named Py1359_1720r_04.py.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1010">
+
+			
+
+<row id="tr1021">
+
+				
+
+<entry id="td1010">
+
+
+
+
+<code id="pre1010" display="block">
+"""
+Begin first test
+&gt;&gt;&gt; sum(2,3)
+5
+
+Begin second test
+&gt;&gt;&gt; product(2,3)
+6
+"""
+def sum(parA,parB):
+    return parA + parB
+
+def product(parC,parD):
+    return parC * parD
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+
+	
+
+<table id="table1011" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1011">
+
+			
+
+<row id="tr1022">
+
+				
+
+<entry id="th1011">
+<emphasis id="Figure_14" effect="bold">
+
+Figure 14
+
+</emphasis>
+
+. Question 4 
+				execution command.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1011">
+
+			
+
+<row id="tr1023">
+
+				
+
+<entry id="td1011">
+
+
+
+
+<code id="pre1011" display="block">
+python Py1359_1720r_04.py -v
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+
+	
+
+<table id="table1012" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1012">
+
+			
+
+<row id="tr1024">
+
+				
+
+<entry id="th1012">
+<emphasis id="Figure_15" effect="bold">
+
+Figure 15
+
+</emphasis>
+
+. Question 4 
+				possible output.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1012">
+
+			
+
+<row id="tr1025">
+
+				
+
+<entry id="td1012">
+
+
+
+
+<code id="pre1012" display="block">
+Trying:
+    sum(2,3)
+Expecting:
+    5
+ok
+Trying:
+    product(2,3)
+Expecting:
+    6
+ok
+2 items had no tests:
+    __main__.product
+    __main__.sum
+1 items passed all tests:
+   2 tests in __main__
+2 tests in 3 items.
+2 passed and 0 failed.
+Test passed.
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+<para id="p1012">
+Go to 
+
+<link id="a1031" target-id="answer04">
+
+answer 4
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21004">
+<title>
+<emphasis id="question05" effect="bold">
+
+Question 5
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1013">
+True or False? Given the Python module shown in 
+
+<link id="a1032" target-id="Figure_16">
+
+Figure 16
+
+</link>
+
+, execution of the 
+module as a script using the command shown in 
+
+<link id="a1033" target-id="Figure_17">
+
+Figure 17
+
+</link>
+
+ produces the output 
+shown in 
+
+<link id="a1034" target-id="Figure_18">
+
+Figure 18
+
+</link>
+
+.
+
+</para>
+
+
+
+	
+
+<table id="table1013" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1013">
+
+			
+
+<row id="tr1026">
+
+				
+
+<entry id="th1013">
+<emphasis id="Figure_16" effect="bold">
+
+Figure 16
+
+</emphasis>
+
+. Question 5 Python 
+				module named Py1359_1720r_05.py.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1013">
+
+			
+
+<row id="tr1027">
+
+				
+
+<entry id="td1013">
+
+
+
+
+<code id="pre1013" display="block">
+"""
+&gt;&gt;&gt; divide(2,3)
+0
+&gt;&gt;&gt; divide(2,0)
+Traceback (most recent call last):
+  ...
+ZeroDivisionError: integer division or modulo by zero
+"""
+def divide(parA,parB):
+    return parA//parB
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+<table id="table1014" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1014">
+
+			
+
+<row id="tr1028">
+
+				
+
+<entry id="th1014">
+<emphasis id="Figure_17" effect="bold">
+
+Figure 17
+
+</emphasis>
+
+. Question 5 
+				execution command.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1014">
+
+			
+
+<row id="tr1029">
+
+				
+
+<entry id="td1014">
+
+
+
+
+<code id="pre1014" display="block">
+python Py1359_1720r_05.py -v
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+<table id="table1015" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1015">
+
+			
+
+<row id="tr1030">
+
+				
+
+<entry id="th1015">
+<emphasis id="Figure_18" effect="bold">
+
+Figure 18
+
+</emphasis>
+
+. Question 5 
+				possible output.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1015">
+
+			
+
+<row id="tr1031">
+
+				
+
+<entry id="td1015">
+
+
+
+
+<code id="pre1015" display="block">
+Trying:
+    divide(2,3)
+Expecting:
+    0
+ok
+Trying:
+    divide(2,0)
+Expecting:
+    Traceback (most recent call last):
+      ...
+    ZeroDivisionError: integer division or modulo by zero
+ok
+1 items had no tests:
+    __main__.divide
+1 items passed all tests:
+   2 tests in __main__
+2 tests in 2 items.
+2 passed and 0 failed.
+Test passed.
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+<para id="p1014">
+Go to 
+
+<link id="a1035" target-id="answer05">
+
+answer 5
+
+</link>
+
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21005">
+<title>
+<emphasis id="question06" effect="bold">
+
+Question 6
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1015">
+True or False? Given the Python module shown in 
+
+<link id="a1036" target-id="Figure_19">
+
+Figure 19
+
+</link>
+
+, execution of the 
+module as a script using the command shown in 
+
+<link id="a1037" target-id="Figure_20">
+
+Figure 20
+
+</link>
+
+ produces the output 
+shown in 
+
+<link id="a1038" target-id="Figure_21">
+
+Figure 21
+
+</link>
+
+.
+
+</para>
+
+
+
+
+
+	
+
+<table id="table1016" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1016">
+
+			
+
+<row id="tr1032">
+
+				
+
+<entry id="th1016">
+<emphasis id="Figure_19" effect="bold">
+
+Figure 19
+
+</emphasis>
+
+. Question 6 Python 
+				module named Py1359_1720r_06.py.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1016">
+
+			
+
+<row id="tr1033">
+
+				
+
+<entry id="td1016">
+
+
+
+
+<code id="pre1016" display="block">
+"""
+&gt;&gt;&gt; function(11)
+Traceback (most recent call last):
+  ...
+ValueError: par must be &lt;= 10
+"""
+def function(par):
+    if par &gt; 10:
+        raise ValueError("par must be &lt;= 10")
+    else:
+        return par
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+<table id="table1017" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1017">
+
+			
+
+<row id="tr1034">
+
+				
+
+<entry id="th1017">
+<emphasis id="Figure_20" effect="bold">
+
+Figure 20
+
+</emphasis>
+
+. Question 6 
+				execution command.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1017">
+
+			
+
+<row id="tr1035">
+
+				
+
+<entry id="td1017">
+
+
+
+
+<code id="pre1017" display="block">
+python Py1359_1720r_06.py -v
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+<table id="table1018" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1018">
+
+			
+
+<row id="tr1036">
+
+				
+
+<entry id="th1018">
+<emphasis id="Figure_21" effect="bold">
+
+Figure 21
+
+</emphasis>
+
+. Question 6 
+				possible output.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1018">
+
+			
+
+<row id="tr1037">
+
+				
+
+<entry id="td1018">
+
+
+
+
+<code id="pre1018" display="block">
+Trying:
+    function(11)
+Expecting:
+    Traceback (most recent call last):
+      ...
+    ValueError: par must be &lt;= 10
+ok
+1 items had no tests:
+    __main__.function
+1 items passed all tests:
+   1 tests in __main__
+1 tests in 2 items.
+1 passed and 0 failed.
+Test passed.
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+<para id="p1016">
+Go to 
+
+<link id="a1039" target-id="answer06">
+
+answer 6
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21006">
+<title>
+<emphasis id="question07" effect="bold">
+
+Question 7
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1017">
+True or False? Given the Python modules shown in 
+
+<link id="a1040" target-id="Figure_22">
+
+Figure 22
+
+</link>
+
+ and 
+
+<link id="a1041" target-id="Figure_23">
+
+Figure 23
+
+</link>
+
+ and 
+the test file shown in 
+
+<link id="a1042" target-id="Figure_25">
+
+Figure 25
+
+</link>
+
+, 
+execution of the command shown in 
+
+<link id="a1043" target-id="Figure_24">
+
+Figure 24
+
+</link>
+
+, produces the output shown in 
+
+
+<link id="a1044" target-id="Figure_26">
+
+Figure 
+26
+
+</link>
+
+.
+
+</para>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<table id="table1019" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1019">
+
+			
+
+<row id="tr1038">
+
+				
+
+<entry id="th1019">
+<emphasis id="Figure_22" effect="bold">
+
+Figure 22
+
+</emphasis>
+
+. Question 7 Python 
+				module named Py1359_1720r_07_runner.py.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1019">
+
+			
+
+<row id="tr1039">
+
+				
+
+<entry id="td1019">
+
+
+
+
+<code id="pre1019" display="block">
+import doctest
+doctest.testfile(Py1359_1720r_07.txt)
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+<table id="table1020" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1020">
+
+			
+
+<row id="tr1040">
+
+				
+
+<entry id="th1020">
+<emphasis id="Figure_23" effect="bold">
+
+Figure 23
+
+</emphasis>
+
+. Question 7 Python 
+				module named Py1359_1720r_07.py.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1020">
+
+			
+
+<row id="tr1041">
+
+				
+
+<entry id="td1020">
+
+
+
+
+<code id="pre1020" display="block">
+def sum(parA,parB):
+    return parA + parB
+
+def product(parC,parD):
+    return parC * parD
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+<table id="table1021" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1021">
+
+			
+
+<row id="tr1042">
+
+				
+
+<entry id="th1021">
+<emphasis id="Figure_24" effect="bold">
+
+Figure 24
+
+</emphasis>
+
+. Question 7 
+				execution command.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1021">
+
+			
+
+<row id="tr1043">
+
+				
+
+<entry id="td1021">
+
+
+
+
+<code id="pre1021" display="block">
+python Py1359_1720r_07_runner.py
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+<table id="table1022" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1022">
+
+			
+
+<row id="tr1044">
+
+				
+
+<entry id="th1022">
+<emphasis id="Figure_25" effect="bold">
+
+Figure 25
+
+</emphasis>
+
+. Question 7 test 
+				code named Py1359_1720r_07.txt.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1022">
+
+			
+
+<row id="tr1045">
+
+				
+
+<entry id="td1022">
+
+
+
+
+<code id="pre1022" display="block">
+&gt;&gt;&gt; from Py1359_1720r_07 import sum
+&gt;&gt;&gt; sum(2,3)
+5
+&gt;&gt;&gt; from Py1359_1720r_07 import product
+&gt;&gt;&gt; product(2,3)
+5
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<table id="table1023" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1023">
+
+			
+
+<row id="tr1046">
+
+				
+
+<entry id="th1023">
+<emphasis id="Figure_26" effect="bold">
+
+Figure 26
+
+</emphasis>
+
+. Question 7 
+				possible output.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1023">
+
+			
+
+<row id="tr1047">
+
+				
+
+<entry id="td1023">
+
+
+
+
+<code id="pre1023" display="block">
+**********************************************************************
+File "Py1359_1720r_07.txt", line 5, in Py1359_1720r_07.txt
+Failed example:
+    product(2,3)
+Expected:
+    5
+Got:
+    6
+**********************************************************************
+1 items had failures:
+   1 of   4 in Py1359_1720r_07.txt
+***Test Failed*** 1 failures.
+
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+<para id="p1018">
+Go to 
+
+<link id="a1045" target-id="answer07">
+
+answer 7
+
+</link>
+
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21007">
+<title>
+<emphasis id="question08" effect="bold">
+
+Question 8
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1019">
+True or False? Given the Python module shown in 
+
+<link id="a1046" target-id="Figure_27">
+
+Figure 27
+
+</link>
+
+ and the test file 
+shown in 
+
+<link id="a1047" target-id="Figure_28">
+
+Figure 28
+
+</link>
+
+, execution of the 
+module as a script using the command shown in 
+
+<link id="a1048" target-id="Figure_29">
+
+Figure 29
+
+</link>
+
+, produces the output 
+shown in 
+
+<link id="a1049" target-id="Figure_30">
+
+Figure 30
+
+</link>
+
+.
+
+</para>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<table id="table1024" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1024">
+
+			
+
+<row id="tr1048">
+
+				
+
+<entry id="th1024">
+<emphasis id="Figure_27" effect="bold">
+
+Figure 27
+
+</emphasis>
+
+. Question 8 Python 
+				module named Py1359_1720r_08.py.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1024">
+
+			
+
+<row id="tr1049">
+
+				
+
+<entry id="td1024">
+
+
+
+
+<code id="pre1024" display="block">
+def sum(parA,parB):
+    return parA + parB
+
+def product(parC,parD):
+    return parC * parD
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testfile("Py1359_1720r_08.txt")
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+<table id="table1025" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1025">
+
+			
+
+<row id="tr1050">
+
+				
+
+<entry id="th1025">
+<emphasis id="Figure_28" effect="bold">
+
+Figure 28
+
+</emphasis>
+
+. Question 8 test 
+				code named Py1359_1720r_08.txt.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1025">
+
+			
+
+<row id="tr1051">
+
+				
+
+<entry id="td1025">
+
+
+
+
+<code id="pre1025" display="block">
+&gt;&gt;&gt; from Py1359_1720r_08 import sum
+&gt;&gt;&gt; sum(2,3)
+5
+&gt;&gt;&gt; from Py1359_1720r_08 import product
+&gt;&gt;&gt; product(2,3)
+6
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+<table id="table1026" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1026">
+
+			
+
+<row id="tr1052">
+
+				
+
+<entry id="th1026">
+<emphasis id="Figure_29" effect="bold">
+
+Figure 29
+
+</emphasis>
+
+. Question 8 
+				execution command.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1026">
+
+			
+
+<row id="tr1053">
+
+				
+
+<entry id="td1026">
+
+
+
+
+<code id="pre1026" display="block">
+python Py1359_1720r_08.py -v
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<table id="table1027" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1027">
+
+			
+
+<row id="tr1054">
+
+				
+
+<entry id="th1027">
+<emphasis id="Figure_30" effect="bold">
+
+Figure 30
+
+</emphasis>
+
+. Question 8 
+				possible output.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1027">
+
+			
+
+<row id="tr1055">
+
+				
+
+<entry id="td1027">
+
+
+
+
+<code id="pre1027" display="block">
+Trying:
+    from Py1359_1720r_08 import sum
+Expecting nothing
+ok
+Trying:
+    sum(2,3)
+Expecting:
+    5
+ok
+Trying:
+    from Py1359_1720r_08 import product
+Expecting nothing
+ok
+Trying:
+    product(2,3)
+Expecting:
+    6
+ok
+1 items passed all tests:
+   4 tests in Py1359_1720r_08.txt
+4 tests in 1 items.
+4 passed and 0 failed.
+Test passed.
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+<para id="p1020">
+Go to 
+
+<link id="a1050" target-id="answer08">
+
+answer 8
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21008">
+<title>
+<emphasis id="question09" effect="bold">
+
+Question 9
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1021">
+True or False? Given the Python version 3 module shown in 
+
+<link id="a1051" target-id="Figure_31">
+
+Figure 31
+
+</link>
+
+, execution of the 
+module as a script using the command shown in 
+
+<link id="a1052" target-id="Figure_32">
+
+Figure 32
+
+</link>
+
+, produces the output 
+shown in 
+
+<link id="a1053" target-id="Figure_33">
+
+Figure 33
+
+</link>
+
+.
+
+</para>
+
+
+
+
+
+	
+
+<table id="table1028" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1028">
+
+			
+
+<row id="tr1056">
+
+				
+
+<entry id="th1028">
+<emphasis id="Figure_31" effect="bold">
+
+Figure 31
+
+</emphasis>
+
+. Question 9 Python 
+				module named Py1359_1720r_09.py.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1028">
+
+			
+
+<row id="tr1057">
+
+				
+
+<entry id="td1028">
+
+
+
+
+<code id="pre1028" display="block">
+"""
+&gt;&gt;&gt; divide(1,3)
+0.333333
+"""
+def divide(parA,parB):
+    return parA/parB
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+	
+
+<table id="table1029" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1029">
+
+			
+
+<row id="tr1058">
+
+				
+
+<entry id="th1029">
+<emphasis id="Figure_32" effect="bold">
+
+Figure 32
+
+</emphasis>
+
+. Question 9 
+				execution command.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1029">
+
+			
+
+<row id="tr1059">
+
+				
+
+<entry id="td1029">
+
+
+
+
+<code id="pre1029" display="block">
+python Py1359_1720r_09.py -v
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+	
+
+	
+
+<table id="table1030" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1030">
+
+			
+
+<row id="tr1060">
+
+				
+
+<entry id="th1030">
+<emphasis id="Figure_33" effect="bold">
+
+Figure 33
+
+</emphasis>
+
+. Question 9 
+				possible output.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1030">
+
+			
+
+<row id="tr1061">
+
+				
+
+<entry id="td1030">
+
+
+
+
+<code id="pre1030" display="block">
+Trying:
+    divide(1,3)
+Expecting:
+    0.3333333333333333
+ok
+1 items had no tests:
+    __main__.divide
+1 items passed all tests:
+   1 tests in __main__
+1 tests in 2 items.
+1 passed and 0 failed.
+Test passed.
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+
+
+<para id="p1022">
+Go to 
+
+<link id="a1054" target-id="answer09">
+
+answer 9
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+</section>
+<section id="h11003">
+<title>
+<emphasis id="Figure_index" effect="bold">
+
+Figure index
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<list id="ul1002" list-type="bulleted">
+
+		
+
+<item id="li1006">
+<link id="a1055" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+. Question 1 test code named Py1359_1720r_01.txt.
+
+</item>
+
+
+		
+
+<item id="li1007">
+<link id="a1056" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+. Question 1 execution command.
+
+</item>
+
+
+		
+
+<item id="li1008">
+<link id="a1057" target-id="Figure_3">
+
+Figure 3
+
+</link>
+
+. Question 1 possible output.
+
+</item>
+
+
+		
+
+<item id="li1009">
+<link id="a1058" target-id="Figure_4">
+
+Figure 4
+
+</link>
+
+. Question 1 actual output.
+
+</item>
+
+
+		
+
+<item id="li1010">
+<link id="a1059" target-id="Figure_5">
+
+Figure 5
+
+</link>
+
+. Question 2 test code named Py1359_1720r_02.txt.
+
+</item>
+
+
+		
+
+<item id="li1011">
+<link id="a1060" target-id="Figure_6">
+
+Figure 6
+
+</link>
+
+. Question 2 execution command.
+
+</item>
+
+
+		
+
+<item id="li1012">
+<link id="a1061" target-id="Figure_7">
+
+Figure 7
+
+</link>
+
+. Question 2 possible output.
+
+</item>
+
+
+		
+
+<item id="li1013">
+<link id="a1062" target-id="Figure_8">
+
+Figure 8
+
+</link>
+
+. Question 2 actual output.
+
+</item>
+
+
+		
+
+<item id="li1014">
+<link id="a1063" target-id="Figure_9">
+
+Figure 9
+
+</link>
+
+. Question 3 Python module named Py1359_1720r_03.py.
+
+</item>
+
+
+		
+
+<item id="li1015">
+<link id="a1064" target-id="Figure_10">
+
+Figure 10
+
+</link>
+
+. Question 3 test code named Py1359_1720r_03.txt.
+
+</item>
+
+
+		
+
+<item id="li1016">
+<link id="a1065" target-id="Figure_11">
+
+Figure 11
+
+</link>
+
+. Question 3 execution command.
+
+</item>
+
+
+		
+
+<item id="li1017">
+<link id="a1066" target-id="Figure_12">
+
+Figure 12
+
+</link>
+
+. Question 3 possible output.
+
+</item>
+
+
+		
+
+<item id="li1018">
+<link id="a1067" target-id="Figure_13">
+
+Figure 13
+
+</link>
+
+. Question 4 Python module named Py1359_1720r_04.py.
+
+</item>
+
+
+		
+
+<item id="li1019">
+<link id="a1068" target-id="Figure_14">
+
+Figure 14
+
+</link>
+
+. Question 4 execution command.
+
+</item>
+
+
+		
+
+<item id="li1020">
+<link id="a1069" target-id="Figure_15">
+
+Figure 15
+
+</link>
+
+. Question 4 possible output.
+
+</item>
+
+
+		
+
+<item id="li1021">
+<link id="a1070" target-id="Figure_16">
+
+Figure 16
+
+</link>
+
+. Question 5 Python module named Py1359_1720r_05.py.
+
+</item>
+
+
+		
+
+<item id="li1022">
+<link id="a1071" target-id="Figure_17">
+
+Figure 17
+
+</link>
+
+. Question 5 execution command.
+
+</item>
+
+
+		
+
+<item id="li1023">
+<link id="a1072" target-id="Figure_18">
+
+Figure 18
+
+</link>
+
+. Question 5 possible output.
+
+</item>
+
+
+		
+
+<item id="li1024">
+<link id="a1073" target-id="Figure_19">
+
+Figure 19
+
+</link>
+
+. Question 6 Python module named Py1359_1720r_06.py.
+
+</item>
+
+
+		
+
+<item id="li1025">
+<link id="a1074" target-id="Figure_20">
+
+Figure 20
+
+</link>
+
+. Question 6 execution command.
+
+</item>
+
+
+		
+
+<item id="li1026">
+<link id="a1075" target-id="Figure_21">
+
+Figure 21
+
+</link>
+
+. Question 6 possible output.
+
+</item>
+
+
+		
+
+<item id="li1027">
+<link id="a1076" target-id="Figure_22">
+
+Figure 22
+
+</link>
+
+. Question 7 Python module named Py1359_1720r_07_runner.py.
+
+</item>
+
+
+		
+
+<item id="li1028">
+<link id="a1077" target-id="Figure_23">
+
+Figure 23
+
+</link>
+
+. Question 7 Python module named Py1359_1720r_07.py.
+
+</item>
+
+
+		
+
+<item id="li1029">
+<link id="a1078" target-id="Figure_24">
+
+Figure 24
+
+</link>
+
+. Question 7 execution command.
+
+</item>
+
+
+		
+
+<item id="li1030">
+<link id="a1079" target-id="Figure_25">
+
+Figure 25
+
+</link>
+
+. Question 7 test code named Py1359_1720r_07.txt.
+
+</item>
+
+
+		
+
+<item id="li1031">
+<link id="a1080" target-id="Figure_26">
+
+Figure 26
+
+</link>
+
+. Question 7 possible output.
+
+</item>
+
+
+		
+
+<item id="li1032">
+<link id="a1081" target-id="Figure_27">
+
+Figure 27
+
+</link>
+
+. Question 8 Python module named Py1359_1720r_08.py.
+
+</item>
+
+
+		
+
+<item id="li1033">
+<link id="a1082" target-id="Figure_28">
+
+Figure 28
+
+</link>
+
+. Question 8 test code named Py1359_1720r_08.txt.
+
+</item>
+
+
+		
+
+<item id="li1034">
+<link id="a1083" target-id="Figure_29">
+
+Figure 29
+
+</link>
+
+. Question 8 execution command.
+
+</item>
+
+
+		
+
+<item id="li1035">
+<link id="a1084" target-id="Figure_30">
+
+Figure 30
+
+</link>
+
+. Question 8 possible output.
+
+</item>
+
+
+		
+
+<item id="li1036">
+<link id="a1085" target-id="Figure_31">
+
+Figure 31
+
+</link>
+
+. Question 9 Python module named Py1359_1720r_09.py.
+
+</item>
+
+
+		
+
+<item id="li1037">
+<link id="a1086" target-id="Figure_32">
+
+Figure 32
+
+</link>
+
+. Question 9 execution command.
+
+</item>
+
+
+		
+
+<item id="li1038">
+<link id="a1087" target-id="Figure_33">
+
+Figure 33
+
+</link>
+
+. Question 9 possible output.
+
+</item>
+
+
+		
+
+<item id="li1039">
+<link id="a1088" target-id="Figure_34">
+
+Figure 34
+
+</link>
+
+. Question 9 actual output.
+
+</item>
+
+
+
+
+	
+
+</list>
+
+
+
+
+
+<para id="p1023">
+<emphasis id="strong1000" effect="bold">
+What is the meaning of the following two images?
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1024">
+These images were inserted here simply to insert some space between the 
+questions and the answers to keep them from being visible on the screen at the 
+same time. 
+
+</para>
+
+
+
+
+
+<media id="media1000" alt="Spacer image of a rabbit and a penguin." display="block">
+<image id="img1000" mime-type="image/jpeg" src="../../media/Spacer01.jpg" width="339" height="290"/>
+</media>
+
+
+
+
+
+<para id="p1025">
+This image was also inserted for the purpose of inserting space between the questions and the answers.
+
+</para>
+
+
+
+
+<para id="p1026">
+
+
+
+<media id="media1001" alt="Spacer image of a penguin and some houses." display="block">
+<image id="img1001" mime-type="image/jpeg" src="../../media/Spacer02.jpg" width="374" height="308"/>
+</media>
+
+
+</para>
+
+
+
+
+
+
+
+</section>
+<section id="h11004">
+<title>
+<emphasis id="Answers" effect="bold">
+
+Answers
+
+</emphasis>
+
+
+</title>
+
+
+
+
+
+
+
+<section id="h21009">
+<title>
+<emphasis id="answer09" effect="bold">
+
+Answer 9
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1027">
+False. The actual output is shown in 
+
+<link id="a1089" target-id="Figure_34">
+
+Figure 34
+
+</link>
+
+. This 
+question was included to 
+point out that testing floating point results can be problematic. Many floating 
+point values are simply estimates. Although this example was purposely caused to 
+fail, a given floating point computation may not produce exactly the same 
+results on different platforms. Therefore a test that specifies a given floating 
+point result may pass on one platform and fail on a different platform.
+
+
+<link id="a1090" url="https://docs.python.org/3/library/doctest.html">
+
+The Python Standard 
+Library -- 26.2 doctest -- Test interactive Python examples
+
+</link>
+
+ provides some 
+suggestions for dealing with this issue.
+
+</para>
+
+
+
+
+
+	
+
+<table id="table1031" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1031">
+
+			
+
+<row id="tr1062">
+
+				
+
+<entry id="th1031">
+<emphasis id="Figure_34" effect="bold">
+
+Figure 34
+
+</emphasis>
+
+. Question 9 actual 
+				output.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1031">
+
+			
+
+<row id="tr1063">
+
+				
+
+<entry id="td1031">
+
+
+
+
+<code id="pre1031" display="block">
+Trying:
+    divide(1,3)
+Expecting:
+    0.333333
+**********************************************************************
+File "Py1359_1720r_09.py", line 4, in __main__
+Failed example:
+    divide(1,3)
+Expected:
+    0.333333
+Got:
+    0.3333333333333333
+1 items had no tests:
+    __main__.divide
+**********************************************************************
+1 items had failures:
+   1 of   1 in __main__
+1 tests in 2 items.
+0 passed and 1 failed.
+***Test Failed*** 1 failures.
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+
+
+<para id="p1028">
+Go back to 
+
+<link id="a1091" target-id="question09">
+
+Question 9
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21010">
+<title>
+<emphasis id="answer08" effect="bold">
+
+Answer 8
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1029">
+True. The call to 
+
+<emphasis id="strong1001" effect="bold">
+testfile
+
+</emphasis>
+ at the end of 
+
+<link id="a1092" target-id="Figure_27">
+
+Figure 27
+
+</link>
+
+ 
+illustrates another way to cause a test file to be executed.
+
+</para>
+
+
+
+
+
+
+
+<para id="p1030">
+Go back to 
+
+<link id="a1093" target-id="question08">
+
+Question 8
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21011">
+<title>
+<emphasis id="answer07" effect="bold">
+
+Answer 7
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1031">
+False. The output produced by the procedure described in this question 
+includes the following error message:
+
+</para>
+
+
+
+
+<para id="p1032">
+<emphasis id="strong1002" effect="bold">
+NameError: name 'Py1359_1720r_07' is not defined
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1033">
+This indicates a syntax error in the specification of the name of the test 
+file. While the concept is correct and it is possible to use Python code in a 
+module similar to that shown in 
+
+<link id="a1094" target-id="Figure_22">
+
+Figure 22
+
+</link>
+
+ to execute a test file such as that 
+shown in 
+
+<link id="a1095" target-id="Figure_25">
+
+Figure 25
+
+</link>
+
+, the name of the 
+test file must be enclosed in quotation marks to be recognized as a test file. 
+Enclosing the name of the test file in 
+
+<link id="a1096" target-id="Figure_22">
+
+Figure 22
+
+</link>
+
+ in quotes would cause the 
+procedure to produce the output shown in 
+
+<link id="a1097" target-id="Figure_26">
+
+Figure 26
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<para id="p1034">
+Go back to 
+
+<link id="a1098" target-id="question07">
+
+Question 7
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21012">
+<title>
+<emphasis id="answer06" effect="bold">
+
+Answer 6
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1035">
+True.
+
+</para>
+
+
+
+
+<para id="p1036">
+Go back to 
+
+<link id="a1099" target-id="question06">
+
+Question 6
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21013">
+<title>
+<emphasis id="answer05" effect="bold">
+
+Answer 5
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1037">
+True.
+
+</para>
+
+
+
+
+<para id="p1038">
+Go back to 
+
+<link id="a1100" target-id="question05">
+
+Question 5
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21014">
+<title>
+<emphasis id="answer04" effect="bold">
+
+Answer 4
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1039">
+True.
+
+</para>
+
+
+
+
+<para id="p1040">
+Go back to 
+
+<link id="a1101" target-id="question04">
+
+Question 4
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21015">
+<title>
+<emphasis id="answer03" effect="bold">
+
+Answer 3
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1041">
+True.
+
+</para>
+
+
+
+
+<para id="p1042">
+Go back to 
+
+<link id="a1102" target-id="question03">
+
+Question 3
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21016">
+<title>
+<emphasis id="answer02" effect="bold">
+
+Answer 2
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1043">
+False. The actual output is shown in 
+
+<link id="a1103" target-id="Figure_8">
+
+Figure 8
+
+</link>
+
+. This is a formatting issue. If 
+you include explanatory text in the text file, you must leave a blank line 
+between the last line of specified output and the following line of explanatory text. 
+Otherwise, the explanatory text will be included as part of required output as 
+shown by the expected output value in 
+
+<link id="a1104" target-id="Figure_8">
+
+Figure 8
+
+</link>
+
+.
+
+</para>
+
+
+	
+
+<table id="table1032" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1032">
+
+			
+
+<row id="tr1064">
+
+				
+
+<entry id="th1032">
+<emphasis id="Figure_8" effect="bold">
+
+Figure 8
+
+</emphasis>
+
+. Question 2 actual 
+				output.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1032">
+
+			
+
+<row id="tr1065">
+
+				
+
+<entry id="td1032">
+
+
+
+
+<code id="pre1032" display="block">
+Trying:
+    2 + 3
+Expecting:
+    5
+    End of test
+**********************************************************************
+File "Py1359_1720r_02.txt", line 2, in Py1359_1720r_02.txt
+Failed example:
+    2 + 3
+Expected:
+    5
+    End of test
+Got:
+    5
+**********************************************************************
+1 items had failures:
+   1 of   1 in Py1359_1720r_02.txt
+1 tests in 1 items.
+0 passed and 1 failed.
+***Test Failed*** 1 failures.
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+<para id="p1044">
+Go back to 
+
+<link id="a1105" target-id="question02">
+
+Question 2
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21017">
+<title>
+<emphasis id="answer01" effect="bold">
+
+Answer 1
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1045">
+False. The actual output is shown in 
+
+<link id="a1106" target-id="Figure_4">
+
+Figure 4
+
+</link>
+
+. The test file contained two 
+tests, one of which passed and the other of which failed. Verbose output was not 
+specified. Therefore, the report didn't include information on the test that 
+passed. The test file contained explanatory text, which is okay under certain 
+formatting conditions, which I will get into in a subsequent question.. 
+
+</para>
+
+
+
+	
+
+<table id="table1033" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1033">
+
+			
+
+<row id="tr1066">
+
+				
+
+<entry id="th1033">
+<emphasis id="Figure_4" effect="bold">
+
+Figure 4
+
+</emphasis>
+
+. Question 1 actual 
+				output.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1033">
+
+			
+
+<row id="tr1067">
+
+				
+
+<entry id="td1033">
+
+
+
+
+<code id="pre1033" display="block">
+**********************************************************************
+File "Py1359_1720r_01.txt", line 7, in Py1359_1720r_01.txt
+Failed example:
+    2 + 3
+Expected:
+    6
+Got:
+    5
+**********************************************************************
+1 items had failures:
+   1 of   2 in Py1359_1720r_01.txt
+***Test Failed*** 1 failures.
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+<para id="p1046">
+Go back to 
+
+<link id="a1107" target-id="question01">
+
+Question 1
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+</section>
+<section id="h11005">
+<title>
+<emphasis id="Miscellaneous" effect="bold">
+
+Miscellaneous
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1047">
+This section contains a variety of miscellaneous information. 
+
+</para>
+
+
+
+
+
+	
+
+<note id="note1000" type="">
+
+
+		
+
+
+			
+
+<emphasis id="strong1003" effect="bold">
+Housekeeping material
+
+</emphasis>
+
+			
+
+<list id="ul1003" list-type="bulleted">
+
+				
+
+<item id="li1040">
+Module name: Itse1359-1720r-Review
+
+</item>
+
+
+				
+
+<item id="li1041">
+File: Itse1359-1720r.htm 
+
+</item>
+
+
+				
+
+<item id="li1042">
+Published: 11/10/14
+
+</item>
+
+
+
+
+<item id="li1043">
+Revised: 03/04/15
+
+</item>
+
+
+			
+
+</list>
+
+
+			
+
+</note>
+
+		
+
+
+
+
+
+
+
+
+
+	
+
+<note id="note1001" type="">
+
+
+		
+
+
+			
+
+<emphasis id="strong1004" effect="bold">
+Disclaimers:
+
+</emphasis>
+<para id="p1048">
+<emphasis id="strong1005" effect="bold">
+Financial
+
+</emphasis>
+: 
+			Although the Connexions site makes it possible for you to download a 
+			PDF file for this module at no charge, and also makes it possible 
+			for you to purchase a pre-printed version of the PDF file, you 
+			should be aware that some of the HTML elements in this module may 
+			not translate well into PDF.
+
+</para>
+
+
+			
+
+<para id="p1049">
+I also want you to know that, I receive no financial compensation 
+			from the Connexions website even if you purchase the PDF version of 
+			the module.
+
+</para>
+
+
+			
+
+<para id="p1050">
+In the past, unknown individuals have copied my modules from 
+			cnx.org, converted them to Kindle books, and placed them for sale on 
+			Amazon.com showing me as the author. I neither receive compensation 
+			for those sales nor do I know who does receive compensation. If you 
+			purchase such a book, please be aware that it is a copy of a module 
+			that is freely available on cnx.org and that it was made and 
+			published without my prior knowledge.
+
+</para>
+
+
+			
+
+<para id="p1051">
+<emphasis id="strong1006" effect="bold">
+Affiliation
+
+</emphasis>
+: I am a professor of Computer 
+			Information Technology at Austin Community College in Austin, TX.
+			
+
+</para>
+
+
+			
+
+</note>
+
+		
+
+
+
+
+
+
+
+
+
+<para id="p1052">
+-end- 
+
+</para>
+
+
+
+
+
+
+
+
+</section>
+</content>
+
+
+
+
+</document>

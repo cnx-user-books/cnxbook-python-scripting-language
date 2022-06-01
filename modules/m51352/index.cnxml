@@ -1,0 +1,2751 @@
+<document xmlns="http://cnx.rice.edu/cnxml"> 
+<title>Itse1359-1080r-Review</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m51352</md:content-id>
+  <md:title>Itse1359-1080r-Review</md:title>
+  <md:abstract>This module contains review questions and answers keyed to the module titled Itse1359-1080-Lists Part 1.</md:abstract>
+  <md:uuid>3c3e6dc0-2bd6-49db-8ffe-86dd0b7dcf14</md:uuid>
+</metadata>
+
+<content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h11000">
+<title>
+Table of contents
+
+</title>
+
+
+
+
+<list id="ul1000" list-type="bulleted">
+
+	
+
+<item id="li1000">
+<link id="a1000" target-id="Preface">
+
+Preface
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1001">
+<link id="a1001" target-id="Questions">
+
+Questions
+
+</link>
+
+
+	
+
+<list id="ul1001" list-type="bulleted">
+
+		
+
+<item id="li1002">
+<link id="a1002" target-id="question01">
+
+1
+
+</link>
+
+, 
+
+<link id="a1003" target-id="question02">
+
+2
+
+</link>
+
+,
+		
+
+<link id="a1004" target-id="question03">
+
+3
+
+</link>
+
+, 
+
+<link id="a1005" target-id="question04">
+
+4
+
+</link>
+
+,
+		
+
+<link id="a1006" target-id="question05">
+
+5
+
+</link>
+
+, 
+
+<link id="a1007" target-id="question06">
+
+6
+
+</link>
+
+,
+		
+
+<link id="a1008" target-id="question07">
+
+7
+
+</link>
+
+, 
+
+<link id="a1009" target-id="question08">
+
+8
+
+</link>
+
+,
+		
+
+<link id="a1010" target-id="question09">
+
+9
+
+</link>
+
+, 
+
+<link id="a1011" target-id="question10">
+
+10
+
+</link>
+
+, 
+		
+
+<link id="a1012" target-id="question11">
+
+11
+
+</link>
+
+, 
+
+<link id="a1013" target-id="question12">
+
+12
+
+</link>
+
+, 
+		
+
+<link id="a1014" target-id="question13">
+
+13
+
+</link>
+
+, 
+		
+
+<link id="a1015" target-id="question14">
+
+14
+
+</link>
+
+, 
+		
+
+<link id="a1016" target-id="question15">
+
+15
+
+</link>
+
+,
+		
+
+<link id="a1017" target-id="question16">
+
+16
+
+</link>
+
+,
+		
+
+<link id="a1018" target-id="question17">
+
+17
+
+</link>
+
+, 
+		
+
+<link id="a1019" target-id="question18">
+
+18
+
+</link>
+
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+	
+
+<item id="li1003">
+<link id="a1020" target-id="Listing_index">
+
+Listing index
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1004">
+<link id="a1021" target-id="Answers">
+
+Answers
+
+</link>
+
+
+</item>
+
+
+
+	
+
+<item id="li1005">
+<link id="a1022" target-id="Miscellaneous">
+
+Miscellaneous
+
+</link>
+
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+</section>
+<section id="h11001">
+<title>
+<emphasis id="Preface" effect="bold">
+
+Preface
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1000">
+This module is one in a collection of modules on Python designed for 
+teaching 
+
+<emphasis id="em1000" effect="italics">
+ITSE 1359 Introduction to Scripting Languages: Python
+
+</emphasis>
+ at Austin Community 
+College in Austin, TX.
+
+</para>
+
+
+
+
+<para id="p1001">
+This module contains review questions and answers keyed to the module titled
+
+
+<emphasis id="em1001" effect="italics">
+Itse1359-1080-Lists Part 1
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+<para id="p1002">
+Once you study that module, you should be able to answer the review 
+questions in this module.
+
+</para>
+
+
+
+
+<para id="p1003">
+The questions and the answers in this module are connected by hyperlinks to 
+make it easy for you to navigate from the question to the answer and back again.
+
+</para>
+
+
+
+
+<para id="p1004">
+<emphasis id="em1002" effect="italics">
+(Note to blind and visually impaired students: with the exception of two 
+bitmap images that are used solely as spacers to separate the question section 
+from the answer section, all of the material in this module is presented in 
+plain text format and should be accessible using an audio screen reader or a 
+braille display.)
+
+</emphasis>
+</para>
+
+
+
+
+</section>
+<section id="h11002">
+<title>
+<emphasis id="Questions" effect="bold">
+
+Questions
+
+</emphasis>
+
+
+</title>
+
+
+
+
+
+<section id="h21000">
+<title>
+<emphasis id="question01" effect="bold">
+
+Question 1
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1005">
+True or False? A 
+
+<emphasis id="em1003" effect="italics">
+subscription
+
+</emphasis>
+ in Python is how you go about getting 
+magazines delivered to your mailbox.
+
+</para>
+
+
+
+
+
+<para id="p1006">
+Go to 
+
+<link id="a1023" target-id="answer01">
+
+answer 1
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21001">
+<title>
+<emphasis id="question02" effect="bold">
+
+Question 2
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1007">
+Name three types of 
+
+<emphasis id="em1004" effect="italics">
+sequence
+
+</emphasis>
+ objects. 
+
+</para>
+
+
+
+
+<para id="p1008">
+Go to 
+
+<link id="a1024" target-id="answer02">
+
+answer 2
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21002">
+<title>
+<emphasis id="question03" effect="bold">
+
+Question 3
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1009">
+Given the following nomenclature 
+
+</para>
+
+
+
+
+<para id="p1010">
+primary "[" expression_list "]" 
+
+</para>
+
+
+
+
+<para id="p1011">
+what is the requirement for the 
+
+<emphasis id="em1005" effect="italics">
+primary
+
+</emphasis>
+? 
+
+</para>
+
+
+
+
+<para id="p1012">
+Go to 
+
+<link id="a1025" target-id="answer03">
+
+answer 3
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21003">
+<title>
+<emphasis id="question04" effect="bold">
+
+Question 4
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1013">
+If the 
+
+<emphasis id="em1006" effect="italics">
+primary
+
+</emphasis>
+ is a 
+
+<emphasis id="em1007" effect="italics">
+sequence
+
+</emphasis>
+, what must be the type of 
+expression_list? 
+
+</para>
+
+
+
+
+<para id="p1014">
+Go to 
+
+<link id="a1026" target-id="answer04">
+
+answer 4
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21004">
+<title>
+<emphasis id="question05" effect="bold">
+
+Question 5
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1015">
+True or False? If the primary is a 
+
+<emphasis id="em1008" effect="italics">
+sequence
+
+</emphasis>
+, the expression_list must 
+evaluate to a positive integer or to a slice containing positive integers.
+
+</para>
+
+
+
+
+<para id="p1016">
+Go to 
+
+<link id="a1027" target-id="answer05">
+
+answer 5
+
+</link>
+
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21005">
+<title>
+<emphasis id="question06" effect="bold">
+
+Question 6
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1017">
+Which item in the sequence is selected for an index value of -1? 
+
+</para>
+
+
+
+
+<para id="p1018">
+Go to 
+
+<link id="a1028" target-id="answer06">
+
+answer 6
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21006">
+<title>
+<emphasis id="question07" effect="bold">
+
+Question 7
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1019">
+True or False? Just like C, C++, and Java, Python supports a 
+
+<emphasis id="em1009" effect="italics">
+character
+
+</emphasis>
+ 
+type.
+
+</para>
+
+
+
+
+<para id="p1020">
+Go to 
+
+<link id="a1029" target-id="answer07">
+
+answer 7
+
+</link>
+
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21007">
+<title>
+<emphasis id="question08" effect="bold">
+
+Question 8
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1021">
+What is another name for a 
+
+<emphasis id="em1010" effect="italics">
+mapping
+
+</emphasis>
+? 
+
+</para>
+
+
+
+
+
+
+<para id="p1022">
+Go to 
+
+<link id="a1030" target-id="answer08">
+
+answer 8
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21008">
+<title>
+<emphasis id="question09" effect="bold">
+
+Question 9
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1023">
+What is a 
+
+<emphasis id="em1011" effect="italics">
+mutable
+
+</emphasis>
+ sequence? 
+
+</para>
+
+
+
+
+<para id="p1024">
+Go to 
+
+<link id="a1031" target-id="answer09">
+
+answer 9
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21009">
+<title>
+<emphasis id="question10" effect="bold">
+
+Question 10
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1025">
+True or False? A string is a sequence.
+
+</para>
+
+
+
+
+<para id="p1026">
+Go to 
+
+<link id="a1032" target-id="answer10">
+
+answer 10
+
+</link>
+
+
+</para>
+
+
+	
+
+
+</section>
+<section id="h21010">
+<title>
+<emphasis id="question11" effect="bold">
+
+Question 11
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1027">
+True or False? A string is a mutable sequence.
+
+</para>
+
+
+
+
+<para id="p1028">
+Go to 
+
+<link id="a1033" target-id="answer11">
+
+answer 11
+
+</link>
+
+
+</para>
+
+
+	
+
+
+</section>
+<section id="h21011">
+<title>
+<emphasis id="question12" effect="bold">
+
+Question 12
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1029">
+What kinds of items can be placed in a 
+
+<emphasis id="em1012" effect="italics">
+list
+
+</emphasis>
+? 
+
+</para>
+
+
+
+
+<para id="p1030">
+Go to 
+
+<link id="a1034" target-id="answer12">
+
+answer 12
+
+</link>
+
+
+</para>
+
+
+	
+
+
+</section>
+<section id="h21012">
+<title>
+<emphasis id="question13" effect="bold">
+
+Question 13
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1031">
+How are 
+
+<emphasis id="em1013" effect="italics">
+lists
+
+</emphasis>
+ formed from a syntax viewpoint?
+
+</para>
+
+
+
+
+<para id="p1032">
+Go to 
+
+<link id="a1035" target-id="answer13">
+
+answer 13
+
+</link>
+
+
+</para>
+
+
+	
+
+
+</section>
+<section id="h21013">
+<title>
+<emphasis id="question14" effect="bold">
+
+Question 14
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1033">
+Show how to create a simple list using program code. 
+
+</para>
+
+
+
+
+<para id="p1034">
+Go to 
+
+<link id="a1036" target-id="answer14">
+
+answer 14
+
+</link>
+
+
+</para>
+
+
+	
+
+
+</section>
+<section id="h21014">
+<title>
+<emphasis id="question15" effect="bold">
+
+Question 15
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1035">
+Show how to access an item in a list using a subscription. 
+
+</para>
+
+
+
+
+<para id="p1036">
+Go to 
+
+<link id="a1037" target-id="answer15">
+
+answer 15
+
+</link>
+
+
+</para>
+
+
+	
+
+
+</section>
+<section id="h21015">
+<title>
+<emphasis id="question16" effect="bold">
+
+Question 16
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1037">
+Show how to access a slice from a list. 
+
+</para>
+
+
+
+
+<para id="p1038">
+Go to 
+
+<link id="a1038" target-id="answer16">
+
+answer 16
+
+</link>
+
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21016">
+<title>
+<emphasis id="question17" effect="bold">
+
+Question 17
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1039">
+Show how to concatenate two lists. 
+
+</para>
+
+
+
+
+<para id="p1040">
+Go to 
+
+<link id="a1039" target-id="answer17">
+
+answer 17
+
+</link>
+
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21017">
+<title>
+<emphasis id="question18" effect="bold">
+
+Question 18
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1041">
+Show how to modify an item in a list using a subscription. 
+
+</para>
+
+
+
+
+<para id="p1042">
+Go to 
+
+<link id="a1040" target-id="answer18">
+
+answer 18
+
+</link>
+
+
+</para>
+
+
+
+
+
+
+
+</section>
+</section>
+<section id="h11003">
+<title>
+<emphasis id="Listing_index" effect="bold">
+
+Listing index
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<list id="ul1002" list-type="bulleted">
+
+		
+
+<item id="li1006">
+<link id="a1041" target-id="Listing_1">
+
+Listing 1
+
+</link>
+
+. Answer 14. 
+
+</item>
+
+
+		
+
+<item id="li1007">
+<link id="a1042" target-id="Listing_2">
+
+Listing 2
+
+</link>
+
+. Answer 15.
+
+</item>
+
+
+		
+
+<item id="li1008">
+<link id="a1043" target-id="Listing_3">
+
+Listing 3
+
+</link>
+
+. Answer 16.
+
+</item>
+
+
+		
+
+<item id="li1009">
+<link id="a1044" target-id="Listing_4">
+
+Listing 4
+
+</link>
+
+. Answer 17.
+
+</item>
+
+
+		
+
+<item id="li1010">
+<link id="a1045" target-id="Listing_5">
+
+Listing 5
+
+</link>
+
+. Answer 18.
+
+</item>
+
+
+
+	
+
+</list>
+
+
+
+
+
+<para id="p1043">
+<emphasis id="strong1000" effect="bold">
+What is the meaning of the following two images?
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1044">
+These images were inserted here simply to insert some space between the 
+questions and the answers to keep them from being visible on the screen at the 
+same time. 
+
+</para>
+
+
+
+
+
+<media id="media1000" alt="Spacer image of a rabbit and a penguin." display="block">
+<image id="img1000" mime-type="image/jpeg" src="../../media/Spacer01.jpg" width="339" height="290"/>
+</media>
+
+
+
+
+
+<para id="p1045">
+This image was also inserted for the purpose of inserting space between the questions and the answers.
+
+</para>
+
+
+
+
+<para id="p1046">
+
+
+
+<media id="media1001" alt="Spacer image of a penguin and some houses." display="block">
+<image id="img1001" mime-type="image/jpeg" src="../../media/Spacer02.jpg" width="374" height="308"/>
+</media>
+
+
+</para>
+
+
+
+
+
+
+
+</section>
+<section id="h11004">
+<title>
+<emphasis id="Answers" effect="bold">
+
+Answers
+
+</emphasis>
+
+
+</title>
+
+
+
+
+
+
+
+<section id="h21018">
+<title>
+<emphasis id="answer18" effect="bold">
+
+Answer 18
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1047">
+<link id="a1046" target-id="Listing_5">
+
+Listing 5
+
+</link>
+
+ shows how to modify an item in a list using a subscription. 
+
+</para>
+
+
+
+	
+
+<table id="table1000" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1000">
+
+			
+
+<row id="tr1000">
+
+				
+
+<entry id="th1000">
+<emphasis id="Listing_5" effect="bold">
+
+Listing 5
+
+</emphasis>
+
+. Answer 18.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1000">
+
+			
+
+<row id="tr1001">
+
+				
+
+<entry id="td1000">
+
+
+
+<code id="pre1000" display="block">
+listA = [3.14,59,"A string",1024]
+listA[2] = "New string" 
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+<para id="p1048">
+Go back to 
+
+<link id="a1047" target-id="question18">
+
+Question 18
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21019">
+<title>
+<emphasis id="answer17" effect="bold">
+
+Answer 17
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1049">
+<link id="a1048" target-id="Listing_4">
+
+Listing 4
+
+</link>
+
+ shows how to concatenate two lists. 
+
+</para>
+
+
+
+	
+
+<table id="table1001" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1001">
+
+			
+
+<row id="tr1002">
+
+				
+
+<entry id="th1001">
+<emphasis id="Listing_4" effect="bold">
+
+Listing 4
+
+</emphasis>
+
+. Answer 17.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1001">
+
+			
+
+<row id="tr1003">
+
+				
+
+<entry id="td1001">
+
+
+
+<code id="pre1001" display="block">
+listA = [3.14,59,"A string",1024]
+listB = [2,4,6,16]
+listC = listA + listB 
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+<para id="p1050">
+Go back to 
+
+<link id="a1049" target-id="question17">
+
+Question 17
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21020">
+<title>
+<emphasis id="answer16" effect="bold">
+
+Answer 16
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1051">
+<link id="a1050" target-id="Listing_3">
+
+Listing 3
+
+</link>
+
+ shows how to access a slice from a list. 
+
+</para>
+
+
+
+
+	
+
+<table id="table1002" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1002">
+
+			
+
+<row id="tr1004">
+
+				
+
+<entry id="th1002">
+<emphasis id="Listing_3" effect="bold">
+
+Listing 3
+
+</emphasis>
+
+. Answer 16.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1002">
+
+			
+
+<row id="tr1005">
+
+				
+
+<entry id="td1002">
+
+
+
+<code id="pre1002" display="block">
+print(theList[0:3])
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+<para id="p1052">
+Go back to 
+
+<link id="a1051" target-id="question16">
+
+Question 16
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+
+</section>
+<section id="h21021">
+<title>
+<emphasis id="answer15" effect="bold">
+
+Answer 15
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1053">
+<link id="a1052" target-id="Listing_2">
+
+Listing 2
+
+</link>
+
+ shows how to access an item in a list using a subscription. 
+
+</para>
+
+
+
+	
+
+<table id="table1003" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1003">
+
+			
+
+<row id="tr1006">
+
+				
+
+<entry id="th1003">
+<emphasis id="Listing_2" effect="bold">
+
+Listing 2
+
+</emphasis>
+
+. Answer 15.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1003">
+
+			
+
+<row id="tr1007">
+
+				
+
+<entry id="td1003">
+
+
+
+<code id="pre1003" display="block">
+print(theList[2])
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+<para id="p1054">
+Go back to 
+
+<link id="a1053" target-id="question15">
+
+Question 15
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21022">
+<title>
+<emphasis id="answer14" effect="bold">
+
+Answer 14
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1055">
+<link id="a1054" target-id="Listing_1">
+
+Listing 1
+
+</link>
+
+ shows a simple list.
+
+</para>
+
+
+
+	
+
+<table id="table1004" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1004">
+
+			
+
+<row id="tr1008">
+
+				
+
+<entry id="th1004">
+<emphasis id="Listing_1" effect="bold">
+
+Listing 1
+
+</emphasis>
+
+. Answer 14.
+
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1004">
+
+			
+
+<row id="tr1009">
+
+				
+
+<entry id="td1004">
+
+
+
+<code id="pre1004" display="block">
+theList = [3.14,59,"A string",1024]
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+<para id="p1056">
+Go back to 
+
+<link id="a1055" target-id="question14">
+
+Question 14
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21023">
+<title>
+<emphasis id="answer13" effect="bold">
+
+Answer 13
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1057">
+<emphasis id="em1014" effect="italics">
+Lists
+
+</emphasis>
+ are formed by placing a comma-separated sequence of expressions 
+in square brackets. 
+
+</para>
+
+
+
+
+<para id="p1058">
+Go back to 
+
+<link id="a1056" target-id="question13">
+
+Question 13
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21024">
+<title>
+<emphasis id="answer12" effect="bold">
+
+Answer 12
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1059">
+The items of a 
+
+<emphasis id="em1015" effect="italics">
+list
+
+</emphasis>
+ are arbitrary Python objects. 
+
+</para>
+
+
+
+
+<para id="p1060">
+Go back to 
+
+<link id="a1057" target-id="question12">
+
+Question 12
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21025">
+<title>
+<emphasis id="answer11" effect="bold">
+
+Answer 11
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1061">
+False. The characters in a string cannot be modified after the string is 
+created. 
+
+</para>
+
+
+
+
+<para id="p1062">
+Go back to 
+
+<link id="a1058" target-id="question11">
+
+Question 11
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21026">
+<title>
+<emphasis id="answer10" effect="bold">
+
+Answer 10
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1063">
+True. A string is a sequence.
+
+</para>
+
+
+
+
+<para id="p1064">
+Go back to 
+
+<link id="a1059" target-id="question10">
+
+Question 10
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+
+</section>
+<section id="h21027">
+<title>
+<emphasis id="answer09" effect="bold">
+
+Answer 9
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1065">
+Mutable sequences can be changed after they are created. 
+
+</para>
+
+
+
+
+<para id="p1066">
+Go back to 
+
+<link id="a1060" target-id="question09">
+
+Question 9
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21028">
+<title>
+<emphasis id="answer08" effect="bold">
+
+Answer 8
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1067">
+A dictionary. 
+
+</para>
+
+
+
+
+
+
+
+<para id="p1068">
+Go back to 
+
+<link id="a1061" target-id="question08">
+
+Question 8
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21029">
+<title>
+<emphasis id="answer07" effect="bold">
+
+Answer 7
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1069">
+False. There is no character type in Python. Rather, a string's items are 
+characters. A character is not a separate data type but a string containing 
+exactly one character. 
+
+</para>
+
+
+
+
+<para id="p1070">
+Go back to 
+
+<link id="a1062" target-id="question07">
+
+Question 7
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21030">
+<title>
+<emphasis id="answer06" effect="bold">
+
+Answer 6
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1071">
+The last item in the sequence is selected for an index value of -1. 
+
+</para>
+
+
+
+
+<para id="p1072">
+Go back to 
+
+<link id="a1063" target-id="question06">
+
+Question 6
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21031">
+<title>
+<emphasis id="answer05" effect="bold">
+
+Answer 5
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1073">
+False. The integers may be positive or negative. 
+
+</para>
+
+
+
+
+<para id="p1074">
+Go back to 
+
+<link id="a1064" target-id="question05">
+
+Question 5
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21032">
+<title>
+<emphasis id="answer04" effect="bold">
+
+Answer 4
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1075">
+If the primary is a 
+
+<emphasis id="em1016" effect="italics">
+sequence
+
+</emphasis>
+, the expression_list must evaluate to an 
+integer or a slice.
+
+</para>
+
+
+
+
+<para id="p1076">
+Go back to 
+
+<link id="a1065" target-id="question04">
+
+Question 4
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21033">
+<title>
+<emphasis id="answer03" effect="bold">
+
+Answer 3
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1077">
+The 
+
+<emphasis id="em1017" effect="italics">
+primary
+
+</emphasis>
+ must evaluate to an object of a 
+
+<emphasis id="em1018" effect="italics">
+sequence
+
+</emphasis>
+ or 
+
+<emphasis id="em1019" effect="italics">
+
+mapping
+
+</emphasis>
+ type. 
+
+</para>
+
+
+
+
+<para id="p1078">
+Go back to 
+
+<link id="a1066" target-id="question03">
+
+Question 3
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21034">
+<title>
+<emphasis id="answer02" effect="bold">
+
+Answer 2
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1079">
+string, tuple and list and possibly range object
+
+</para>
+
+
+
+
+<para id="p1080">
+Go back to 
+
+<link id="a1067" target-id="question02">
+
+Question 2
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21035">
+<title>
+<emphasis id="answer01" effect="bold">
+
+Answer 1
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1081">
+False in the Python context. In Python, A 
+
+<emphasis id="em1020" effect="italics">
+subscription
+
+</emphasis>
+ selects an item 
+of a 
+
+<emphasis id="em1021" effect="italics">
+sequence
+
+</emphasis>
+ object. 
+
+</para>
+
+
+
+
+<para id="p1082">
+Go back to 
+
+<link id="a1068" target-id="question01">
+
+Question 1
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+</section>
+<section id="h11005">
+<title>
+<emphasis id="Miscellaneous" effect="bold">
+
+Miscellaneous
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1083">
+This section contains a variety of miscellaneous information. 
+
+</para>
+
+
+
+
+
+	
+
+<note id="note1000" type="">
+
+
+		
+
+
+			
+
+<emphasis id="strong1001" effect="bold">
+Housekeeping material
+
+</emphasis>
+
+			
+
+<list id="ul1003" list-type="bulleted">
+
+				
+
+<item id="li1011">
+Module name: Itse1359-1080r-Review
+
+</item>
+
+
+				
+
+<item id="li1012">
+File: Itse1359-1080r.htm 
+
+</item>
+
+
+				
+
+<item id="li1013">
+Published: 10/15/14
+
+</item>
+
+
+				
+
+<item id="li1014">
+Revised: 02/21/15
+
+</item>
+
+
+			
+
+</list>
+
+
+			
+
+</note>
+
+		
+
+
+
+
+
+
+
+
+
+	
+
+<note id="note1001" type="">
+
+
+		
+
+
+			
+
+<emphasis id="strong1002" effect="bold">
+Disclaimers:
+
+</emphasis>
+<para id="p1084">
+<emphasis id="strong1003" effect="bold">
+Financial
+
+</emphasis>
+: 
+			Although the Connexions site makes it possible for you to download a 
+			PDF file for this module at no charge, and also makes it possible 
+			for you to purchase a pre-printed version of the PDF file, you 
+			should be aware that some of the HTML elements in this module may 
+			not translate well into PDF.
+
+</para>
+
+
+			
+
+<para id="p1085">
+I also want you to know that, I receive no financial compensation 
+			from the Connexions website even if you purchase the PDF version of 
+			the module.
+
+</para>
+
+
+			
+
+<para id="p1086">
+In the past, unknown individuals have copied my modules from 
+			cnx.org, converted them to Kindle books, and placed them for sale on 
+			Amazon.com showing me as the author. I neither receive compensation 
+			for those sales nor do I know who does receive compensation. If you 
+			purchase such a book, please be aware that it is a copy of a module 
+			that is freely available on cnx.org and that it was made and 
+			published without my prior knowledge.
+
+</para>
+
+
+			
+
+<para id="p1087">
+<emphasis id="strong1004" effect="bold">
+Affiliation
+
+</emphasis>
+: I am a professor of Computer 
+			Information Technology at Austin Community College in Austin, TX.
+			
+
+</para>
+
+
+			
+
+</note>
+
+		
+
+
+
+
+
+
+
+
+
+<para id="p1088">
+-end- 
+
+</para>
+
+
+
+
+
+
+
+
+</section>
+</content>
+
+
+
+
+</document>

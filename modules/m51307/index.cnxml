@@ -1,0 +1,1702 @@
+<document xmlns="http://cnx.rice.edu/cnxml"> 
+<title>Itse1359-1000-Preface</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m51307</md:content-id>
+  <md:title>Itse1359-1000-Preface</md:title>
+  <md:abstract>This module is the preface for a collection of modules designed for teaching ITSE 1359 Introduction to Scripting Languages: Python at Austin Community College in Austin, TX.</md:abstract>
+  <md:uuid>6a78ab84-a3e5-4627-8b5d-765608701486</md:uuid>
+</metadata>
+
+<content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h11000">
+<title>
+Table of contents
+
+</title>
+
+
+
+
+<list id="ul1000" list-type="bulleted">
+
+	
+
+<item id="li1000">
+<link id="a1000" target-id="Welcome_">
+
+Welcome
+
+</link>
+
+
+</item>
+
+
+
+	
+
+<item id="li1001">
+<link id="a1001" target-id="Information_about_the_course">
+
+Information about the course
+
+</link>
+
+
+<list id="ul1001" list-type="bulleted">
+
+		
+
+<item id="li1002">
+<link id="a1002" target-id="Course_description">
+
+Course description
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1003">
+<link id="a1003" target-id="Prerequisites">
+
+Prerequisites
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1004">
+<link id="a1004" target-id="Course_rationale">
+
+Course rationale
+
+</link>
+
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+	
+
+<item id="li1005">
+<link id="a1005" target-id="Learning_resources">
+
+Learning resources
+
+</link>
+
+
+<list id="ul1002" list-type="bulleted">
+
+		
+
+<item id="li1006">
+<link id="a1006" target-id="General">
+
+General
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1007">
+<link id="a1007" target-id="Primary_learning_resource">
+
+Primary learning resources
+
+</link>
+
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+	
+
+<item id="li1008">
+<link id="a1008" target-id="How_to_use_this_instructional_material">
+
+How to use this instructional material
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1009">
+<link id="a1009" target-id="An_editorial_comment">
+
+An editorial comment
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1010">
+<link id="a1010" target-id="Reinforcing_what_you_are_learning">
+
+Reinforcing what you are 
+	learning
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1011">
+<link id="a1011" target-id="Miscellaneous">
+
+Miscellaneous
+
+</link>
+
+
+</item>
+
+
+
+
+
+</list>
+
+
+	
+
+	
+
+	
+	
+
+</section>
+<section id="h11001">
+<title>
+ 
+
+<emphasis id="Welcome_" effect="bold">
+
+Welcome
+
+</emphasis>
+
+
+
+
+
+</title>
+
+
+
+
+<para id="p1000">
+ Welcome to the course material for 
+
+<emphasis id="em1000" effect="italics">
+ITSE 1359 Introduction to Scripting 
+Languages: Python
+
+</emphasis>
+ at Austin Community College in Austin, TX.
+
+</para>
+
+
+
+
+<para id="p1001">
+ 
+
+<emphasis id="em1001" effect="italics">
+(Note to blind and visually impaired students: most of the 
+material for this course is presented in plain text format and should be 
+accessible using an audio screen reader or a braille display. While there are a 
+few bitmapped images that aren't accessible, that material will not be needed 
+for assignments or included on tests.)
+
+</emphasis>
+</para>
+
+
+
+
+</section>
+<section id="h11002">
+<title>
+ 
+
+<emphasis id="Information_about_the_course" effect="bold">
+
+Information about the course
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<section id="h21000">
+<title>
+ 
+
+<emphasis id="Course_description" effect="bold">
+
+Course description
+
+</emphasis>
+
+
+
+
+
+</title>
+
+
+
+
+<para id="p1002">
+ As of September 2014, the description for this course reads 
+as follows:
+
+
+
+</para>
+
+
+
+
+<quote id="blockquote1000" display="block">
+ Introduction to scripting languages including basic data types, 
+control structures, regular expressions, input/output, and textual analysis.
+
+</quote>
+
+
+
+
+</section>
+<section id="h21001">
+<title>
+ 
+
+<emphasis id="Prerequisites" effect="bold">
+
+Prerequisites
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1003">
+ One semester of programming or departmental approval.
+
+</para>
+
+
+
+
+</section>
+<section id="h21002">
+<title>
+<emphasis id="Course_rationale" effect="bold">
+
+Course rationale
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1004">
+This course is an introduction to scripting languages and Python. The purpose 
+of the course is to prepare students for building scripts that control a 
+sequence of program steps such as those used in developing testing and deploying 
+software. A modern scripting language, Python, is used as an example of a 
+scripting language.
+
+</para>
+
+
+
+
+</section>
+</section>
+<section id="h11003">
+<title>
+ 
+
+<emphasis id="Learning_resources" effect="bold">
+
+Learning resources
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<section id="h21003">
+<title>
+ 
+
+<emphasis id="General" effect="bold">
+
+General
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1005">
+ I have long been a proponent of free and open educational resources for 
+college students. This version of this course does not require students to 
+purchase printed textbooks. Instead the learning resources for the course 
+consist of a large number of online 
+resources arranged in the 
+
+<emphasis id="following_major_sections" effect="bold">
+
+following major sections
+
+</emphasis>
+
+:
+
+    
+
+</para>
+
+
+
+
+<list id="ol1000" list-type="enumerated">
+
+	
+
+<item id="li1012">
+Language Fundamentals - Demonstrate the basic techniques used to create scripts 
+	for automating system administrative tasks.
+
+</item>
+
+
+	
+
+<item id="li1013">
+Testing - Design, code, and test Python applications using Python 
+	doctests and unit testing tools.
+
+</item>
+
+
+	
+
+<item id="li1014">
+Text processing - Demonstrate the use of string operations and regular expressions in 
+	processing text.
+
+</item>
+
+
+	
+
+<item id="li1015">
+Networking and Databases - Demonstrate the use of Python in developing 
+	applications using networking and databases.
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+</section>
+<section id="h21004">
+<title>
+<emphasis id="Primary_learning_resource" effect="bold">
+
+Primary learning resources
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1006">
+ You are probably reading this document online at 
+
+<link id="a1012" url="http://cnx.org/">
+
+
+cnx.org
+
+</link>
+
+, otherwise known as 
+
+<emphasis id="strong1000" effect="bold">
+openstax cnx
+
+</emphasis>
+. As of October 
+2014, two views of the document are available: an 
+
+<emphasis id="em1002" effect="italics">
+openstax
+
+</emphasis>
+ view and a
+
+
+<emphasis id="em1003" effect="italics">
+legacy
+
+</emphasis>
+ view. The material is the same in both views. Only the format 
+and the top-level organization is different.
+
+</para>
+
+
+
+
+<para id="p1007">
+ In the 
+
+<emphasis id="em1004" effect="italics">
+openstax
+
+</emphasis>
+ view, the group of documents is referred to as a 
+
+<emphasis id="strong1001" effect="bold">
+
+book
+
+</emphasis>
+ and each document is referred to as a 
+
+<emphasis id="strong1002" effect="bold">
+page
+
+</emphasis>
+.
+
+
+
+</para>
+
+
+
+
+<para id="p1008">
+ In the 
+
+<emphasis id="em1005" effect="italics">
+legacy
+
+</emphasis>
+ view, the group of documents is referred to as a 
+
+<emphasis id="strong1003" effect="bold">
+
+collection
+
+</emphasis>
+ and each document is referred to as a 
+
+<emphasis id="strong1004" effect="bold">
+module
+
+</emphasis>
+.
+
+
+
+</para>
+
+
+
+
+<para id="p1009">
+You should not think of this book or this collection as a 
+comprehensive tutorial on Python programming. Instead, you should think of it as 
+an 
+
+<emphasis id="em1006" effect="italics">
+annotated guidebook
+
+</emphasis>
+ to free online resources that constitute the primary 
+learning resources for the course.
+
+</para>
+
+
+
+
+<para id="p1010">
+In some cases, I will explain the material in detail and illustrate the 
+material with working programs. In other cases, I will partially explain the 
+material and refer you to one or more online resources for additional 
+explanations. In some cases, I will simply refer you to one or more online 
+resources for the complete explanation. In all cases, I will either attempt to 
+explain the material or refer you to one or more online resources for a full or 
+partial explanation.
+
+</para>
+
+
+
+
+<para id="p1011">
+For many of the modules, I will also provide a 
+
+<emphasis id="em1007" effect="italics">
+review module
+
+</emphasis>
+ containing 
+questions and answers to help you retain the important information provided by 
+the module.
+
+</para>
+
+
+
+
+<para id="p1012">
+References to free online resources will include but will not be limited to 
+the following websites listed in no particular order:
+
+</para>
+
+
+
+
+<list id="ul1003" list-type="bulleted">
+
+	
+
+<item id="li1016">
+
+	
+
+<link id="a1013" url="http://interactivepython.org/courselib/static/thinkcspy/toc.html#t-o-c">
+
+How To Think Like a Computer Scientist - Interactive Version
+
+</link>
+
+
+
+
+</item>
+
+
+	
+
+<item id="li1017">
+<link id="a1014" url="http://openbookproject.net/thinkcs/python/english3e/">
+
+How to Think Like a Computer Scientist
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1018">
+<link id="a1015" url="http://www.skulpt.org/">
+
+Skulpt
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1019">
+<link id="a1016" url="http://pythontutor.com/">
+
+Online code visualizer
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1020">
+<link id="a1017" url="http://www.learnpython.org/">
+
+learnpython.org
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1021">
+<link id="a1018" url="http://www.codecademy.com/en/tracks/python">
+
+Python at 
+	Codecademy
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1022">
+<link id="a1019" url="http://programarcadegames.com/">
+
+Program Arcade Games
+With Python And Pygame
+
+</link>
+
+
+</item>
+
+
+
+	
+
+<item id="li1023">
+<link id="a1020" url="http://www.tutorialspoint.com/python/">
+
+tutorialspoint -- Python 
+Tutorial
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1024">
+<link id="a1021" url="https://docs.python.org/3/tutorial/index.html">
+
+The Python Tutorial
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1025">
+<link id="a1022" url="http://www.sthurlow.com/python/">
+
+A Beginner's Python Tutorial
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1026">
+<link id="a1023" url="http://en.wikibooks.org/wiki/A_Beginner's_Python_Tutorial">
+
+Another 
+Beginner's Python Tutorial
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1027">
+<link id="a1024" url="http://www.diveintopython.net/toc/index.html">
+
+Diving Into Python
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1028">
+<link id="a1025" url="https://docs.python.org/3/c-api/index.html#c-api-index">
+
+Python/C API Reference Manual
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1029">
+<link id="a1026" url="https://docs.python.org/3/reference/index.html">
+
+The Python Language Reference
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1030">
+<link id="a1027" url="https://docs.python.org/3/library/index.html#library-index">
+
+The Python Standard Library
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1031">
+<link id="a1028" url="http://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml/">
+
+Hands-on 
+Python Tutorial
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1032">
+<link id="a1029" url="http://www.learnpython.org/">
+
+learnpython.org
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1033">
+
+	
+
+<link id="a1030" url="http://en.wikibooks.org/wiki/Non-Programmer's_Tutorial_for_Python_3">
+
+Non-Programmer's Tutorial for Python 3
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1034">
+<link id="a1031" url="http://www.python-course.eu/python3_course.php">
+
+Python3 Tutorial
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1035">
+<link id="a1032" url="http://docs.python-guide.org/en/latest/writing/tests/">
+
+Testing Your 
+Code -- The Hitchhiker's Guide to Python
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1036">
+<link id="a1033" url="http://www.tkdocs.com/index.html">
+
+TkDocs
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1037">
+<link id="a1034" url="http://effbot.org/tkinterbook/tkinter-hello-tkinter.htm">
+
+Hello Tkinter
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1038">
+<link id="a1035" url="http://effbot.org/tkinterbook/grid.htm">
+
+The Tkinter Grid Geometry Manager
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1039">
+<link id="a1036" url="http://www.python-course.eu/index.php">
+
+Python Course
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1040">
+<link id="a1037" url="http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html">
+
+Tkinter 8.5 reference: a GUI for Python
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1041">
+<link id="a1038" url="http://inventwithpython.com/bookshelf/">
+
+The Invent with Python Bookshelf
+
+</link>
+
+
+	
+
+<emphasis id="em1008" effect="italics">
+(many online books, some free, some not free)
+
+</emphasis>
+</item>
+
+
+	
+
+<item id="li1042">
+<link id="a1039" url="http://scipy-lectures.github.io/index.html">
+
+Python Scientific Lecture Notes
+
+</link>
+
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+	
+
+<para id="p1013">
+Several of the assignments require the use of Python Turtle Graphics. 
+	Here are links to some useful references on Turtle Graphics:
+
+</para>
+
+
+	
+
+<list id="ul1004" list-type="bulleted">
+
+		
+
+<item id="li1043">
+
+		
+
+<link id="a1040" url="https://docs.python.org/3/library/turtle.html?highlight=turtle#module-turtle">
+
+24.1. turtle - Turtle graphics - Python 3.4.3rc1 documentation
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1044">
+
+		
+
+<link id="a1041" url="https://fiftyexamples.readthedocs.org/en/latest/turtle.html">
+
+Background Drawing Graphics - 50 Examples 1.0 documentation
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1045">
+
+		
+
+<link id="a1042" url="http://interactivepython.org/courselib/static/thinkcspy/index.html">
+
+How to Think like a Computer Scientist Interactive Edition
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1046">
+
+		
+
+<link id="a1043" url="http://www.eg.bucknell.edu/~hyde/Python3/TurtleDirections.html">
+
+Notes on using Python's turtle built-in commands
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1047">
+
+		
+
+<link id="a1044" url="https://opentechschool.github.io/python-beginners/en/simple_drawing.html">
+
+Simple drawing with turtle - Introduction to Programming with Python
+
+</link>
+
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+
+
+</section>
+</section>
+<section id="h11004">
+<title>
+<emphasis id="How_to_use_this_instructional_material" effect="bold">
+
+How to use this 
+instructional material
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1014">
+Everyone is welcome to use this material in any manner that is consistent 
+with the 
+
+<link id="a1045" url="http://creativecommons.org/">
+
+Creative Commons
+
+</link>
+
+ license 
+under which it is published. However, if you are enrolled in Prof. Baldwin's 
+section of this course at Austin Community College in Austin, TX, there are some 
+other things that you need to know.
+
+</para>
+
+
+
+
+<para id="p1015">
+Although the URL may change in the future, for the Spring 2015 semester, you 
+will find the online syllabus for the course at
+
+
+<link id="a1046" url="http://www6.austincc.edu/directory/info.php?id=baldwin">
+
+
+http://www6.austincc.edu/directory/info.php?id=baldwin
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<para id="p1016">
+Also, although the URL may change in the future, for the Spring 2015 
+semester, you will find the entry to the college website for the course at
+
+
+<link id="a1047" url="http://www.austincc.edu/baldwin/">
+
+http://www.austincc.edu/baldwin/
+
+</link>
+
+. 
+
+</para>
+
+
+
+
+<para id="p1017">
+You will also have access to a 
+
+<link id="a1048" url="http://www.blackboard.com/">
+
+Blackboard
+
+</link>
+
+ site that is specifically tailored to the course. You will find 
+additional learning resources on that site including programming assignments and 
+tests, assignment and test schedules, etc. The order of the programming assignments and tests mirrors the order of 
+the topics covered in this Ebook. Therefore, you should study the material in 
+the Ebook from start to finish in parallel with your efforts to complete the assignments and the 
+tests.
+
+</para>
+
+
+
+
+</section>
+<section id="h11005">
+<title>
+<emphasis id="An_editorial_comment" effect="bold">
+
+An editorial comment
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1018">
+In the opinion of this author, the Python programming language in and of 
+itself is not a particularly interesting programming language. In fact, to a 
+programmer accustomed to compiled, strongly-typed programming languages such as 
+C, C++, and Java, the Python programming language seems to be a little "sloppy" 
+and fraught with pitfalls. However, in the grand scheme of things, as of 2015, 
+Python is an 
+
+<emphasis id="strong1005" effect="bold">
+extremely important
+
+</emphasis>
+ programming language.
+
+</para>
+
+
+
+
+<para id="p1019">
+The importance of Python derives not from the language itself, but from the 
+hundreds of independent open source Python libraries that have been developed by 
+others in such areas as image manipulation, networking, plotting and graphics, 
+engineering and scientific programming, web development, gaming, cryptography, 
+database, geographic information systems 
+
+<emphasis id="em1009" effect="italics">
+(GIS)
+
+</emphasis>
+, audio and music, presentation, 
+XML processing, etc. In fact, it is hard to come up with a programming 
+application area where someone has not already supplemented the basic Python 
+programming language with an open-source library designed for use in that 
+application area. Many of those libraries are Python wrappers for compiled C 
+code providing speed and efficiency not normally associated with interpreted 
+languages such as Python. A long list of such library modules is provided at
+
+
+<link id="a1049" url="https://wiki.python.org/moin/UsefulModules">
+
+UsefulModules
+
+</link>
+
+. Many of 
+the links on that page point to other pages that also contain lists of links. An 
+even longer list is provided on the
+
+
+<link id="a1050" url="http://www.scipy.org/topical-software.html">
+
+SciPy Topical Software
+
+</link>
+
+ 
+page.
+
+</para>
+
+
+
+
+</section>
+<section id="h11006">
+<title>
+<emphasis id="Reinforcing_what_you_are_learning" effect="bold">
+
+Reinforcing what you are 
+learning
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1020">
+Although not required by the course, I highly recommend that you also study 
+the material in the section of this Ebook titled
+
+
+<link id="a1051" url="http://cnx.org/contents/228ac3a7-ed79-4a10-8d52-890dfa1fd20d">
+
+
+Putting Python to Work
+
+</link>
+
+ in addition to the required material described
+
+
+<link id="a1052" target-id="following_major_sections">
+
+earlier
+
+</link>
+
+. Seeing how Python is actually 
+used in practice may help you to develop and retain the knowledge required to succeed in the 
+course.
+
+</para>
+
+
+
+
+<para id="p1021">
+Similarly, I also recommend that you study the material on the following 
+three websites 
+in parallel with the material on this website to reinforce what you
+
+
+<emphasis id="are_learning" effect="bold">
+
+are learning
+
+</emphasis>
+
+:
+
+</para>
+
+
+
+
+<list id="ol1001" list-type="enumerated">
+
+	
+
+<item id="li1048">
+<link id="a1053" url="http://www.codecademy.com/en/tracks/python">
+
+Python at 
+	Codecademy
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1049">
+<link id="a1054" url="http://programarcadegames.com/">
+
+Program Arcade Games
+With Python And Pygame
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1050">
+
+	
+
+<link id="a1055" url="http://interactivepython.org/courselib/static/thinkcspy/toc.html#t-o-c">
+
+How To Think Like a Computer Scientist - Interactive Version
+
+</link>
+
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+<para id="p1022">
+The first website 
+
+<link id="a1056" target-id="are_learning">
+
+listed above
+
+</link>
+
+ provides an interactive online Python tutorial that will help you learn the 
+fundamentals of Python programming and test your progress along the way.
+
+</para>
+
+
+
+
+<para id="p1023">
+The second website 
+
+<link id="a1057" target-id="are_learning">
+
+listed above
+
+</link>
+
+ will not only help you learn 
+about Python programming, but may also provide you with some enjoyment along the way. 
+This website provides both text and video instruction, along with quizzes and 
+programming projects to teach you how to use the Python language to write 
+interactive arcade games involving sound, graphics, etc. While much of that 
+material is beyond the scope of this course, you may find that learning that 
+material will make the course more enjoyable.
+
+</para>
+
+
+
+
+<para id="p1024">
+The third website 
+
+<link id="a1058" target-id="are_learning">
+
+listed above
+
+</link>
+
+ is an excellent 
+free online interactive Python textbook designed specifically for use in courses 
+commonly referred by computer science academics as CS-1 courses. The 
+non-interactive version of the book is located
+
+
+<link id="a1059" url="http://openbookproject.net/thinkcs/python/english3e/">
+
+here
+
+</link>
+
+.
+
+</para>
+
+
+	
+
+</section>
+<section id="h11007">
+<title>
+<emphasis id="Miscellaneous" effect="bold">
+
+Miscellaneous
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1025">
+This section contains a variety of miscellaneous information.
+
+</para>
+
+
+
+
+
+	
+
+<note id="note1000" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1006" effect="bold">
+Housekeeping material
+
+</emphasis>
+
+
+				
+
+<list id="ul1005" list-type="bulleted">
+
+					
+
+<item id="li1051">
+Module name: Itse1359-1000-Preface
+
+</item>
+
+
+					
+
+<item id="li1052">
+File: Itse1359-1000.htm
+
+
+</item>
+
+
+					
+
+<item id="li1053">
+Published: 10/13/2014
+
+</item>
+
+
+					
+
+<item id="li1054">
+Revised: 01/21/16 
+
+</item>
+
+
+				
+
+</list>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+
+
+
+	
+
+<note id="note1001" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1007" effect="bold">
+Disclaimers:
+
+</emphasis>
+<para id="p1026">
+<emphasis id="strong1008" effect="bold">
+Financial
+
+</emphasis>
+: Although the Connexions
+site makes it possible for you to download a PDF file for this
+module at no charge, and also makes it possible for you to
+purchase a pre-printed version of the PDF file, you should be
+aware that some of the HTML elements in this module may not translate well into
+PDF.
+
+</para>
+
+
+				
+
+<para id="p1027">
+I also want you to know that, I receive no financial compensation from the Connexions website even if you purchase 
+	the PDF version of the module.
+
+</para>
+
+
+				
+
+<para id="p1028">
+In the past, unknown individuals have copied my modules from cnx.org, converted them to Kindle books, and 
+				placed them for sale on Amazon.com showing me as the author. I 
+				neither receive compensation for those sales nor do I know who does 
+				receive compensation. If you purchase such a book, please be 
+				aware that it is a copy of a module that is freely 
+				available on cnx.org and that it was made and published without 
+				my prior knowledge.
+
+</para>
+
+
+				
+
+<para id="p1029">
+<emphasis id="strong1009" effect="bold">
+Affiliation
+
+</emphasis>
+: I am a professor of Computer Information 
+	Technology at Austin Community College in Austin, TX.
+	
+
+</para>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+
+
+<para id="p1030">
+-end- 
+
+</para>
+
+
+
+
+
+
+</section>
+</content>
+
+
+
+
+</document>

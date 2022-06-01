@@ -1,0 +1,2023 @@
+<document xmlns="http://cnx.rice.edu/cnxml"> 
+<title>Itse1359-1030r-Review</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m51319</md:content-id>
+  <md:title>Itse1359-1030r-Review</md:title>
+  <md:abstract>This module contains review questions and answers keyed to the module titled Itse1359-1030-Variables and Identifiers.</md:abstract>
+  <md:uuid>fd479b51-36a8-4c98-8da9-c2b71a4e9ee6</md:uuid>
+</metadata>
+
+<content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h11000">
+<title>
+Table of contents
+
+</title>
+
+
+
+
+<list id="ul1000" list-type="bulleted">
+
+	
+
+<item id="li1000">
+<link id="a1000" target-id="Preface">
+
+Preface
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1001">
+<link id="a1001" target-id="Questions">
+
+Questions
+
+</link>
+
+
+	
+
+<list id="ul1001" list-type="bulleted">
+
+		
+
+<item id="li1002">
+<link id="a1002" target-id="question01">
+
+1
+
+</link>
+
+, 
+
+<link id="a1003" target-id="question02">
+
+2
+
+</link>
+
+,
+		
+
+<link id="a1004" target-id="question03">
+
+3
+
+</link>
+
+, 
+
+<link id="a1005" target-id="question04">
+
+4
+
+</link>
+
+,
+		
+
+<link id="a1006" target-id="question05">
+
+5
+
+</link>
+
+, 
+
+<link id="a1007" target-id="question06">
+
+6
+
+</link>
+
+,
+		
+
+<link id="a1008" target-id="question07">
+
+7
+
+</link>
+
+, 
+
+<link id="a1009" target-id="question08">
+
+8
+
+</link>
+
+,
+		
+
+<link id="a1010" target-id="question09">
+
+9
+
+</link>
+
+, 
+
+<link id="a1011" target-id="question10">
+
+10
+
+</link>
+
+, 
+		
+
+<link id="a1012" target-id="question11">
+
+11
+
+</link>
+
+, 
+
+<link id="a1013" target-id="question12">
+
+12
+
+</link>
+
+
+		
+		
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+	
+
+<item id="li1003">
+<link id="a1014" target-id="Figure_index">
+
+Figure index
+
+</link>
+
+
+</item>
+
+
+
+	
+
+<item id="li1004">
+<link id="a1015" target-id="Answers">
+
+Answers
+
+</link>
+
+
+</item>
+
+
+
+	
+
+<item id="li1005">
+<link id="a1016" target-id="Miscellaneous">
+
+Miscellaneous
+
+</link>
+
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+</section>
+<section id="h11001">
+<title>
+<emphasis id="Preface" effect="bold">
+
+Preface
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1000">
+This module is one in a collection of modules on Python designed for 
+teaching 
+
+<emphasis id="em1000" effect="italics">
+ITSE 1359 Introduction to Scripting Languages: Python
+
+</emphasis>
+ at Austin Community 
+College in Austin, TX.
+
+</para>
+
+
+
+
+<para id="p1001">
+This module contains review questions and answers keyed to the module titled
+
+
+<emphasis id="em1001" effect="italics">
+Itse1359-1030-Variables and Identifiers
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+<para id="p1002">
+Once you study that module, you should be able to answer the review 
+questions in this module.
+
+</para>
+
+
+
+
+<para id="p1003">
+The questions and the answers in this module are connected by hyperlinks to 
+make it easy for you to navigate from the question to the answer and back again.
+
+</para>
+
+
+
+
+<para id="p1004">
+<emphasis id="em1002" effect="italics">
+(Note to blind and visually impaired students: with the exception of two 
+bitmap images that are used solely as spacers to separate the question section 
+from the answer section, all of the material in this module is presented in 
+plain text format and should be accessible using an audio screen reader or a 
+braille display.)
+
+</emphasis>
+</para>
+
+
+
+
+</section>
+<section id="h11002">
+<title>
+<emphasis id="Questions" effect="bold">
+
+Questions
+
+</emphasis>
+
+
+</title>
+
+
+
+
+
+<section id="h21000">
+<title>
+<emphasis id="question01" effect="bold">
+
+Question 1
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1005">
+True or False? A variable is the same as a constant.
+
+</para>
+
+
+
+
+
+<para id="p1006">
+Go to 
+
+<link id="a1017" target-id="answer01">
+
+answer 1
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21001">
+<title>
+<emphasis id="question02" effect="bold">
+
+Question 2
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1007">
+True or False? Python is a 
+
+<emphasis id="em1003" effect="italics">
+strongly typed
+
+</emphasis>
+ language.
+
+</para>
+
+
+
+
+<para id="p1008">
+Go to 
+
+<link id="a1018" target-id="answer02">
+
+answer 2
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21002">
+<title>
+<emphasis id="question03" effect="bold">
+
+Question 3
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1009">
+True or False? Python programmers must declare all variables.
+
+</para>
+
+
+
+
+<para id="p1010">
+Go to 
+
+<link id="a1019" target-id="answer03">
+
+answer 3
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21003">
+<title>
+<emphasis id="question04" effect="bold">
+
+Question 4
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1011">
+Explain the dangers of using a language that does not require variables to be 
+declared. 
+
+</para>
+
+
+
+
+<para id="p1012">
+Go to 
+
+<link id="a1020" target-id="answer04">
+
+answer 4
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21004">
+<title>
+<emphasis id="question05" effect="bold">
+
+Question 5
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1013">
+What is the best defense against spelling errors in variables names? 
+
+</para>
+
+
+
+
+<para id="p1014">
+Go to 
+
+<link id="a1021" target-id="answer05">
+
+answer 5
+
+</link>
+
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21005">
+<title>
+<emphasis id="question06" effect="bold">
+
+Question 6
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1015">
+True or False? Variable names can begin with numeric or digit characters.
+
+</para>
+
+
+
+
+<para id="p1016">
+Go to 
+
+<link id="a1022" target-id="answer06">
+
+answer 6
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21006">
+<title>
+<emphasis id="question07" effect="bold">
+
+Question 7
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1017">
+Write a simple program that illustrates case sensitivity in the names of 
+variables. 
+
+</para>
+
+
+
+
+<para id="p1018">
+Go to 
+
+<link id="a1023" target-id="answer07">
+
+answer 7
+
+</link>
+
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21007">
+<title>
+<emphasis id="question08" effect="bold">
+
+Question 8
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1019">
+Explain the use of the assignment operator. 
+
+</para>
+
+
+
+
+
+
+<para id="p1020">
+Go to 
+
+<link id="a1024" target-id="answer08">
+
+answer 8
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21008">
+<title>
+<emphasis id="question09" effect="bold">
+
+Question 9
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1021">
+Which type usually provides the greater range for storage of numeric values, 
+integer or floating point? 
+
+</para>
+
+
+
+
+<para id="p1022">
+Go to 
+
+<link id="a1025" target-id="answer09">
+
+answer 9
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21009">
+<title>
+<emphasis id="question10" effect="bold">
+
+Question 10
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1023">
+Should you just always use floating point instead of integer to be safe? 
+
+</para>
+
+
+
+
+<para id="p1024">
+Go to 
+
+<link id="a1026" target-id="answer10">
+
+answer 10
+
+</link>
+
+
+</para>
+
+
+	
+
+
+</section>
+<section id="h21010">
+<title>
+<emphasis id="question11" effect="bold">
+
+Question 11
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1025">
+Write a simple program that illustrates the approximation nature of floating 
+point arithmetic. 
+
+</para>
+
+
+
+
+<para id="p1026">
+Go to 
+
+<link id="a1027" target-id="answer11">
+
+answer 11
+
+</link>
+
+
+</para>
+
+
+	
+
+
+</section>
+<section id="h21011">
+<title>
+<emphasis id="question12" effect="bold">
+
+Question 12
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1027">
+Explain the purpose of the automatic continuation variable whose name is 
+simply the underscore character. 
+
+</para>
+
+
+
+
+<para id="p1028">
+Go to 
+
+<link id="a1028" target-id="answer12">
+
+answer 12
+
+</link>
+
+
+</para>
+
+
+
+
+
+
+</section>
+</section>
+<section id="h11003">
+<title>
+<emphasis id="Figure_index" effect="bold">
+
+Figure index
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<list id="ul1002" list-type="bulleted">
+
+		
+
+<item id="li1006">
+<link id="a1029" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+. Same letters, different case. 
+
+</item>
+
+
+		
+
+<item id="li1007">
+<link id="a1030" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+. Same letters, same case.
+
+</item>
+
+
+		
+
+<item id="li1008">
+<link id="a1031" target-id="Figure_3">
+
+Figure 3
+
+</link>
+
+. Floating point errors.
+
+</item>
+
+
+	
+
+</list>
+
+
+
+
+<para id="p1029">
+<emphasis id="strong1000" effect="bold">
+What is the meaning of the following two images?
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1030">
+These images were inserted here simply to insert some space between the 
+questions and the answers to keep them from being visible on the screen at the 
+same time. 
+
+</para>
+
+
+
+
+
+<media id="media1000" alt="Spacer image of a rabbit and a penguin." display="block">
+<image id="img1000" mime-type="image/jpeg" src="../../media/Spacer01.jpg" width="339" height="290"/>
+</media>
+
+
+
+
+
+<para id="p1031">
+This image was also inserted for the purpose of inserting space between the questions and the answers.
+
+</para>
+
+
+
+
+<para id="p1032">
+
+
+
+<media id="media1001" alt="Spacer image of a penguin and some houses." display="block">
+<image id="img1001" mime-type="image/jpeg" src="../../media/Spacer02.jpg" width="374" height="308"/>
+</media>
+
+
+</para>
+
+
+
+
+
+
+
+</section>
+<section id="h11004">
+<title>
+<emphasis id="Answers" effect="bold">
+
+Answers
+
+</emphasis>
+
+
+</title>
+
+
+
+
+
+
+
+<section id="h21012">
+<title>
+<emphasis id="answer12" effect="bold">
+
+Answer 12
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1033">
+The primary purpose of the automatic variable named _ is to make it easier 
+for you to string calculations together in interactive mode and to display the 
+intermediate results as you go. 
+
+</para>
+
+
+
+
+<para id="p1034">
+Go back to 
+
+<link id="a1032" target-id="question12">
+
+Question 12
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21013">
+<title>
+<emphasis id="answer11" effect="bold">
+
+Answer 11
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1035">
+See the sample program in 
+
+<link id="a1033" target-id="Figure_3">
+
+Figure 3
+
+</link>
+
+. We know that the 
+true result of this expression is an unending string of nines, as in 
+9.999999999999999
+
+</para>
+
+
+
+
+	
+
+<table id="table1000" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1000">
+
+			
+
+<row id="tr1000">
+
+				
+
+<entry id="th1000">
+<emphasis id="Figure_3" effect="bold">
+
+Figure 3
+
+</emphasis>
+
+. Floating point 
+				errors.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1000">
+
+			
+
+<row id="tr1001">
+
+				
+
+<entry id="td1000">
+
+
+
+<code id="pre1000" display="block">
+&gt;&gt;&gt; 10/3 + 20/3
+10.0
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1036">
+However, in this case, Python returned an answer of 10.0, indicating that 
+	the answer is accurate to three significant figures. This is not really the 
+	correct answer, but as a practical matter, it may be the 
+
+<emphasis id="em1004" effect="italics">
+best
+
+</emphasis>
+ answer. 
+	I will leave that for you to decide. 
+
+</para>
+
+
+
+
+<para id="p1037">
+Go back to 
+
+<link id="a1034" target-id="question11">
+
+Question 11
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21014">
+<title>
+<emphasis id="answer10" effect="bold">
+
+Answer 10
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1038">
+Probably not. Floating point arithmetic often suffers from speed penalties. 
+In addition, integer arithmetic produces exact results while floating point 
+arithmetic usually produces approximate results 
+
+<emphasis id="em1005" effect="italics">
+(although the approximations 
+may be very close to being exact in many cases)
+
+</emphasis>
+. 
+
+</para>
+
+
+
+
+<para id="p1039">
+Go back to 
+
+<link id="a1035" target-id="question10">
+
+Question 10
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+
+</section>
+<section id="h21015">
+<title>
+<emphasis id="answer09" effect="bold">
+
+Answer 9
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1040">
+Floating point usually provides the greater range for storage of numeric 
+values. 
+
+</para>
+
+
+
+
+<para id="p1041">
+Go back to 
+
+<link id="a1036" target-id="question09">
+
+Question 9
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21016">
+<title>
+<emphasis id="answer08" effect="bold">
+
+Answer 8
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1042">
+The assignment operator causes the value of its right operand to be stored in 
+the memory location identified by its left operand. 
+
+</para>
+
+
+
+
+
+
+
+<para id="p1043">
+Go back to 
+
+<link id="a1037" target-id="question08">
+
+Question 8
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21017">
+<title>
+<emphasis id="answer07" effect="bold">
+
+Answer 7
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1044">
+An example of such a program is shown in 
+
+<link id="a1038" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+. Note 
+that the names of the two variables have the same letters, but different case. 
+The fact that the two variables are different variables is illustrated by the 
+fact that each is assigned a different value. The sum of the two variables 
+demonstrates that the two variables contain different, and correct, values. 
+
+</para>
+
+
+
+
+
+	
+
+<table id="table1001" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1001">
+
+			
+
+<row id="tr1002">
+
+				
+
+<entry id="th1001">
+<emphasis id="Figure_1" effect="bold">
+
+Figure 1
+
+</emphasis>
+
+. Same letters, 
+				different case.
+
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1001">
+
+			
+
+<row id="tr1003">
+
+				
+
+<entry id="td1001">
+
+
+
+<code id="pre1001" display="block">
+&gt;&gt;&gt; aX=10 # this is one variable
+&gt;&gt;&gt; Ax=20 # this is a different variable
+&gt;&gt;&gt; aX+Ax
+30
+&gt;&gt;&gt;
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1045">
+Contrast the above result with the program in 
+
+<link id="a1039" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+ 
+	where a variable whose name contains the same letters and the same case is 
+	used twice.
+
+</para>
+
+
+
+
+	
+
+<table id="table1002" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1002">
+
+			
+
+<row id="tr1004">
+
+				
+
+<entry id="th1002">
+<emphasis id="Figure_2" effect="bold">
+
+Figure 2
+
+</emphasis>
+
+. Same letters, same 
+				case.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1002">
+
+			
+
+<row id="tr1005">
+
+				
+
+<entry id="td1002">
+
+
+
+<code id="pre1002" display="block">
+&gt;&gt;&gt; ax=10
+&gt;&gt;&gt; ax=20
+&gt;&gt;&gt; ax+ax
+40
+&gt;&gt;&gt; 
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1046">
+All the program in 
+
+<link id="a1040" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+ accomplishes is the 
+	assignment of two different values to the same variable. The second 
+	assignment overwrites the value previously assigned to the variable. The 
+	program then adds the 
+	variable to itself using its current value of 20 producing a result of 40
+	
+
+<emphasis id="em1006" effect="italics">
+(instead of 30 as in the previous example)
+
+</emphasis>
+. 
+
+</para>
+
+
+
+
+<para id="p1047">
+Go back to 
+
+<link id="a1041" target-id="question07">
+
+Question 7
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21018">
+<title>
+<emphasis id="answer06" effect="bold">
+
+Answer 6
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1048">
+<emphasis id="strong1001" effect="bold">
+False.
+
+</emphasis>
+ Variable names must begin with a letter or underscore 
+character.
+
+</para>
+
+
+
+
+<para id="p1049">
+Go back to 
+
+<link id="a1042" target-id="question06">
+
+Question 6
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21019">
+<title>
+<emphasis id="answer05" effect="bold">
+
+Answer 5
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1050">
+Use meaningful variable names for which the spelling is obvious, such as 
+
+<emphasis id="strong1002" effect="bold">
+
+theOverheadRate
+
+</emphasis>
+. 
+
+</para>
+
+
+
+
+<para id="p1051">
+Go back to 
+
+<link id="a1043" target-id="question05">
+
+Question 5
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21020">
+<title>
+<emphasis id="answer04" effect="bold">
+
+Answer 4
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1052">
+Several different kinds of problems can result from making typing errors that 
+result in misspelling the names of variables. These errors usually result in 
+programs that produce incorrect results without warning.
+
+</para>
+
+
+
+
+<para id="p1053">
+Go back to 
+
+<link id="a1044" target-id="question04">
+
+Question 4
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21021">
+<title>
+<emphasis id="answer03" effect="bold">
+
+Answer 3
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1054">
+<emphasis id="strong1003" effect="bold">
+False.
+
+</emphasis>
+ Variable declarations are not required in Python. All that is 
+required to cause a variable to come into existence is to invent a new name for 
+a variable and assign a value to it. 
+
+</para>
+
+
+
+
+<para id="p1055">
+Go back to 
+
+<link id="a1045" target-id="question03">
+
+Question 3
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+<section id="h21022">
+<title>
+<emphasis id="answer02" effect="bold">
+
+Answer 2
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1056">
+<emphasis id="strong1004" effect="bold">
+False.
+
+</emphasis>
+ Python is not a strongly typed language. From a pure technical 
+viewpoint, the Python programmer rarely needs to be concerned about type. 
+
+</para>
+
+
+
+
+<para id="p1057">
+Go back to 
+
+<link id="a1046" target-id="question02">
+
+Question 2
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+
+
+</section>
+<section id="h21023">
+<title>
+<emphasis id="answer01" effect="bold">
+
+Answer 1
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1058">
+<emphasis id="strong1005" effect="bold">
+False.
+
+</emphasis>
+ The value of a variable is intended to change during the 
+execution of the program. The value of a constant 
+
+<emphasis id="em1007" effect="italics">
+(which I haven't discussed 
+so far in this collection)
+
+</emphasis>
+ is not intended to change. 
+
+</para>
+
+
+
+
+<para id="p1059">
+Go back to 
+
+<link id="a1047" target-id="question01">
+
+Question 1
+
+</link>
+
+ 
+
+</para>
+
+
+
+
+</section>
+</section>
+<section id="h11005">
+<title>
+<emphasis id="Miscellaneous" effect="bold">
+
+Miscellaneous
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1060">
+This section contains a variety of miscellaneous information. 
+
+</para>
+
+
+
+
+
+	
+
+<note id="note1000" type="">
+
+
+		
+
+
+			
+
+<emphasis id="strong1006" effect="bold">
+Housekeeping material
+
+</emphasis>
+
+			
+
+<list id="ul1003" list-type="bulleted">
+
+				
+
+<item id="li1009">
+Module name: Itse1359-1030r-Review
+
+</item>
+
+
+				
+
+<item id="li1010">
+File: Itse1359-1030r.htm 
+
+</item>
+
+
+				
+
+<item id="li1011">
+Published: 10/14/14
+
+</item>
+
+
+				
+
+<item id="li1012">
+Revised: 20/20/15
+
+</item>
+
+
+			
+
+</list>
+
+
+			
+
+</note>
+
+		
+
+
+
+
+
+
+
+
+
+	
+
+<note id="note1001" type="">
+
+
+		
+
+
+			
+
+<emphasis id="strong1007" effect="bold">
+Disclaimers:
+
+</emphasis>
+<para id="p1061">
+<emphasis id="strong1008" effect="bold">
+Financial
+
+</emphasis>
+: 
+			Although the Connexions site makes it possible for you to download a 
+			PDF file for this module at no charge, and also makes it possible 
+			for you to purchase a pre-printed version of the PDF file, you 
+			should be aware that some of the HTML elements in this module may 
+			not translate well into PDF.
+
+</para>
+
+
+			
+
+<para id="p1062">
+I also want you to know that, I receive no financial compensation 
+			from the Connexions website even if you purchase the PDF version of 
+			the module.
+
+</para>
+
+
+			
+
+<para id="p1063">
+In the past, unknown individuals have copied my modules from 
+			cnx.org, converted them to Kindle books, and placed them for sale on 
+			Amazon.com showing me as the author. I neither receive compensation 
+			for those sales nor do I know who does receive compensation. If you 
+			purchase such a book, please be aware that it is a copy of a module 
+			that is freely available on cnx.org and that it was made and 
+			published without my prior knowledge.
+
+</para>
+
+
+			
+
+<para id="p1064">
+<emphasis id="strong1009" effect="bold">
+Affiliation
+
+</emphasis>
+: I am a professor of Computer 
+			Information Technology at Austin Community College in Austin, TX.
+			
+
+</para>
+
+
+			
+
+</note>
+
+		
+
+
+
+
+
+
+
+
+
+<para id="p1065">
+-end- 
+
+</para>
+
+
+
+
+
+
+
+
+</section>
+</content>
+
+
+
+
+</document>

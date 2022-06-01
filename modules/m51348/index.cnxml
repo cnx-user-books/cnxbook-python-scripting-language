@@ -1,0 +1,3091 @@
+<document xmlns="http://cnx.rice.edu/cnxml"> 
+<title>Itse1359-1060-Syntax</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m51348</md:content-id>
+  <md:title>Itse1359-1060-Syntax</md:title>
+  <md:abstract>This module will help you to understand the physical construction of a Python program with particular emphasis on indentation.</md:abstract>
+  <md:uuid>f62bf8c2-00f8-44ed-a24a-1fd30ef3d7fc</md:uuid>
+</metadata>
+
+<content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h11000">
+<title>
+Table of contents
+
+</title>
+
+
+
+
+<list id="ul1000" list-type="bulleted">
+
+	
+
+<item id="li1000">
+<link id="a1000" target-id="Preface">
+
+Preface
+
+</link>
+
+
+	
+
+<list id="ul1001" list-type="bulleted">
+
+		
+
+<item id="li1001">
+<link id="a1001" target-id="Viewing_tip">
+
+Viewing tip
+
+</link>
+
+
+<list id="ul1002" list-type="bulleted">
+
+			
+
+<item id="li1002">
+<link id="a1002" target-id="Figures">
+
+Figures
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1003">
+<link id="a1003" target-id="Listings">
+
+Listings
+
+</link>
+
+
+</item>
+
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+	
+
+<item id="li1004">
+<link id="a1004" target-id="Introduction">
+
+Introduction
+
+</link>
+
+ 
+
+</item>
+
+
+	
+
+<item id="li1005">
+<link id="a1005" target-id="Program_Construction">
+
+Program construction
+
+</link>
+
+
+<list id="ul1003" list-type="bulleted">
+
+		
+
+<item id="li1006">
+<link id="a1006" target-id="A_physical_line_">
+
+A physical line 
+
+</link>
+
+ 
+
+</item>
+
+
+		
+
+<item id="li1007">
+<link id="a1007" target-id="A_logical_line_">
+
+A logical line
+
+</link>
+
+ 
+		
+
+<list id="ul1004" list-type="bulleted">
+
+			
+
+<item id="li1008">
+<link id="a1008" target-id="Statements_and_logical_lines_">
+
+Statements and logical lines 
+			
+
+</link>
+
+ 
+
+</item>
+
+
+			
+
+<item id="li1009">
+<link id="a1009" target-id="Comments">
+
+Comments
+
+</link>
+
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+		
+
+<item id="li1010">
+<link id="a1010" target-id="Explicit_line_joining">
+
+Explicit line joining
+
+</link>
+
+
+<list id="ul1005" list-type="bulleted">
+
+			
+
+<item id="li1011">
+<link id="a1011" target-id="The_backslash_character">
+
+The backslash character
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1012">
+<link id="a1012" target-id="For_illustration_only">
+
+For illustration only
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1013">
+<link id="a1013" target-id="No_spaces_or_comments_allowed">
+
+No spaces or comments allowed
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1014">
+<link id="a1014" target-id="Otherwise_illegal_">
+
+Otherwise illegal 
+
+</link>
+
+ 
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+		
+
+<item id="li1015">
+<link id="a1015" target-id="Implicit_line_joining">
+
+Implicit line joining
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1016">
+<link id="a1016" target-id="Blank_lines">
+
+Blank lines
+
+</link>
+
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+	
+
+<item id="li1017">
+<link id="a1017" target-id="Indentation">
+
+Indentation
+
+</link>
+
+
+<list id="ul1006" list-type="bulleted">
+
+		
+
+<item id="li1018">
+<link id="a1018" target-id="Indentation_is_used_to_determine_grouping_of_statements_">
+
+Indentation is used to determine grouping of statements
+
+</link>
+
+ 
+		
+
+<list id="ul1007" list-type="bulleted">
+
+			
+
+<item id="li1019">
+<link id="a1019" target-id="A_blessing_and_a_curse">
+
+A blessing and a curse
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1020">
+<link id="a1020" target-id="No_safety_nets">
+
+No safety nets
+
+</link>
+
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+		
+
+<item id="li1021">
+<link id="a1021" target-id="An_example_of_correct_indentation">
+
+An example of correct indentation
+
+</link>
+
+
+<list id="ul1008" list-type="bulleted">
+
+			
+
+<item id="li1022">
+<link id="a1022" target-id="Compare_A_with_B_and_take_appropriate_action">
+
+Compare A with B and take appropriate action
+
+</link>
+
+
+			
+
+</item>
+
+
+			
+
+<item id="li1023">
+<link id="a1023" target-id="A_compound_statement_">
+
+A compound statement 
+
+</link>
+
+ 
+
+</item>
+
+
+			
+
+<item id="li1024">
+<link id="a1024" target-id="Group_behavior_">
+
+Group behavior
+
+</link>
+
+ 
+			
+
+</item>
+
+
+			
+
+<item id="li1025">
+<link id="a1025" target-id="Another_sample_script_">
+
+Another sample script
+
+</link>
+
+ 
+			
+
+</item>
+
+
+			
+
+<item id="li1026">
+<link id="a1026" target-id="Members_of_the_group">
+
+Members of the group
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1027">
+<link id="a1027" target-id="An_opinion_">
+
+An opinion 
+
+</link>
+
+ 
+
+</item>
+
+
+			
+
+<item id="li1028">
+<link id="a1028" target-id="Indentation_details">
+
+Indentation details
+
+</link>
+
+
+<list id="ul1009" list-type="bulleted">
+
+				
+
+<item id="li1029">
+<link id="a1029" target-id="Leading_whitespace_">
+
+Leading whitespace 
+
+</link>
+
+ 
+
+</item>
+
+
+				
+
+<item id="li1030">
+<link id="a1030" target-id="Tabs">
+
+Tabs
+
+</link>
+
+
+</item>
+
+
+			
+
+</list>
+
+
+			
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+		
+
+<item id="li1031">
+<link id="a1031" target-id="The_bottom_line_on_indentation">
+
+The bottom line on indentation
+
+</link>
+
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+	
+
+<item id="li1032">
+<link id="a1032" target-id="Miscellaneous">
+
+Miscellaneous
+
+</link>
+
+
+</item>
+
+
+
+
+
+</list>
+
+
+	
+	
+
+</section>
+<section id="h11001">
+<title>
+<emphasis id="Preface" effect="bold">
+
+Preface
+
+</emphasis>
+
+
+</title>
+
+
+	
+	
+
+<para id="p1000">
+This module is one in a collection of modules on Python designed for 
+teaching 
+
+<emphasis id="em1000" effect="italics">
+ITSE 1359 Introduction to Scripting Languages: Python
+
+</emphasis>
+ at Austin Community 
+College in Austin, TX. It explains some of the mechanics of putting together a 
+	Python program. 
+
+</para>
+
+
+	
+
+<section id="h21000">
+<title>
+<emphasis id="Viewing_tip" effect="bold">
+
+Viewing tip
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1001">
+I recommend that you open another copy of this module in a separate 
+browser window and use the following links to easily find and view the Figures 
+and the Listings while you are reading about them.
+
+</para>
+
+
+
+
+<para id="p1002">
+<emphasis id="em1001" effect="italics">
+(Note to blind and visually impaired students: all of the Figures and 
+Listings in 
+this module are presented in plain text format and should be accessible using an 
+audio screen reader or a braille display.)
+
+</emphasis>
+</para>
+
+
+	
+
+<section id="h31000">
+<title>
+<emphasis id="Figures" effect="bold">
+
+Figures
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<list id="ul1010" list-type="bulleted">
+
+		
+
+<item id="li1033">
+<link id="a1033" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+. Two physical lines. 
+
+</item>
+
+
+		
+
+<item id="li1034">
+<link id="a1034" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+. Output from the script in Listing 4.
+
+</item>
+
+
+
+
+	
+
+</list>
+
+
+
+
+</section>
+<section id="h31001">
+<title>
+<emphasis id="Listings" effect="bold">
+
+Listings
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<list id="ul1011" list-type="bulleted">
+
+		
+
+<item id="li1035">
+<link id="a1035" target-id="Listing_1">
+
+Listing 1
+
+</link>
+
+. Explicit line joining.
+
+</item>
+
+
+		
+
+<item id="li1036">
+<link id="a1036" target-id="Listing_2">
+
+Listing 2
+
+</link>
+
+. Implicit line joining.
+
+</item>
+
+
+		
+
+<item id="li1037">
+<link id="a1037" target-id="Listing_3">
+
+Listing 3
+
+</link>
+
+. Blank lines and whitespace.
+
+</item>
+
+
+		
+
+<item id="li1038">
+<link id="a1038" target-id="Listing_4">
+
+Listing 4
+
+</link>
+
+. An example of correct indentation.
+
+</item>
+
+
+		
+
+<item id="li1039">
+<link id="a1039" target-id="Listing_5">
+
+Listing 5
+
+</link>
+
+. Another sample script. 
+
+</item>
+
+
+
+
+</list>
+
+
+	
+
+</section>
+</section>
+</section>
+<section id="h11002">
+<title>
+<emphasis id="Introduction" effect="bold">
+
+Introduction
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1003">
+You have learned how to write some simple programs and how to execute 
+	them interactively. 
+
+</para>
+
+
+
+
+<para id="p1004">
+You have also learned how to capture simple programs in script files and how 
+to execute those script files. 
+
+</para>
+
+
+
+
+<para id="p1005">
+Now it is time to learn a little more about the mechanics of putting together 
+a Python program. 
+
+</para>
+
+
+	
+
+</section>
+<section id="h11003">
+<title>
+<emphasis id="Program_Construction" effect="bold">
+
+Program construction
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1006">
+Conceptually, programs are constructed from statements, and statements 
+	are composed of expressions. In practice, you need to know how to construct 
+	statements from a physical viewpoint. 
+
+</para>
+
+
+
+
+<para id="p1007">
+A Python program is divided into a number of 
+
+<emphasis id="em1002" effect="italics">
+logical lines
+
+</emphasis>
+. A logical 
+line is constructed from one or more 
+
+<emphasis id="em1003" effect="italics">
+physical lines.
+
+</emphasis>
+ 
+
+</para>
+
+
+
+
+<section id="h21001">
+<title>
+<emphasis id="A_physical_line_" effect="bold">
+
+A physical line 
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1008">
+A physical line ends with the character or characters used by your platform 
+for terminating lines. 
+
+</para>
+
+
+
+
+<para id="p1009">
+On Unix, this is the 
+
+<emphasis id="em1004" effect="italics">
+linefeed
+
+</emphasis>
+ character. On Windows, it is the 
+
+<emphasis id="em1005" effect="italics">
+
+carriage return
+
+</emphasis>
+ character followed by the 
+
+<emphasis id="em1006" effect="italics">
+linefeed
+
+</emphasis>
+ character. On 
+Macintosh, it is the 
+
+<emphasis id="em1007" effect="italics">
+carriage return
+
+</emphasis>
+ character. 
+
+</para>
+
+
+
+
+<para id="p1010">
+We refer to this in programming jargon as the 
+
+<emphasis id="em1008" effect="italics">
+newline
+
+</emphasis>
+ character 
+
+<emphasis id="em1009" effect="italics">
+
+(even though it is actually two characters on Windows systems)
+
+</emphasis>
+. 
+
+</para>
+
+
+
+
+<para id="p1011">
+Basically, a physical line is what you get when you type some characters into 
+your text editor and press the 
+
+<emphasis id="em1010" effect="italics">
+Enter
+
+</emphasis>
+ key, the 
+
+<emphasis id="em1011" effect="italics">
+Return
+
+</emphasis>
+ key, or 
+whatever you call that key on your keyboard. 
+
+<emphasis id="em1012" effect="italics">
+(Actually you don't even need 
+to type characters before pressing the Enter key, in which case you get a blank 
+line.) 
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1012">
+This is the key that causes the cursor to go down to the next line and return 
+to the left side of the editing window.
+
+</para>
+
+
+
+
+<para id="p1013">
+For example, when creating the text shown in 
+
+<link id="a1040" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+ using a text editor on my Windows computer, I pressed the Enter key immediately following 
+the --&gt; for each line. This produced a 
+
+<emphasis id="em1013" effect="italics">
+newline
+
+</emphasis>
+ in 
+each case. 
+
+</para>
+
+
+
+
+	
+
+<table id="table1000" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1000">
+
+			
+
+<row id="tr1000">
+
+				
+
+<entry id="th1000">
+<emphasis id="Figure_1" effect="bold">
+
+Figure 1
+
+</emphasis>
+
+. Two physical lines.
+
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1000">
+
+			
+
+<row id="tr1001">
+
+				
+
+<entry id="td1000">
+
+
+
+<code id="pre1000" display="block">
+I will end the line here --&gt;
+and end the next line here --&gt;
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+
+
+</section>
+<section id="h21002">
+<title>
+<emphasis id="A_logical_line_" effect="bold">
+
+A logical line 
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1014">
+A 
+
+<emphasis id="em1014" effect="italics">
+logical line
+
+</emphasis>
+ may be the same as a 
+
+<emphasis id="em1015" effect="italics">
+physical line
+
+</emphasis>
+, or line joining rules 
+
+<emphasis id="em1016" effect="italics">
+(described later)
+
+</emphasis>
+ can be used to construct a logical line 
+from two or more physical lines. 
+
+</para>
+
+
+
+
+<section id="h31002">
+<title>
+<emphasis id="Statements_and_logical_lines_" effect="bold">
+
+Statements and logical lines 
+
+</emphasis>
+
+ 
+
+
+</title>
+
+
+
+
+<para id="p1015">
+A statement cannot cross logical line boundaries except where the syntax 
+allows for the 
+
+<emphasis id="em1017" effect="italics">
+newline
+
+</emphasis>
+ character, such as in 
+
+<emphasis id="em1018" effect="italics">
+compound
+
+</emphasis>
+ 
+
+<emphasis id="em1019" effect="italics">
+
+statements
+
+</emphasis>
+. I will show you an example of a compound statement later in this 
+module. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31003">
+<title>
+<emphasis id="Comments" effect="bold">
+
+Comments
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1016">
+We learned about comments in an earlier module. To summarize, a comment 
+starts with a hash character (#) that is not part of a string literal 
+
+<emphasis id="em1020" effect="italics">
+(we also 
+learned about string literals in an earlier module)
+
+</emphasis>
+. The comment ends at the end 
+of the physical line. 
+
+</para>
+
+
+
+
+</section>
+</section>
+<section id="h21003">
+<title>
+<emphasis id="Explicit_line_joining" effect="bold">
+
+Explicit line joining
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1017">
+You can join two or more 
+
+<emphasis id="em1021" effect="italics">
+physical lines
+
+</emphasis>
+ to produce a 
+
+<emphasis id="em1022" effect="italics">
+logical line
+
+</emphasis>
+, 
+using the backslash character as shown in 
+
+<link id="a1041" target-id="Listing_1">
+
+Listing 1
+
+</link>
+
+.
+
+</para>
+
+
+	
+
+<table id="table1001" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1001">
+
+			
+
+<row id="tr1002">
+
+				
+
+<entry id="th1001">
+<emphasis id="Listing_1" effect="bold">
+
+Listing 1
+
+</emphasis>
+
+. Explicit line joining.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1001">
+
+			
+
+<row id="tr1003">
+
+				
+
+<entry id="td1001">
+
+
+
+<code id="pre1001" display="block">
+a = 3
+b = 4
+# construct c=a+b
+c \
+= \
+a \
++ \
+b
+print(c)
+
+# the output is 7
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+<section id="h31004">
+<title>
+<emphasis id="The_backslash_character" effect="bold">
+
+The backslash character
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1018">
+When a 
+
+<emphasis id="em1023" effect="italics">
+physical line
+
+</emphasis>
+ ends in a backslash that is not part of a string 
+literal or comment, that line is joined with the following 
+
+<emphasis id="em1024" effect="italics">
+physical line
+
+</emphasis>
+ 
+forming a single 
+
+<emphasis id="em1025" effect="italics">
+logical line
+
+</emphasis>
+. 
+
+</para>
+
+
+
+
+<para id="p1019">
+The backslash and the following end-of-line character(s) are ignored 
+by the interpreter and do not become part of the logical line. 
+
+</para>
+
+
+
+
+<para id="p1020">
+In 
+
+<link id="a1042" target-id="Listing_1">
+
+Listing 1
+
+</link>
+
+, the expression 
+
+<emphasis id="strong1000" effect="bold">
+c=a+b
+
+</emphasis>
+ is created by joining five consecutive 
+
+
+<emphasis id="em1026" effect="italics">
+physical lines
+
+</emphasis>
+ to create one 
+
+<emphasis id="em1027" effect="italics">
+logical line
+
+</emphasis>
+. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31005">
+<title>
+<emphasis id="For_illustration_only" effect="bold">
+
+For illustration only
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1021">
+Obviously, this is not how you would want to write a long script, but it is 
+not unusual to break long expressions into two or more physical lines to make 
+them fit onto a prescribed page width. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31006">
+<title>
+<emphasis id="No_spaces_or_comments_allowed" effect="bold">
+
+No spaces or comments allowed
+
+</emphasis>
+
+ 
+
+
+</title>
+
+
+
+
+<para id="p1022">
+You must make certain that no space characters follow the backslash. 
+
+</para>
+
+
+
+
+<para id="p1023">
+You may not place a comment following the backslash, and a backslash does not 
+continue a comment. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31007">
+<title>
+<emphasis id="Otherwise_illegal_" effect="bold">
+
+Otherwise illegal 
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1024">
+A backslash is illegal elsewhere on a line except inside a string literal.
+
+
+</para>
+
+
+
+
+</section>
+</section>
+<section id="h21004">
+<title>
+<emphasis id="Implicit_line_joining" effect="bold">
+
+Implicit line joining
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1025">
+Expressions in parentheses, square brackets, or curly brackets can be split 
+over more than one physical line without using backslashes as shown in 
+
+<link id="a1043" target-id="Listing_2">
+
+Listing 2
+
+</link>
+
+.
+
+
+</para>
+
+
+	
+
+<table id="table1002" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1002">
+
+			
+
+<row id="tr1004">
+
+				
+
+<entry id="th1002">
+<emphasis id="Listing_2" effect="bold">
+
+Listing 2
+
+</emphasis>
+
+. Implicit line joining.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1002">
+
+			
+
+<row id="tr1005">
+
+				
+
+<entry id="td1002">
+
+
+
+<code id="pre1002" display="block">
+a = 3
+b = 4
+c = (a # continue on next line
+     + b)
+print(c)
+
+# the output is 7
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+<para id="p1026">
+You can also place a comment on a line that is being continued implicitly as 
+shown in the third line of 
+
+<link id="a1044" target-id="Listing_2">
+
+Listing 2
+
+</link>
+
+. 
+
+</para>
+
+
+
+
+<para id="p1027">
+Also, you can indent the continuation line however you want. This is very 
+useful for making the code more readable. 
+
+</para>
+
+
+
+
+</section>
+<section id="h21005">
+<title>
+<emphasis id="Blank_lines" effect="bold">
+
+Blank lines
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1028">
+Lines containing only spaces, tabs, form feeds, and comments are ignored in 
+scripts, but the behavior may be different in interactive mode, depending on the 
+implementation. 
+
+</para>
+
+
+
+
+<para id="p1029">
+An example of some spaces and blank lines is shown in 
+
+<link id="a1045" target-id="Listing_3">
+
+Listing 3
+
+</link>
+
+.
+
+</para>
+
+
+	
+
+<table id="table1003" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1003">
+
+			
+
+<row id="tr1006">
+
+				
+
+<entry id="th1003">
+<emphasis id="Listing_3" effect="bold">
+
+Listing 3
+
+</emphasis>
+
+. Blank lines and 
+				whitespace.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1003">
+
+			
+
+<row id="tr1007">
+
+				
+
+<entry id="td1003">
+
+
+
+<code id="pre1003" display="block">
+a = 3
+  # spaces and comment
+b = 4
+    # tab and comment
+c = (a # continue on next line
+     + b)
+# a blank line follows
+
+print(c)
+
+# the output is 7 </code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+</section>
+</section>
+<section id="h11004">
+<title>
+<emphasis id="Indentation" effect="bold">
+
+
+</emphasis>
+
+Indentation
+
+</title>
+
+
+
+
+<para id="p1030">
+In every other programming environment that I have worked with in the past, 
+indentation is used strictly for cosmetic or readability purposes. 
+
+</para>
+
+
+
+
+<para id="p1031">
+However, indentation is not used strictly for cosmetic or readability 
+purposes in Python. It is such an important topic in Python that I have 
+separated it into a major section in this module. 
+
+</para>
+
+
+
+
+<section id="h21006">
+<title>
+<emphasis id="Indentation_is_used_to_determine_grouping_of_statements_" effect="bold">
+
+
+Indentation is used to determine grouping of statements 
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1032">
+Unlike most other programming environments, physical indentation is used in 
+Python to determine the grouping of statements. 
+
+</para>
+
+
+
+
+<section id="h31008">
+<title>
+<emphasis id="A_blessing_and_a_curse" effect="bold">
+
+A blessing and a curse
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1033">
+This can be both a blessing and a curse. The blessing is that it forces you 
+to use proper indentation, which usually leads to more readable code. 
+
+</para>
+
+
+
+
+<para id="p1034">
+The curse is that if you don't use proper indentation, your script probably 
+won't behave properly. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31009">
+<title>
+<emphasis id="No_safety_nets" effect="bold">
+
+No safety nets
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1035">
+There are few if any safety nets in Python 
+
+<emphasis id="em1028" effect="italics">
+(such as the matching curly brackets used in 
+C, C++, and Java)
+
+</emphasis>
+ to protect you from indentation errors. 
+
+</para>
+
+
+
+
+<para id="p1036">
+To make matters worse, such errors often turn up as logical errors 
+
+<emphasis id="em1029" effect="italics">
+(meaning 
+that the script simply doesn't work correctly)
+
+</emphasis>
+ rather than interpreter errors 
+
+
+<emphasis id="em1030" effect="italics">
+(meaning that the interpreter will tell you about the error)
+
+</emphasis>
+. 
+
+</para>
+
+
+
+
+</section>
+</section>
+<section id="h21007">
+<title>
+<emphasis id="An_example_of_correct_indentation" effect="bold">
+
+An example of correct indentation
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1037">
+Although I haven't introduced you to the 
+
+<emphasis id="strong1001" effect="bold">
+if
+
+</emphasis>
+ statement yet, you probably have 
+a fairly good idea what it is used for. I am going to use it to illustrate the 
+proper indentation of a 
+
+<emphasis id="em1031" effect="italics">
+group of statements
+
+</emphasis>
+ with the script in 
+
+<link id="a1046" target-id="Listing_4">
+
+Listing 4
+
+</link>
+
+. 
+
+</para>
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<note id="note1000" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1002" effect="bold">
+Description of an "if" statement:
+
+</emphasis>
+
+				
+
+<para id="p1038">
+An 
+
+<emphasis id="strong1003" effect="bold">
+if
+
+</emphasis>
+ statement means that if some 
+				expression evaluates to 
+
+<emphasis id="strong1004" effect="bold">
+true
+
+</emphasis>
+, the program will do 
+				something specific. Otherwise, the script won't do that specific 
+				thing.
+
+</para>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+
+
+<para id="p1039">
+Don't be too concerned if the logic of the script in 
+
+<link id="a1047" target-id="Listing_4">
+
+Listing 4
+
+</link>
+
+ escapes you at this point 
+in time. I will explain the use of the 
+
+<emphasis id="strong1005" effect="bold">
+if
+
+</emphasis>
+ statement in detail in a 
+future 
+module. The important thing here is to understand the grouping of statements.
+
+
+</para>
+
+
+	
+
+<table id="table1004" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1004">
+
+			
+
+<row id="tr1008">
+
+				
+
+<entry id="th1004">
+<emphasis id="Listing_4" effect="bold">
+
+Listing 4
+
+</emphasis>
+
+. An example of correct indentation.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1004">
+
+			
+
+<row id="tr1009">
+
+				
+
+<entry id="td1004">
+
+
+
+<code id="pre1004" display="block">
+A = 3
+B = 4
+
+if B &gt; A:
+  print(A) # begin group
+  print(B)
+  print(A + B) # end group
+A = 6 # not part of above group
+print(A)  
+
+#============================================================
+#The output, which is not part of the script, is shown below.
+3
+4
+7
+6
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+<section id="h31010">
+<title>
+<emphasis id="Compare_A_with_B_and_take_appropriate_action" effect="bold">
+
+Compare A with B and take appropriate action
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1040">
+The script in 
+
+<link id="a1048" target-id="Listing_4">
+
+Listing 4
+
+</link>
+
+ compares the value of the variable 
+
+<emphasis id="strong1006" effect="bold">
+A
+
+</emphasis>
+ with the 
+value of the variable 
+
+<emphasis id="strong1007" effect="bold">
+B
+
+</emphasis>
+ to determine if the value of 
+
+<emphasis id="strong1008" effect="bold">
+B
+
+</emphasis>
+ 
+is greater than the value of 
+
+<emphasis id="strong1009" effect="bold">
+A
+
+</emphasis>
+ 
+
+<emphasis id="em1032" effect="italics">
+(if B &gt; A:)
+
+</emphasis>
+. 
+
+</para>
+
+
+
+
+<para id="p1041">
+If the value of 
+
+<emphasis id="strong1010" effect="bold">
+B
+
+</emphasis>
+ is greater than the value of 
+
+<emphasis id="strong1011" effect="bold">
+A
+
+</emphasis>
+
+
+
+<emphasis id="em1033" effect="italics">
+(which it is in this case)
+
+</emphasis>
+, 
+the three indented print statements are executed. Otherwise, that group of three 
+statements is bypassed. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31011">
+<title>
+<emphasis id="A_compound_statement_" effect="bold">
+
+A compound statement 
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1042">
+The three statements shown with indentation are either all executed, or they 
+are all bypassed. Hence, they behave as a group. 
+
+</para>
+
+
+
+
+<para id="p1043">
+A group of statements like this is sometimes referred to as a 
+
+<emphasis id="em1034" effect="italics">
+compound 
+statement
+
+</emphasis>
+ 
+
+<emphasis id="em1035" effect="italics">
+(a statement made up of two or more individual statements)
+
+</emphasis>
+. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31012">
+<title>
+<emphasis id="Group_behavior_" effect="bold">
+
+Group behavior 
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1044">
+When the three indented statements are executed as a group, the values 3, 4, and 7 are 
+printed on consecutive output lines by the three print statements in the group 
+of statements, as shown in 
+
+<link id="a1049" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+. 
+
+</para>
+
+
+	
+
+<table id="table1005" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1005">
+
+			
+
+<row id="tr1010">
+
+				
+
+<entry id="th1005">
+<emphasis id="Figure_2" effect="bold">
+
+Figure 2
+
+</emphasis>
+
+. Output from the 
+				script in Listing 4.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1005">
+
+			
+
+<row id="tr1011">
+
+				
+
+<entry id="td1005">
+
+
+
+<code id="pre1005" display="block">
+C:\jnk\6&gt;echo off
+3
+4
+7
+6
+Press any key to continue . . .
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+<para id="p1045">
+Then the value 6 is printed by the last statement in the script, which is 
+not part of the group. 
+
+<emphasis id="em1036" effect="italics">
+(Note that the last statement is not indented.)
+
+</emphasis>
+</para>
+
+
+
+
+</section>
+<section id="h31013">
+<title>
+<emphasis id="Another_sample_script_" effect="bold">
+
+Another sample script 
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1046">
+Now, let's make a change to the script. The script shown in 
+
+<link id="a1050" target-id="Listing_5">
+
+Listing 5
+
+</link>
+
+ is identical to the 
+one in 
+
+<link id="a1051" target-id="Listing_4">
+
+Listing 4
+
+</link>
+
+ except that I switched the values of 
+
+<emphasis id="strong1012" effect="bold">
+A
+
+</emphasis>
+ and 
+
+
+<emphasis id="strong1013" effect="bold">
+B
+
+</emphasis>
+ to cause the group of 
+indented 
+statements to be bypassed 
+
+<emphasis id="em1037" effect="italics">
+(
+
+</emphasis>
+<emphasis id="strong1014" effect="bold">
+<emphasis id="em1038" effect="italics">
+B
+
+</emphasis>
+</emphasis>
+<emphasis id="em1039" effect="italics">
+ is no longer greater than 
+
+
+</emphasis>
+<emphasis id="strong1015" effect="bold">
+<emphasis id="em1040" effect="italics">
+A
+
+</emphasis>
+</emphasis>
+). 
+
+</para>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<table id="table1006" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1006">
+
+			
+
+<row id="tr1012">
+
+				
+
+<entry id="th1006">
+<emphasis id="Listing_5" effect="bold">
+
+Listing 5
+
+</emphasis>
+
+. Another sample script. 
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1006">
+
+			
+
+<row id="tr1013">
+
+				
+
+<entry id="td1006">
+
+
+
+<code id="pre1006" display="block">
+A = 4
+B = 3
+
+if B &gt; A:
+  print(A) # begin group
+  print(B)
+  print(A + B) # end group
+A = 6 # not part of above group
+print(A) 
+
+#============================================================
+#The output, which is not part of the script, is shown below.
+6
+</code>
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+<para id="p1047">
+In this case, only one value 
+(6) is printed because the three print statements in the group were bypassed as 
+a group. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31014">
+<title>
+<emphasis id="Members_of_the_group" effect="bold">
+
+Members of the group
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1048">
+The important point here is that the three indented statements in 
+
+<link id="a1052" target-id="Listing_4">
+
+Listing 4
+
+</link>
+
+ and 
+
+
+<link id="a1053" target-id="Listing_5">
+
+Listing 5
+
+</link>
+
+ constitute a group
+because of their 
+
+<emphasis id="em1041" effect="italics">
+common indentation level
+
+</emphasis>
+. 
+
+</para>
+
+
+
+
+</section>
+<section id="h31015">
+<title>
+<emphasis id="An_opinion_" effect="bold">
+
+An opinion 
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1049">
+I personally don't like the idea of using indentation to create grouping. 
+Although it sounds nice in theory, it can be very labor intensive in practice. 
+Once you have written a script, one simple change can often require you to go 
+back and modify the indentation level of almost every statement in the script.
+
+
+</para>
+
+
+
+
+<para id="p1050">
+I guess the good news is that this will encourage you to write your 
+script as a series of short, concise independent modules rather than as a 
+single long rambling script. 
+
+</para>
+
+
+
+
+<para id="p1051">
+I am also concerned about the accessibility or lack thereof that grouping 
+based on indentation level provides for blind and visually impaired students.
+
+</para>
+
+
+
+
+</section>
+<section id="h31016">
+<title>
+<emphasis id="Indentation_details" effect="bold">
+
+Indentation details
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<section id="h41000">
+<title>
+<emphasis id="Leading_whitespace_" effect="bold">
+
+Leading whitespace 
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1052">
+Leading whitespace 
+
+<emphasis id="em1042" effect="italics">
+(spaces and tabs)
+
+</emphasis>
+ at the beginning of a 
+
+<emphasis id="em1043" effect="italics">
+logical line
+
+</emphasis>
+ 
+is used to compute the indentation level of the line. This, in turn, is used to 
+determine the grouping of statements. 
+
+</para>
+
+
+
+
+</section>
+<section id="h41001">
+<title>
+<emphasis id="Tabs" effect="bold">
+
+Tabs
+
+</emphasis>
+
+ 
+
+</title>
+
+
+
+
+<para id="p1053">
+My advice is to avoid the use of tabs altogether. Use spaces instead, and use 
+the same number of spaces for each statement in the group. 
+
+</para>
+
+
+
+
+<para id="p1054">
+However, if you must use tabs, you should go to the
+
+
+<link id="a1054" url="https://docs.python.org/3/reference/lexical_analysis.html#indentation">
+
+Python Language 
+Reference -- 2.1.8. Indentation
+
+</link>
+
+ and make certain that you understand how Python deals with tabs.
+
+</para>
+
+
+
+
+</section>
+</section>
+</section>
+<section id="h21008">
+<title>
+<emphasis id="The_bottom_line_on_indentation" effect="bold">
+
+The bottom line on indentation
+
+</emphasis>
+
+
+
+
+</title>
+
+
+
+
+<para id="p1055">
+Use spaces to cause the indentation level of 
+all statements in a group of statements to be indented to the same level. 
+Statements in a group are either all executed, or all bypassed by the program 
+logic.
+
+</para>
+
+
+
+
+<para id="p1056">
+I will provide a visualization of the behavior of indentation in the module 
+titled 
+
+
+<link id="a1055" url="http://cnx.org/contents/71aca310-6390-40c4-9001-561cde902a0c">
+
+Itse1359-1065-Visualizing Python
+
+</link>
+
+ 
+in
+	
+
+<link id="a1056" url="http://cnx.org/contents/96b34405-9562-406b-bafb-90c5fb70f39e">
+
+this 
+	book
+
+</link>
+
+.
+
+</para>
+
+
+	
+
+</section>
+</section>
+<section id="h11005">
+<title>
+<emphasis id="Miscellaneous" effect="bold">
+
+Miscellaneous
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1057">
+This section contains a variety of miscellaneous information.
+
+</para>
+
+
+
+
+
+	
+
+<note id="note1001" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1016" effect="bold">
+Housekeeping material
+
+</emphasis>
+
+				
+
+<list id="ul1012" list-type="bulleted">
+
+					
+
+<item id="li1040">
+Module name: Itse1359-1060-Syntax
+
+</item>
+
+
+					
+
+<item id="li1041">
+File: Itse1359-1060.htm
+
+
+</item>
+
+
+					
+
+<item id="li1042">
+Published: 10/14/14
+
+</item>
+
+
+					
+
+<item id="li1043">
+Revised: 03/26/15
+
+</item>
+
+
+				
+
+</list>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+
+
+
+	
+
+<note id="note1002" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1017" effect="bold">
+Disclaimers:
+
+</emphasis>
+<para id="p1058">
+<emphasis id="strong1018" effect="bold">
+Financial
+
+</emphasis>
+: Although the Connexions
+site makes it possible for you to download a PDF file for this
+module at no charge, and also makes it possible for you to
+purchase a pre-printed version of the PDF file, you should be
+aware that some of the HTML elements in this module may not translate well into
+PDF.
+
+</para>
+
+
+				
+
+<para id="p1059">
+I also want you to know that, I receive no financial compensation from the Connexions website even if you purchase 
+	the PDF version of the module.
+
+</para>
+
+
+				
+
+<para id="p1060">
+In the past, unknown individuals have copied my modules from cnx.org, converted them to Kindle books, and 
+				placed them for sale on Amazon.com showing me as the author. I 
+				neither receive compensation for those sales nor do I know who does 
+				receive compensation. If you purchase such a book, please be 
+				aware that it is a copy of a module that is freely 
+				available on cnx.org and that it was made and published without 
+				my prior knowledge.
+
+</para>
+
+
+				
+
+<para id="p1061">
+<emphasis id="strong1019" effect="bold">
+Affiliation
+
+</emphasis>
+: I am a professor of Computer Information 
+	Technology at Austin Community College in Austin, TX.
+	
+
+</para>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+	
+
+<para id="p1062">
+-end- 
+
+</para>
+
+
+
+
+
+
+</section>
+</content>
+
+
+
+
+</document>

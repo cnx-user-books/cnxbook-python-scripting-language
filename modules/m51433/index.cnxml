@@ -1,0 +1,4125 @@
+<document xmlns="http://cnx.rice.edu/cnxml"> 
+<title>Itse1359-1280-Function Arguments</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m51433</md:content-id>
+  <md:title>Itse1359-1280-Function Arguments</md:title>
+  <md:abstract>This module explains how to tap into some of the more-powerful capabilities of Python functions using required arguments, default arguments, keyword arguments, and variable-length arguments.</md:abstract>
+  <md:uuid>15904262-d30b-45ed-ad84-9a6b117bc426</md:uuid>
+</metadata>
+
+<content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h11000">
+<title>
+Table of Contents
+
+</title>
+
+
+
+
+<list id="ul1000" list-type="bulleted">
+
+	
+
+<item id="li1000">
+<link id="a1000" target-id="Preface">
+
+Preface
+
+</link>
+
+
+	
+
+<list id="ul1001" list-type="bulleted">
+
+		
+
+<item id="li1001">
+<link id="a1001" target-id="What_you_have_learned">
+
+What you have learned
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1002">
+<link id="a1002" target-id="What_you_will_learn">
+
+What you will learn
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1003">
+<link id="a1003" target-id="Viewing_tip">
+
+Viewing tip
+
+</link>
+
+
+<list id="ul1002" list-type="bulleted">
+
+			
+
+<item id="li1004">
+<link id="a1004" target-id="Images">
+
+Figures
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1005">
+<link id="a1005" target-id="Listings">
+
+Listings
+
+</link>
+
+
+</item>
+
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+
+	
+
+<item id="li1006">
+<link id="a1006" target-id="General_background_information">
+
+General background information
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1007">
+<link id="a1007" target-id="Discussion_and_sample_code">
+
+Discussion and sample code
+
+</link>
+
+
+<list id="ul1003" list-type="bulleted">
+
+		
+
+<item id="li1008">
+<link id="a1008" target-id="Passing_by_value_or_reference">
+
+Passing by value or reference
+
+</link>
+
+
+<list id="ul1004" list-type="bulleted">
+
+			
+
+<item id="li1009">
+<link id="a1009" target-id="The_function_definition">
+
+The function definition
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1010">
+<link id="a1010" target-id="A_non-technical_explanation">
+
+A non-technical explanation
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1011">
+<link id="a1011" target-id="Visualization_of_the_code_in_Listing_1">
+
+Visualization 
+			of the code in Listing 1
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1012">
+<link id="a1012" target-id="A_modified_approach_to_the_same_objective">
+
+A modified approach to the same objective
+
+</link>
+
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+		
+
+<item id="li1013">
+<link id="a1013" target-id="Required_arguments">
+
+Required arguments
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1014">
+<link id="a1014" target-id="Default_arguments">
+
+Default arguments
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1015">
+<link id="a1015" target-id="Keyword_arguments">
+
+Keyword arguments
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1016">
+<link id="a1016" target-id="Variable-length_arguments">
+
+Variable-length arguments
+
+</link>
+
+
+<list id="ul1005" list-type="bulleted">
+
+			
+
+<item id="li1017">
+<link id="a1017" target-id="Visualization_of_variable-length_arguments">
+
+Visualization of variable-length arguments
+
+</link>
+
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+
+	
+
+<item id="li1018">
+<link id="a1018" target-id="Run_the_program">
+
+Run the programs
+
+</link>
+
+
+</item>
+
+
+
+	
+
+<item id="li1019">
+<link id="a1019" target-id="Miscellaneous">
+
+Miscellaneous
+
+</link>
+
+
+</item>
+
+
+
+
+
+</list>
+
+
+	
+	
+
+</section>
+<section id="h11001">
+<title>
+<emphasis id="Preface" effect="bold">
+
+Preface
+
+</emphasis>
+
+
+</title>
+
+
+	
+	
+
+<para id="p1000">
+This module is one in a collection of modules on Python designed for 
+teaching 
+
+<emphasis id="em1000" effect="italics">
+ITSE 1359 Introduction to Scripting Languages: Python
+
+</emphasis>
+ at Austin Community 
+College in Austin, TX. 
+
+</para>
+
+
+
+
+<section id="h21000">
+<title>
+<emphasis id="What_you_have_learned" effect="bold">
+
+What you have learned
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1001">
+You learned the basics of defining and calling Python functions in the 
+earlier module titled 
+
+
+<link id="a1020" url="http://cnx.org/contents/4b3d1706-871d-4641-8c34-2a1d19b1b03c">
+
+Itse1359-1270-Functions
+
+</link>
+
+
+<emphasis id="em1001" effect="italics">
+.
+
+</emphasis>
+</para>
+
+
+
+
+</section>
+<section id="h21001">
+<title>
+<emphasis id="What_you_will_learn" effect="bold">
+
+What you will learn
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1002">
+In this module, you will learn how to tap into some of the more-powerful 
+capabilities of functions involving optional ways to use arguments. This will 
+include an explanation of 
+
+</para>
+
+
+
+
+<list id="ul1006" list-type="bulleted">
+
+	
+
+<item id="li1020">
+required arguments, 
+
+</item>
+
+
+	
+
+<item id="li1021">
+default arguments, 
+
+</item>
+
+
+	
+
+<item id="li1022">
+keyword 
+arguments, and 
+
+</item>
+
+
+	
+
+<item id="li1023">
+variable-length arguments.
+
+</item>
+
+
+
+
+</list>
+
+
+	
+
+</section>
+<section id="h21002">
+<title>
+<emphasis id="Viewing_tip" effect="bold">
+
+Viewing tip
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1003">
+I recommend that you open another copy of this module in a separate 
+browser window and use the following links to easily find and view the Figures 
+	and the Listings while you are reading about them.
+
+</para>
+
+
+
+
+<para id="p1004">
+<emphasis id="em1002" effect="italics">
+(Note to blind and visually impaired students: most of the Figures and all of the 
+Listings in 
+this module are presented in plain text format and should be accessible using an 
+audio screen reader or a braille display. Note however that the required 
+indentation may not be properly represented by an audio screen reader.)
+
+</emphasis>
+</para>
+
+
+	
+
+<section id="h31000">
+<title>
+<emphasis id="Images" effect="bold">
+
+Figures
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<list id="ul1007" list-type="bulleted">
+
+
+
+
+<item id="li1024">
+<link id="a1021" target-id="Image_2">
+
+Figure 1
+
+</link>
+
+. Output from the code in Listing 1.
+
+</item>
+
+
+		
+
+<item id="li1025">
+<link id="a1022" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+. Visualization of the code in Listing 1. 
+
+</item>
+
+
+
+
+
+<item id="li1026">
+<link id="a1023" target-id="Image_4">
+
+Figure 3
+
+</link>
+
+. Output from the code in Listing 2.
+
+</item>
+
+
+
+
+
+<item id="li1027">
+<link id="a1024" target-id="Image_6">
+
+Figure 4
+
+</link>
+
+. Output produced by the code in Listing 3.
+
+</item>
+
+
+
+
+
+<item id="li1028">
+<link id="a1025" target-id="Image_8">
+
+Figure 5
+
+</link>
+
+. Output produced by the code in Listing 4.
+
+</item>
+
+
+
+
+
+<item id="li1029">
+<link id="a1026" target-id="Image_10">
+
+Figure 6
+
+</link>
+
+. Output produced by the code in Listing 5.
+
+</item>
+
+
+		
+
+<item id="li1030">
+<link id="a1027" target-id="Figure_7">
+
+Figure 7
+
+</link>
+
+. Visualization of 
+		variable-length arguments.
+
+</item>
+
+
+	
+
+</list>
+
+
+
+
+</section>
+<section id="h31001">
+<title>
+<emphasis id="Listings" effect="bold">
+
+Listings
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<list id="ul1008" list-type="bulleted">
+
+
+
+<item id="li1031">
+<link id="a1028" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+. A list-modifier function. 
+
+</item>
+
+
+
+
+<item id="li1032">
+<link id="a1029" target-id="Image_3">
+
+Listing 2
+
+</link>
+
+. Another list-modifier function.
+
+</item>
+
+
+
+
+<item id="li1033">
+<link id="a1030" target-id="Image_5">
+
+Listing 3
+
+</link>
+
+. Illustration of default arguments.
+
+</item>
+
+
+
+
+<item id="li1034">
+<link id="a1031" target-id="Image_7">
+
+Listing 4
+
+</link>
+
+. Illustration of keyword arguments.
+
+</item>
+
+
+
+
+<item id="li1035">
+<link id="a1032" target-id="Image_9">
+
+Listing 5
+
+</link>
+
+. Illustration of variable-length arguments.
+
+</item>
+
+
+
+
+</list>
+
+
+	
+
+</section>
+</section>
+</section>
+<section id="h11002">
+<title>
+<emphasis id="General_background_information" effect="bold">
+
+General 
+	background information
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1005">
+The overall topic of function arguments in Python is broad and relatively complex. A complete 
+treatment of the topic is beyond the scope of this collection of modules. 
+Instead, I will provide some examples of what is possible. For a more compete 
+treatment, I will refer you to
+
+
+<link id="a1033" url="https://docs.python.org/3/tutorial/controlflow.html#more-on-defining-functions">
+
+
+The Python Tutorial -- More on Defining Functions
+
+</link>
+
+ and
+
+
+<link id="a1034" url="http://www.tutorialspoint.com/python/python_functions.htm">
+
+
+tutorialspoint -- Python Functions
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<para id="p1006">
+One of the fundamental concepts in computer programming is whether function 
+parameters are passed 
+
+<emphasis id="em1003" effect="italics">
+by value
+
+</emphasis>
+ or 
+
+<emphasis id="em1004" effect="italics">
+by reference
+
+</emphasis>
+. If a parameter 
+is passed by value, the function receives a copy of the thing referred to by the 
+parameter. Modifying that thing in the function will not modify the original.
+
+</para>
+
+
+
+
+<para id="p1007">
+If a parameter is passed by reference, the incoming parameter can be used by 
+code in the function to modify the original. Some programming languages support 
+both types of parameter passing. 
+
+</para>
+
+
+
+
+<para id="p1008">
+According to
+
+
+<link id="a1035" url="http://www.tutorialspoint.com/python/python_functions.htm">
+
+
+tutorialspoint -- Python Functions
+
+</link>
+
+, all parameters in Python are 
+
+<emphasis id="em1005" effect="italics">
+passed by reference
+
+</emphasis>
+. 
+On the other hand, according to
+
+
+<link id="a1036" url="https://docs.python.org/3/tutorial/controlflow.html#defining-functions">
+
+
+The Python Tutorial -- Defining Functions
+
+</link>
+
+,
+
+</para>
+
+
+
+
+<quote id="blockquote1000" display="block">
+"thus, arguments are passed using call by value (where the value is always an object reference, not the value of the object)."
+
+</quote>
+
+
+
+
+<para id="p1009">
+In this case, I come down on the side of
+
+<emphasis id="em1006" effect="italics">
+ call by value
+
+</emphasis>
+. I think it is more 
+correct to say that parameters are passed by value and as a result, the 
+function receives copies of references to objects. Even though I can use a copy 
+of an object's reference to modify the object, I cannot use a copy of that 
+reference to cause the original reference to point to a different object. I can 
+modify the object to which the reference points, but I cannot modify the 
+reference itself.
+
+</para>
+
+
+
+
+<para id="p1010">
+I will illustrate what I mean by this in conjunction with the program in 
+
+
+<link id="a1037" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+.
+
+</para>
+
+
+	
+	
+
+</section>
+<section id="h11003">
+<title>
+<emphasis id="Discussion_and_sample_code" effect="bold">
+
+Discussion and sample code
+
+</emphasis>
+
+
+</title>
+
+
+	
+	
+
+<para id="p1011">
+This module will examine the following kinds of arguments:
+
+</para>
+
+
+
+
+<list id="ul1009" list-type="bulleted">
+
+	
+
+<item id="li1036">
+Required arguments
+
+</item>
+
+
+	
+
+<item id="li1037">
+Default arguments
+
+</item>
+
+
+	
+
+<item id="li1038">
+Keyword arguments
+
+</item>
+
+
+	
+
+<item id="li1039">
+Variable-length arguments
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+<section id="h21003">
+<title>
+<emphasis id="Passing_by_value_or_reference" effect="bold">
+
+Passing by value or reference
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1012">
+The program shown in 
+
+<link id="a1038" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+ illustrates the significance of passing 
+parameters by 
+
+<emphasis id="em1007" effect="italics">
+value
+
+</emphasis>
+ or by 
+
+<emphasis id="em1008" effect="italics">
+reference
+
+</emphasis>
+ when those parameters are references to objects. 
+
+
+<link id="a1039" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+ also illustrates the use of two 
+
+<emphasis id="em1009" effect="italics">
+required arguments
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+	
+
+<table id="table1000" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1000">
+
+			
+
+<row id="tr1000">
+
+				
+
+<entry id="th1000">
+<emphasis id="Image_1" effect="bold">
+
+Listing 1
+
+</emphasis>
+
+. A list-modifier 
+				function.
+
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1000">
+
+			
+
+<row id="tr1001">
+
+				
+
+<entry id="td1000">
+
+
+
+
+<code id="pre1000" display="block">
+# Illustrates pass by value or reference
+#---------------------------------------------------
+
+def listModifier(listA,listB):
+  """Illustrates pass by value or reference"""
+  print("In listModifier")
+
+  print("Use incoming parameter to append to listA")
+  listA.append(3.14159)
+  print("New listA = " + str(listA))
+
+  print("Assign a new list to listB")
+  listB = ["A","new","list"]
+  print("New listB = " + str(listB))
+
+  return
+#End function definition
+
+#Call the function
+print("Create two lists")
+aList = ["ab","cd","ef"]
+bList = ["The","old","list"]
+
+print("aList = " + str(aList))
+print("bList = " + str(bList))
+
+print("Call listModifier")
+listModifier(aList,bList)
+print("Back from listModifier")
+print("aList = " + str(aList))
+print("bList = " + str(bList))
+</code>
+
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1013">
+<link id="a1040" target-id="Image_2">
+
+Figure 1
+
+</link>
+
+ shows the output produced by the code in 
+
+<link id="a1041" target-id="Image_1">
+
+
+	Listing 1
+
+</link>
+
+.
+
+</para>
+
+
+
+
+	
+
+<table id="table1001" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1001">
+
+			
+
+<row id="tr1002">
+
+				
+
+<entry id="th1001">
+<emphasis id="Image_2" effect="bold">
+
+Figure 1
+
+</emphasis>
+
+. Output from the code 
+				in Listing 1.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1001">
+
+			
+
+<row id="tr1003">
+
+				
+
+<entry id="td1001">
+
+
+
+
+<code id="pre1001" display="block">
+Create two lists
+aList = ['ab', 'cd', 'ef']
+bList = ['The', 'old', 'list']
+Call listModifier
+In listModifier
+Use incoming parameter to append to listA
+New listA = ['ab', 'cd', 'ef', 3.14159]
+Assign a new list to listB
+New listB = ['A', 'new', 'list']
+Back from listModifier
+aList = ['ab', 'cd', 'ef', 3.14159]
+bList = ['The', 'old', 'list']
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<section id="h31002">
+<title>
+<emphasis id="The_function_definition" effect="bold">
+
+The function definition
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1014">
+The code in 
+
+<link id="a1042" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+ defines a function named 
+
+<emphasis id="strong1000" effect="bold">
+listModifier
+
+</emphasis>
+. 
+	This function receives two incoming parameters. Each parameter points to a 
+	different list. I contend that the incoming parameters are actually copies 
+of the variables that were passed as parameters.
+
+</para>
+
+
+
+
+<para id="p1015">
+The code in the function uses one of the incoming parameters to access the list and to append a value of 3.14159 onto the end of the list. The 
+second line of text from the bottom of 
+
+<link id="a1043" target-id="Image_2">
+
+Figure 1
+
+</link>
+
+ confirms that this operation was 
+successful.
+
+</para>
+
+
+
+
+<para id="p1016">
+Then the code in the function creates a new list and attempts to use the 
+second incoming parameter to replace the original list pointed to by that parameter with 
+the new list. The last line of text in 
+
+<link id="a1044" target-id="Image_2">
+
+Figure 1
+
+</link>
+
+ confirms that this was 
+
+
+<emphasis id="strong1001" effect="bold">
+not 
+successful
+
+</emphasis>
+. The copy of the incoming parameter points to the new list but this 
+does not cause the original reference to point to the new list.
+
+</para>
+
+
+
+
+</section>
+<section id="h31003">
+<title>
+<emphasis id="A_non-technical_explanation" effect="bold">
+
+A non-technical explanation
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1017">
+This same situation occurs in the Java courses that I teach. I often attempt 
+to explain it this way. Assume that I write my home address on a piece of paper 
+and make a copy of that piece of paper. Then I lose the copy. If a burglar finds 
+the copy, he has a pointer to my house. He could use that pointer in an attempt 
+to break into my house. However, even if he were to scratch out the address on 
+the copy and write a new address on the copy, that would not change the address 
+written on the original. The original would still point to the same old address.
+
+</para>
+
+
+
+
+<para id="p1018">
+This is essentially what happens in 
+
+<link id="a1045" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+ when the code creates a new list 
+and assigns its value to the copy of the original reference. The copy points to 
+the new list inside the function but the original reference outside the 
+function continues to point to the original list.
+
+</para>
+
+
+
+
+<para id="p1019">
+In effect, the copies that are received as parameters by a function become 
+local variables within the function. Those variables, and in this case the new 
+list that is pointed to by one of those variables, all cease to exist when the 
+function terminates unless returned by the function.
+
+</para>
+
+
+
+
+</section>
+<section id="h31004">
+<title>
+<emphasis id="Visualization_of_the_code_in_Listing_1" effect="bold">
+
+Visualization of the code 
+in Listing 1
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1020">
+<link id="a1046" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+ shows a
+
+
+<link id="a1047" url="http://pythontutor.com/visualize.html#mode=display">
+
+visualization
+
+</link>
+
+ 
+of the code in 
+
+<link id="a1048" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+ after all of the code has been 
+executed.
+
+</para>
+
+
+
+
+
+<para id="p1021">
+<emphasis id="strong1002" effect="bold">
+<emphasis id="Figure_2" effect="bold">
+
+Figure 2.
+
+</emphasis>
+
+ Visualization of the code in Listing 1.
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1022">
+<media id="media1000" alt="Visualization of the code in Listing 1" display="block">
+<image id="img1000" mime-type="image/jpeg" src="../../media/1359-1280a.jpg" width="773" height="687"/>
+</media>
+
+
+</para>
+
+
+
+
+
+<para id="p1023">
+I recommend that you create a 
+
+<link id="a1049" url="http://pythontutor.com/visualize.html#mode=display">
+
+
+visualization
+
+</link>
+
+  for the code in 
+
+<link id="a1050" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+ and step 
+through the program one instruction at a time. As you do that, pay attention to 
+the movements of the red and green arrows on the left, the diagram on the right, 
+and the printed material at the bottom. That should help you to better 
+understand the concept of 
+
+<emphasis id="em1010" effect="italics">
+"passing by value."
+
+</emphasis>
+</para>
+
+
+
+
+
+
+</section>
+<section id="h31005">
+<title>
+<emphasis id="A_modified_approach_to_the_same_objective" effect="bold">
+
+A modified approach to 
+the same objective
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1024">
+<link id="a1051" target-id="Image_3">
+
+Listing 2
+
+</link>
+
+ shows a modification to the code from 
+
+<link id="a1052" target-id="Image_1">
+
+
+Listing 1
+
+</link>
+
+ that is designed to accomplish what 
+
+
+<link id="a1053" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+ attempted to do but was unable to do.
+
+</para>
+
+
+	
+
+<table id="table1002" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1002">
+
+			
+
+<row id="tr1004">
+
+				
+
+<entry id="th1002">
+<emphasis id="Image_3" effect="bold">
+
+Listing 2
+
+</emphasis>
+
+. Another list-modifier function.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1002">
+
+			
+
+<row id="tr1005">
+
+				
+
+<entry id="td1002">
+
+
+
+
+<code id="pre1002" display="block">
+# Illustrates pass by value or reference
+#---------------------------------------------------
+
+def listModifier(listA,listB):
+  """Illustrates pass by value or reference"""
+  print("In listModifier")
+
+  print("Use incoming parameter to append to listA")
+  listA.append(3.14159)
+  print("New listA = " + str(listA))
+
+  print("Assign a new list to listB")
+  listB = ["A","new","list"]
+  print("New listB = " + str(listB))
+
+  return listB
+#End function definition
+
+#Call the function
+print("Create two lists")
+aList = ["ab","cd","ef"]
+bList = ["The","old","list"]
+
+print("aList = " + str(aList))
+print("bList = " + str(bList))
+
+print("Call listModifier")
+bList = listModifier(aList,bList)
+print("Back from listModifier")
+print("aList = " + str(aList))
+print("bList = " + str(bList))
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1025">
+<link id="a1054" target-id="Image_4">
+
+Figure 3
+
+</link>
+
+ shows the output from the code in 
+
+<link id="a1055" target-id="Image_3">
+
+
+	Listing 2
+
+</link>
+
+.
+
+</para>
+
+
+
+
+	
+
+<table id="table1003" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1003">
+
+			
+
+<row id="tr1006">
+
+				
+
+<entry id="th1003">
+<emphasis id="Image_4" effect="bold">
+
+Figure 3
+
+</emphasis>
+
+. Output from the code 
+				in Listing 2.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1003">
+
+			
+
+<row id="tr1007">
+
+				
+
+<entry id="td1003">
+
+
+
+
+<code id="pre1003" display="block">
+Create two lists
+aList = ['ab', 'cd', 'ef']
+bList = ['The', 'old', 'list']
+Call listModifier
+In listModifier
+Use incoming parameter to append to listA
+New listA = ['ab', 'cd', 'ef', 3.14159]
+Assign a new list to listB
+New listB = ['A', 'new', 'list']
+Back from listModifier
+aList = ['ab', 'cd', 'ef', 3.14159]
+bList = ['A', 'new', 'list']
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1026">
+<link id="a1056" target-id="Image_3">
+
+Listing 2
+
+</link>
+
+ has two major modifications relative to 
+
+<link id="a1057" target-id="Image_1">
+
+
+	Listing 1
+
+</link>
+
+. First, the 
+	function returns a copy of the reference to the new list instead of 
+	returning nothing. Second, the return value is assigned to the variable 
+	named 
+
+<emphasis id="strong1003" effect="bold">
+bList
+
+</emphasis>
+. This does 
+	cause the variable named 
+
+<emphasis id="strong1004" effect="bold">
+bList
+
+</emphasis>
+ to point to a different list 
+	object. This is confirmed by the last line of text in 
+
+<link id="a1058" target-id="Image_4">
+
+
+	Figure 3
+
+</link>
+
+. 
+
+</para>
+
+
+
+
+<para id="p1027">
+Conclusion -- 
+	function parameters in Python are passed by value, but the copies that are 
+	passed can often be used to access and modify the objects pointed to by the 
+	original reference variables of which they are copies.
+
+</para>
+
+
+
+
+<para id="p1028">
+In this program, the function's second argument is of no consequence. The 
+function and the program would behave the same if the second argument were 
+eliminated entirely. I left it in for illustration purposes only.
+
+</para>
+
+
+
+
+<para id="p1029">
+Hopefully you can study these two programs along with the program output and 
+the above discussion to understand the basic behavior of Python function 
+arguments.
+
+</para>
+
+
+
+
+</section>
+</section>
+<section id="h21004">
+<title>
+<emphasis id="Required_arguments" effect="bold">
+
+Required arguments
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1030">
+Note that there is a subtle technical difference between arguments and parameters. 
+However, I often tend to use the two terms interchangeably so you will simply 
+need to grit your teeth and bear with me if you see me using one or the other 
+term incorrectly.
+
+</para>
+
+
+
+
+<para id="p1031">
+When a function defines one or more arguments using the syntax shown in 
+
+
+<link id="a1059" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+ and 
+
+<link id="a1060" target-id="Image_3">
+
+Listing 2
+
+</link>
+
+, the code that calls the function must pass one parameter for each 
+argument and must pass them in the correct order. That is why we call them 
+
+<emphasis id="em1011" effect="italics">
+
+required arguments
+
+</emphasis>
+. There isn't a lot more that needs to be said about 
+required arguments.
+
+</para>
+
+
+
+
+</section>
+<section id="h21005">
+<title>
+<emphasis id="Default_arguments" effect="bold">
+
+Default arguments
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1032">
+A function can define one or more default arguments in addition to required 
+arguments as shown in 
+
+<link id="a1061" target-id="Image_5">
+
+Listing 3
+
+</link>
+
+. Default values are defined for the default 
+arguments when the function is defined using the syntax shown in 
+
+<link id="a1062" target-id="Image_5">
+
+
+Listing 3
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<para id="p1033">
+The calling program can ignore some or all of the default arguments when 
+calling the function. By this I mean that the calling program can simply not 
+pass parameters for some or all of the default arguments. However, when default 
+arguments are ignored, they must be ignored from right to left in the argument 
+list. In other words, the calling program cannot ignore a default argument in 
+the middle of a group of default arguments.
+
+</para>
+
+
+
+
+<para id="p1034">
+When the calling program ignores default arguments, the defined default 
+values for those arguments are used by the code in the body of the function.
+
+</para>
+
+
+
+
+<para id="p1035">
+The program shown in 
+
+<link id="a1063" target-id="Image_5">
+
+Listing 3
+
+</link>
+
+ illustrates a function with one required 
+argument (
+
+<emphasis id="strong1005" effect="bold">
+listA
+
+</emphasis>
+) and three default arguments (
+
+<emphasis id="strong1006" effect="bold">
+listB
+
+</emphasis>
+, 
+
+
+<emphasis id="strong1007" effect="bold">
+listC
+
+</emphasis>
+, and 
+
+<emphasis id="strong1008" effect="bold">
+listD
+
+</emphasis>
+).
+
+</para>
+
+
+	
+
+<table id="table1004" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1004">
+
+			
+
+<row id="tr1008">
+
+				
+
+<entry id="th1004">
+<emphasis id="Image_5" effect="bold">
+
+Listing 3
+
+</emphasis>
+
+. Illustration of 
+				default arguments.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1004">
+
+			
+
+<row id="tr1009">
+
+				
+
+<entry id="td1004">
+
+
+
+
+<code id="pre1004" display="block">
+# Illustrates default arguments
+#-----------------------------------------------------------
+
+def listModifier(listA,listB=["B"],listC=["C"],listD=["D"]):
+  """Illustrates default arguments"""
+  print("In listModifier")
+
+  listA.append(1.00001)
+  print("listA = " + str(listA))
+  listB.append(2.00002)
+  print("listB = " + str(listB))
+  listC.append(3.00003)
+  print("listC = " + str(listC))
+  listD.append(4.00004)
+  print("listD = " + str(listD))
+
+  return
+#End function definition
+
+aList = ["ab","cd","ef"]
+bList = ["The","old","list"]
+cList = ["This old house"]
+dList = ["is falling down"]
+
+print("aList = " + str(aList))
+print("bList = " + str(bList))
+print("cList = " + str(cList))
+print("dList = " + str(dList))
+
+print("Call listModifier")
+listModifier(aList,bList)
+print("Back from listModifier")
+
+print("aList = " + str(aList))
+print("bList = " + str(bList))
+print("cList = " + str(cList))
+print("dList = " + str(dList))
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1036">
+<link id="a1064" target-id="Image_6">
+
+Figure 4
+
+</link>
+
+ shows the output produced by the code in 
+
+<link id="a1065" target-id="Image_5">
+
+
+	Listing 3
+
+</link>
+
+.
+
+</para>
+
+
+
+
+	
+
+<table id="table1005" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1005">
+
+			
+
+<row id="tr1010">
+
+				
+
+<entry id="th1005">
+<emphasis id="Image_6" effect="bold">
+
+Figure 4
+
+</emphasis>
+
+. Output produced by 
+				the code in Listing 3.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1005">
+
+			
+
+<row id="tr1011">
+
+				
+
+<entry id="td1005">
+
+
+
+
+<code id="pre1005" display="block">
+aList = ['ab', 'cd', 'ef']
+bList = ['The', 'old', 'list']
+cList = ['This old house']
+dList = ['is falling down']
+Call listModifier
+In listModifier
+listA = ['ab', 'cd', 'ef', 1.00001]
+listB = ['The', 'old', 'list', 2.00002]
+listC = ['C', 3.00003]
+listD = ['D', 4.00004]
+Back from listModifier
+aList = ['ab', 'cd', 'ef', 1.00001]
+bList = ['The', 'old', 'list', 2.00002]
+cList = ['This old house']
+dList = ['is falling down']
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1037">
+The first thing that you should pay attention to is the syntax for 
+	defining default arguments in the function named 
+
+<emphasis id="strong1009" effect="bold">
+listModifier
+
+</emphasis>
+.
+	
+
+<emphasis id="em1012" effect="italics">
+(You will see later that this 
+
+<emphasis id="strong1010" effect="bold">
+same syntax is used for defining keyword 
+	arguments
+
+</emphasis>
+.)
+
+</emphasis>
+</para>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<para id="p1038">
+The second thing you should pay attention to is the syntax used to call 
+the function named 
+
+<emphasis id="strong1011" effect="bold">
+listModifier
+
+</emphasis>
+ about six lines up from the 
+bottom of 
+
+<link id="a1066" target-id="Image_5">
+
+Listing 3
+
+</link>
+
+. The function call passes only two parameters to the function:
+
+
+<emphasis id="strong1012" effect="bold">
+aList
+
+</emphasis>
+ and 
+
+<emphasis id="strong1013" effect="bold">
+bList
+
+</emphasis>
+. 
+
+</para>
+
+
+
+
+<para id="p1039">
+The function treats the first parameter as satisfying the required argument named
+
+
+<emphasis id="strong1014" effect="bold">
+listA
+
+</emphasis>
+. The function treats the second parameter as satisfying the default 
+argument named 
+
+<emphasis id="strong1015" effect="bold">
+ListB
+
+</emphasis>
+, replacing the default value with the 
+parameter that is actually received. Not receiving any more incoming parameters, 
+the function processes the default values for 
+
+<emphasis id="strong1016" effect="bold">
+listC
+
+</emphasis>
+ and 
+
+<emphasis id="strong1017" effect="bold">
+
+listD
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+<para id="p1040">
+Hopefully this explanation along with the code in 
+
+<link id="a1067" target-id="Image_5">
+
+Listing 
+3
+
+</link>
+
+ and the output in 
+
+
+<link id="a1068" target-id="Image_6">
+
+Figure 4
+
+</link>
+
+ will tell you what you need to know about using default 
+function arguments.
+
+</para>
+
+
+
+
+</section>
+<section id="h21006">
+<title>
+<emphasis id="Keyword_arguments" effect="bold">
+
+Keyword arguments
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1041">
+When a function having required arguments is called, the calling program must 
+pass a parameter for each required argument and must pass those parameters in 
+the correct left-to-right order relative to the argument list.
+
+</para>
+
+
+
+
+<para id="p1042">
+When a function having default arguments is called, the calling program can 
+omit passing parameters to the arguments on the right end of the argument list. 
+However, the parameters that are passed to default arguments must be passed in 
+the correct left-to-right order relative to the argument list.
+
+</para>
+
+
+
+
+<para id="p1043">
+You are probably seeing the trend here. When a function having keyword 
+arguments is called, the calling program can pass parameters for all, some, or 
+none of the keyword arguments. Furthermore, the parameters that are passed to 
+keyword arguments can be passed in any order. Positional matching is no longer 
+required. 
+
+</para>
+
+
+
+
+<para id="p1044">
+A function can define required arguments, default arguments, keyword 
+arguments, and variable-length arguments 
+
+<emphasis id="em1013" effect="italics">
+(to be discussed later)
+
+</emphasis>
+ in a 
+variety of combinations. In this module, I will combine required arguments with 
+each of the other types but won't provide examples of combining all four types 
+in the same function.
+
+</para>
+
+
+
+
+<para id="p1045">
+A function can define one or more keyword arguments in addition to required 
+arguments as shown in 
+
+<link id="a1069" target-id="Image_7">
+
+Listing 4
+
+</link>
+
+. Default values are defined for the keyword 
+arguments when the function is defined using the syntax shown in 
+
+<link id="a1070" target-id="Image_7">
+
+
+Listing 4
+
+</link>
+
+. 
+
+<emphasis id="em1014" effect="italics">
+(I 
+told you earlier that the syntax for defining default arguments is the same as the syntax for defining keyword arguments.)
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1046">
+The calling program can ignore none, some, or all of the keyword arguments 
+when calling the function. By this I mean that the calling program can simply 
+not pass parameters for keyword arguments. Parameters that are passed for 
+keyword arguments can be passed in any order. In other words, unlike default 
+arguments, the calling program can ignore a keyword argument in 
+the middle of a group of keyword arguments.
+
+</para>
+
+
+
+
+<para id="p1047">
+As with default arguments, when the calling program ignores keyword arguments, the defined default 
+values for those arguments are used by the code in the body of the function.
+
+</para>
+
+
+
+
+<para id="p1048">
+The program shown in 
+
+<link id="a1071" target-id="Image_7">
+
+Listing 4
+
+</link>
+
+ illustrates a function with one required 
+argument (
+
+<emphasis id="strong1018" effect="bold">
+listA
+
+</emphasis>
+) and three keyword arguments (
+
+<emphasis id="strong1019" effect="bold">
+listB
+
+</emphasis>
+, 
+
+
+<emphasis id="strong1020" effect="bold">
+listC
+
+</emphasis>
+, and 
+
+<emphasis id="strong1021" effect="bold">
+listD
+
+</emphasis>
+).
+
+</para>
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<table id="table1006" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1006">
+
+			
+
+<row id="tr1012">
+
+				
+
+<entry id="th1006">
+<emphasis id="Image_7" effect="bold">
+
+Listing 4
+
+</emphasis>
+
+. Illustration of 
+				keyword arguments.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1006">
+
+			
+
+<row id="tr1013">
+
+				
+
+<entry id="td1006">
+
+
+
+
+<code id="pre1006" display="block">
+# Illustrates keyword arguments
+#---------------------------------------------------
+
+def listModifier(listA,listB=["B"],listC=["C"],listD=["D"]):
+  """Illustrates keyword arguments"""
+  print("In listModifier")
+
+  listA.append(1.00001)
+  print("listA = " + str(listA))
+  listB.append(2.00002)
+  print("listB = " + str(listB))
+  listC.append(3.00003)
+  print("listC = " + str(listC))
+  listD.append(4.00004)
+  print("listD = " + str(listD))
+
+  return
+#End function definition
+
+aList = ["ab","cd","ef"]
+bList = ["The","old","list"]
+cList = ["This old house"]
+dList = ["is falling down"]
+
+print("aList = " + str(aList))
+print("bList = " + str(bList))
+print("cList = " + str(cList))
+print("dList = " + str(dList))
+
+print("Call listModifier")
+listModifier(aList,listD=dList,listB=bList)
+print("Back from listModifier")
+
+print("aList = " + str(aList))
+print("bList = " + str(bList))
+print("cList = " + str(cList))
+print("dList = " + str(dList))
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1049">
+The code in 
+
+<link id="a1072" target-id="Image_7">
+
+Listing 4
+
+</link>
+
+ produces the output shown in 
+
+<link id="a1073" target-id="Image_8">
+
+
+	Figure 5
+
+</link>
+
+.
+
+</para>
+
+
+
+
+	
+
+<table id="table1007" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1007">
+
+			
+
+<row id="tr1014">
+
+				
+
+<entry id="th1007">
+<emphasis id="Image_8" effect="bold">
+
+Figure 5
+
+</emphasis>
+
+. Output produced by 
+				the code in Listing 4.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1007">
+
+			
+
+<row id="tr1015">
+
+				
+
+<entry id="td1007">
+
+
+
+
+<code id="pre1007" display="block">
+aList = ['ab', 'cd', 'ef']
+bList = ['The', 'old', 'list']
+cList = ['This old house']
+dList = ['is falling down']
+Call listModifier
+In listModifier
+listA = ['ab', 'cd', 'ef', 1.00001]
+listB = ['The', 'old', 'list', 2.00002]
+listC = ['C', 3.00003]
+listD = ['is falling down', 4.00004]
+Back from listModifier
+aList = ['ab', 'cd', 'ef', 1.00001]
+bList = ['The', 'old', 'list', 2.00002]
+cList = ['This old house']
+dList = ['is falling down', 4.00004]
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1050">
+As before, the first thing that you should pay attention to is the syntax 
+	for defining keyword arguments in the function named 
+
+<emphasis id="strong1022" effect="bold">
+listModifier
+
+</emphasis>
+ in 
+
+<link id="a1074" target-id="Image_7">
+
+
+	Listing 4
+
+</link>
+
+. 
+	If you compare it with the argument list for the function with the same name 
+	in 
+
+<link id="a1075" target-id="Image_5">
+
+Listing 3
+
+</link>
+
+, you will see that there are 
+
+<emphasis id="strong1023" effect="bold">
+exactly the same
+
+</emphasis>
+. Therefore, the 
+	manner in which the arguments are defined does not distinguish default arguments 
+	from keyword arguments. The distinguishing factor is the syntax with which 
+	the function is called.
+
+</para>
+
+
+
+
+<para id="p1051">
+The second thing you should pay attention to is the syntax used to call 
+the function named 
+
+<emphasis id="strong1024" effect="bold">
+listModifier
+
+</emphasis>
+ about six lines up from the 
+bottom of 
+
+<link id="a1076" target-id="Image_7">
+
+Listing 4
+
+</link>
+
+. The function call passes three parameters: 
+
+<emphasis id="strong1025" effect="bold">
+aList
+
+</emphasis>
+,
+
+
+<emphasis id="strong1026" effect="bold">
+dList
+
+</emphasis>
+, and 
+
+<emphasis id="strong1027" effect="bold">
+bList
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+<para id="p1052">
+The reference variable named 
+
+<emphasis id="strong1028" effect="bold">
+aList
+
+</emphasis>
+ is passed as the first parameter to 
+satisfy the required argument named 
+
+<emphasis id="strong1029" effect="bold">
+listA
+
+</emphasis>
+. Note that it is 
+passed using the same syntax as in 
+
+<link id="a1077" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+, 
+
+<link id="a1078" target-id="Image_3">
+
+
+Listing 2
+
+</link>
+
+, and 
+
+<link id="a1079" target-id="Image_5">
+
+Listing 3
+
+</link>
+
+. Because it is 
+a required argument, it must be passed in the correct order in a positional 
+sense.
+
+</para>
+
+
+
+
+<para id="p1053">
+The syntax for passing 
+
+<emphasis id="strong1030" effect="bold">
+dList
+
+</emphasis>
+ and 
+
+<emphasis id="strong1031" effect="bold">
+bList
+
+</emphasis>
+ however is significantly different 
+from the previous examples. 
+What you see is something closely akin to an assignment statement. In other 
+words, the parameter named 
+
+<emphasis id="strong1032" effect="bold">
+dList
+
+</emphasis>
+ is 
+
+<emphasis id="em1015" effect="italics">
+assigned
+
+</emphasis>
+ to the argument named 
+
+
+<emphasis id="strong1033" effect="bold">
+listD
+
+</emphasis>
+. Also, the parameter named 
+
+<emphasis id="strong1034" effect="bold">
+bList
+
+</emphasis>
+ is assigned to the argument named 
+
+
+<emphasis id="strong1035" effect="bold">
+listB
+
+</emphasis>
+. 
+Nothing is passed and assigned to the argument named 
+
+<emphasis id="strong1036" effect="bold">
+listC
+
+</emphasis>
+. Furthermore, the 
+two parameters that 
+are passed through assignment to the named arguments are passed in reverse order 
+relative to the definition of those arguments in the function definition.
+
+</para>
+
+
+
+
+<para id="p1054">
+Hopefully this explanation along with the code in 
+
+<link id="a1080" target-id="Image_7">
+
+Listing 
+4
+
+</link>
+
+ and the output in 
+
+
+<link id="a1081" target-id="Image_8">
+
+Figure 5
+
+</link>
+
+ will tell you what you need to know about using keyword 
+function arguments.
+
+</para>
+
+
+
+
+<para id="p1055">
+I also recommend that you create a 
+
+
+<link id="a1082" url="http://pythontutor.com/visualize.html#mode=display">
+
+
+visualization
+
+</link>
+
+  for the code in 
+
+<link id="a1083" target-id="Image_7">
+
+Listing 
+4
+
+</link>
+
+ and step 
+through the program one instruction at a time. As you do that, pay attention to 
+the movements of the red and green arrows on the left, the diagram on the right, 
+and the printed material at the bottom. That should help you to better 
+understand the concept of keyword arguments.
+
+</para>
+
+
+
+
+</section>
+<section id="h21007">
+<title>
+<emphasis id="Variable-length_arguments" effect="bold">
+
+Variable-length arguments
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1056">
+The program in 
+
+<link id="a1084" target-id="Image_9">
+
+Listing 5
+
+</link>
+
+ defines a function named 
+
+<emphasis id="strong1037" effect="bold">
+listModifier
+
+</emphasis>
+ 
+with one required argument (
+
+<emphasis id="strong1038" effect="bold">
+listA
+
+</emphasis>
+) and a syntax that supports 
+an arbitrary number of arguments (
+
+<emphasis id="strong1039" effect="bold">
+*wxyz
+
+</emphasis>
+). 
+
+<emphasis id="em1016" effect="italics">
+(Note the 
+asterisk, *, immediately to the left of 
+
+<emphasis id="strong1040" effect="bold">
+wxyz
+
+</emphasis>
+.)
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1057">
+The program in 
+
+<link id="a1085" target-id="Image_9">
+
+Listing 5
+
+</link>
+
+ illustrates 
+
+<emphasis id="em1017" effect="italics">
+variable-length arguments
+
+</emphasis>
+.
+
+</para>
+
+
+	
+
+<table id="table1008" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1008">
+
+			
+
+<row id="tr1016">
+
+				
+
+<entry id="th1008">
+<emphasis id="Image_9" effect="bold">
+
+Listing 5
+
+</emphasis>
+
+. Illustration of 
+				variable-length arguments.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1008">
+
+			
+
+<row id="tr1017">
+
+				
+
+<entry id="td1008">
+
+
+
+
+<code id="pre1008" display="block">
+# Illustrates variable-length arguments
+#--------------------------------------------------------------------------
+
+def listModifier(listA,*wxyz):
+  """Illustrates variable-length arguments"""
+  print("In listModifier")
+
+  #append a numeric value to the list referenced by required argument listA
+  listA.append(1.00001)
+  
+  #append increasing numeric values to lists referenced by other parameters
+  count = 2
+  for ref in wxyz:
+    ref.append(1.00001 * count)
+    count += 1 #end for loop here
+
+  return #return nothing
+#End function definition
+
+aList = ["ab","cd","ef"]
+bList = ["The","old","list"]
+cList = ["This old house"]
+dList = ["is falling down"]
+
+print("aList = " + str(aList))
+print("bList = " + str(bList))
+print("cList = " + str(cList))
+print("dList = " + str(dList))
+
+print("Call listModifier")
+listModifier(aList,bList,cList,dList)
+print("Back from listModifier")
+
+print("aList = " + str(aList))
+print("bList = " + str(bList))
+print("cList = " + str(cList))
+print("dList = " + str(dList))
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1058">
+The code in 
+
+<link id="a1086" target-id="Image_9">
+
+Listing 5
+
+</link>
+
+ produces the output shown in 
+
+<link id="a1087" target-id="Image_10">
+
+
+	Figure 6
+
+</link>
+
+.
+
+</para>
+
+
+
+
+	
+
+<table id="table1009" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1009">
+
+			
+
+<row id="tr1018">
+
+				
+
+<entry id="th1009">
+<emphasis id="Image_10" effect="bold">
+
+Figure 6
+
+</emphasis>
+
+. Output produced 
+				by the code in Listing 5.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1009">
+
+			
+
+<row id="tr1019">
+
+				
+
+<entry id="td1009">
+
+
+
+
+<code id="pre1009" display="block">
+aList = ['ab', 'cd', 'ef']
+bList = ['The', 'old', 'list']
+cList = ['This old house']
+dList = ['is falling down']
+Call listModifier
+In listModifier
+Back from listModifier
+aList = ['ab', 'cd', 'ef', 1.00001]
+bList = ['The', 'old', 'list', 2.00002]
+cList = ['This old house', 3.00003]
+dList = ['is falling down', 4.00004]
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+<para id="p1059">
+The first thing that you should pay attention to is the syntax for 
+defining variable-length arguments in the function named 
+
+<emphasis id="strong1041" effect="bold">
+listModifier
+
+</emphasis>
+ 
+in 
+
+<link id="a1088" target-id="Image_9">
+
+Listing 5
+
+</link>
+
+. The syntax consists of an asterisk (*) followed by an arbitrary 
+argument name. As mentioned earlier, the function definition in 
+
+<link id="a1089" target-id="Image_9">
+
+
+Listing 5
+
+</link>
+
+ consists 
+of a required argument (
+
+<emphasis id="strong1042" effect="bold">
+listA
+
+</emphasis>
+) followed by the syntax for a 
+variable-length group of arguments (
+
+<emphasis id="strong1043" effect="bold">
+*wxyz
+
+</emphasis>
+).
+
+</para>
+
+
+
+
+<para id="p1060">
+In this program, the calling program must pass a parameter for the required 
+argument and can pass an arbitrary number of parameters following the required 
+argument.
+
+</para>
+
+
+
+
+<para id="p1061">
+The second thing you should pay attention to is the syntax used to call 
+the function named 
+
+<emphasis id="strong1044" effect="bold">
+listModifier
+
+</emphasis>
+ about six lines up from the 
+bottom of 
+
+<link id="a1090" target-id="Image_9">
+
+Listing 5
+
+</link>
+
+. The function call passes four parameters: 
+
+<emphasis id="strong1045" effect="bold">
+aList
+
+</emphasis>
+,
+
+
+<emphasis id="strong1046" effect="bold">
+bList, cList
+
+</emphasis>
+, and 
+
+<emphasis id="strong1047" effect="bold">
+dList
+
+</emphasis>
+, each of which is a 
+reference to a list object.
+
+</para>
+
+
+
+
+<para id="p1062">
+The reference variable named 
+
+<emphasis id="strong1048" effect="bold">
+aList
+
+</emphasis>
+ is passed as the first 
+parameter to satisfy the required argument named 
+
+<emphasis id="strong1049" effect="bold">
+listA
+
+</emphasis>
+. Note 
+that it is passed using the same syntax as in 
+
+<link id="a1091" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+, 
+
+<link id="a1092" target-id="Image_3">
+
+
+Listing 2
+
+</link>
+
+, 
+
+<link id="a1093" target-id="Image_5">
+
+Listing 3
+
+</link>
+
+ and 
+
+
+<link id="a1094" target-id="Image_7">
+
+Listing 4
+
+</link>
+
+. 
+Because it is a required argument, it must be passed in the correct order in a 
+positional sense.
+
+</para>
+
+
+
+
+<para id="p1063">
+The remaining three parameters are passed as variable-length arguments. The 
+interpreter wraps them in a tuple and presents the tuple to the code in the body 
+of the function. 
+
+<emphasis id="em1018" effect="italics">
+(You learned about tuples in the earlier module titled 
+
+
+<link id="a1095" url="http://cnx.org/contents/59b92f58-fa74-4624-a37a-37ab2794536a">
+
+Itse1359-1100-Indexing and Slicing Tuples
+
+</link>
+
+ and several modules following that 
+one.)
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1064">
+The code in the body of the function uses the parameter passed as the 
+required argument to append a numeric value to the list referred to by that 
+parameter.
+
+</para>
+
+
+
+
+<para id="p1065">
+Although a tuple is immutable, the list objects referred to by the elements 
+in the tuple are mutable. A 
+
+<emphasis id="strong1050" effect="bold">
+for
+
+</emphasis>
+ loop in the functions iterates 
+from the beginning to the end of the tuple, extracting the references to the 
+lists and appending an increasing numeric value to the end of each list. This is 
+shown in the last four lines of text in 
+
+<link id="a1096" target-id="Image_10">
+
+Figure 6
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<para id="p1066">
+Note that if the order in which the function processes the arguments is 
+important, the order in which the calling program passes the parameters must 
+match that order because that is the order in which they will be wrapped in the 
+tuple.
+
+</para>
+
+
+
+
+<para id="p1067">
+Hopefully this explanation along with the code in 
+
+<link id="a1097" target-id="Image_9">
+
+Listing 
+5
+
+</link>
+
+ and the output in 
+
+
+<link id="a1098" target-id="Image_10">
+
+Figure 6
+
+</link>
+
+ will tell you what you need to know about using variable-length 
+function arguments. I do want to caution again, however, that this module does not 
+provide a complete treatment of function arguments. For a more compete 
+treatment, I will refer you to
+
+
+<link id="a1099" url="https://docs.python.org/3/tutorial/controlflow.html#more-on-defining-functions">
+
+
+The Python Tutorial -- More on Defining Functions
+
+</link>
+
+ and
+
+
+<link id="a1100" url="http://www.tutorialspoint.com/python/python_functions.htm">
+
+
+tutorialspoint -- Python Functions
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<section id="h31006">
+<title>
+<emphasis id="Visualization_of_variable-length_arguments" effect="bold">
+
+Visualization of 
+variable-length arguments
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1068">
+<link id="a1101" target-id="Figure_7">
+
+Figure 7
+
+</link>
+
+ shows a
+
+
+<link id="a1102" url="http://pythontutor.com/visualize.html#mode=display">
+
+visualization
+
+</link>
+
+ 
+of the code in 
+
+<link id="a1103" target-id="Image_9">
+
+Listing 
+5
+
+</link>
+
+ part of the way through the execution of the program. Note that in order 
+to reduce the amount of vertical space required to publish the
+
+
+<link id="a1104" url="http://pythontutor.com/visualize.html#mode=display">
+
+visualization
+
+</link>
+
+, 
+one of the visualization parameters was changed to 
+
+<emphasis id="em1019" effect="italics">
+"inline primitives and 
+nested objects [default]."
+
+</emphasis>
+</para>
+
+
+
+
+
+<para id="p1069">
+<emphasis id="strong1051" effect="bold">
+<emphasis id="Figure_7" effect="bold">
+
+Figure 7.
+
+</emphasis>
+
+ Visualization of variable-length arguments.
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1070">
+<media id="media1001" alt="Visualization of variable-length arguments." display="block">
+<image id="img1001" mime-type="image/jpeg" src="../../media/1359-1280b.jpg" width="837" height="684"/>
+</media>
+
+
+</para>
+
+
+
+
+
+<para id="p1071">
+I recommend that you create a
+
+
+<link id="a1105" url="http://pythontutor.com/visualize.html#mode=display">
+
+
+visualization
+
+</link>
+
+ for the code in 
+
+<link id="a1106" target-id="Image_9">
+
+Listing 
+5
+
+</link>
+
+ and step through the program one instruction at a time. As you do that, 
+pay attention to the movements of the red and green arrows on the left, the 
+diagram on the right, and the printed material at the bottom. That should help 
+you to better understand the concept of variable-length arguments.
+
+</para>
+
+
+
+
+
+
+
+
+</section>
+</section>
+</section>
+<section id="h11004">
+<title>
+<emphasis id="Run_the_program" effect="bold">
+
+Run the programs
+
+</emphasis>
+
+
+</title>
+
+
+
+
+
+<para id="p1072">
+I encourage you to copy the code from 
+
+<link id="a1107" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+, 
+
+<link id="a1108" target-id="Image_3">
+
+
+Listing 2
+
+</link>
+
+, 
+
+
+<link id="a1109" target-id="Image_5">
+
+Listing 3
+
+</link>
+
+, 
+
+<link id="a1110" target-id="Image_7">
+
+Listing 4
+
+</link>
+
+, 
+and 
+
+<link id="a1111" target-id="Image_9">
+
+Listing 5
+
+</link>
+
+. Execute the code and confirm that you get the same results as those 
+shown in in this module. Experiment with the code, 
+making changes, and observing the results of your changes. Make certain that you 
+can explain why your changes behave as they do.
+
+</para>
+
+
+
+
+<para id="p1073">
+I also recommend that you create
+
+
+<link id="a1112" url="http://pythontutor.com/visualize.html#mode=display">
+
+
+visualizations
+
+</link>
+
+  for the code in 
+
+<link id="a1113" target-id="Image_1">
+
+Listing 1
+
+</link>
+
+ through
+
+
+<link id="a1114" target-id="Image_9">
+
+Listing 5
+
+</link>
+
+. Step 
+through the programs one instruction at a time. As you do that, pay attention to 
+the movements of the red and green arrows on the left, the diagram on the right, 
+and the printed material at the bottom. That should help you to better 
+understand the concepts embodied in those sample programs.
+
+</para>
+
+
+	
+
+</section>
+<section id="h11005">
+<title>
+<emphasis id="Miscellaneous" effect="bold">
+
+Miscellaneous
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1074">
+This section contains a variety of miscellaneous information.
+
+</para>
+
+
+
+
+
+	
+
+<note id="note1000" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1052" effect="bold">
+Housekeeping material
+
+</emphasis>
+
+				
+
+<list id="ul1010" list-type="bulleted">
+
+					
+
+<item id="li1040">
+Module name: Itse1359-1280-Function Arguments
+
+</item>
+
+
+					
+
+<item id="li1041">
+File: Itse1359-1280.htm
+
+
+</item>
+
+
+					
+
+<item id="li1042">
+Published: 10/26/14
+
+</item>
+
+
+					
+
+<item id="li1043">
+Revised: 01/31/16
+
+</item>
+
+
+				
+
+</list>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+
+
+
+	
+
+<note id="note1001" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1053" effect="bold">
+Disclaimers:
+
+</emphasis>
+<para id="p1075">
+<emphasis id="strong1054" effect="bold">
+Financial
+
+</emphasis>
+: Although the Connexions
+site makes it possible for you to download a PDF file for this
+module at no charge, and also makes it possible for you to
+purchase a pre-printed version of the PDF file, you should be
+aware that some of the HTML elements in this module may not translate well into
+PDF.
+
+</para>
+
+
+				
+
+<para id="p1076">
+I also want you to know that, I receive no financial compensation from the Connexions website even if you purchase 
+	the PDF version of the module.
+
+</para>
+
+
+				
+
+<para id="p1077">
+In the past, unknown individuals have copied my modules from cnx.org, converted them to Kindle books, and 
+				placed them for sale on Amazon.com showing me as the author. I 
+				neither receive compensation for those sales nor do I know who does 
+				receive compensation. If you purchase such a book, please be 
+				aware that it is a copy of a module that is freely 
+				available on cnx.org and that it was made and published without 
+				my prior knowledge.
+
+</para>
+
+
+				
+
+<para id="p1078">
+<emphasis id="strong1055" effect="bold">
+Affiliation
+
+</emphasis>
+: I am a professor of Computer Information 
+	Technology at Austin Community College in Austin, TX.
+	
+
+</para>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+
+
+<para id="p1079">
+-end- 
+
+</para>
+
+
+
+
+
+
+</section>
+</content>
+
+
+
+
+</document>

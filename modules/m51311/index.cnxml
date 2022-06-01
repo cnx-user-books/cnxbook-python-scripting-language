@@ -1,0 +1,614 @@
+<document xmlns="http://cnx.rice.edu/cnxml"> 
+<title>Itse1359-1015-Program Organization</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m51311</md:content-id>
+  <md:title>Itse1359-1015-Program Organization</md:title>
+  <md:abstract>This module provides a brief introduction to program organization using scripts, modules, and packages.</md:abstract>
+  <md:uuid>5b770b03-e31d-4b77-b60a-15dc19c6c052</md:uuid>
+</metadata>
+
+<content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h11000">
+<title>
+Table of contents
+
+</title>
+
+
+
+
+<list id="ul1000" list-type="bulleted">
+
+	
+
+<item id="li1000">
+<link id="a1000" target-id="Preface">
+
+Preface
+
+</link>
+
+
+	
+
+</item>
+
+
+
+
+	
+
+<item id="li1001">
+<link id="a1001" target-id="Discussion">
+
+Discussion
+
+</link>
+
+
+</item>
+
+
+
+
+	
+
+<item id="li1002">
+<link id="a1002" target-id="Miscellaneous">
+
+Miscellaneous
+
+</link>
+
+
+</item>
+
+
+
+
+
+</list>
+
+
+	
+	
+
+</section>
+<section id="h11001">
+<title>
+<emphasis id="Preface" effect="bold">
+
+Preface
+
+</emphasis>
+
+
+</title>
+
+
+	
+	
+
+<para id="p1000">
+This module is one in a collection of modules on Python designed for 
+teaching 
+
+<emphasis id="em1000" effect="italics">
+ITSE 1359 Introduction to Scripting Languages: Python
+
+</emphasis>
+ at Austin Community 
+College in Austin, TX.
+
+</para>
+
+
+
+
+<para id="p1001">
+You are probably reading this document online at 
+
+<link id="a1003" url="http://cnx.org/">
+
+
+cnx.org
+
+</link>
+
+, otherwise known as 
+
+<emphasis id="strong1000" effect="bold">
+openstax cnx
+
+</emphasis>
+. As of October 
+2014, two views of the document are available: an 
+
+<emphasis id="em1001" effect="italics">
+openstax
+
+</emphasis>
+ view and a
+
+
+<emphasis id="em1002" effect="italics">
+legacy
+
+</emphasis>
+ view. In the legacy view, the document is commonly referred to 
+as a 
+
+<emphasis id="em1003" effect="italics">
+module
+
+</emphasis>
+, which is contained in a 
+
+<emphasis id="em1004" effect="italics">
+collection
+
+</emphasis>
+ of modules. I 
+mention this here to distinguish the word 
+
+<emphasis id="em1005" effect="italics">
+module
+
+</emphasis>
+ from the usage of the 
+same word that you will find 
+
+<link id="a1004" target-id="want_to_organize_them_into">
+
+below
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<para id="p1002">
+This document provides a brief introduction to program organization using 
+scripts, modules, and packages.
+
+</para>
+
+
+	
+	
+
+</section>
+<section id="h11002">
+<title>
+<emphasis id="Discussion" effect="bold">
+
+Discussion
+
+</emphasis>
+
+
+</title>
+
+
+	
+	
+
+<para id="p1003">
+Although you won't need this information initially, once your Python 
+	programs become larger than a few lines of code, you may 
+	
+
+<emphasis id="want_to_organize_them_into" effect="bold">
+
+want to organize 
+	them into
+
+</emphasis>
+
+ 
+
+<emphasis id="strong1001" effect="bold">
+scripts
+
+</emphasis>
+, 
+
+<emphasis id="strong1002" effect="bold">
+modules
+
+</emphasis>
+, and 
+	
+
+<emphasis id="strong1003" effect="bold">
+packages
+
+</emphasis>
+. There is no shortage of online 
+	material on that topic. Here is a list of online resources 
+	that explain how to organize your programs:
+
+</para>
+
+
+
+
+<list id="ul1001" list-type="bulleted">
+
+	
+
+<item id="li1003">
+<link id="a1005" url="http://www.tutorialspoint.com/python/python_modules.htm">
+
+tutorialspoint -- Python Modules
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1004">
+<link id="a1006" url="https://docs.python.org/3/tutorial/modules.html">
+
+The Python Tutorial 
+-- 6. Modules
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1005">
+
+	
+
+<link id="a1007" url="http://www.python-course.eu/python3_modules_and_modular_programming.php">
+
+Python Course -- Modular Programming and Modules
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1006">
+<link id="a1008" url="http://www.sthurlow.com/python/lesson09/">
+
+The original sthurlow.com python tutorial -- Modules
+
+</link>
+
+
+	
+
+</item>
+
+
+	
+
+<item id="li1007">
+<link id="a1009" url="http://www.learnpython.org/en/Modules_and_Packages">
+
+learnpython.org 
+-- Modules and Packages
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1008">
+
+	
+
+<link id="a1010" url="http://en.wikibooks.org/wiki/A_Beginner's_Python_Tutorial/Importing_Modules">
+
+A Beginner's Python Tutorial/Importing Modules
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1009">
+
+	
+
+<link id="a1011" url="http://en.wikibooks.org/wiki/Non-Programmer's_Tutorial_for_Python_3/Using_Modules">
+
+Non-Programmer's Tutorial for Python 3/Using Modules
+
+</link>
+
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+<para id="p1004">
+Also, as you write more complicated programs, you will need to use modules 
+that are contained in the standard Python distribution. Here is a link to an 
+index of those modules in Python 3.4.2:
+
+</para>
+
+
+
+
+<list id="ul1002" list-type="bulleted">
+
+	
+
+<item id="li1010">
+<link id="a1012" url="https://docs.python.org/3/py-modindex.html">
+
+Python Module Index
+
+</link>
+
+
+</item>
+
+
+
+
+</list>
+
+
+
+
+<para id="p1005">
+This information is being provided at this early stage in the course so that 
+you will know where to find it when you need it.
+
+</para>
+
+
+	
+
+</section>
+<section id="h11003">
+<title>
+<emphasis id="Miscellaneous" effect="bold">
+
+Miscellaneous
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1006">
+This section contains a variety of miscellaneous information.
+
+</para>
+
+
+
+
+
+	
+
+<note id="note1000" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1004" effect="bold">
+Housekeeping material
+
+</emphasis>
+
+				
+
+<list id="ul1003" list-type="bulleted">
+
+					
+
+<item id="li1011">
+Module name: Itse1359-1015-Program Organization
+
+</item>
+
+
+					
+
+<item id="li1012">
+File: Itse1359-1015.htm
+
+
+</item>
+
+
+					
+
+<item id="li1013">
+Published: 10/14/14
+
+</item>
+
+
+					
+
+<item id="li1014">
+Revised: 12/28/14
+
+</item>
+
+
+				
+
+</list>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+
+
+
+	
+
+<note id="note1001" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1005" effect="bold">
+Disclaimers:
+
+</emphasis>
+<para id="p1007">
+<emphasis id="strong1006" effect="bold">
+Financial
+
+</emphasis>
+: Although the Connexions
+site makes it possible for you to download a PDF file for this
+module at no charge, and also makes it possible for you to
+purchase a pre-printed version of the PDF file, you should be
+aware that some of the HTML elements in this module may not translate well into
+PDF.
+
+</para>
+
+
+				
+
+<para id="p1008">
+I also want you to know that, I receive no financial compensation from the Connexions website even if you purchase 
+	the PDF version of the module.
+
+</para>
+
+
+				
+
+<para id="p1009">
+In the past, unknown individuals have copied my modules from cnx.org, converted them to Kindle books, and 
+				placed them for sale on Amazon.com showing me as the author. I 
+				neither receive compensation for those sales nor do I know who does 
+				receive compensation. If you purchase such a book, please be 
+				aware that it is a copy of a module that is freely 
+				available on cnx.org and that it was made and published without 
+				my prior knowledge.
+
+</para>
+
+
+				
+
+<para id="p1010">
+<emphasis id="strong1007" effect="bold">
+Affiliation
+
+</emphasis>
+: I am a professor of Computer Information 
+	Technology at Austin Community College in Austin, TX.
+	
+
+</para>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+	
+
+<para id="p1011">
+-end- 
+
+</para>
+
+
+
+
+
+
+</section>
+</content>
+
+
+
+
+</document>

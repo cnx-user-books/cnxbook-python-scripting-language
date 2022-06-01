@@ -1,0 +1,1547 @@
+<document xmlns="http://cnx.rice.edu/cnxml"> 
+<title>Itse1359-1250-Nested Loops</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m51428</md:content-id>
+  <md:title>Itse1359-1250-Nested Loops</md:title>
+  <md:abstract>This module explains nested loops in Python.</md:abstract>
+  <md:uuid>34d000fd-1e35-482b-b8d5-96b32a552b48</md:uuid>
+</metadata>
+
+<content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h11000">
+<title>
+Table of Contents
+
+</title>
+
+
+
+
+<list id="ul1000" list-type="bulleted">
+
+	
+
+<item id="li1000">
+<link id="a1000" target-id="Preface">
+
+Preface
+
+</link>
+
+
+	
+
+<list id="ul1001" list-type="bulleted">
+
+		
+
+<item id="li1001">
+<link id="a1001" target-id="What_you_have_learned">
+
+What you have learned
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1002">
+<link id="a1002" target-id="What_you_will_learn">
+
+What you will learn
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1003">
+<link id="a1003" target-id="Viewing_tip">
+
+Viewing tip
+
+</link>
+
+
+<list id="ul1002" list-type="bulleted">
+
+			
+
+<item id="li1004">
+<link id="a1004" target-id="Images">
+
+Figures
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1005">
+<link id="a1005" target-id="Listings">
+
+Listings
+
+</link>
+
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+
+	
+
+<item id="li1006">
+<link id="a1006" target-id="General_background_information">
+
+General background information
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1007">
+<link id="a1007" target-id="Discussion_and_sample_code">
+
+Discussion and sample code
+
+</link>
+
+
+</item>
+
+
+
+	
+
+<item id="li1008">
+<link id="a1008" target-id="Visualizing_the_program_code">
+
+Visualizing the program code
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1009">
+<link id="a1009" target-id="Run_the_program">
+
+Run the program
+
+</link>
+
+
+</item>
+
+
+
+	
+
+<item id="li1010">
+<link id="a1010" target-id="Miscellaneous">
+
+Miscellaneous
+
+</link>
+
+
+</item>
+
+
+
+
+
+</list>
+
+
+	
+	
+
+</section>
+<section id="h11001">
+<title>
+<emphasis id="Preface" effect="bold">
+
+Preface
+
+</emphasis>
+
+
+</title>
+
+
+	
+	
+
+<para id="p1000">
+This module is one in a collection of modules on Python designed for 
+teaching 
+
+<emphasis id="em1000" effect="italics">
+ITSE 1359 Introduction to Scripting Languages: Python
+
+</emphasis>
+ at Austin Community 
+College in Austin, TX.
+
+</para>
+
+
+
+
+<section id="h21000">
+<title>
+<emphasis id="What_you_have_learned" effect="bold">
+
+What you have learned
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1001">
+You have learned how to construct 
+
+<emphasis id="strong1000" effect="bold">
+while
+
+</emphasis>
+ loops, 
+
+<emphasis id="strong1001" effect="bold">
+for
+
+</emphasis>
+ 
+loops, and 
+
+<emphasis id="strong1002" effect="bold">
+if
+
+</emphasis>
+ statements in recent modules on 
+
+<emphasis id="em1001" effect="italics">
+control flow
+
+</emphasis>
+ 
+in Python.
+
+</para>
+
+
+
+
+</section>
+<section id="h21001">
+<title>
+<emphasis id="What_you_will_learn" effect="bold">
+
+What you will learn
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1002">
+In this module, you will learn that loops can be nested and how to nest them.
+
+</para>
+
+
+	
+
+</section>
+<section id="h21002">
+<title>
+<emphasis id="Viewing_tip" effect="bold">
+
+Viewing tip
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1003">
+I recommend that you open another copy of this module in a separate 
+browser window and use the following links to easily find and view the Figures 
+	and the Listings while you are reading about them.
+
+</para>
+
+
+
+
+<para id="p1004">
+<emphasis id="em1002" effect="italics">
+(Note to blind and visually impaired students: most of the Figures and all of the 
+Listings in 
+this module are presented in plain text format and should be accessible using an 
+audio screen reader or a braille display. Note however that the required 
+indentation may not be properly represented by an audio screen reader.)
+
+</emphasis>
+</para>
+
+
+	
+
+<section id="h31000">
+<title>
+<emphasis id="Images" effect="bold">
+
+Figures
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<list id="ul1003" list-type="bulleted">
+
+
+
+<item id="li1011">
+<link id="a1011" target-id="Image_1">
+
+Figure 1
+
+</link>
+
+. Syntax for nested while loops. 
+
+</item>
+
+
+
+
+<item id="li1012">
+<link id="a1012" target-id="Image_2">
+
+Figure 2
+
+</link>
+
+. Syntax for nested for loops
+
+</item>
+
+
+
+
+<item id="li1013">
+<link id="a1013" target-id="Image_4">
+
+Figure 3
+
+</link>
+
+. Output from the code in Listing 1.
+
+</item>
+
+
+	
+
+</list>
+
+
+
+
+</section>
+<section id="h31001">
+<title>
+<emphasis id="Listings" effect="bold">
+
+Listings
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<list id="ul1004" list-type="bulleted">
+
+
+
+<item id="li1014">
+<link id="a1014" target-id="Image_3">
+
+Listing 1
+
+</link>
+
+. An example of nested while and for loops.
+
+</item>
+
+
+
+
+</list>
+
+
+	
+
+</section>
+</section>
+</section>
+<section id="h11002">
+<title>
+<emphasis id="General_background_information" effect="bold">
+
+General 
+	background information
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1005">
+Python allows you to nest 
+
+<emphasis id="strong1003" effect="bold">
+while
+
+</emphasis>
+ loops and 
+
+<emphasis id="strong1004" effect="bold">
+for
+
+</emphasis>
+ 
+loops inside of 
+
+<emphasis id="strong1005" effect="bold">
+while
+
+</emphasis>
+ loops and 
+
+<emphasis id="strong1006" effect="bold">
+for
+
+</emphasis>
+ 
+loops 
+to a greater depth than you are likely to need.
+
+</para>
+
+
+
+
+<para id="p1006">
+<link id="a1015" target-id="Image_1">
+
+Figure 1
+
+</link>
+
+ shows the general syntax for nested 
+
+<emphasis id="strong1007" effect="bold">
+while
+
+</emphasis>
+ loops.
+
+</para>
+
+
+
+	
+
+<table id="table1000" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1000">
+
+			
+
+<row id="tr1000">
+
+				
+
+<entry id="th1000">
+<emphasis id="Image_1" effect="bold">
+
+Figure 1
+
+</emphasis>
+
+. Syntax for nested 
+				while loops.
+
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1000">
+
+			
+
+<row id="tr1001">
+
+				
+
+<entry id="td1000">
+
+
+
+
+<code id="pre1000" display="block">
+while expression:
+  while expression:
+    while expression:
+      statement(s)
+    statement(s)
+  statement(s)
+</code>
+
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+
+
+<para id="p1007">
+<link id="a1016" target-id="Image_2">
+
+Figure 2
+
+</link>
+
+ shows the general syntax of nested 
+
+<emphasis id="strong1008" effect="bold">
+for
+
+</emphasis>
+ loops.
+
+</para>
+
+
+	
+
+<table id="table1001" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1001">
+
+			
+
+<row id="tr1002">
+
+				
+
+<entry id="th1001">
+<emphasis id="Image_2" effect="bold">
+
+Figure 2
+
+</emphasis>
+
+. Syntax for nested 
+				for loops
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1001">
+
+			
+
+<row id="tr1003">
+
+				
+
+<entry id="td1001">
+
+
+
+
+<code id="pre1001" display="block">
+for var in sequence:
+   for var in sequence:
+      statements(s)
+   statements(s)
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1008">
+The syntax can become more complicated than that shown in either 
+
+<link id="a1017" target-id="Image_1">
+
+
+	Figure 1
+
+</link>
+
+ 
+	or 
+
+<link id="a1018" target-id="Image_2">
+
+Figure 2
+
+</link>
+
+. This is particularly true when you mix while loops and for loops 
+	in a nested construct.
+
+</para>
+
+
+	
+	
+
+</section>
+<section id="h11003">
+<title>
+<emphasis id="Discussion_and_sample_code" effect="bold">
+
+Discussion and sample code
+
+</emphasis>
+
+
+</title>
+
+
+	
+	
+
+<para id="p1009">
+<link id="a1019" target-id="Image_3">
+
+Listing 1
+
+</link>
+
+ shows a program with a 
+
+<emphasis id="strong1009" effect="bold">
+while
+
+</emphasis>
+ loop nested inside 
+	of a 
+
+<emphasis id="strong1010" effect="bold">
+for
+
+</emphasis>
+ loop which in turn is nested inside of another 
+
+<emphasis id="strong1011" effect="bold">
+
+	while
+
+</emphasis>
+ loop.
+
+</para>
+
+
+	
+
+<table id="table1002" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1002">
+
+			
+
+<row id="tr1004">
+
+				
+
+<entry id="th1002">
+<emphasis id="Image_3" effect="bold">
+
+Listing 1
+
+</emphasis>
+
+. An example of nested 
+				while and for loops.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1002">
+
+			
+
+<row id="tr1005">
+
+				
+
+<entry id="td1002">
+
+
+
+
+<code id="pre1002" display="block">
+# Illustrates nested loops--------------------------------------------------
+
+leftDigit = 0
+rightDigit = 0
+
+while leftDigit &lt; 3:
+
+  for middleDigit in range(3):
+    rightDigit = 0
+    print("") #blank line
+
+    while rightDigit &lt; 3:
+      print(str(leftDigit) + "-" + str(middleDigit) + "-" + str(rightDigit))
+      rightDigit += 1
+    #end inner while loop
+
+  #end for loop
+
+  leftDigit += 1
+#end outer while loop
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1010">
+<link id="a1020" target-id="Image_4">
+
+Figure 3
+
+</link>
+
+ shows the output from the code in 
+	
+
+<link id="a1021" target-id="Image_3">
+
+Listing 1
+
+</link>
+
+. 
+	Note that the blank lines were inserted to make the material in 
+
+<link id="a1022" target-id="Image_4">
+
+
+	Figure 3
+
+</link>
+
+ 
+	easier to read.
+
+</para>
+
+
+
+
+	
+
+<table id="table1003" summary="This is a table." pgwide="630">
+<tgroup cols="1">
+
+
+		
+
+<thead id="thead1003">
+
+			
+
+<row id="tr1006">
+
+				
+
+<entry id="th1003">
+<emphasis id="Image_4" effect="bold">
+
+Figure 3
+
+</emphasis>
+
+. Output from the code 
+				in Listing 1.
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</thead>
+
+
+		
+
+<tbody id="tbody1003">
+
+			
+
+<row id="tr1007">
+
+				
+
+<entry id="td1003">
+
+
+
+
+<code id="pre1003" display="block">
+0-0-0
+0-0-1
+0-0-2
+
+0-1-0
+0-1-1
+0-1-2
+
+0-2-0
+0-2-1
+0-2-2
+
+1-0-0
+1-0-1
+1-0-2
+
+1-1-0
+1-1-1
+1-1-2
+
+1-2-0
+1-2-1
+1-2-2
+
+2-0-0
+2-0-1
+2-0-2
+
+2-1-0
+2-1-1
+2-1-2
+
+2-2-0
+2-2-1
+2-2-2
+</code>
+
+
+
+
+				
+
+</entry>
+
+			
+
+</row>
+
+		
+
+</tbody>
+
+
+	
+
+</tgroup>
+</table>
+
+
+
+
+	
+
+<para id="p1011">
+This program simulates a scaled-down version of the odometer in your car. 
+	This odometer, however, only has three digits and each digit is limited to 
+	the values of 0, 1, and 2. In other words, Each digit of the odometer 
+	rolls over to 0 when its value exceeds 2.
+
+</para>
+
+
+
+
+<para id="p1012">
+The program begins by creating two working variables named 
+
+<emphasis id="strong1012" effect="bold">
+leftDigit
+
+</emphasis>
+ 
+and 
+
+<emphasis id="strong1013" effect="bold">
+rightDigit
+
+</emphasis>
+ and initializing their values to zero. These are 
+essentially counter variables for the outermost 
+
+<emphasis id="strong1014" effect="bold">
+while
+
+</emphasis>
+ loop and the 
+innermost 
+
+<emphasis id="strong1015" effect="bold">
+while
+
+</emphasis>
+ loop in 
+
+<link id="a1023" target-id="Image_3">
+
+Listing 1
+
+</link>
+
+. They are also the left-most 
+and right-most digits shown in the columns of digits in 
+
+<link id="a1024" target-id="Image_4">
+
+
+Figure 3
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<para id="p1013">
+It isn't necessary to create a separate working variable for the middle 
+digit. That variable, named 
+
+<emphasis id="strong1016" effect="bold">
+middleDigit
+
+</emphasis>
+ is created as part of the 
+
+<emphasis id="strong1017" effect="bold">
+
+for
+
+</emphasis>
+ loop statement in 
+
+<link id="a1025" target-id="Image_3">
+
+Listing 1
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<para id="p1014">
+If you compare the code in 
+
+<link id="a1026" target-id="Image_3">
+
+Listing 1
+
+</link>
+
+ with the output in 
+
+
+<link id="a1027" target-id="Image_4">
+
+Figure 3
+
+</link>
+
+, you will 
+see that the 
+
+<emphasis id="strong1018" effect="bold">
+for
+
+</emphasis>
+ loop goes through its full range of iterations 
+(3) for each iteration of the outermost 
+
+<emphasis id="strong1019" effect="bold">
+while
+
+</emphasis>
+ loop.
+
+</para>
+
+
+
+
+<para id="p1015">
+You will also see that the innermost 
+
+<emphasis id="strong1020" effect="bold">
+while
+
+</emphasis>
+ loop goes 
+through its full range of iterations (3) for every iteration of the 
+
+<emphasis id="strong1021" effect="bold">
+for
+
+</emphasis>
+ 
+loop. As a result, the innermost 
+
+<emphasis id="strong1022" effect="bold">
+while
+
+</emphasis>
+ loop goes through nine 
+iterations for every iteration of the outermost 
+
+<emphasis id="strong1023" effect="bold">
+while
+
+</emphasis>
+ loop.
+
+</para>
+
+
+
+
+<para id="p1016">
+When you think about the behavior of nested loops, think of an odometer. 
+That may help you to remember how they behave.
+
+</para>
+
+
+
+
+</section>
+<section id="h11004">
+<title>
+<emphasis id="Visualizing_the_program_code" effect="bold">
+
+Visualizing the program code
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1017">
+I recommend that you create a
+
+
+<link id="a1028" url="http://pythontutor.com/visualize.html#mode=display">
+
+visualization
+
+</link>
+
+ 
+for the code in 
+
+<link id="a1029" target-id="Image_3">
+
+Listing 1
+
+</link>
+
+ and step through the program 
+one instruction at a time. As you do that, pay attention to the movements of the 
+red and green arrows on the left, the diagram on the right, and the printed 
+material at the bottom. That should help you to better understand the behavior 
+of nested loops.
+
+</para>
+
+
+
+
+
+</section>
+<section id="h11005">
+<title>
+<emphasis id="Run_the_program" effect="bold">
+
+Run the program
+
+</emphasis>
+
+
+</title>
+
+
+
+
+
+<para id="p1018">
+I also encourage you to copy the code from 
+
+<link id="a1030" target-id="Image_3">
+
+Listing 1
+
+</link>
+
+. Execute the code and confirm 
+that you get the same results as those shown in 
+
+<link id="a1031" target-id="Image_4">
+
+Figure 3
+
+</link>
+
+. Experiment with the code, 
+making changes, and observing the results of your changes. Make certain that you 
+can explain why your changes behave as they do. For example, rewrite the program 
+using all 
+
+<emphasis id="strong1024" effect="bold">
+while
+
+</emphasis>
+ loops, all 
+
+<emphasis id="strong1025" effect="bold">
+for
+
+</emphasis>
+ loops, or some 
+other combination of 
+
+<emphasis id="strong1026" effect="bold">
+while
+
+</emphasis>
+ loops and 
+
+<emphasis id="strong1027" effect="bold">
+for
+
+</emphasis>
+ 
+loops.
+
+</para>
+
+
+	
+
+</section>
+<section id="h11006">
+<title>
+<emphasis id="Miscellaneous" effect="bold">
+
+Miscellaneous
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1019">
+This section contains a variety of miscellaneous information. 
+
+</para>
+
+
+
+
+
+	
+
+<note id="note1000" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1028" effect="bold">
+Housekeeping material
+
+</emphasis>
+
+				
+
+<list id="ul1005" list-type="bulleted">
+
+					
+
+<item id="li1015">
+Module name: Itse1359-1250-Nested Loops
+
+</item>
+
+
+					
+
+<item id="li1016">
+File: Itse1359-1250.htm
+
+
+</item>
+
+
+					
+
+<item id="li1017">
+Published: 10/26/14
+
+</item>
+
+
+					
+
+<item id="li1018">
+Revised: 02/25/15
+
+</item>
+
+
+				
+
+</list>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+
+
+
+	
+
+<note id="note1001" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1029" effect="bold">
+Disclaimers:
+
+</emphasis>
+<para id="p1020">
+<emphasis id="strong1030" effect="bold">
+Financial
+
+</emphasis>
+: Although the Connexions
+site makes it possible for you to download a PDF file for this
+module at no charge, and also makes it possible for you to
+purchase a pre-printed version of the PDF file, you should be
+aware that some of the HTML elements in this module may not translate well into
+PDF.
+
+</para>
+
+
+				
+
+<para id="p1021">
+I also want you to know that, I receive no financial compensation from the Connexions website even if you purchase 
+	the PDF version of the module.
+
+</para>
+
+
+				
+
+<para id="p1022">
+In the past, unknown individuals have copied my modules from cnx.org, converted them to Kindle books, and 
+				placed them for sale on Amazon.com showing me as the author. I 
+				neither receive compensation for those sales nor do I know who does 
+				receive compensation. If you purchase such a book, please be 
+				aware that it is a copy of a module that is freely 
+				available on cnx.org and that it was made and published without 
+				my prior knowledge.
+
+</para>
+
+
+				
+
+<para id="p1023">
+<emphasis id="strong1031" effect="bold">
+Affiliation
+
+</emphasis>
+: I am a professor of Computer Information 
+	Technology at Austin Community College in Austin, TX.
+	
+
+</para>
+
+
+				
+
+</note>
+
+			
+
+
+		
+
+
+
+	
+
+
+
+	
+
+<para id="p1024">
+-end- 
+
+</para>
+
+
+
+
+
+
+</section>
+</content>
+
+
+
+
+</document>

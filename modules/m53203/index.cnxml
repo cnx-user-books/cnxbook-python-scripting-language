@@ -1,0 +1,2080 @@
+<document xmlns="http://cnx.rice.edu/cnxml"> 
+<title>Itse1359-1065-Visualizing Python</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m53203</md:content-id>
+  <md:title>Itse1359-1065-Visualizing Python</md:title>
+  <md:abstract>This module explains how to use a free educational code visualizer tool created by Philip Guo.</md:abstract>
+  <md:uuid>71aca310-6390-40c4-9001-561cde902a0c</md:uuid>
+</metadata>
+
+<content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="h11000">
+<title>
+<emphasis id="Table_of_contents" effect="bold">
+
+Table of contents
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<list id="ul1000" list-type="bulleted">
+
+	
+
+<item id="li1000">
+<link id="a1000" target-id="Preface">
+
+Preface
+
+</link>
+
+
+	
+
+<list id="ul1001" list-type="bulleted">
+
+		
+
+<item id="li1001">
+<link id="a1001" target-id="Viewing_tip">
+
+Viewing tip
+
+</link>
+
+
+<list id="ul1002" list-type="bulleted">
+
+			
+
+<item id="li1002">
+<link id="a1002" target-id="Figures">
+
+Figures
+
+</link>
+
+
+</item>
+
+
+			
+
+<item id="li1003">
+<link id="a1003" target-id="Listings">
+
+Listings
+
+</link>
+
+
+</item>
+
+
+		
+
+</list>
+
+
+		
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+
+	
+
+<item id="li1004">
+<link id="a1004" target-id="General_background_information">
+
+General background information
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1005">
+<link id="a1005" target-id="Recommendation">
+
+Recommendation
+
+</link>
+
+
+</item>
+
+
+	
+
+<item id="li1006">
+<link id="a1006" target-id="Discussion_and_sample_code">
+
+Discussion and sample code
+
+</link>
+
+
+<list id="ul1003" list-type="bulleted">
+
+		
+
+<item id="li1007">
+<link id="a1007" target-id="Open_the_online_text_editor">
+
+Open the online text editor
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1008">
+<link id="a1008" target-id="Three_drop-down_boxes">
+
+Three drop-down boxes
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1009">
+<link id="a1009" target-id="Beginning_the_visualization_process">
+
+Beginning the 
+		visualization process
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1010">
+<link id="a1010" target-id="The_red_and_green_arrows">
+
+The red and green arrows
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1011">
+<link id="a1011" target-id="Output_following_three_presses_of_the_Forward_button">
+
+
+		Output following three presses of the Forward button
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1012">
+<link id="a1012" target-id="Same_situation_different_code">
+
+Same situation, different 
+		code
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1013">
+<link id="a1013" target-id="Stepping_through_the_code">
+
+Stepping through the code
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1014">
+<link id="a1014" target-id="The_student_torture_program">
+
+The student torture program
+
+</link>
+
+
+</item>
+
+
+		
+
+<item id="li1015">
+<link id="a1015" target-id="Sharing_the_code_visualizer_with_a_tutor">
+
+Sharing the code 
+		visualizer with a tutor
+
+</link>
+
+
+</item>
+
+
+	
+
+</list>
+
+
+	
+
+</item>
+
+
+
+	
+
+<item id="li1016">
+<link id="a1016" target-id="Run_the_program">
+
+Run the programs
+
+</link>
+
+
+</item>
+
+
+
+
+	
+
+<item id="li1017">
+<link id="a1017" target-id="Miscellaneous">
+
+Miscellaneous
+
+</link>
+
+
+</item>
+
+
+
+
+
+</list>
+
+
+	
+	
+
+</section>
+<section id="h11001">
+<title>
+<emphasis id="Preface" effect="bold">
+
+Preface
+
+</emphasis>
+
+
+</title>
+
+
+	
+	
+
+<para id="p1000">
+This module is one in a collection of modules on Python designed for 
+teaching 
+
+<emphasis id="em1000" effect="italics">
+ITSE 1359 Introduction to Scripting Languages: Python
+
+</emphasis>
+ at Austin Community 
+College in Austin, TX. This module concentrates on the use of the
+	
+
+<link id="a1018" url="http://pythontutor.com/">
+
+Online Python Tutor
+
+</link>
+
+, which includes a 
+	free educational 
+
+<emphasis id="em1001" effect="italics">
+code visualizer tool
+
+</emphasis>
+ created by
+	
+
+<link id="a1019" url="http://www.pgbovine.net/">
+
+Philip Guo
+
+</link>
+
+. 
+
+</para>
+
+
+
+
+<para id="p1001">
+This 
+
+<link id="a1020" url="http://pythontutor.com/visualize.html#mode=edit">
+
+code visualizer tool
+
+</link>
+
+ helps students overcome a fundamental barrier to 
+learning programming: understanding what happens as the computer executes each 
+line of a program's source code. Using this code visualizer tool, a teacher or 
+student can write Python, Java, and JavaScript programs in the Web browser and 
+visualize what the computer is doing step-by-step as it executes those programs.
+
+</para>
+
+
+	
+	
+
+<section id="h21000">
+<title>
+<emphasis id="Viewing_tip" effect="bold">
+
+Viewing tip
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1002">
+I recommend that you open another copy of this module in a separate 
+browser window and use the following links to easily find and view the Figures 
+and Listings while you are reading about them.
+
+</para>
+
+
+	
+
+<section id="h31000">
+<title>
+<emphasis id="Figures" effect="bold">
+
+Figures
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<list id="ul1004" list-type="bulleted">
+
+
+
+<item id="li1018">
+<link id="a1021" target-id="Figure_1">
+
+Figure 1.
+
+</link>
+
+ The online text editor. 
+
+</item>
+
+
+
+
+<item id="li1019">
+<link id="a1022" target-id="Figure_2">
+
+Figure 2.
+
+</link>
+
+ Beginning the visualization process. 
+
+</item>
+
+
+
+
+<item id="li1020">
+<link id="a1023" target-id="Figure_3">
+
+Figure 3.
+
+</link>
+
+ Output following three presses of the Forward button. 
+
+</item>
+
+
+
+
+<item id="li1021">
+<link id="a1024" target-id="Figure_4">
+
+Figure 4.
+
+</link>
+
+ Same situation, different code. 
+
+</item>
+
+
+
+
+<item id="li1022">
+<link id="a1025" target-id="Figure_5">
+
+Figure 5.
+
+</link>
+
+ The student torture program. 
+
+</item>
+
+
+
+	
+
+</list>
+
+
+	
+
+</section>
+<section id="h31001">
+<title>
+<emphasis id="Listings" effect="bold">
+
+Listings
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<list id="ul1005" list-type="bulleted">
+
+
+
+<item id="li1023">
+<link id="a1026" target-id="Listing_1">
+
+Listing 1.
+
+</link>
+
+ A sample program with proper indentation. 
+
+</item>
+
+
+
+
+<item id="li1024">
+<link id="a1027" target-id="Listing_2">
+
+Listing 2.
+
+</link>
+
+ Another sample program with proper indentation.
+
+</item>
+
+
+
+	
+
+</list>
+
+
+
+
+	
+
+</section>
+</section>
+</section>
+<section id="h11002">
+<title>
+<emphasis id="General_background_information" effect="bold">
+
+General 
+	background information
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1003">
+I touched on the use of the code visualizer in the earlier module titled 
+
+
+<link id="a1028" url="http://cnx.org/contents/28ddaa84-fd39-4161-972a-e9edde592149">
+
+Itse1359-1050-Introduction to Scripts
+
+</link>
+
+. 
+I also touched on the code visualizer in the module titled 
+
+
+<link id="a1029" url="http://cnx.org/contents/66b8fc97-0d6f-4ed8-b3e8-f61d76c6bce1">
+
+Itse1359-2510-Getting Started with the Online Python Tutor Code Visualizer
+
+</link>
+
+ 
+in
+	
+
+<link id="a1030" url="http://cnx.org/contents/96b34405-9562-406b-bafb-90c5fb70f39e">
+
+this 
+	book
+
+</link>
+
+. 
+The purpose of this module is to provide additional information related to the code 
+visualizer.
+
+</para>
+
+
+
+
+<para id="p1004">
+When learning to program, it is often useful to be able to follow the 
+execution of a program step-by-step. A free online tool called the
+
+
+<link id="a1031" url="http://pythontutor.com/visualize.html#mode=edit">
+
+Online Python Tutor
+
+</link>
+
+ 
+makes this possible. The following quotation was copied from
+
+
+<link id="a1032" url="http://pythontutor.com/">
+
+pythontutor.com
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<quote id="blockquote1000" display="block">
+
+	
+
+<emphasis id="em1002" effect="italics">
+"
+
+</emphasis>
+<link id="a1033" url="http://pythontutor.com/visualize.html#mode=edit">
+
+
+<emphasis id="em1003" effect="italics">
+Online 
+	Python Tutor
+
+</emphasis>
+</link>
+
+
+<emphasis id="em1004" effect="italics">
+ is a free educational tool created by 
+
+</emphasis>
+
+	
+
+<link id="a1034" url="http://www.pgbovine.net/">
+
+
+<emphasis id="em1005" effect="italics">
+Philip Guo
+
+</emphasis>
+</link>
+
+
+<emphasis id="em1006" effect="italics">
+ that helps 
+	students overcome a fundamental barrier to learning programming: 
+	understanding what happens as the computer executes each line of a program's 
+	source code. Using this tool, a teacher or student can write 
+
+</emphasis>
+<emphasis id="strong1000" effect="bold">
+
+	
+
+<emphasis id="em1007" effect="italics">
+Python
+
+</emphasis>
+</emphasis>
+<emphasis id="em1008" effect="italics">
+, 
+
+<emphasis id="strong1001" effect="bold">
+Java
+
+</emphasis>
+, and 
+
+<emphasis id="strong1002" effect="bold">
+JavaScript
+
+</emphasis>
+ 
+	programs in the Web browser and visualize what the computer is doing 
+	step-by-step as it executes those programs."
+
+</emphasis>
+</quote>
+
+
+
+
+</section>
+<section id="h11003">
+<title>
+<emphasis id="Recommendation" effect="bold">
+
+Recommendation
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1005">
+I recommend that from this point forward in this course, you copy and paste 
+every sample program into the code visualizer and observe the behavior of 
+that code as you step through the program, one instruction at a time. I believe 
+that doing that will help you to better understand Python programming.
+
+</para>
+
+
+
+
+<para id="p1006">
+The procedure for doing that is as follows: 
+
+</para>
+
+
+
+
+<list id="ul1006" list-type="bulleted">
+
+	
+
+<item id="li1025">
+Open the 
+
+<link id="a1035" url="http://pythontutor.com/visualize.html#mode=edit">
+
+
+	code visualizer
+
+</link>
+
+.
+
+</item>
+
+
+	
+
+<item id="li1026">
+Copy the example program code into the online
+	
+
+<link id="a1036" url="http://pythontutor.com/visualize.html#mode=edit">
+
+text editor
+
+</link>
+
+.
+
+</item>
+
+
+	
+
+<item id="li1027">
+Select Python 3.3 in the pull-down list.
+
+</item>
+
+
+	
+
+<item id="li1028">
+Click the button labeled 
+
+<emphasis id="strong1003" effect="bold">
+Visualize Execution
+
+</emphasis>
+.
+
+</item>
+
+
+	
+
+<item id="li1029">
+Use the 
+
+<emphasis id="strong1004" effect="bold">
+Forward
+
+</emphasis>
+ and 
+
+<emphasis id="strong1005" effect="bold">
+Back
+
+</emphasis>
+ buttons to 
+	step forward and backward through your code, one instruction at a time, 
+	while observing the positions of the red and green arrows and observing the information that appears on the screen to the right of 
+	the code window. 
+
+</item>
+
+
+
+
+</list>
+
+
+	
+	
+
+</section>
+<section id="h11004">
+<title>
+<emphasis id="Discussion_and_sample_code" effect="bold">
+
+Discussion and sample code
+
+</emphasis>
+
+
+</title>
+
+
+	
+	
+
+<para id="p1007">
+The earlier module titled 
+	
+
+<link id="a1037" url="http://cnx.org/contents/f62bf8c2-00f8-44ed-a24a-1fd30ef3d7fc">
+
+Itse1359-1060-Syntax
+
+</link>
+
+ 
+	in
+	
+
+<link id="a1038" url="http://cnx.org/contents/96b34405-9562-406b-bafb-90c5fb70f39e">
+
+this 
+	book
+
+</link>
+
+ presented 
+	and explained the two Python 
+	programs shown in 
+
+<link id="a1039" target-id="Listing_1">
+
+Listing 1
+
+</link>
+
+ and 
+
+<link id="a1040" target-id="Listing_2">
+
+Listing 2
+
+</link>
+
+. I will illustrate the use of the code visualizer 
+	with this pair of sample programs. 
+
+</para>
+
+
+
+
+<table id="table1000" summary="This is a table." pgwide="677">
+<tgroup cols="1">
+
+
+<thead id="thead1000">
+<row id="tr1000">
+
+
+
+<entry id="th1000">
+<emphasis id="Listing_1" effect="bold">
+
+Listing 1.
+
+</emphasis>
+
+ A sample program with proper indentation.
+
+
+</entry>
+</row>
+</thead>
+
+
+<tbody id="tbody1000">
+<row id="tr1001">
+<entry id="td1000">
+
+		
+
+<code id="pre1000" display="block">A = 3
+B = 4
+
+if B &gt; A:
+  print(A) # begin group
+  print(B)
+  print(A + B) # end group
+A = 6 # not part of above group
+print(A)</code>
+
+
+
+
+</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table>
+
+
+
+
+
+<table id="table1001" summary="This is a table." pgwide="677">
+<tgroup cols="1">
+
+
+<thead id="thead1001">
+<row id="tr1002">
+
+
+
+<entry id="th1001">
+<emphasis id="Listing_2" effect="bold">
+
+Listing 2.
+
+</emphasis>
+
+ Another sample program with proper 
+indentation.
+
+</entry>
+</row>
+</thead>
+
+
+<tbody id="tbody1001">
+<row id="tr1003">
+<entry id="td1001">
+
+		
+
+<code id="pre1001" display="block">A = 4
+B = 3
+
+if B &gt; A:
+  print(A) # begin group
+  print(B)
+  print(A + B) # end group
+A = 6 # not part of above group
+print(A) </code>
+
+
+
+
+</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table>
+
+
+
+
+<section id="h21001">
+<title>
+<emphasis id="Open_the_online_text_editor" effect="bold">
+
+Open the online text editor
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1008">
+When you first open the online
+
+
+<link id="a1041" url="http://pythontutor.com/visualize.html#mode=edit">
+
+text editor
+
+</link>
+
+, a 
+portion of the screen will look like 
+
+<link id="a1042" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+.
+
+</para>
+
+
+
+
+
+<para id="p1009">
+<emphasis id="strong1006" effect="bold">
+<emphasis id="Figure_1" effect="bold">
+
+Figure 1.
+
+</emphasis>
+
+ The online text editor.
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1010">
+<media id="media1000" alt="missing image" display="block">
+<image id="img1000" mime-type="image/jpeg" src="../../media/1359-1060-c.jpg" width="442" height="490"/>
+</media>
+
+
+</para>
+
+
+
+		
+		
+
+
+<para id="p1011">
+The blank portion at the top of 
+
+<link id="a1043" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+ is the text editor portion of the 
+screen. 
+
+</para>
+
+
+
+
+</section>
+<section id="h21002">
+<title>
+<emphasis id="Three_drop-down_boxes" effect="bold">
+
+Three drop-down boxes
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1012">
+There are three drop-down boxes at the bottom of 
+
+<link id="a1044" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+ that allow you 
+to select 
+different options. The different options in these 
+boxes control the manner in which the output information is presented as you 
+step through the program. In some cases, you might want to step through the same 
+program more than once with different sets of options selected.
+
+</para>
+
+
+
+
+</section>
+<section id="h21003">
+<title>
+<emphasis id="Beginning_the_visualization_process" effect="bold">
+
+Beginning the visualization 
+process
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1013">
+<link id="a1045" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+ shows the result of pasting the code from 
+
+<link id="a1046" target-id="Listing_1">
+
+Listing 1
+
+</link>
+
+ into the text 
+editor and pressing the button in 
+
+<link id="a1047" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+ labeled 
+
+<emphasis id="strong1007" effect="bold">
+Visualize Execution
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+
+<para id="p1014">
+<emphasis id="strong1008" effect="bold">
+<emphasis id="Figure_2" effect="bold">
+
+Figure 2.
+
+</emphasis>
+
+ Beginning the visualization process.
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1015">
+<media id="media1001" alt="missing image" display="block">
+<image id="img1001" mime-type="image/jpeg" src="../../media/1359-1060-d.jpg" width="592" height="308"/>
+</media>
+
+
+</para>
+
+
+
+		
+
+
+</section>
+<section id="h21004">
+<title>
+<emphasis id="The_red_and_green_arrows" effect="bold">
+
+The red and green arrows
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1016">
+As indicated by the key in the bottom left corner of 
+
+<link id="a1048" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+, two arrows 
+will appear next to the code as you step through the code. A red 
+arrow shows the instruction that will be executed the next time you press the
+
+
+<emphasis id="strong1009" effect="bold">
+Forward
+
+</emphasis>
+ button. 
+
+<emphasis id="em1009" effect="italics">
+(Pressing the 
+
+<emphasis id="strong1010" effect="bold">
+Back
+
+</emphasis>
+ button moves 
+the red arrow 
+back one step.)
+
+</emphasis>
+ The green arrow shows the instruction that was most 
+recently executed. 
+
+<emphasis id="em1010" effect="italics">
+(The green arrow isn't visible in 
+
+<link id="a1049" target-id="Figure_2">
+
+Figure 2
+
+</link>
+
+ because it is 
+underneath the red arrow at the beginning.)
+
+</emphasis>
+</para>
+
+
+
+
+</section>
+<section id="h21005">
+<title>
+<emphasis id="Output_following_three_presses_of_the_Forward_button" effect="bold">
+
+Output 
+following three presses of the Forward button
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1017">
+<link id="a1050" target-id="Figure_3">
+
+Figure 3
+
+</link>
+
+ shows the result of pressing the 
+
+<emphasis id="strong1011" effect="bold">
+Forward
+
+</emphasis>
+ button three times.
+
+</para>
+
+
+
+
+
+
+<para id="p1018">
+<emphasis id="strong1012" effect="bold">
+<emphasis id="Figure_3" effect="bold">
+
+Figure 3.
+
+</emphasis>
+
+ Output following three presses of the Forward 
+	button.
+
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1019">
+<media id="media1002" alt="missing image" display="block">
+<image id="img1002" mime-type="image/jpeg" src="../../media/1359-1060-e.jpg" width="629" height="307"/>
+</media>
+
+
+</para>
+
+
+
+
+
+<para id="p1020">
+We see from the green arrow on the left that the relational test in 
+the 
+
+<emphasis id="strong1013" effect="bold">
+if
+
+</emphasis>
+ statement was the most recently executed instruction.
+
+</para>
+
+
+
+
+<para id="p1021">
+We see on the right that the variables named 
+
+<emphasis id="strong1014" effect="bold">
+A
+
+</emphasis>
+ and 
+
+<emphasis id="strong1015" effect="bold">
+
+B
+
+</emphasis>
+ contain references 
+
+<emphasis id="em1011" effect="italics">
+(pointers)
+
+</emphasis>
+ to objects of type 
+
+<emphasis id="strong1016" effect="bold">
+int
+
+</emphasis>
+ containing 
+values of 
+
+<emphasis id="strong1017" effect="bold">
+3
+
+</emphasis>
+ and 
+
+<emphasis id="strong1018" effect="bold">
+4
+
+</emphasis>
+ respectively. 
+
+</para>
+
+
+
+
+<para id="p1022">
+Because
+
+
+<emphasis id="strong1019" effect="bold">
+B
+
+</emphasis>
+ is greater than 
+
+<emphasis id="strong1020" effect="bold">
+A
+
+</emphasis>
+, the relational test in 
+the 
+
+<emphasis id="strong1021" effect="bold">
+if
+
+</emphasis>
+ statement 
+
+<emphasis id="em1012" effect="italics">
+(pointed to by the green arrow)
+
+</emphasis>
+ returned true 
+when that statement was executed. This means that the three 
+statements in the indented block following the 
+
+<emphasis id="strong1022" effect="bold">
+if
+
+</emphasis>
+ statement 
+will be executed. The red arrow points to the first statement in the indented block 
+meaning that it will be executed the next time the user presses the 
+
+<emphasis id="strong1023" effect="bold">
+
+Forward
+
+</emphasis>
+ button.
+
+</para>
+
+
+
+
+</section>
+<section id="h21006">
+<title>
+<emphasis id="Same_situation_different_code" effect="bold">
+
+Same situation, different code
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1023">
+<link id="a1051" target-id="Figure_4">
+
+Figure 4
+
+</link>
+
+ shows the same situation using the code from 
+
+<link id="a1052" target-id="Listing_2">
+
+Listing 2.
+
+</link>
+
+ instead of 
+the code from 
+
+<link id="a1053" target-id="Listing_1">
+
+Listing 1
+
+</link>
+
+.
+
+</para>
+
+
+
+
+
+<para id="p1024">
+<emphasis id="strong1024" effect="bold">
+<emphasis id="Figure_4" effect="bold">
+
+Figure 4.
+
+</emphasis>
+
+ Same situation, different code.
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1025">
+<media id="media1003" alt="missing image" display="block">
+<image id="img1003" mime-type="image/jpeg" src="../../media/1359-1060-f.jpg" width="635" height="306"/>
+</media>
+
+
+</para>
+
+
+
+
+
+<para id="p1026">
+Note that the values stored in the variables named 
+
+<emphasis id="strong1025" effect="bold">
+A
+
+</emphasis>
+ and 
+
+
+<emphasis id="strong1026" effect="bold">
+B
+
+</emphasis>
+ were reversed 
+relative to the code in 
+
+<link id="a1054" target-id="Figure_3">
+
+Figure 3
+
+</link>
+
+. As a result, the 
+
+<emphasis id="strong1027" effect="bold">
+if
+
+</emphasis>
+ statement pointed to by 
+the green arrow returned false instead of true when that statement was executed. Because of that, execution of 
+the indented code block following the 
+
+<emphasis id="strong1028" effect="bold">
+if
+
+</emphasis>
+ statement will be skipped entirely and 
+the red arrow now points to the statement immediately following that code block. 
+That is the next statement that will be executed.
+
+</para>
+
+
+
+
+</section>
+<section id="h21007">
+<title>
+<emphasis id="Stepping_through_the_code" effect="bold">
+
+Stepping through the code
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1027">
+As you use the 
+
+<emphasis id="strong1029" effect="bold">
+Forward
+
+</emphasis>
+ and 
+
+<emphasis id="strong1030" effect="bold">
+Back
+
+</emphasis>
+ buttons to step through the code, one 
+instruction at a time, you can observe the red and green arrows to gain a better 
+understanding of the flow of control through the program. 
+
+<emphasis id="em1013" effect="italics">
+(You will learn 
+more about 
+flow of control in future modules and you will probably find that the code 
+visualizer is particularly useful when analyzing that code.)
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1028">
+If you are in a hurry, you can press the 
+
+<emphasis id="strong1031" effect="bold">
+First
+
+</emphasis>
+ button and the 
+
+
+<emphasis id="strong1032" effect="bold">
+Last
+
+</emphasis>
+ button to cause the code 
+visualizer to go the first or last instruction in one step.
+
+</para>
+
+
+
+
+</section>
+<section id="h21008">
+<title>
+<emphasis id="The_student_torture_program" effect="bold">
+
+The student torture program
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1029">
+There are links to quite a few sample programs below the drop-down boxes 
+shown in 
+
+<link id="a1055" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+. 
+
+<emphasis id="em1014" effect="italics">
+(I cropped them out of 
+
+<link id="a1056" target-id="Figure_1">
+
+Figure 1
+
+</link>
+
+ to save space.)
+
+</emphasis>
+ One 
+of those sample programs is named 
+
+<emphasis id="strong1033" effect="bold">
+student torture
+
+</emphasis>
+.
+
+</para>
+
+
+
+
+<para id="p1030">
+As a preview of things to come, 
+
+<link id="a1057" target-id="Figure_5">
+
+Figure 5
+
+</link>
+
+ shows the result of opening that 
+program in the code visualizer and pressing the 
+
+<emphasis id="strong1034" effect="bold">
+Last
+
+</emphasis>
+ button.
+
+</para>
+
+
+
+
+
+<para id="p1031">
+<emphasis id="strong1035" effect="bold">
+<emphasis id="Figure_5" effect="bold">
+
+Figure 5.
+
+</emphasis>
+
+ The student torture program.
+
+</emphasis>
+</para>
+
+
+
+
+<para id="p1032">
+<media id="media1004" alt="missing image" display="block">
+<image id="img1004" mime-type="image/jpeg" src="../../media/1359-1060-g.jpg" width="579" height="338"/>
+</media>
+
+
+</para>
+
+
+
+
+
+</section>
+<section id="h21009">
+<title>
+<emphasis id="Sharing_the_code_visualizer_with_a_tutor" effect="bold">
+
+Sharing the code 
+visualizer with a tutor
+
+</emphasis>
+
+
+</title>
+
+
+
+
+<para id="p1033">
+Finally, there is another interesting sample program at
+
+
+<link id="a1058" url="http://pythontutor.com/">
+
+http://pythontutor.com/
+
+</link>
+
+ that you can step 
+through and observe its behavior. While you are there, be sure to note your ability to share the code visualizer with a friend or a tutor on another 
+computer on the Internet and jointly analyze a program.
+
+</para>
+
+
+
+
+
+</section>
+</section>
+<section id="h11005">
+<title>
+<emphasis id="Run_the_program" effect="bold">
+
+Run the programs
+
+</emphasis>
+
+
+</title>
+
+
+
+
+
+<para id="p1034">
+I encourage you to use the code in 
+
+<link id="a1059" target-id="Listing_1">
+
+Listing 1
+
+</link>
+
+ and 
+
+<link id="a1060" target-id="Listing_2">
+
+Listing 2.
+
+</link>
+
+ 
+along with the code visualizer to repeat the 
+procedures explained in this module. Confirm that you get results similar to 
+those shown in 
+
+<link id="a1061" target-id="Figure_3">
+
+Figure 3
+
+</link>
+
+ and 
+
+<link id="a1062" target-id="Figure_4">
+
+Figure 4
+
+</link>
+
+.
+
+</para>
+
+
+
+
+<para id="p1035">
+Change the options in the drop-down boxes and observe the results.
+
+</para>
+
+
+
+
+<para id="p1036">
+Experiment with the code, 
+making changes, and observing the results of your changes. Make certain that you 
+can explain why your changes behave as they do.
+
+</para>
+
+
+
+
+<para id="p1037">
+As mentioned earlier, I strongly recommend that from this point forward 
+in this course, you copy and paste every sample program into the code visualizer 
+and observe the behavior of that code as you step through the program, one 
+instruction at a time. I believe that doing that will help you to better 
+understand Python programming.
+
+</para>
+
+
+
+
+	
+
+</section>
+<section id="h11006">
+<title>
+<emphasis id="Miscellaneous" effect="bold">
+
+Miscellaneous
+
+</emphasis>
+
+
+</title>
+
+
+	
+
+<para id="p1038">
+This section contains a variety of miscellaneous information.
+
+</para>
+
+
+
+
+
+	
+
+<note id="note1000" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1036" effect="bold">
+Housekeeping material
+
+</emphasis>
+
+				
+
+<list id="ul1007" list-type="bulleted">
+
+					
+
+<item id="li1030">
+Module name: Itse1359-1065-Visualizing Python
+
+</item>
+
+
+					
+
+<item id="li1031">
+File: Itse1359-1065.htm
+
+
+</item>
+
+
+					
+
+<item id="li1032">
+Published: 01/31/16
+
+</item>
+
+
+				
+
+</list>
+
+
+</note>
+
+
+
+
+
+
+	
+
+<note id="note1001" type="">
+
+
+		
+
+
+			
+
+
+				
+
+<emphasis id="strong1037" effect="bold">
+Disclaimers:
+
+</emphasis>
+<para id="p1039">
+<emphasis id="strong1038" effect="bold">
+Financial
+
+</emphasis>
+: Although the Connexions
+site makes it possible for you to download a PDF file for this
+module at no charge, and also makes it possible for you to
+purchase a pre-printed version of the PDF file, you should be
+aware that some of the HTML elements in this module may not translate well into
+PDF.
+
+</para>
+
+
+				
+
+<para id="p1040">
+I also want you to know that, I receive no financial compensation from the Connexions website even if you purchase 
+	the PDF version of the module.
+
+</para>
+
+
+				
+
+<para id="p1041">
+In the past, unknown individuals have copied my modules from cnx.org, converted them to Kindle books, and 
+				placed them for sale on Amazon.com showing me as the author. I 
+				neither receive compensation for those sales nor do I know who does 
+				receive compensation. If you purchase such a book, please be 
+				aware that it is a copy of a module that is freely 
+				available on cnx.org and that it was made and published without 
+				my prior knowledge.
+
+</para>
+
+
+				
+
+<para id="p1042">
+<emphasis id="strong1039" effect="bold">
+Affiliation
+
+</emphasis>
+: I am a professor of Computer Information 
+	Technology at Austin Community College in Austin, TX.
+	
+
+</para>
+
+
+</note>
+
+
+
+	
+
+
+<para id="p1043">
+-end- 
+
+</para>
+
+
+
+
+
+
+</section>
+</content>
+
+
+
+
+</document>
